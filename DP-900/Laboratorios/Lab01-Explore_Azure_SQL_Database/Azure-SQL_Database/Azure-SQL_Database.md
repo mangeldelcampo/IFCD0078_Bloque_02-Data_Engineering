@@ -216,6 +216,19 @@ Resultado de consulta con INNER JOIN
 
 5.    Tómate un momento para experimentar. Intenta cambiar el precio en la cláusula WHERE o ordenar los resultados por otra columna y, a continuación, vuelve a ejecutar la consulta para ver cómo cambian los resultados.
 
+```sql
+SELECT
+    v.ModelName,
+    m.ManufacturerName,
+    m.Country,
+    v.ListPrice
+FROM Vehicle AS v
+INNER JOIN Manufacturer AS m
+    ON v.ManufacturerID = m.ManufacturerID
+WHERE ListPrice > 30000
+ORDER BY m.ManufacturerName;
+```
+
 ![Panel de Nueva Consulta](imagenes/E1Imagen21.png)
 
 Cuando termines, cierra el panel del editor de consultas y descarta los cambios si se te solicita.

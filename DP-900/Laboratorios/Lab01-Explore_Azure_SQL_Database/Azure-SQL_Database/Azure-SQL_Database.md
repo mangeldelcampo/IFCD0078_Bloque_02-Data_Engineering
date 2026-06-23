@@ -2,6 +2,34 @@
 # DP-900 - Lab 01 - Explorar Azure SQL Database
 # Descripción del Ejercicio
 El laboratorio describe el ciclo de vida completo del aprovisionamiento, configuración e interacción con una base de datos relacional nativa de la nube mediante **Azure SQL Database**. El documento guía al usuario en la creación de una infraestructura optimizada para el control de costes en entornos de desarrollo, el establecimiento de perímetros de seguridad mediante reglas de firewall de IP, y la manipulación de datos relacionales a través de sentencias estructuradas SQL (DDL, DML y DQL) ejecutadas directamente desde el portal de Azure. El proceso concluye con el desmantelamiento atómico de la infraestructura para garantizar una gobernanza financiera eficiente dentro de la suscripción de Azure.
+### 1. Aprovisionamiento de Infraestructura y Optimización de Costes
+* **Selección del Recurso:** Se inicializa un recurso de tipo **Azure SQL** enfocado en una **Base de datos única** (*Single database*), idónea para cargas de trabajo de aprendizaje.
+* **Aisolation de Carga (Workload):** Se configura el entorno como **Development** (Desarrollo) y se asigna un tipo de almacenamiento de respaldo con redundancia local (**Locally-redundant backup storage - LRS**), minimizando el impacto económico del ejercicio.
+* **Modelo Serverless:** La base de datos se despliega bajo el nivel *General Purpose - Serverless* de la serie estándar Gen5 (1 vCore, 32 GB de almacenamiento), lo que permite la tarificación basada en el uso por segundo.
+* **Organización Lógica:** El servidor y la base de datos se encapsulan dentro de un único **Grupo de Recursos** (*Resource Group*), simplificando la administración y el borrado masivo.
+
+### 2. Seguridad Perimetral y Redes
+* **Capa de Conectividad:** Se habilita un **Punto de conexión público** (*Public endpoint*) para permitir que las herramientas de consulta interactúen con el motor.
+* **Defensa en el Firewall:** Se configuran dos reglas estrictas en el cortafuegos de Azure SQL Server:
+  1. Permitir que los servicios y recursos internos de Azure accedan al servidor.
+  2. Registrar la **dirección IP pública del cliente actual** para abrir el acceso exclusivo al administrador de la práctica.
+* **Mecanismo de Autenticación:** Se utiliza **SQL Authentication** como la vía más directa para laboratorios, estableciendo credenciales de administrador local (`mgueldba`) y contraseña.
+
+### 3. Operaciones de Datos (Sintaxis Estructurada SQL)
+A través de la herramienta nativa **Query editor (preview)**, se realizan interacciones sobre el plano de datos para dar vida a la base de datos `Dealership`:
+
+* **Definición de Esquema (DDL):** Se ejecutan sentencias `CREATE TABLE` para la creación de las tablas de fabricantes (`Manufacturer`) y vehículos (`Vehicle`).
+  * *Integridad referencial:* Se implementan restricciones de **PRIMARY KEY** para garantizar la unicidad de filas y de **FOREIGN KEY** para entrelazar ambas tablas a través del campo común `ManufacturerID`.
+* **Población de Datos (DML):** Se inyectan filas de muestra mediante comandos `INSERT INTO`, registrando 4 fabricantes y 8 vehículos en el sistema.
+* **Explotación de Información (DQL):** Se practican consultas de extracción mediante comandos `SELECT`:
+  * Proyección de columnas específicas para mejorar la legibilidad frente al uso generalizado de `SELECT *`.
+  * Filtrado condicional de registros a nivel de fila mediante la cláusula **`WHERE`**.
+  * Ordenación de la salida de datos de menor a mayor precio con **`ORDER BY`**.
+  * Combinación de entidades distribuidas en distintas tablas mediante la instrucción **`INNER JOIN ... ON`**.
+
+### 4. Gobernanza Financiera y Desmantelamiento
+* **Eliminación en Cascada:** Al concluir la validación técnica, se ejecuta la eliminación directa del **Grupo de Recursos** original.
+* **Prevención de Costes:** Esta acción elimina de forma simultánea e irreversible la base de datos, el servidor lógico y las configuraciones de red asociadas, garantizando que **no queden recursos residuales activos** generando cargos en la suscripción.
 
 ## Fase 1: Aprovisionar un recurso de Azure SQL Database
 "Aprovisionar" simplemente significa crear y configurar un nuevo recurso. En esta sección, crearás tu servidor de base de datos y una base de datos vacía para alojar tus datos.

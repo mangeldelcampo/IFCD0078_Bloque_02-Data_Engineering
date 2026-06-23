@@ -168,25 +168,31 @@ Ejecución de INSERT INTO completada
 # ## Fase 3: Consultar los datos
 Ahora puedes usar comandos SQL SELECT para recuperar y explorar los datos. Prueba ejecutando cada uno de estos bloques:
 1. Ver todos los datos de los vehículos:
+```sql
 SELECT * FROM Vehicle;
+```
 Resultado de SELECT * FROM Vehicle
 ![Panel de Nueva Consulta](imagenes/E1Imagen17.png)
 2. Ver solo columnas específicas:
+```
 SELECT ModelName, BodyType, ListPrice
 FROM Vehicle;
+```
 Resultado de SELECT de columnas específicas
 ![Panel de Nueva Consulta](imagenes/E1Imagen18.png)
 
 3. Filtrar y ordenar datos (vehículos de menos de $30,000):
+```sql
 SELECT ModelName, BodyType, ListPrice
 FROM Vehicle
 WHERE ListPrice < 30000
 ORDER BY ListPrice;
+```
 Resultado de SELECT con WHERE y ORDER BY
 ![Panel de Nueva Consulta](imagenes/E1Imagen19.png)
 
 4. Combinar datos de ambas tablas (JOIN) para ver el modelo junto al país de su fabricante:
-```
+```sql
 SELECT
     v.ModelName,
     m.ManufacturerName,

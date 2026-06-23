@@ -1,6 +1,38 @@
 # DP-900 - Lab 01 - Azure Database for PostgreSQL
 ## Ejercicio: Creación y uso de una base de datos en Azure Database for PostgreSql
 
+## Resumen 
+Este laboratorio documenta el procedimiento técnico para el aprovisionamiento y la puesta en marcha de una solución de base de datos relacional de código abierto utilizando el servicio Azure Database for PostgreSQL. La práctica detalla el despliegue bajo el modelo de Servidor Flexible (Flexible Server), una arquitectura de Microsoft Azure diseñada para proporcionar un control granular sobre las variables del motor, optimización financiera en cargas de trabajo de desarrollo y mecanismos avanzados de conectividad híbrida.
+
+El documento abarca el flujo completo desde el plano de control: validación de requisitos de suscripción, asignación de identidades lógicas y contenedores de recursos, parametrización de red perimetral mediante el puerto nativo de PostgreSQL (5432) y el establecimiento de políticas de acceso seguro e integridad en la nube de Azure.
+
+
+## Puntos Clave del Laboratorio
+
+### 1. Configuración del Entorno y Modelo de Despliegue
+
+* **Arquitectura de Servidor Flexible:** Se selecciona específicamente la opción de Azure Database for PostgreSQL Flexible Server. Esta modalidad PaaS (Plataforma como Servicio) ofrece a los desarrolladores un control simplificado, compatibilidad nativa con las extensiones de la comunidad y un aislamiento completo de la infraestructura.
+* **Contenedores de Gobernanza:** La infraestructura lógica se asocia a una suscripción activa (Azure for Students) y se encapsula dentro de un Grupo de Recursos dedicado (LaboratorioAdnan) para unificar la monitorización y el ciclo de vida de los componentes.
+* **Parámetros de Ubicación:** El servidor se despliega en la región geográfica UK South, asociándose a una versión de motor estable (PostgreSQL 17).
+
+### 2. Optimización Financiera y de Carga
+
+* **Perfil Dev/Test:** El tipo de carga de trabajo se clasifica explícitamente como Desarrollo. Esta opción restringe el uso de recursos masivos para evitar costes innecesarios en fases preliminares de diseño.
+* **Disponibilidad Estándar:** Con el fin de minimizar el consumo de créditos, la alta disponibilidad con redundancia de zona se mantiene desactivada (Disabled), operando bajo un Acuerdo de Nivel de Servicio (SLA) básico del 99.9%.
+
+### 3. Seguridad Perimetral y Autenticación
+
+* **Firewall y Restricción de Puerto:** Se habilita la conectividad por Acceso público protegiendo el endpoint mediante el cortafuegos de Azure. El tráfico entrante se canaliza estrictamente a través del puerto estándar 5432.
+* **Control por Dirección IP:** Se restringe el perímetro de red añadiendo de forma exclusiva la dirección IP pública del cliente actual (79.116.248.142) a las reglas de firewall. Cualquier conexión externa ajena a este origen es bloqueada por defecto.
+* **Identidad y Acceso:** La plataforma ofrece un modelo híbrido que permite seleccionar entre la Autenticación nativa de PostgreSQL (mediante un usuario administrador local como adnan) y la integración centralizada con Microsoft Entra ID mediante tokens temporales.
+
+### 4. Ciclo de Vida y Despliegue Automatizado
+
+* **Aprovisionamiento Atómico:** Tras la validación de la pestaña Revisar y crear, el motor de Azure despliega en cascada todos los recursos de red y discos físicos requeridos.
+* **Acceso Inmediato al Recurso:** Una vez que la interfaz confirma que Se completó la implementación, el plano de control habilita el botón Ir al recurso, permitiendo al administrador el acceso directo al panel centralizado para gestionar las bases de datos lógicas individuales.
+
+
+## Ejecución Ejercicio 
 ### Paso 1: Acceso al portal de Azure
 Ingresa al portal de Azure. Portal de Azure e iniciamos sesión con nuestras credenciales.
 

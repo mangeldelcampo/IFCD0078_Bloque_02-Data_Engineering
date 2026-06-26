@@ -147,6 +147,6 @@ When you’ve finished exploring Azure Cosmos DB, you should delete the resource
 
 In this lab, you created an Azure Cosmos DB account, added JSON items, and queried them using a SQL-like language. You’ve taken your first steps with NoSQL data in the cloud\!
 
-![][image13]  
+![Diapositiva 13](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_2_Explore%20Azure%20Cosmos%20DB/imagenes/10Limpieza.png)
 
 

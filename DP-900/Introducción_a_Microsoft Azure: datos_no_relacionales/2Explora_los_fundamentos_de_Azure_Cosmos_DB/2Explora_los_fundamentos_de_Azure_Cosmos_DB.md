@@ -156,19 +156,19 @@ Se recomienda utilizar la API NoSQL para nuevas aplicaciones.
 
 Una consulta tiene este aspecto:
 
-'''SQL
+```sql
 
 SELECT \*
 
 FROM customers c
 
 WHERE c.id \= "joe@litware.com"
-'''
+```
 
 El resultado es un documento JSON:
 
 **JSON**
-
+```json
 {
 
    "id": "joe@litware.com",
@@ -184,6 +184,7 @@ El resultado es un documento JSON:
     }
 
 }
+```
 
 * Consejo*
 
@@ -202,7 +203,7 @@ db.products.find({id: 123})
 El resultado:
 
 **JSON**
-
+```json
 {
 
    "id": 123,
@@ -212,7 +213,7 @@ El resultado:
    "price": 2.99
 
 }
-
+```
 Esta API es la opción ideal cuando su equipo ya cuenta con experiencia en MongoDB o cuando está migrando una carga de trabajo de MongoDB existente a un servicio en la nube administrado.
 
 ### Cosmos DB para tabla
@@ -249,10 +250,10 @@ Por ejemplo, una tabla **de empleados** podría tener este aspecto:
 
 Cassandra utiliza CQL (Cassandra Query Language), cuya sintaxis es similar a la de SQL. Para recuperar un registro específico:
 
-sql'''
+```sql
 
 SELECT \* FROM Employees WHERE ID \= 2
-'''
+```
 
 Esta API es ideal para equipos que migran una carga de trabajo de Apache Cassandra a una base de datos en la nube totalmente administrada.
 

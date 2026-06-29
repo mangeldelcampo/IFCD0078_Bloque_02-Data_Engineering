@@ -29,7 +29,7 @@ En este módulo aprenderás a:
 
 ## INDICE
 
-* [Introducción](#introducción-introducciónintroducción)
+* [Introducción](#introducción-introducción)
 
 * [Explora el almacenamiento de blobs de Azure](#explora-el-almacenamiento-de-blobs-de-azure)
 
@@ -45,7 +45,7 @@ En este módulo aprenderás a:
 
 * [Resumen](#resumen)
 
-## Introducción {#introducción}
+## Introducción (#introducción)
 
 La mayoría de las aplicaciones de software necesitan almacenar datos. A menudo, estos datos se almacenan en una base de datos relacional, donde se organizan en tablas relacionadas y se gestionan mediante el Lenguaje de Consulta Estructurada (SQL). Sin embargo, muchas aplicaciones no requieren la estructura rígida de una base de datos relacional y utilizan almacenamiento no relacional (conocido comúnmente como NoSQL).
 

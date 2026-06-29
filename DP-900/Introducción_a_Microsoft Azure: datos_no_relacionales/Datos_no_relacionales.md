@@ -73,9 +73,8 @@ Azure Blob Storage admite tres tipos diferentes de blobs:
 
 * **Añadir blobs** . Un blob de adición es un blob de bloques optimizado para admitir operaciones de adición. Solo se pueden añadir bloques al final de un blob de adición; no se admite la actualización ni la eliminación de bloques existentes. Cada bloque puede variar de tamaño, hasta 4 MB. El tamaño máximo de un blob de adición es de poco más de 195 GB .
 
-![Diagrama que explica los diferentes tipos de almacenamiento de blobs.][image2]
+![Diagrama que explica los diferentes tipos de almacenamiento de blobs.](imagenes3_1/Imagen2.png)
 
-Imagen2
 
 * El almacenamiento de blobs proporciona cuatro niveles de acceso, que ayudan a equilibrar la latencia de acceso y el coste de almacenamiento:
 
@@ -87,25 +86,21 @@ Imagen2
 
 * El nivel **de archivo** ofrece el menor coste de almacenamiento, pero con una mayor latencia. Está diseñado para datos históricos que no deben perderse, pero que solo se requieren ocasionalmente. Los datos deben permanecer en el nivel de archivo durante un mínimo de 180 días para evitar penalizaciones por eliminación anticipada. Los blobs en el nivel de archivo se almacenan efectivamente en estado sin conexión. La latencia de lectura típica para los niveles Hot, Cool y Cold es de unos pocos milisegundos, pero para el nivel de archivo, puede tardar hasta 15 horas en que los datos estén disponibles. Para recuperar un blob del nivel de archivo, debe cambiar el nivel de acceso a Hot, Cool o Cold. El blob se rehidratará. Solo podrá leer el blob cuando el proceso de rehidratación haya finalizado.
 
-![Diagrama que explica los diferentes niveles de acceso al almacenamiento de blobs.][image3]
+![Diagrama que explica los diferentes niveles de acceso al almacenamiento de blobs.](imagenes3_1/Imagen3.png)
 
-Imagen3
 
 * Puedes crear directivas de gestión del ciclo de vida para los blobs en una cuenta de almacenamiento. Una directiva de gestión del ciclo de vida puede mover automáticamente un blob de la capa de acceso frecuente a la de acceso menos frecuente y, finalmente, a la de archivo, a medida que envejece y se usa con menos frecuencia (la directiva se basa en el número de días transcurridos desde su modificación). Una directiva de gestión del ciclo de vida también puede configurar la eliminación de blobs obsoletos.
 
 * Azure Storage también ofrece opciones de redundancia integradas para mantener sus datos altamente disponibles y protegidos contra fallos. **El almacenamiento localmente redundante (LRS)** mantiene tres copias de sus datos en un único centro de datos. **El almacenamiento con redundancia de zona (ZRS)** distribuye las copias entre tres zonas de disponibilidad en la región principal, de modo que sus datos permanecen accesibles incluso si una zona deja de funcionar. Para protegerse contra desastres regionales, **el almacenamiento georredundante (GRS)** y **el almacenamiento georredundante de zona (GZRS)** replican sus datos de forma asíncrona en una región secundaria situada a cientos de kilómetros de distancia. También puede habilitar el acceso de lectura a la región secundaria (RA-GRS o RA-GZRS) para que su aplicación pueda leer datos de la región secundaria incluso antes de que se produzca una conmutación por error.
 
-Imagen4
 
-![Diagrama que explica las diferentes opciones de redundancia para el almacenamiento de blobs.][image4]
+![Diagrama que explica las diferentes opciones de redundancia para el almacenamiento de blobs.](imagenes3_1/Imagen4.png)
 
 ## Explora Azure Data Lake Storage Gen2 {#explora-azure-data-lake-storage-gen2}
 
 Azure Data Lake Storage Gen2 es una solución de lago de datos a escala de nube integrada en Azure Storage. Combina la escalabilidad y el control de costes de Azure Blob Storage (incluidos los niveles de almacenamiento y la gestión del ciclo de vida) con un sistema de archivos jerárquico compatible con los principales sistemas de análisis.
 
-![Captura de pantalla de un contenedor de almacenamiento de blobs de Azure con un espacio de nombres jerárquico.][image5]
-
-Imagen5.png
+![Captura de pantalla de un contenedor de almacenamiento de blobs de Azure con un espacio de nombres jerárquico.](imagenes3_1/Imagen5.png)
 
 Sistemas como Azure Databricks pueden montar un sistema de archivos distribuido alojado en Azure Data Lake Storage Gen2 y usarlo para procesar grandes volúmenes de datos. Los inquilinos de Microsoft Fabric aprovisionan automáticamente OneLake, que se basa en Azure Data Lake Storage Gen2.
 
@@ -117,9 +112,8 @@ Para crear un sistema de archivos de Azure Data Lake Storage Gen2, debe habilita
 
 Microsoft Fabric aprovisiona automáticamente OneLake, basado en Azure Data Lake Gen 2\.
 
-![Diagrama que muestra la función y la estructura de OneLake.][image6]
+![Diagrama que muestra la función y la estructura de OneLake.](imagenes3_1/Imagen6.png)
 
-Imagen6.png
 
 OneLake es un lago de datos lógico, unificado y único, diseñado para toda su organización. OneLake se incluye automáticamente con cada inquilino de Microsoft Fabric y funciona como repositorio central para todos sus datos analíticos. Ya sean estructurados o no estructurados, OneLake admite cualquier tipo de archivo y le permite utilizar los mismos datos en varios motores analíticos sin necesidad de moverlos ni duplicarlos.
 
@@ -141,17 +135,15 @@ Muchos sistemas locales que comprenden una red de ordenadores internos utilizan 
 
 Azure Files es, en esencia, una forma de crear recursos compartidos de red en la nube, como los que se suelen encontrar en organizaciones locales, para que varios usuarios tengan acceso a documentos y otros archivos. Al alojar los recursos compartidos de archivos en Azure, las organizaciones pueden eliminar los costos de hardware y mantenimiento, y beneficiarse de la alta disponibilidad y el almacenamiento en la nube escalable para sus archivos.
 
-![Diagrama de una cuenta de almacenamiento de Azure con un recurso compartido de Azure Files.][image7]
+![Diagrama de una cuenta de almacenamiento de Azure con un recurso compartido de Azure Files.](imagenes3_1/Imagen7.png)
 
-Imagen7.png
 
 Puedes crear Azure File Storage en una cuenta de almacenamiento. Azure Files te permite compartir grandes cantidades de datos en una sola cuenta de almacenamiento: hasta 256 TiB para cuentas basadas en SSD e incluso más para cuentas basadas en HDD. Estos datos se pueden distribuir entre cualquier número de recursos compartidos de archivos en la cuenta. El tamaño máximo de un solo archivo es de 4 TiB, pero puedes establecer cuotas para limitar el tamaño de cada recurso compartido por debajo de esta cifra. Actualmente, Azure File Storage admite hasta 2000 identificadores simultáneos por archivo o directorio.
 
 Una vez creada una cuenta de almacenamiento, puede cargar archivos a Azure File Storage mediante el portal de Azure o herramientas como la utilidad **AzCopy** . También puede usar el servicio **Azure File Sync** para sincronizar copias locales en caché de archivos compartidos con los datos de Azure File Storage.
 
-![Diagrama de la arquitectura de almacenamiento de archivos de Azure.][image8]
+![Diagrama de la arquitectura de almacenamiento de archivos de Azure.](imagenes3_1/Imagen8.png)
 
-Imagen8.png
 
 Azure File Storage ofrece dos niveles de almacenamiento. El nivel **HDD** utiliza hardware basado en discos duros en un centro de datos, y el nivel **SSD** utiliza discos de estado sólido. El nivel **SSD** ofrece un mayor rendimiento, pero tiene un coste más elevado.
 
@@ -173,9 +165,8 @@ Sin embargo, no se deje engañar pensando que una tabla de Azure Table Storage e
 
 Los datos en Azure Table Storage suelen estar **desnormalizados** , de modo que cada fila contiene la información completa de una entidad lógica. Por ejemplo, una tabla con información de clientes podría almacenar el nombre, el apellido, uno o más números de teléfono y una o más direcciones de cada cliente. El número de campos en cada fila puede variar según la cantidad de números de teléfono y direcciones de cada cliente, así como los detalles registrados para cada dirección. En una base de datos relacional, esta información se distribuiría en varias filas de diferentes tablas.
 
-![Diagrama de una cuenta de almacenamiento de Azure con tablas de Azure.][image9]
+![Diagrama de una cuenta de almacenamiento de Azure con tablas de Azure.](imagenes3_1/Imagen9.png)
 
-Imagen9.png
 
 ** Nota**
 

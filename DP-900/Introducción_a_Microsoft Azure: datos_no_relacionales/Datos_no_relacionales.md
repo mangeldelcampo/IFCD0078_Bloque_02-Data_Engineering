@@ -29,7 +29,7 @@ En este módulo aprenderás a:
 
 ## INDICE
 
-* [Introducción](#introducción)
+* [Introducción](#introducción-introducciónintroducción)
 
 * [Explora el almacenamiento de blobs de Azure](#explora-el-almacenamiento-de-blobs-de-azure)
 

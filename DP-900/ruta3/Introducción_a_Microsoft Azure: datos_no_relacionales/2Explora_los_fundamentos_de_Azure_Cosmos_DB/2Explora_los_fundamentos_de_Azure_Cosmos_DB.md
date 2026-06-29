@@ -261,26 +261,26 @@ Esta API es ideal para equipos que migran una carga de trabajo de Apache Cassand
 
 **Azure Cosmos DB para Apache Gremlin** está diseñado para **datos de grafos** , un modelo donde las entidades se representan como **vértices** (nodos) y las relaciones como **aristas** . Las bases de datos de grafos son útiles cuando las conexiones entre los datos son tan importantes como los datos mismos: por ejemplo, en redes sociales, sistemas de recomendación, detección de fraude y jerarquías organizativas.
 
-![Diagrama gráfico que muestra los vértices de los empleados conectados por aristas que representan las relaciones jerárquicas y la pertenencia a departamentos.][image5]
+![Diagrama gráfico que muestra los vértices de los empleados conectados por aristas que representan las relaciones jerárquicas y la pertenencia a departamentos.](/imagenes3_2/5graph.png)
 
-5graph.png
 
 En el ejemplo anterior, los vértices de empleados y departamentos están conectados por aristas que representan las relaciones jerárquicas y la pertenencia a un departamento.
 
 Gremlin es el lenguaje de consulta utilizado para recorrer y manipular datos de grafos. Para agregar un vértice de empleado y conectarlo a uno existente:
 
 **apache**
-
+```apache
 g.addV('employee').property('id', '3').property('firstName', 'Alice')
 
 g.V('3').addE('reports to').to(g.V('1'))
 
+```
 Para recuperar todos los vértices de empleados en orden de ID:
 
 **apache**
-
+```apache
 g.V().hasLabel('employee').order().by('id')
-
+```
 Con cinco API para elegir, puedes adaptar la interfaz de Cosmos DB a tu modelo de datos, las habilidades de tu equipo y el código de tu aplicación. En la siguiente unidad, tendrás la oportunidad de trabajar directamente con Cosmos DB.
 
 ## Evaluación del módulo

@@ -88,8 +88,9 @@ Necesitará una suscripción de [Azure subscription](https://azure.microsoft.com
 
 ![image4](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_1_Azure_Storage/imagenes/03CreateAccount.png)
 
+Networking
 
-![image4](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_1_Azure_Storage/imagenes/03CreateAccount.png)
+![image4](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_1_Azure_Storage/imagenes/04CreateAccount.png)
 
 
 

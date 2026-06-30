@@ -58,7 +58,8 @@ Necesitará una suscripción de [Azure subscription](https://azure.microsoft.com
 
 1. Si aún no lo ha hecho, inicie sesión en el **Azure portal**.  
 2. En la página de inicio del **Azure portal**, seleccione **＋ Create a resource** en la esquina superior izquierda y busque **Storage account**. Luego, en la página resultante de **Storage account**, seleccione **Create**.  
-    ![][image1]  
+![imagen1](DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_1_Azure_Storage/imagenes/00 CreateAccount.png)  
+![imagen13](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_2_ExploreAzureCosmosDB/imagenes/9Select.png)
 3. Introduzca los siguientes valores en la pestaña **Basics** de la página **Create a storage account**:
 
    ○      **Subscription:** Seleccione su suscripción de Azure.

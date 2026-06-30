@@ -180,11 +180,8 @@ Cuando termines de explorar Azure Cosmos DB, deberías eliminar los recursos que
 1. En el portal de Azure, accede al **grupo de recursos** que contiene tu cuenta de Cosmos DB.  
 2. Selecciona **Eliminar grupo de recursos**, confirma la eliminación introduciendo el nombre del grupo de recursos y **selecciona Eliminar**.
 
-![Diapositiva 13](/imagenes/10Limpieza.png)
+![Diapositiva 13](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_2_Explore%20Azure%20Cosmos%20DB/imagenes/10Limpieza.png)
 
 ***TIP:** Eliminar el grupo de recursos elimina la cuenta de base de datos de Cosmos y todo lo que hay dentro de ella en un solo paso. Esta es la forma más rápida de asegurarte de que nada quede funcionando y que cueste dinero.*
 
 En este laboratorio, creaste una cuenta de base de datos de Azure Cosmos, añadiste elementos JSON y los consultaste usando un lenguaje similar a SQL. ¡Has dado tus primeros pasos con los datos NoSQL en la nube\!
-
- 
-

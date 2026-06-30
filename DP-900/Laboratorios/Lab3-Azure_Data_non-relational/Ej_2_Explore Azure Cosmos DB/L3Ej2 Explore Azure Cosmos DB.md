@@ -64,17 +64,17 @@ Necesitarás una [suscripción a Azure](https://azure.microsoft.com/free) en la 
 
 *Configuramos el **tipo de carga de trabajo** en Aprendizaje porque viene con valores predeterminados para principiantes que facilitan la configuración y mantienen bajos los costes. El nombre de tu **cuenta** debe ser único en todo el servicio, ya que pasa a formar parte de la URL de tu servicio. Elegimos una **ubicación** cerca de ti para que tus pruebas se ejecuten más rápido; Las ubicaciones que veas dependerán de tu suscripción y de si ciertas zonas de disponibilidad están activadas. Para **el modo capacidad**, optamos por el rendimiento provisionado para que el rendimiento se mantenga predecible durante este laboratorio corto—aunque el modo serverless puede funcionar bien si solo lo necesitas ocasionalmente. Si el **nivel gratuito** está disponible, lo usaremos para que puedas experimentar sin acumular cargos. Por último, mantenemos desactivada la opción de "**limitar el rendimiento total de cuentas**" para que nada se ralentice inesperadamente mientras trabajas.*
 
-![image3](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_2_Explore Azure Cosmos DB/imagenes/2CreateCosmosDBNoSQL1.png)
+![image3](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_2_Explore%20Azure%20Cosmos%20DB/imagenes/2CreateCosmosDBNoSQL1.png)
 
 4. Cuando la configuración haya sido validada, seleccione **Crear**.
-![image4](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_2_Explore Azure Cosmos DB/imagenes/4CreateCosmosDBNoSQL1.png)
+![image4](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_2_Explore%20Azure%20Cosmos%20DB/imagenes/4CreateCosmosDBNoSQL1.png)
 
 
 ***Consejo**: Azure Portal estimará cuánto tiempo tardará en provisionar esta instancia de Azure Cosmos DB. El tiempo estimado de creación se calcula en función de la ubicación que hayas seleccionado.*
 
 
 5. Espera a que termine el despliegue. Luego ve al recurso desplegado.
-![image5](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_2_Explore Azure Cosmos DB/imagenes/4CreateCosmosDBNoSQL2.png)
+![image5](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_2_Explore%20Azure%20Cosmos%20DB/imagenes/4CreateCosmosDBNoSQL2.png)
 
 ### **4.3.**                         **Crea una base de datos de ejemplo**
 
@@ -82,21 +82,21 @@ Necesitarás una [suscripción a Azure](https://azure.microsoft.com/free) en la 
 
 1. En la página de tu nueva cuenta de Cosmos DB, en el panel de la izquierda, selecciona **Explorador de datos**.
 
-![image6](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_2_Explore Azure Cosmos DB/imagenes/5CosmosDBNoOverView1.png)
+![image6](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_2_Explore%20Azure%20Cosmos%20DB/imagenes/5CosmosDBNoOverView1.png)
 
 
  
 
 2. En la página **del Explorador de Datos**, **selecciona Iniciar inicio rápido**.
 
-![image6](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_2_Explore Azure Cosmos DB/imagenes/5CosmosDBNoOverView2.png)
+![image7](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_2_Explore%20Azure%20Cosmos%20DB/imagenes/5CosmosDBNoOverView2.png)
  
 
 ***Consejo**: Quick Start crea una base de datos funcional, contenedor y datos de muestra para que puedas practicar añadir y consultar elementos sin diseñar un esquema primero.*
 
 3. En el **panel de Nuevo Contenedor**, revisa la configuración pre-rellenada de la base de datos de ejemplo (una base de datos llamada **SampleDB,** un contenedor llamado **SampleContainer** y una clave de partición **de /categoryId**) y luego **selecciona OK.** Un breve tutorial guiado puede aparecer junto al panel; puedes seguirlo paso a paso con **Siguiente** o simplemente seleccionar **OK** para continuar.
 
-![image6](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_2_Explore Azure Cosmos DB/imagenes/5CosmosDBNoOverView3.png)
+![image8](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_2_Explore%20Azure%20Cosmos%20DB/imagenes/5CosmosDBNoOverView3.png)
 
  
 
@@ -104,7 +104,7 @@ Necesitarás una [suscripción a Azure](https://azure.microsoft.com/free) en la 
 
 4. Observa el estado en el panel inferior de la pantalla hasta que se haya creado la base de datos **SampleDB** y su contenedor **SampleContainer** (lo que puede tardar un minuto aproximadamente).
 
-![image8](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_2_Explore%20Azure%20Cosmos%20DB/imagenes/6SampleDB.png)
+![image9](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_2_Explore%20Azure%20Cosmos%20DB/imagenes/6SampleDB.png)
 
  
 
@@ -112,7 +112,7 @@ Necesitarás una [suscripción a Azure](https://azure.microsoft.com/free) en la 
 
 1. En la página del Explorador de Datos, amplía la base de datos **de SampleDB** y el contenedor **SampleContainer**, y selecciona **Elementos** para ver una lista de elementos en el contenedor. Los elementos representan datos de productos, cada uno con un id único y otras propiedades. Selecciona cualquier elemento para ver una representación JSON de sus datos en el panel de la derecha.
 
-![image9](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_2_Explore%20Azure%20Cosmos%20DB/imagenes/6SampleDB1.png)
+![image10](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_2_Explore%20Azure%20Cosmos%20DB/imagenes/6SampleDB1.png)
 
  
 
@@ -137,7 +137,7 @@ Necesitarás una [suscripción a Azure](https://azure.microsoft.com/free) en la 
 
 }
 ```
-![imagen10](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_2_Explore%20Azure%20Cosmos%20DB/imagenes/7CrearItem.png)
+![imagen11](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_2_Explore%20Azure%20Cosmos%20DB/imagenes/7CrearItem.png)
 
  
 
@@ -155,7 +155,7 @@ Query the database
 
 1. In the **Data Explorer** page, select the **New SQL Query** icon.
 
-[imagen11](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_2_Explore%20Azure%20Cosmos%20DB/imagenes/8Select.png)
+[imagen12](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_2_Explore%20Azure%20Cosmos%20DB/imagenes/8Select.png)
 
 2. In the SQL Query editor, review the default query () and use the **Execute Query** button to run it.SELECT \* FROM c  
 3. Review the results, which includes the full JSON representation of all items.  
@@ -167,7 +167,7 @@ Sql SELECT * FROM c WHERE CONTAINS(c.name,"Helmet")
 
 5. Use the **Execute Query** button to run the revised query and review the results, which includes JSON entities for any items with a **name** field containing the text “Helmet”.
 
-![imagen12](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_2_Explore%20Azure%20Cosmos%20DB/imagenes/9Select.png)
+![imagen13](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_2_Explore%20Azure%20Cosmos%20DB/imagenes/9Select.png)
 
  
 
@@ -182,7 +182,7 @@ Cuando termines de explorar Azure Cosmos DB, deberías eliminar los recursos que
 1. En el portal de Azure, accede al **grupo de recursos** que contiene tu cuenta de Cosmos DB.  
 2. Selecciona **Eliminar grupo de recursos**, confirma la eliminación introduciendo el nombre del grupo de recursos y **selecciona Eliminar**.
 
-![Diapositiva 13](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_2_Explore%20Azure%20Cosmos%20DB/imagenes/10Limpieza.png)
+![imagen 14](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_2_Explore%20Azure%20Cosmos%20DB/imagenes/10Limpieza.png)
 
 ***TIP:** Eliminar el grupo de recursos elimina la cuenta de base de datos de Cosmos y todo lo que hay dentro de ella en un solo paso. Esta es la forma más rápida de asegurarte de que nada quede funcionando y que cueste dinero.*
 

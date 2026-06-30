@@ -157,7 +157,7 @@ Query the database
 
 1. In the **Data Explorer** page, select the **New SQL Query** icon.
 
-[imagen12](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_2_Explore%20Azure%20Cosmos%20DB/imagenes/8Select.png)
+![imagen12](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_2_Explore%20Azure%20Cosmos%20DB/imagenes/8Select.png)
 
 2. In the SQL Query editor, review the default query () and use the **Execute Query** button to run it.SELECT \* FROM c  
 3. Review the results, which includes the full JSON representation of all items.  

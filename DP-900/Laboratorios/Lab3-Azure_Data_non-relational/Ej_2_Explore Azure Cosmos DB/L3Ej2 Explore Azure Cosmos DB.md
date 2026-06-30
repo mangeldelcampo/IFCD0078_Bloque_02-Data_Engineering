@@ -67,6 +67,7 @@ Necesitarás una [suscripción a Azure](https://azure.microsoft.com/free) en la 
 ![image3](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_2_Explore%20Azure%20Cosmos%20DB/imagenes/2CreateCosmosDBNoSQL1.png)
 
 4. Cuando la configuración haya sido validada, seleccione **Crear**.
+
 ![image4](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_2_Explore%20Azure%20Cosmos%20DB/imagenes/4CreateCosmosDBNoSQL1.png)
 
 
@@ -74,6 +75,7 @@ Necesitarás una [suscripción a Azure](https://azure.microsoft.com/free) en la 
 
 
 5. Espera a que termine el despliegue. Luego ve al recurso desplegado.
+
 ![image5](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_2_Explore%20Azure%20Cosmos%20DB/imagenes/4CreateCosmosDBNoSQL2.png)
 
 ### **4.3.**                         **Crea una base de datos de ejemplo**

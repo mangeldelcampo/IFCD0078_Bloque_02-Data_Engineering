@@ -41,11 +41,11 @@ Necesitarás una [suscripción a Azure](https://azure.microsoft.com/free) en la 
 
 1. En el portal de Azure, **selecciona \+ Crear un recurso** en la esquina superior izquierda y busca . En los resultados, selecciona **Azure Cosmos DB** y **selecciona Crear**.Azure Cosmos DB
 
-![][image1]
+![image1](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_2_Explore%20Azure%20Cosmos%20DB/imagenes/0CreateAzureCosmosDB.png)
 
 2. En la **base de datos Azure Cosmos para NoSQL**, selecciona **Crear**.
 
-![][image2]
+![image2](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_2_Explore%20Azure%20Cosmos%20DB/imagenes/1CosmosDBNoSQL1.png)
 
 ***Consejo**: La cuenta es el nivel superior para tus recursos de Cosmos DB. Elegir Azure Cosmos DB para NoSQL te permite almacenar y consultar datos JSON con un lenguaje de consulta sencillo, similar a SQL.*
 
@@ -64,7 +64,7 @@ Necesitarás una [suscripción a Azure](https://azure.microsoft.com/free) en la 
 
 *Configuramos el **tipo de carga de trabajo** en Aprendizaje porque viene con valores predeterminados para principiantes que facilitan la configuración y mantienen bajos los costes. El nombre de tu **cuenta** debe ser único en todo el servicio, ya que pasa a formar parte de la URL de tu servicio. Elegimos una **ubicación** cerca de ti para que tus pruebas se ejecuten más rápido; Las ubicaciones que veas dependerán de tu suscripción y de si ciertas zonas de disponibilidad están activadas. Para **el modo capacidad**, optamos por el rendimiento provisionado para que el rendimiento se mantenga predecible durante este laboratorio corto—aunque el modo serverless puede funcionar bien si solo lo necesitas ocasionalmente. Si el **nivel gratuito** está disponible, lo usaremos para que puedas experimentar sin acumular cargos. Por último, mantenemos desactivada la opción de "**limitar el rendimiento total de cuentas**" para que nada se ralentice inesperadamente mientras trabajas.*
 
-*![][image3]*
+![][image3]
 
 4. Cuando la configuración haya sido validada, seleccione **Crear**.
 
@@ -102,7 +102,7 @@ Necesitarás una [suscripción a Azure](https://azure.microsoft.com/free) en la 
 
 4. Observa el estado en el panel inferior de la pantalla hasta que se haya creado la base de datos **SampleDB** y su contenedor **SampleContainer** (lo que puede tardar un minuto aproximadamente).
 
-![][image8]
+![image8](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_2_Explore%20Azure%20Cosmos%20DB/imagenes/6SampleDB.png)
 
  
 
@@ -110,7 +110,7 @@ Visualizar y crear elementos
 
 1. En la página del Explorador de Datos, amplía la base de datos **de SampleDB** y el contenedor **SampleContainer**, y selecciona **Elementos** para ver una lista de elementos en el contenedor. Los elementos representan datos de productos, cada uno con un id único y otras propiedades. Selecciona cualquier elemento para ver una representación JSON de sus datos en el panel de la derecha.
 
-![][image9]
+![image9](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_2_Explore%20Azure%20Cosmos%20DB/imagenes/6SampleDB1.png)
 
  
 
@@ -135,7 +135,7 @@ Código
 
 }
 ```
-![][image10]
+![imagen10](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_2_Explore%20Azure%20Cosmos%20DB/imagenes/7CrearItem.png)
 
  
 
@@ -153,7 +153,7 @@ Query the database
 
 1. In the **Data Explorer** page, select the **New SQL Query** icon.
 
-![][image11]
+[imagen11](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_2_Explore%20Azure%20Cosmos%20DB/imagenes/8Select.png)
 
 2. In the SQL Query editor, review the default query () and use the **Execute Query** button to run it.SELECT \* FROM c  
 3. Review the results, which includes the full JSON representation of all items.  
@@ -165,7 +165,7 @@ Sql SELECT * FROM c WHERE CONTAINS(c.name,"Helmet")
 
 5. Use the **Execute Query** button to run the revised query and review the results, which includes JSON entities for any items with a **name** field containing the text “Helmet”.
 
-![][image12]
+![imagen12](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_2_Explore%20Azure%20Cosmos%20DB/imagenes/9Select.png)
 
  
 

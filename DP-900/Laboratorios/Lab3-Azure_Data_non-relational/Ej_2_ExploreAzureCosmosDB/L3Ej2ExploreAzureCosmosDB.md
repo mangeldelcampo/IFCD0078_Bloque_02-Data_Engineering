@@ -41,7 +41,8 @@ Necesitarás una [suscripción a Azure](https://azure.microsoft.com/free) en la 
 
 1. En el portal de Azure, **selecciona \+ Crear un recurso** en la esquina superior izquierda y busca . En los resultados, selecciona **Azure Cosmos DB** y **selecciona Crear**.Azure Cosmos DB
 
-![image1](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_2_ExploreAzureCosmos20DB/imagenes/0CreateAzureCosmosDB.png)
+![image2](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_2_ExploreAzureCosmosDB/imagenes/0CreateAzureCosmosDB.png)
+
 
 2. En la **base de datos Azure Cosmos para NoSQL**, selecciona **Crear**.
 
@@ -64,7 +65,8 @@ Necesitarás una [suscripción a Azure](https://azure.microsoft.com/free) en la 
 
 *Configuramos el **tipo de carga de trabajo** en Aprendizaje porque viene con valores predeterminados para principiantes que facilitan la configuración y mantienen bajos los costes. El nombre de tu **cuenta** debe ser único en todo el servicio, ya que pasa a formar parte de la URL de tu servicio. Elegimos una **ubicación** cerca de ti para que tus pruebas se ejecuten más rápido; Las ubicaciones que veas dependerán de tu suscripción y de si ciertas zonas de disponibilidad están activadas. Para **el modo capacidad**, optamos por el rendimiento provisionado para que el rendimiento se mantenga predecible durante este laboratorio corto—aunque el modo serverless puede funcionar bien si solo lo necesitas ocasionalmente. Si el **nivel gratuito** está disponible, lo usaremos para que puedas experimentar sin acumular cargos. Por último, mantenemos desactivada la opción de "**limitar el rendimiento total de cuentas**" para que nada se ralentice inesperadamente mientras trabajas.*
 
-![image3](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_2_ExploreAzureCosmos20DB/imagenes/2CreateCosmosDBNoSQL1.png)
+![image3](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_2_ExploreAzureCosmosDB/imagenes/2CreateCosmosDBNoSQL1.png)
+
 
 4. Cuando la configuración haya sido validada, seleccione **Crear**.
 

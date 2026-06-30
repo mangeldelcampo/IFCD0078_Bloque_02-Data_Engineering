@@ -168,12 +168,12 @@ El soporte de **Data Lake Store Gen2** le permite utilizar carpetas jerárquicas
 ![image17](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_1_Azure_Storage/imagenes/17UpgradeGen2.png)   
 💡 **Consejo:** La actualización es un cambio de capacidad a nivel de cuenta; los datos permanecen, pero la semántica del directorio cambia para admitir operaciones avanzadas.
 
-4. Cuando se complete la actualización, en el panel del lado izquierdo, en la sección superior, seleccione **Storage browser** y navegue de regreso a la raíz de su contenedor de **blob** data, que aún contiene la carpeta product\_data.  
-5. Seleccione la carpeta product\_data y verifique que aún contiene el archivo product1.json que subió anteriormente.  
+4. Cuando se complete la actualización, en el panel del lado izquierdo, en la sección superior, seleccione **Storage browser** y navegue de regreso a la raíz de su contenedor de **blob** data, que aún contiene la carpeta **product\_data**.  
+5. Seleccione la carpeta **product\_data** y verifique que aún contiene el archivo **product1.json** que subió anteriormente.  
 6. Utilice el botón **⤒ Upload** para abrir el panel **Upload blob**.  
 7. En el panel **Upload blob**, seleccione el archivo product2.json que guardó en su ordenador local. A continuación, seleccione el botón **Upload**.  
 8. Cierre el panel **Upload blob** si aún está abierto, y verifique que la carpeta product\_data ahora contiene el archivo product2.json.  
-    ![image18](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_1_Azure_Storage/imagenes/17UpgradeGen2-1.png)
+    ![image18](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_1_Azure_Storage/imagenes/21UploadFich2.png)
 
 💡 **Consejo:** Añadir un segundo archivo después de la actualización confirma la continuidad sin interrupciones: los **blobs** existentes siguen funcionando y los nuevos obtienen beneficios jerárquicos como las ACL (Listas de Control de Acceso) de directorio.
 

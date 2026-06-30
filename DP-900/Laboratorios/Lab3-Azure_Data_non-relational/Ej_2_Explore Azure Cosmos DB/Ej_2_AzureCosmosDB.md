@@ -1,4 +1,3 @@
-# Azure Cosmos DB (NoSQL)
 # DP-900 - Lab 03 Ejercicio 2
 # Laboratorio Práctico: Despliegue y Consulta en Azure Cosmos DB (NoSQL)
 

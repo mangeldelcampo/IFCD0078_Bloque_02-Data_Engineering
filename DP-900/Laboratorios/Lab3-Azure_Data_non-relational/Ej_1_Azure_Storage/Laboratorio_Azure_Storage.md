@@ -1,4 +1,3 @@
-# Azure-Storage y Data Lake Gen2
 # DP-900 - Lab 03 Ejercicio 1
 # Laboratorio Práctico: Exploración de Azure Storage y Data Lake Gen2
 

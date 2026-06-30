@@ -64,15 +64,17 @@ Necesitarás una [suscripción a Azure](https://azure.microsoft.com/free) en la 
 
 *Configuramos el **tipo de carga de trabajo** en Aprendizaje porque viene con valores predeterminados para principiantes que facilitan la configuración y mantienen bajos los costes. El nombre de tu **cuenta** debe ser único en todo el servicio, ya que pasa a formar parte de la URL de tu servicio. Elegimos una **ubicación** cerca de ti para que tus pruebas se ejecuten más rápido; Las ubicaciones que veas dependerán de tu suscripción y de si ciertas zonas de disponibilidad están activadas. Para **el modo capacidad**, optamos por el rendimiento provisionado para que el rendimiento se mantenga predecible durante este laboratorio corto—aunque el modo serverless puede funcionar bien si solo lo necesitas ocasionalmente. Si el **nivel gratuito** está disponible, lo usaremos para que puedas experimentar sin acumular cargos. Por último, mantenemos desactivada la opción de "**limitar el rendimiento total de cuentas**" para que nada se ralentice inesperadamente mientras trabajas.*
 
-![][image3]
+![image3](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_2_Explore Azure Cosmos DB/imagenes/2CreateCosmosDBNoSQL1.png)
 
 4. Cuando la configuración haya sido validada, seleccione **Crear**.
+![image4](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_2_Explore Azure Cosmos DB/imagenes/4CreateCosmosDBNoSQL1.png)
 
-![][image4]
 
 ***Consejo**: Azure Portal estimará cuánto tiempo tardará en provisionar esta instancia de Azure Cosmos DB. El tiempo estimado de creación se calcula en función de la ubicación que hayas seleccionado.*
 
+
 5. Espera a que termine el despliegue. Luego ve al recurso desplegado.
+![image5](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_2_Explore Azure Cosmos DB/imagenes/4CreateCosmosDBNoSQL2.png)
 
 ### **4.3.**                         **Crea una base de datos de ejemplo**
 
@@ -80,21 +82,21 @@ Necesitarás una [suscripción a Azure](https://azure.microsoft.com/free) en la 
 
 1. En la página de tu nueva cuenta de Cosmos DB, en el panel de la izquierda, selecciona **Explorador de datos**.
 
-![][image5]
+![image6](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_2_Explore Azure Cosmos DB/imagenes/5CosmosDBNoOverView1.png)
+
 
  
 
 2. En la página **del Explorador de Datos**, **selecciona Iniciar inicio rápido**.
 
-![][image6]
-
+![image6](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_2_Explore Azure Cosmos DB/imagenes/5CosmosDBNoOverView2.png)
  
 
 ***Consejo**: Quick Start crea una base de datos funcional, contenedor y datos de muestra para que puedas practicar añadir y consultar elementos sin diseñar un esquema primero.*
 
 3. En el **panel de Nuevo Contenedor**, revisa la configuración pre-rellenada de la base de datos de ejemplo (una base de datos llamada **SampleDB,** un contenedor llamado **SampleContainer** y una clave de partición **de /categoryId**) y luego **selecciona OK.** Un breve tutorial guiado puede aparecer junto al panel; puedes seguirlo paso a paso con **Siguiente** o simplemente seleccionar **OK** para continuar.
 
-![][image7]
+![image6](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_2_Explore Azure Cosmos DB/imagenes/5CosmosDBNoOverView3.png)
 
  
 
@@ -106,7 +108,7 @@ Necesitarás una [suscripción a Azure](https://azure.microsoft.com/free) en la 
 
  
 
-Visualizar y crear elementos
+**Visualizar y crear elementos**
 
 1. En la página del Explorador de Datos, amplía la base de datos **de SampleDB** y el contenedor **SampleContainer**, y selecciona **Elementos** para ver una lista de elementos en el contenedor. Los elementos representan datos de productos, cada uno con un id único y otras propiedades. Selecciona cualquier elemento para ver una representación JSON de sus datos en el panel de la derecha.
 
@@ -117,7 +119,7 @@ Visualizar y crear elementos
 2. En la parte superior de la página, selecciona **Nuevo elemento** para crear un nuevo elemento en blanco.  
 3. Modifica el JSON del nuevo elemento de la siguiente manera y luego **selecciona Guardar**.
 
-Código
+
 ```JSON
 {
 

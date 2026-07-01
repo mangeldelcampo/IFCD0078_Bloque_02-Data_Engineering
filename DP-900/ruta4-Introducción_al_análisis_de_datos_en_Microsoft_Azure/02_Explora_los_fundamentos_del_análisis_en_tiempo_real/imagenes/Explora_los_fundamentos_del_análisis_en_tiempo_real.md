@@ -240,7 +240,7 @@ En este módulo, aprendiste a:
 
 ---
 
-⬅️ **Anterior:** [01. Explora los fundamentos del análisis a gran escala](../01_Analisis_a_gran_escala/01_Explora_los_fundamentos_del_análisis_a_gran_escala.md)
+⬅️ **Anterior:** [01. Explora los fundamentos del análisis a gran escala](DP-900/ruta4-Introducción_al_análisis_de_datos_en_Microsoft_Azure/01_Explora_los_fundamentos_del_análisis_a_gran_escala/01_Explora_los_fundamentos_del_análisis_a_gran_escala.md)
 
 🏠 **Inicio del módulo:** [README](../README.md)
 

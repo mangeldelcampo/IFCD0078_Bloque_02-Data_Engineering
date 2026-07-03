@@ -215,4 +215,4 @@ Todo el desarrollo (carga, modelado e interfaz) se ha ejecutado de manera local 
 
 ⬅️ **Anterior:** [Explore real-time analytics in Microsoft Fabric](../Explore_real_time_analytics_in_Microsoft_Fabric/Explore_real_time_analytics_in_Microsoft_Fabric.md)
 
-🏠 **Inicio del módulo:** [README](../../README.md)
+🏠 **Inicio del módulo:** [README](../README.md)

@@ -203,7 +203,7 @@ Una vez finalizada la exploración de las características de Microsoft Fabric, 
 
 ---
 
-⬅️ **Anterior:** [Explore Azure Cosmos DB](../Explore_Azure_Cosmos_DB/Explore_Azure_Cosmos_DB.md)
+⬅️ **Anterior:** [Explore Azure Cosmos DB](/DP-900/laboratorios/Lab3-Azure_Data_non-relational/Ej_2_ExploreAzureCosmosDB/L3Ej2ExploreAzureCosmosDB.md)
 
 🏠 **Inicio del módulo:** [README](../../README.md)
 

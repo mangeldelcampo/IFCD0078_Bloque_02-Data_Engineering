@@ -96,5 +96,5 @@ Todos los archivos `.md` (teoría y laboratorios) deben finalizar con un bloque 
 
 ➡️ **Siguiente:** [Nombre del siguiente recurso](../Carpeta_Siguiente/Archivo_Siguiente.md)
 ```
-🏠 **Inicio del módulo:** [README PRINCIPAL](DP900/README.md)
+🏠 **Inicio del módulo:** [README PRINCIPAL](/DP900/README.md)
 *(Ajustar el nivel de subida `../` o `../../` según la profundidad de la carpeta actual respecto a la raíz del proyecto).*

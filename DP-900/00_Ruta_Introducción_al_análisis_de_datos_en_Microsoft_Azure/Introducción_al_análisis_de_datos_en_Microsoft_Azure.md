@@ -7,7 +7,6 @@ Microsoft Azure ofrece múltiples servicios que se pueden combinar para crear so
 Esta ruta de aprendizaje te ayuda a prepararte para la certificación **Azure Data Fundamentals**.
 
 # Módulos de esta ruta de aprendizaje
-* 🗺️ **[00. Ruta: Introducción al análisis de datos en Microsoft Azure](00_Ruta_Introducción_al_análisis_de_datos_en_Microsoft_Azure/Introducción_al_análisis_de_datos_en_Microsoft_Azure.md)**
 * 🗄️ **[01. Explora los fundamentos del análisis a gran escala](01_Explora_los_fundamentos_del_análisis_a_gran_escala/01_Explora_los_fundamentos_del_análisis_a_gran_escala.md)**
 * ⚡ **[02. Explora los fundamentos del análisis en tiempo real](02_Explora_los_fundamentos_del_análisis_en_tiempo_real/02_Explora_los_fundamentos_del_análisis_en_tiempo_real.md)**
 * 📊 **[03. Explora los fundamentos de la visualización de datos](03_Explora_los_fundamentos_de_la_visualización_de_datos/03_Explora_los_fundamentos_de_la_visualización_de_datos.md)**
@@ -18,10 +17,6 @@ Esta ruta de aprendizaje te ayuda a prepararte para la certificación **Azure Da
 - [Explora los fundamentos de la visualización de datos](#explora-los-fundamentos-de-la-visualización-de-datos)
 
 ---
-* 🗺️ **[00. Ruta: Introducción al análisis de datos en Microsoft Azure](00_Ruta_Introducción_al_análisis_de_datos_en_Microsoft_Azure/Introducción_al_análisis_de_datos_en_Microsoft_Azure.md)**
-* 🗄️ **[01. Explora los fundamentos del análisis a gran escala](01_Analisis_a_gran_escala/01_Explora_los_fundamentos_del_análisis_a_gran_escala.md)**
-* ⚡ **[02. Explora los fundamentos del análisis en tiempo real](02_Analisis_en_tiempo_real/02_Explora_los_fundamentos_del_análisis_en_tiempo_real.md)**
-* 📊 **[03. Explora los fundamentos de la visualización de datos](03_Visualizacion_de_datos/03_Explora_los_fundamentos_de_la_visualización_de_datos.md)**
 
 
 

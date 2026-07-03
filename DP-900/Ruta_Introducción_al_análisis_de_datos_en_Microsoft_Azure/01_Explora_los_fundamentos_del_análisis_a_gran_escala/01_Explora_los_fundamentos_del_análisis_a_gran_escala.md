@@ -228,8 +228,8 @@ En este módulo, aprendiste a:
 
 ---
 
-⬅️ **Anterior:** [00. Ruta Introducción al análisis de datos en Microsoft Azure](../Ruta_Introducción_al_análisis_de_datos_en_Microsoft_Azure/Introducción_al_análisis_de_datos_en_Microsoft_Azure.md)
+⬅️ **Anterior:** [Ruta Introducción al análisis de datos en Microsoft Azure](../Ruta_Introducción_al_análisis_de_datos_en_Microsoft_Azure/Introducción_al_análisis_de_datos_en_Microsoft_Azure.md)
 
 🏠 **Inicio del módulo:** [README](../README.md)
 
-➡️ **Siguiente:** [02. Explora los fundamentos del análisis en tiempo real](../02_Analisis_en_tiempo_real/02_Explora_los_fundamentos_del_análisis_en_tiempo_real.md)
+➡️ **Siguiente:** [02. Explora los fundamentos del análisis en tiempo real](../02_Explora_los_fundamentos_del_análisis_en_tiempo_real/02_Explora_los_fundamentos_del_análisis_en_tiempo_real.md)

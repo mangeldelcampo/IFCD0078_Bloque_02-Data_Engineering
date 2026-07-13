@@ -30,6 +30,8 @@ Para aislar los entornos, crearemos tres contenedores físicos:
 1. Navega a la [página principal de Microsoft Fabric](https://app.fabric.microsoft.com/home?experience=fabric) e inicia sesión.
 2. En la barra lateral izquierda, selecciona **Espacios de trabajo** (icono 🗇).
 3. Crea un nuevo espacio de trabajo llamado **Desarrollo**, seleccionando un modo de licencia que incluya capacidad de Fabric.
+![Captura de pantalla de creación de workspace](./imagenes/00ImagenCreaWSDes.png)
+![Captura de pantalla de detalles de creación](./imagenes/01ImagenCreaWSDes.png)
 4. Repite el proceso para crear los espacios **Pruebas_PRD_WS** y **Produccion_PRD_WS**.
 
 > [!TIP]
@@ -42,6 +44,7 @@ Define la ruta lógica de promoción y vincula los contenedores físicos:
 
 1. En la barra de menú izquierda, selecciona **Espacios de trabajo** > **Pipelines de despliegue** > **Nuevo pipeline**.
 2. Nombra la canalización como `PlineDestoTesttoProd` y selecciona **Crear y continuar**.
+![Interfaz de creación de pipeline](./imagenes/02ImagenCreaPipeLine.png)
 
 ---
 
@@ -49,6 +52,7 @@ Define la ruta lógica de promoción y vincula los contenedores físicos:
 1. Selecciona la canalización creada en el menú lateral.
 2. En cada etapa (Development, Test, Production), despliega las opciones de **Asignar un espacio de trabajo** y selecciona el área correspondiente.
 3. Confirma la asignación seleccionando la marca de verificación.
+![Asignación de workspaces a etapas](./imagenes/03AsignarWSaFases.png)
 
 ---
 
@@ -57,7 +61,11 @@ Generaremos un artefacto para someterlo al proceso de despliegue:
 
 1. Navega al espacio de trabajo **Desarrollo**.
 2. Selecciona **Nuevo elemento** > **Lakehouse**, nómbralo `LabLakehouse` y selecciona **Crear**.
+![Selección de nuevo elemento](./imagenes/04ImagenNewItem.png)
+![Selección de Lakehouse](./imagenes/05ImagenLakehouse.png)
+![Configuración de nombre de Lakehouse](./imagenes/06ImagenLakehouse.png)
 3. En el explorador del Lakehouse, selecciona **Empezar con datos de muestra**.
+![Opción de datos de muestra](./imagenes/07ImagenDatosMuestra.png)
 
 > [!NOTE]
 > Los Deployment Pipelines de Fabric solo copian metadatos, no los datos físicos. Al desplegar el Lakehouse, la estructura y los esquemas se replicarán, pero los datos de muestra permanecerán exclusivamente en Desarrollo.
@@ -68,8 +76,12 @@ Generaremos un artefacto para someterlo al proceso de despliegue:
 Promocionaremos el artefacto desde Desarrollo hasta Producción:
 
 1. Selecciona la etapa **Test** en la canalización y haz clic en **Desplegar** para copiar el Lakehouse.
+![Vista de implementación de cambios](./imagenes/08ImagenImplementar.png)
 2. Una vez sincronizado, selecciona la etapa **Production** y repite el proceso de despliegue.
+![Cuadro de diálogo de implementación](./imagenes/09ImagenImplementar.png)
 3. Verifica que las marcas verdes indiquen que todas las fases están sincronizadas.
+![Estado sincronizado de la pipeline](./imagenes/10ImagenRevision.png)
+![Validación en el workspace de producción](./imagenes/11ImagenRevision.png)
 
 > [!IMPORTANT]
 > El significado de los iconos es crítico:
@@ -82,8 +94,11 @@ Promocionaremos el artefacto desde Desarrollo hasta Producción:
 ## 6. Limpieza
 Para finalizar el laboratorio, elimina los recursos creados:
 1. Elimina la canalización de despliegue desde el menú de configuración.
+![Eliminación de pipeline](./imagenes/12ImagenDeletePipeline.png)
 2. Elimina los espacios de trabajo creados desde la **Configuración del espacio de trabajo** > **Eliminar este espacio de trabajo**.
 
 ---
 
 ⬅️ [Anterior](../readmeLab.md) | 🏠 [Inicio](../../Readmedp-700.md) | ➡️ [Siguiente](../2.Get_started_with_Copilot_in_Microsoft_Fabric_for_Data_Warehouse/readme2.md)
+
+```

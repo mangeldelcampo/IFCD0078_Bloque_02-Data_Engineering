@@ -33,6 +33,7 @@ Para aislar los entornos, crearemos tres contenedores físicos:
 ![Captura de pantalla de creación de workspace](./imagenes/00ImagenCreaWSDes.png)
 
 ![Captura de pantalla de detalles de creación](./imagenes/01ImagenCreaWSDes.png)
+
 4. Repite el proceso para crear los espacios **Pruebas_PRD_WS** y **Produccion_PRD_WS**.
 
 > [!TIP]

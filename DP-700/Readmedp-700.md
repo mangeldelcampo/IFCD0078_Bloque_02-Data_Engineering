@@ -53,7 +53,7 @@ Bienvenido al repositorio de formación para la certificación DP-700.
 
 | # | Laboratorio | Descripción |
 | :--- | :--- | :--- |
-| 1 | [Implement CI/CD](./Laboratorios/1.Implement_Continuous_Integration_and_Continuous_Delivery_CI-CD_in_Microsoft_Fabric/readme1.md) | Configuración de pipelines de despliegue y gestión de ALM. |
+| 1 | [Implement CI/CD](./Laboratorios/Implement_Continuous_Integration_and_Continuous_Delivery_CI-CD_in_Microsoft_Fabric/readme1.md) | Configuración de pipelines de despliegue y gestión de ALM. |
 | 2 | [Copilot for Data Warehouse](./Laboratorios/2.Get_started_with_Copilot_in_Microsoft_Fabric_for_Data_Warehouse/readme2.md) | Uso de IA generativa para el desarrollo de almacenes de datos. |
 | 3 | [Real-time data in Eventhouse](./Laboratorios/3.Work_with_real-time_data_in_an_Eventhouse_in_Microsoft_Fabric/readme3.md) | Trabajo con datos en tiempo real y Eventhouse. |
 | 4 | [Real-Time Intelligence](./Laboratorios/4.Get_started_with_Real-Time_Intelligence_in_Microsoft_Fabric/readme4.md) | Introducción a Real-Time Intelligence en Fabric. |

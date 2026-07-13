@@ -31,6 +31,7 @@ Para aislar los entornos, crearemos tres contenedores físicos:
 2. En la barra lateral izquierda, selecciona **Espacios de trabajo** (icono 🗇).
 3. Crea un nuevo espacio de trabajo llamado **Desarrollo**, seleccionando un modo de licencia que incluya capacidad de Fabric.
 ![Captura de pantalla de creación de workspace](./imagenes/00ImagenCreaWSDes.png)
+
 ![Captura de pantalla de detalles de creación](./imagenes/01ImagenCreaWSDes.png)
 4. Repite el proceso para crear los espacios **Pruebas_PRD_WS** y **Produccion_PRD_WS**.
 
@@ -67,6 +68,7 @@ Generaremos un artefacto para someterlo al proceso de despliegue:
 ![Selección de nuevo elemento](./imagenes/04ImagenNewItem.png)
 ![Selección de Lakehouse](./imagenes/05ImagenLakehouse.png)
 ![Configuración de nombre de Lakehouse](./imagenes/06ImagenLakehouse.png)
+
 3. En el explorador del Lakehouse, selecciona **Empezar con datos de muestra**.
 
 ![Opción de datos de muestra](./imagenes/07ImagenDatosMuestra.png)
@@ -80,10 +82,13 @@ Generaremos un artefacto para someterlo al proceso de despliegue:
 Promocionaremos el artefacto desde Desarrollo hasta Producción:
 
 1. Selecciona la etapa **Test** en la canalización y haz clic en **Desplegar** para copiar el Lakehouse.
+
 ![Vista de implementación de cambios](./imagenes/08ImagenImplementar.png)
 2. Una vez sincronizado, selecciona la etapa **Production** y repite el proceso de despliegue.
+
 ![Cuadro de diálogo de implementación](./imagenes/09ImagenImplementar.png)
 3. Verifica que las marcas verdes indiquen que todas las fases están sincronizadas.
+
 ![Estado sincronizado de la pipeline](./imagenes/10ImagenRevision.png)
 ![Validación en el workspace de producción](./imagenes/11ImagenRevision.png)
 
@@ -98,6 +103,7 @@ Promocionaremos el artefacto desde Desarrollo hasta Producción:
 ## 6. Limpieza
 Para finalizar el laboratorio, elimina los recursos creados:
 1. Elimina la canalización de despliegue desde el menú de configuración.
+
 ![Eliminación de pipeline](./imagenes/12ImagenDeletePipeline.png)
 2. Elimina los espacios de trabajo creados desde la **Configuración del espacio de trabajo** > **Eliminar este espacio de trabajo**.
 

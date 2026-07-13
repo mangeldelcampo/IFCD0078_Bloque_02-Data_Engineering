@@ -88,6 +88,7 @@ Promocionaremos el artefacto desde Desarrollo hasta Producción:
 2. Una vez sincronizado, selecciona la etapa **Production** y repite el proceso de despliegue.
 
 ![Cuadro de diálogo de implementación](./imagenes/09ImagenImplementar.png)
+
 3. Verifica que las marcas verdes indiquen que todas las fases están sincronizadas.
 
 ![Estado sincronizado de la pipeline](./imagenes/10ImagenRevision.png)

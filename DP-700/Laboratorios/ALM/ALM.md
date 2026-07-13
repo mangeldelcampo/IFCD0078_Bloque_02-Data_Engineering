@@ -34,4 +34,4 @@ En Fabric, tus "aplicaciones" son los distintos artefactos que construyes: flujo
 
 ---
 
-[⬅️ Volver a Laboratorio 1 (readme1.md)](readme1.md) | [🏠 Volver al Inicio (Readmedp-700.md)](../Readmedp-700.md)
+[⬅️ Volver a Laboratorio 1 (readme1.md)](../1.Implement_Continuous_Integration_and_Continuous_Delivery_CI-CD_in_Microsoft_Fabric/readme1.mdreadme1.md) | [🏠 Volver al Inicio (Readmedp-700.md)](../Readmedp-700.md)

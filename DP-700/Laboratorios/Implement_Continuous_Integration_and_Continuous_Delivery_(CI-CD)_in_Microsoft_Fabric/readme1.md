@@ -44,6 +44,7 @@ Define la ruta lógica de promoción y vincula los contenedores físicos:
 
 1. En la barra de menú izquierda, selecciona **Espacios de trabajo** > **Pipelines de despliegue** > **Nuevo pipeline**.
 2. Nombra la canalización como `PlineDestoTesttoProd` y selecciona **Crear y continuar**.
+
 ![Interfaz de creación de pipeline](./imagenes/02ImagenCreaPipeLine.png)
 
 ---
@@ -52,6 +53,7 @@ Define la ruta lógica de promoción y vincula los contenedores físicos:
 1. Selecciona la canalización creada en el menú lateral.
 2. En cada etapa (Development, Test, Production), despliega las opciones de **Asignar un espacio de trabajo** y selecciona el área correspondiente.
 3. Confirma la asignación seleccionando la marca de verificación.
+
 ![Asignación de workspaces a etapas](./imagenes/03AsignarWSaFases.png)
 
 ---
@@ -61,10 +63,12 @@ Generaremos un artefacto para someterlo al proceso de despliegue:
 
 1. Navega al espacio de trabajo **Desarrollo**.
 2. Selecciona **Nuevo elemento** > **Lakehouse**, nómbralo `LabLakehouse` y selecciona **Crear**.
+
 ![Selección de nuevo elemento](./imagenes/04ImagenNewItem.png)
 ![Selección de Lakehouse](./imagenes/05ImagenLakehouse.png)
 ![Configuración de nombre de Lakehouse](./imagenes/06ImagenLakehouse.png)
 3. En el explorador del Lakehouse, selecciona **Empezar con datos de muestra**.
+
 ![Opción de datos de muestra](./imagenes/07ImagenDatosMuestra.png)
 
 > [!NOTE]

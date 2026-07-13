@@ -11,7 +11,7 @@
 * [6. Limpieza](#6-limpieza)
 
 ## Objetivos
-* Configurar una estrategia de ALM mediante la creación de tres entornos aislados (Desarrollo, Prueba y Producción).
+* Configurar una estrategia de [ALM](../../Laboratorios/ALM/ALM.md) mediante la creación de tres entornos aislados (Desarrollo, Prueba y Producción).
 * Crear y configurar un Deployment Pipeline para enlazar los entornos.
 * Promocionar un artefacto (Lakehouse) entre las diferentes etapas del ciclo de vida.
 

@@ -107,6 +107,7 @@ Para finalizar el laboratorio, elimina los recursos creados:
 1. Elimina la canalización de despliegue desde el menú de configuración.
 
 ![Eliminación de pipeline](./imagenes/12ImagenDeletePipeline.png)
+
 2. Elimina los espacios de trabajo creados desde la **Configuración del espacio de trabajo** > **Eliminar este espacio de trabajo**.
 
 ---

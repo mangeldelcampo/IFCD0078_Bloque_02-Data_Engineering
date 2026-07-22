@@ -21,7 +21,7 @@ Este laboratorio tarda aproximadamente 30 minutos en completarse.
 3. Crea un nuevo espacio de trabajo con el nombre que elijas, seleccionando un modo de licencia que incluya la capacidad de Fabric (Trial, Premium o Text).
 4. Cuando abra tu nuevo espacio de trabajo, debería estar vacío.
 
-![Espacio de trabajo vacío](imagenes/01Workspace.png)
+![Espacio de trabajo vacío](imagenes/01RealTime.png)
 
 ---
 
@@ -227,4 +227,4 @@ Si has terminado de explorar la Inteligencia en Tiempo Real en Fabric, puedes el
 3. En la sección **General**, selecciona **Eliminar este espacio de trabajo**.
 
 ---
-[⬅️ Laboratorio Anterior](../readmeLab.md) | [🏠 Índice de Laboratorios](../../README.md) | [Siguiente Laboratorio ➡️](../2.Siguiente_Lab/readme2.md)
+[⬅️ Laboratorio Anterior](../readmeLab.md) | [🏠 Índice de Laboratorios](../../Readmedp-600.md) | [Siguiente Laboratorio ➡️](../2.Siguiente_Lab/readme2.md)

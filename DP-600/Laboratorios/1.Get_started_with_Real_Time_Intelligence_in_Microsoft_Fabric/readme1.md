@@ -10,6 +10,17 @@ Este laboratorio tarda aproximadamente 30 minutos en completarse.
 
 ---
 
+## Índice
+* [Crea un espacio de trabajo](#crea-un-espacio-de-trabajo)
+* [Crear un flujo de eventos](#crear-un-flujo-de-eventos)
+* [Crear una casa de eventos](#crear-una-casa-de-eventos)
+* [Consulta los datos capturados](#consulta-los-datos-capturados)
+* [Crea un panel de control en tiempo real](#crea-un-panel-de-control-en-tiempo-real)
+* [Crea una alerta](#crea-una-alerta)
+* [Limpieza de recursos](#limpieza-de-recursos)
+* [Resumen del Laboratorio](#📋-resumen-del-laboratorio)
+* [Puntos Clave](#💡-puntos-clave)
+
 ## Crea un espacio de trabajo
 
 > **Nota:** Necesitas acceso a una capacidad de pago o de prueba de Fabric para completar este ejercicio. Para información sobre la prueba gratuita de Fabric, consulta la prueba de Fabric.

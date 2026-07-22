@@ -1,14 +1,14 @@
 *Este repositorio es una guía de estudio para el examen DP-600. Se recomienda seguir el orden numérico de los laboratorios para una progresión lógica del aprendizaje.*
 
-# Certificación DP-600: Laboratorios Microsoft Fabric - Ingeniero de Datos de Fabric Asociado
+# Certificación DP-600: Implementar soluciones analíticas usando Microsoft Fabric
 
-Bienvenido al repositorio de formación para la certificación DP-700.
+Bienvenido al repositorio de formación para la certificación DP-600.
 
 ## Índice de Laboratorios
 
 | # | Laboratorio | Descripción |
 | :--- | :--- | :--- |
-| 1 | [TITULO_LABORATORIO](./Laboratorios/1.NOMBRE_LABORATORIO/readme1.md) | TITULO_LABORATORIO |
+| 1 | [Comienza con Inteligencia en Tiempo Real en Microsoft_Fabric](./Laboratorios/1.Comienza con Inteligencia en Tiempo Real en Microsoft Fabric/readme1.md) | Comienza con Inteligencia en Tiempo Real en Microsoft Fabric |
 | 2 | [TITULO_LABORATORIO](./Laboratorios/2.NOMBRE_LABORATORIO/readme2.md) | TITULO_LABORATORIO |
 | 3 | [TITULO_LABORATORIO](./Laboratorios/3.NOMBRE_LABORATORIO/readme3.md) | TITULO_LABORATORIO |
 | 4 | [TITULO_LABORATORIO](./Laboratorios/4.NOMBRE_LABORATORIO/readme4.md) | TITULO_LABORATORIO |

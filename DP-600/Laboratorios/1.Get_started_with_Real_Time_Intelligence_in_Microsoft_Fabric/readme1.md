@@ -237,5 +237,21 @@ Si has terminado de explorar la Inteligencia en Tiempo Real en Fabric, puedes el
 2. En la barra de herramientas, selecciona **Configuración del espacio de trabajo**.
 3. En la sección **General**, selecciona **Eliminar este espacio de trabajo**.
 
+
+## Resumen
+
+El laboratorio detalla los pasos para iniciarse en la Inteligencia en Tiempo Real (Real-Time Intelligence) usando Microsoft Fabric mediante un ejercicio práctico estimado de unos 30 minutos. El propósito principal es enseñar cómo crear una arquitectura integral para ingerir flujos de datos bursátiles en streaming, almacenarlos adecuadamente para su consulta, visualizar métricas calculadas y activar alertas automáticas ante cambios de mercado.
+
+## Puntos clave
+
+Ingesta mediante Eventstream: Se enseña a capturar datos vivos desde una fuente de mercado de valores usando el Real-Time hub y un flujo de eventos (Eventstream).
+
+Almacenamiento en Eventhouse: Se crean una Casa de eventos (Eventhouse) y una base de datos KQL para actuar como destino estructurado del flujo continuo de datos de las acciones (tabla stock).
+
+Uso del lenguaje KQL: Incluye la práctica del lenguaje Kusto (KQL) para procesar los datos recibidos y calcular el promedio de precios agrupados por símbolo dentro de ventanas móviles de 5 minutos.
+
+Visualización en Tiempo Real: Explica el proceso de convertir una consulta KQL en un Panel de Control (Dashboard) en tiempo real, permitiendo renderizar los resultados a través de gráficos visuales como los de columnas.
+
+Sistema de Alertas (Activator): Se introduce la herramienta Activator para crear reglas automatizadas. En este caso, se configura una alerta que monitoriza los paneles visuales y envía notificaciones por correo electrónico cada vez que el precio promedio supera un margen de crecimiento establecido (100).
 ---
 [⬅️ Laboratorio Anterior](../readmeLab.md) | [🏠 Índice de Laboratorios](../../Readmedp-600.md) | [Siguiente Laboratorio ➡️](../2.Siguiente_Lab/readme2.md)

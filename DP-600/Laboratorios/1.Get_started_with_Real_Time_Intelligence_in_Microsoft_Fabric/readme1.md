@@ -253,5 +253,6 @@ Uso del lenguaje KQL: Incluye la práctica del lenguaje Kusto (KQL) para procesa
 Visualización en Tiempo Real: Explica el proceso de convertir una consulta KQL en un Panel de Control (Dashboard) en tiempo real, permitiendo renderizar los resultados a través de gráficos visuales como los de columnas.
 
 Sistema de Alertas (Activator): Se introduce la herramienta Activator para crear reglas automatizadas. En este caso, se configura una alerta que monitoriza los paneles visuales y envía notificaciones por correo electrónico cada vez que el precio promedio supera un margen de crecimiento establecido (100).
+
 ---
 [⬅️ Laboratorio Anterior](../readmeLab.md) | [🏠 Índice de Laboratorios](../../Readmedp-600.md) | [Siguiente Laboratorio ➡️](../2.Siguiente_Lab/readme2.md)

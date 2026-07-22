@@ -8,7 +8,7 @@ Bienvenido al repositorio de formación para la certificación DP-600.
 
 | # | Laboratorio | Descripción |
 | :--- | :--- | :--- |
-| 1 | [Introducción a la inteligencia en tiempo real en Microsoft Fabric](./Laboratorios/1.Introducción_a_la_inteligencia_en_tiempo_real_en Microsoft_Fabric/readme1.md) | Configuración de pipelines de despliegue y gestión de ALM. |
+| 1 | [Introducción a la inteligencia en tiempo real en Microsoft Fabric](./Laboratorios/1.Introduccion_a_la_inteligencia_en_tiempo_real_en Microsoft_Fabric/readme1.md) | Introduccion a la inteligencia en tiempo real en Microsoft_Fabric |
 | 2 | [TITULO_LABORATORIO](./Laboratorios/2.NOMBRE_LABORATORIO/readme2.md) | TITULO_LABORATORIO |
 | 3 | [TITULO_LABORATORIO](./Laboratorios/3.NOMBRE_LABORATORIO/readme3.md) | TITULO_LABORATORIO |
 | 4 | [TITULO_LABORATORIO](./Laboratorios/4.NOMBRE_LABORATORIO/readme4.md) | TITULO_LABORATORIO |

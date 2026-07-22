@@ -2,8 +2,8 @@
 
 # Certificación DP-600: Implementar soluciones analíticas usando Microsoft Fabric
 
-Bienvenido al repositorio de formación para la certificación DP-600.
-
+Bienvenido al repositorio de formación para la certificación DP-600. Certificado de Microsoft: Ingeniero Asociado de Analítica de Fabric
+Como ingeniero de análisis de Fabric asociado, debe tener experiencia en la materia en el diseño, la creación e implementación de soluciones de análisis de datos a escala empresarial.
 ## Índice de Laboratorios
 
 | # | Laboratorio | Descripción |

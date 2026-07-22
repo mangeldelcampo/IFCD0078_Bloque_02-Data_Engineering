@@ -8,7 +8,7 @@ Bienvenido al repositorio de formación para la certificación DP-600.
 
 | # | Laboratorio | Descripción |
 | :--- | :--- | :--- |
-| 1 | [Get_started](./Laboratorios/1.Comienza con Inteligencia en Tiempo Real en Microsoft Fabric/readme1.md) | Comienza con Inteligencia en Tiempo Real en Microsoft Fabric |
+| 1 | [Introducción a la inteligencia en tiempo real en Microsoft Fabric](./Laboratorios/1.Comienza con Inteligencia en Tiempo Real en Microsoft Fabric/readme1.md) | Comienza con Inteligencia en Tiempo Real en Microsoft Fabric |
 | 2 | [TITULO_LABORATORIO](./Laboratorios/2.NOMBRE_LABORATORIO/readme2.md) | TITULO_LABORATORIO |
 | 3 | [TITULO_LABORATORIO](./Laboratorios/3.NOMBRE_LABORATORIO/readme3.md) | TITULO_LABORATORIO |
 | 4 | [TITULO_LABORATORIO](./Laboratorios/4.NOMBRE_LABORATORIO/readme4.md) | TITULO_LABORATORIO |

@@ -47,7 +47,7 @@ Este laboratorio tarda aproximadamente 30 minutos en completarse.
 3. Elige un **tipo de espacio de trabajo de Fabric y Power BI** en la sección Avanzado. Las opciones podrían ser: Fabric, prueba de Fabric, Power BI Premium.
 4. Cuando abra tu nuevo espacio de trabajo, debería estar vacío.
 
-![Creación Workspace](imagenes/01CreacionWorkspace.png)
+![Creación Workspace](./imagenes/01CreacionWorkspace.png)
 
 ---
 
@@ -58,7 +58,7 @@ Ahora que tienes un espacio de trabajo, crea un almacén de datos para alojar tu
 1. En tu espacio de trabajo, selecciona **+ Nuevo artículo** y luego selecciona **Almacén (Warehouse)** en la sección de Datos de la Tienda. Llámala `ContosoDW`.
 2. Tras un minuto aproximadamente, se crea un nuevo almacén que se abre en el navegador.
 
-![Creación Warehouse](imagenes/02CreacionWarehouse.png)
+![Creación Warehouse](./imagenes/02CreacionWarehouse.png)
 
 ---
 
@@ -82,17 +82,17 @@ CREATE TABLE f_Sales
 );
 ```
 
-![Nueva Consulta SQL](imagenes/03NuevaConsultaSQL.png)
+![Nueva Consulta SQL](./imagenes/03NuevaConsultaSQL.png)
 
 2. Usa el botón **▷ Ejecutar** para ejecutar el script SQL.
 
-![Ejecutar Consulta SQL](imagenes/04NuevaConsultaSQL.png)
+![Ejecutar Consulta SQL](./imagenes/04NuevaConsultaSQL.png)
 
 3. Usa el botón de **Actualizar** en la barra de herramientas para actualizar la vista. En el panel del Explorador, expande `Esquemas > dbo > Tablas` y verifica que la tabla de `f_Sales` ha sido creada.
 
 > **Nota:** El prefijo `f_` identifica esto como una tabla de hechos. Esta convención de nombres facilita que analistas y herramientas distingan tablas de hechos de tablas dimensionales. La tabla de hechos intencionadamente no tiene una clave primaria, lo cual es una práctica habitual porque no sirve para una función útil para las tablas de hechos y aumentaría innecesariamente el almacenamiento.
 
-![Tabla Creada](imagenes/05TablaCreada.png)
+![Tabla Creada](./imagenes/05TablaCreada.png)
 
 ---
 
@@ -174,7 +174,7 @@ CREATE TABLE d_Customer
 
 > **Consejo:** Si las tablas tardan un poco en aparecer, actualiza la página del navegador.
 
-![Tablas Dimensiones](imagenes/06TablasDimensiones.png)
+![Tablas Dimensiones](./imagenes/06TablasDimensiones.png)
 
 ---
 
@@ -286,7 +286,7 @@ ORDER BY d.[Month], p.Category;
 
 Observa cómo la consulta refleja el diseño del esquema estrella: la tabla de hechos (`f_sales`) se une a cada tabla de dimensiones para incorporar atributos descriptivos. Las funciones `SUM` agregan las columnas numéricas de la tabla de hechos, y la cláusula `GROUP BY` utiliza atributos dimensionales para definir el agrupamiento.
 
-![Consulta Estrella](imagenes/07Consulta.png)
+![Consulta Estrella](./imagenes/07Consulta.png)
 
 | MonthName | Category | TotalSales | TotalQuantity | TotalDiscounts |
 | :--- | :--- | :--- | :--- | :--- |
@@ -451,7 +451,7 @@ Revisa los resultados teniendo en cuenta el siguiente resumen del diseño:
 * **Jerarquías:** Fecha (Año > Trimestre > Mes > Día), Tienda (Región > País > Estado > Ciudad), Producto (Categoría > Subcategoría > Marca > Producto).
 * **Seguimiento SCD:** Tipo 2 según el coste del producto; Tipo 1 en el nombre del producto y todos los atributos del cliente (como se demuestra en este ejercicio). La dimensión del almacén también incluye columnas SCD Tipo 2 por diseño.
 
-![Evaluar Diseño](imagenes/08EvaluarDise.png)
+![Evaluar Diseño](./imagenes/08EvaluarDise.png)
 
 ---
 

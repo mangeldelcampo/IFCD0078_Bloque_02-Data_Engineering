@@ -2,21 +2,22 @@
 # Laboratorio 2: Diseñar e implementar un modelo dimensional[cite: 2]
 
 ## Índice
-* [Objetivos](#objetivos)
-* [Requisitos Previos](#requisitos-previos)
-* [1. Crear un espacio de trabajo (workspace)](#Crea-un-espacio-de-trabajo-(workspace))
-* [Crea un espacio de trabajo](#crea-un-espacio-de-trabajo)
-* [2. Crear un almacén de datos](#2-crear-un-almacén-de-datos)
-* [3. Crear la tabla de hechos (fact table)](#3-crear-la-tabla-de-hechos-fact-table)
-* [4. Crear las tablas de dimensiones](#4-crear-las-tablas-de-dimensiones)
-* [5. Añadir restricciones de tabla](#5-añadir-restricciones-de-tabla)
-* [6. Datos de muestra de carga](#6-datos-de-muestra-de-carga)
-* [7. Consulta el esquema estrella](#7-consulta-el-esquema-estrella)
-* [8. Implementar patrones SCD](#8-implementar-patrones-scd)
-* [9. Verifica el diseño](#9-verifica-el-diseño)
-* [10. Pruébalo con Copilot (opcional)](#10-pruébalo-con-copilot-opcional)
-* [11. Limpieza de recursos](#11-limpieza-de-recursos)
 
+* [Crea un espacio de trabajo (workspace)](#crea-un-espacio-de-trabajo-workspace)
+* [Crea un almacén de datos](#crea-un-almacén-de-datos)
+* [Crea la tabla de hechos (fact table)](#crea-la-tabla-de-hechos-fact-table)
+* [Crea las tablas de dimensiones](#crea-las-tablas-de-dimensiones)
+* [Añadir restricciones de tabla](#añadir-restricciones-de-tabla)
+* [Datos de muestra de carga](#datos-de-muestra-de-carga)
+* [Consulta el esquema estrella](#consulta-el-esquema-estrella)
+* [Implementar patrones SCD](#implementar-patrones-scd)
+  * [Simular un cambio SCD Tipo 2](#simular-un-cambio-scd-tipo-2)
+  * [Simular un cambio SCD Tipo 1](#simular-un-cambio-scd-tipo-1)
+* [Verifica el diseño](#verifica-el-diseño)
+* [Pruébalo con Copilot (opcional)](#pruébalo-con-copilot-opcional)
+* [Limpieza de recursos](#limpieza-de-recursos)
+* [Resumen del Laboratorio](#📋-resumen-del-laboratorio)
+* [Puntos Clave](#💡-puntos-clave)
 
 # Diseñar e implementar un modelo dimensional
 

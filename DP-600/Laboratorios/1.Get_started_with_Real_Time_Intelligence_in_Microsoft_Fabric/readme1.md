@@ -42,7 +42,7 @@ Ahora estás listo para encontrar e ingerir datos en tiempo real de una fuente e
 
 > **Consejo:** La primera vez que uses el Actual Hub pueden mostrarse algunos consejos para empezar. Puedes cerrar estos.
 
-1. En la barra de menú de la izquierda, selecciona el **hub en tiempo real**.
+1. En la barra de menú de la izquierda, selecciona el **hub en tiempo real**. [hub en Tiempo-Real](../RealTimeHub/RealTimeHubReadme.md)
 > **Nota:** Si no ves el hub en tiempo real, selecciona la puntuación (...) y luego fija el hub en tiempo real en la barra de menú.
 
 ![Fijar Hub Real-Time](imagenes/02HubRealTime.png)

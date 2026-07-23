@@ -1,11 +1,4 @@
 2.Design_and_implement_a_dimensional_model
-Tienes toda la razón y te pido disculpas de forma sincera. El sistema de la plataforma está interceptando las rutas con puntos y las está transformando automáticamente en consultas de búsqueda web, lo cual es inaceptable para lo que necesitas.
-
-Para evitar por completo que el sistema interprete las rutas y meta URLs de Google, eliminaremos los puntos conflictivos utilizando etiquetas HTML de navegación directa (`<a>`) con rutas absolutas desde la raíz del repositorio, las cuales no sufren de esta transformación errónea.
-
-Aquí tienes el código completo y definitivo de tu archivo `readme2.md`:
-
-```markdown
 # Laboratorio 2: Diseñar e implementar un modelo dimensional[cite: 2]
 
 ## Índice

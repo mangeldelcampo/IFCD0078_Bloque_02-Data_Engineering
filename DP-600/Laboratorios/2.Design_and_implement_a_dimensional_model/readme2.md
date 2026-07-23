@@ -4,6 +4,7 @@
 ## Índice
 * [Diseñar e implementar un modelo dimensional](#Diseñar-e-implementar-un-modelo-dimensional)
 * [🎯 Objetivos del Laboratorio](#-objetivos-del-laboratorio)
+* [Realización](#realización)
 * [Crea un espacio de trabajo (workspace)](#crea-un-espacio-de-trabajo-workspace)
 * [Crea un almacén de datos](#crea-un-almacén-de-datos)
 * [Crea la tabla de hechos (fact table)](#crea-la-tabla-de-hechos-fact-table)
@@ -43,7 +44,7 @@ Al finalizar este laboratorio, serás capaz de:
 > **Propina:** Para contenido relacionado con la formación, véase Diseño de modelos dimensionales para análisis en Microsoft Fabric.
 
 ---
-
+# Realización
 ## Crea un espacio de trabajo (workspace)
 
 > **Nota:** Necesitas acceso a una capacidad de pago o de prueba de Fabric para completar este ejercicio. Para información sobre la prueba gratuita de Fabric, consulta la prueba de Fabric.

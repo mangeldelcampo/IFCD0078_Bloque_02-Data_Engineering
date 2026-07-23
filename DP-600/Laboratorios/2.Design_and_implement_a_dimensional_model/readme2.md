@@ -500,4 +500,5 @@ Este laboratorio proporciona una guía práctica paso a paso para el diseño y c
 * **Comportamiento de las Medidas:** Identificación de métricas aditivas (como `Quantity` o `SalesAmount`, que se pueden sumar de forma segura con `SUM()`) frente a métricas no aditivas (como `UnitPrice`, que darían resultados erróneos al sumarse y deben promediarse).
 
 [ÍNDICE](#índice)
+
 ⬅️ [Anterior](../1.Get_started_with_Real_Time_Intelligence_in_Microsoft_Fabric/readme1.md) | 🏠 [Inicio](../../Readmedp-600.md) | ➡️ [Siguiente](../2.Get_started_with_Copilot_in_Microsoft_Fabric_for_Data_Warehouse/readme2.md)

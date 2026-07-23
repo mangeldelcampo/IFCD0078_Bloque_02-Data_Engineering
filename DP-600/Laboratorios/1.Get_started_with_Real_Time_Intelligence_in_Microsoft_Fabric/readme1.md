@@ -256,4 +256,6 @@ Visualización en Tiempo Real: Explica el proceso de convertir una consulta KQL 
 Sistema de Alertas (Activator): Se introduce la herramienta Activator para crear reglas automatizadas. En este caso, se configura una alerta que monitoriza los paneles visuales y envía notificaciones por correo electrónico cada vez que el precio promedio supera un margen de crecimiento establecido (100).
 
 ---
+[ÍNDICE](#índice)
+
 [⬅️ Laboratorio Anterior](../readmeLab.md) | [🏠 Índice de Laboratorios](../../Readmedp-600.md) | [Siguiente Laboratorio ➡️](../readmeLab.md)

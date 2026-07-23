@@ -69,7 +69,7 @@ Ahora estás listo para encontrar e ingerir datos en tiempo real de una fuente e
 
 ![Conectar](imagenes/06Connect.png)
 
-6. Selecciona **Abierto al evento**. El eventstream mostrará la fuente de stock y el flujo de datos de stock en el lienzo de diseño:
+6. Selecciona **Abierto al evento**. El [eventstream](../Eventstream/ReadmeEventstream.md) mostrará la fuente de stock y el flujo de datos de stock en el lienzo de diseño:
 
 ![Abrir Eventstream](imagenes/07OpenEventstream.png)
 

@@ -2,7 +2,7 @@
 # Laboratorio 2: Diseñar e implementar un modelo dimensional[cite: 2]
 
 ## Índice
-
+* [Diseñar e implementar un modelo dimensional](#Diseñar-e-implementar-un-modelo-dimensional)
 * [Crea un espacio de trabajo (workspace)](#crea-un-espacio-de-trabajo-workspace)
 * [Crea un almacén de datos](#crea-un-almacén-de-datos)
 * [Crea la tabla de hechos (fact table)](#crea-la-tabla-de-hechos-fact-table)
@@ -476,7 +476,19 @@ Cuando termines de explorar tu almacén de datos, elimina el espacio de trabajo 
 2. En la barra de herramientas, selecciona **Configuración del espacio de trabajo**.
 3. En la sección General, selecciona **Eliminar este espacio de trabajo**.
 
-```
+## 📋 Resumen del Laboratorio
+Este laboratorio proporciona una guía práctica paso a paso para el diseño y construcción de un modelo dimensional de esquema en estrella (star schema) utilizando Microsoft Fabric Warehouse. A lo largo del ejercicio, se aborda la creación de tablas mediante sintaxis T-SQL, estableciendo una tabla de hechos (`f_Sales`) para medir transacciones de venta y tablas de dimensiones que le otorgan contexto (Fecha, Tienda, Producto y Cliente). Además, el laboratorio incluye una demostración aplicada de los patrones para la gestión del historial de los datos, insertando y validando Dimensiones Lentamente Cambiantes (SCD) de Tipo 1 y Tipo 2, culminando con validaciones analíticas a través de consultas agregadas con JOINs.
+
+## 💡 Puntos Clave
+* **Arquitectura de Esquema en Estrella:** Separación lógica entre las métricas de negocio medibles (tabla de hechos) y la información descriptiva que responde al "quién, qué, cuándo y dónde" (tablas de dimensiones).
+* **Metadatos e Integridad (NOT ENFORCED):** Implementación de restricciones de claves primarias y foráneas (`ALTER TABLE ... ADD CONSTRAINT`) utilizando el modificador `NOT ENFORCED`. En Fabric, esto no valida las transacciones para no ralentizar la carga, pero sirve como metadato vital para que Power BI autodescubra las relaciones.
+* **Claves Subrogadas de Fecha:** Empleo del formato de número entero `YYYYMMDD` (ej. `20260105`) como clave subrogada para las fechas, siendo la mejor práctica estándar para optimizar el rendimiento de las uniones en bases de datos analíticas.
+* **SCD Tipo 1 (Sobrescribir):** Aplicación de actualizaciones `UPDATE` in situ para atributos donde no se necesita historial (como la simple corrección de un error tipográfico en el nombre de un producto). El valor anterior se pierde.
+* **SCD Tipo 2 (Seguimiento Histórico):** Uso de campos de vigencia temporal (`ValidFrom`, `ValidTo`, `IsCurrent`) para insertar nuevas versiones de un registro y "caducar" el antiguo. Esto garantiza la exactitud histórica, permitiendo que una venta antigua siga vinculada al precio o coste que tenía el producto en el momento de la transacción.
+* **Comportamiento de las Medidas:** Identificación de métricas aditivas (como `Quantity` o `SalesAmount`, que se pueden sumar de forma segura con `SUM()`) frente a métricas no aditivas (como `UnitPrice`, que darían resultados erróneos al sumarse y deben promediarse).
+
+
+
 ⬅️ Anterior | 🏠 Inicio | Siguiente ➡️
 
 ```

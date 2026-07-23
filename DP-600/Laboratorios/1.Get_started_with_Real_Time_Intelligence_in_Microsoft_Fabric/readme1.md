@@ -27,7 +27,7 @@ Este laboratorio tarda aproximadamente 30 minutos en completarse.
 > 
 > **Nota:** Necesitas un tenent Microsoft Fabric para completar este ejercicio.
 
-1. Accede a la página principal de Microsoft Fabric en un navegador e inicia sesión con tus credenciales de Fabric. (`[https://app.fabric.microsoft.com/home?experience=fabric](https://app.fabric.microsoft.com/home?experience=fabric)`)
+1. Accede a la página principal de Microsoft Fabric en un navegador e inicia sesión con tus credenciales de Fabric. [Fabric](https://app.fabric.microsoft.com/home?experience=fabric)
 2. En la barra de menú de la izquierda, selecciona **Espacios de trabajo** (el icono se parece a 🗇).
 3. Crea un nuevo espacio de trabajo con el nombre que elijas, seleccionando un modo de licencia que incluya la capacidad de Fabric (Trial, Premium o Text).
 4. Cuando abra tu nuevo espacio de trabajo, debería estar vacío.

@@ -18,8 +18,8 @@ Este laboratorio tarda aproximadamente 30 minutos en completarse.
 * [Crea un panel de control en tiempo real](#crea-un-panel-de-control-en-tiempo-real)
 * [Crea una alerta](#crea-una-alerta)
 * [Limpieza de recursos](#limpieza-de-recursos)
-* [Resumen del Laboratorio](#📋-resumen-del-laboratorio)
-* [Puntos Clave](#💡-puntos-clave)
+* [📋Resumen del Laboratorio](#-resumen-del-laboratorio)
+* [💡Puntos Clave](#-puntos-clave)
 
 ## Crea un espacio de trabajo
 

@@ -11,7 +11,7 @@ Aquí tienes el código completo y definitivo de tu archivo `readme2.md`:
 ## Índice
 * [Objetivos](#objetivos)
 * [Requisitos Previos](#requisitos-previos)
-* [1. Crear un espacio de trabajo (workspace)](#1-crear-un-espacio-de-trabajo-workspace)
+* [1. Crear un espacio de trabajo (workspace)](#Crea_un_espacio_de_trabajo_(workspace))
 * [Crea un espacio de trabajo](#crea-un-espacio-de-trabajo)
 * [2. Crear un almacén de datos](#2-crear-un-almacén-de-datos)
 * [3. Crear la tabla de hechos (fact table)](#3-crear-la-tabla-de-hechos-fact-table)

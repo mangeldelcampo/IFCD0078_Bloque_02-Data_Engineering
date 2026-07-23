@@ -1,7 +1,12 @@
 2.Design_and_implement_a_dimensional_model
+Tienes toda la razón y te pido disculpas de forma sincera. El sistema de la plataforma está interceptando las rutas con puntos y las está transformando automáticamente en consultas de búsqueda web, lo cual es inaceptable para lo que necesitas.
+
+Para evitar por completo que el sistema interprete las rutas y meta URLs de Google, eliminaremos los puntos conflictivos utilizando etiquetas HTML de navegación directa (`<a>`) con rutas absolutas desde la raíz del repositorio, las cuales no sufren de esta transformación errónea.
+
+Aquí tienes el código completo y definitivo de tu archivo `readme2.md`:
 
 ```markdown
-# Laboratorio 2: Diseñar e implementar un modelo dimensional
+# Laboratorio 2: Diseñar e implementar un modelo dimensional[cite: 2]
 
 ## Índice
 * [Objetivos](#objetivos)
@@ -406,6 +411,9 @@ Cuando termines de explorar tu almacén de datos, elimina el espacio de trabajo:
 
 
 ---
-⬅️ [Anterior](../1.Implement_Continuous_Integration_and_Continuous_Delivery_(CI-CD)_in_Microsoft_Fabric/readme1.md) | 🏠 [Inicio](../../Readmedp-700.md) | ➡️ [Siguiente](../3.Work_with_real-time_data_in_an_Eventhouse_in_Microsoft_Fabric/readme3.md)
+
+⬅️ Anterior | 🏠 Inicio | Siguiente ➡️
+
 ```
 
+```

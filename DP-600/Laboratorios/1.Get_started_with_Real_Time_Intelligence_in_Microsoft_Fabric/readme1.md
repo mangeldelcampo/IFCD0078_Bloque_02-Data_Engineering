@@ -119,7 +119,7 @@ Sin embargo, actualmente no hay tablas para consultar. Vamos a resolver ese prob
 
 Se ha creado la conexión entre el arroyo y la mesa. Vamos a verificar eso en el evento stream.
 
-10. En la barra de menú de la izquierda, selecciona el [hub en Tiempo-Real](../RealTimeHub/RealTimeHubReadme.md). En el menú `...` del flujo datos de stock, selecciona **Abrir flujo de eventos**.
+10. En la barra de menú de la izquierda, selecciona el [**hub en Tiempo-Real**](../RealTimeHub/RealTimeHubReadme.md). En el menú `...` del flujo datos de stock, selecciona **Abrir flujo de eventos**.
 El evento ahora muestra un destino para el stream:
 
 ![Destinos Stream](imagenes/18DestinationsStream.png)

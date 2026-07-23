@@ -18,8 +18,8 @@
 * [Verifica el diseño](#verifica-el-diseño)
 * [Pruébalo con Copilot (opcional)](#pruébalo-con-copilot-opcional)
 * [Limpieza de recursos](#limpieza-de-recursos)
-* [📋Resumen del Laboratorio](#resumen-del-laboratorio)
-* [💡Puntos Clave](#puntos-clave)
+* [📋 Resumen del Laboratorio](#-resumen-del-laboratorio)
+* [💡 Puntos Clave](#-puntos-clave)
 
 # Diseñar e implementar un modelo dimensional
 

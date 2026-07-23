@@ -3,6 +3,7 @@
 
 ## Índice
 * [Diseñar e implementar un modelo dimensional](#Diseñar-e-implementar-un-modelo-dimensional)
+* [🎯 Objetivos del Laboratorio](#-objetivos-del-laboratorio)
 * [Crea un espacio de trabajo (workspace)](#crea-un-espacio-de-trabajo-workspace)
 * [Crea un almacén de datos](#crea-un-almacén-de-datos)
 * [Crea la tabla de hechos (fact table)](#crea-la-tabla-de-hechos-fact-table)
@@ -28,6 +29,16 @@ En este ejercicio, diseñas e implementas un modelo dimensional de esquema en es
 También implementas patrones de dimensión que cambia lentamente (SCD) para manejar datos que cambian con el tiempo, demostrando cómo funcionan en la práctica los cambios de Tipo 1 (sobrescribir) y Tipo 2 (seguimiento histórico).
 
 Este laboratorio tarda aproximadamente 30 minutos en completarse.
+
+## 🎯 Objetivos del Laboratorio
+
+Al finalizar este laboratorio, serás capaz de:
+
+* **Diseñar e implementar un modelo dimensional:** Crear una arquitectura de esquema en estrella (star schema) orientada a cargas de trabajo analíticas para una organización minorista.
+* **Crear artefactos en Fabric Warehouse:** Utilizar sintaxis T-SQL para definir y construir tablas de hechos (eventos/ventas) y tablas de dimensiones (contexto descriptivo).
+* **Definir relaciones y restricciones:** Establecer metadatos estructurales (claves primarias y foráneas `NOT ENFORCED`) para optimizar el modelado semántico posterior en Power BI.
+* **Consultar un esquema en estrella:** Ejecutar consultas analíticas de agregación cruzando la tabla de hechos con múltiples dimensiones mediante sentencias `JOIN` y `GROUP BY`.
+* **Implementar Dimensiones Lentamente Cambiantes (SCD):** Aplicar patrones técnicos para gestionar datos históricos mediante SCD Tipo 1 (sobrescritura sin historial) y SCD Tipo 2 (mantenimiento de versiones históricas mediante campos de vigencia).
 
 > **Propina:** Para contenido relacionado con la formación, véase Diseño de modelos dimensionales para análisis en Microsoft Fabric.
 

@@ -12,6 +12,7 @@ Aquí tienes el código completo y definitivo de tu archivo `readme2.md`:
 * [Objetivos](#objetivos)
 * [Requisitos Previos](#requisitos-previos)
 * [1. Crear un espacio de trabajo (workspace)](#1-crear-un-espacio-de-trabajo-workspace)
+* [Crea un espacio de trabajo](#crea-un-espacio-de-trabajo)
 * [2. Crear un almacén de datos](#2-crear-un-almacén-de-datos)
 * [3. Crear la tabla de hechos (fact table)](#3-crear-la-tabla-de-hechos-fact-table)
 * [4. Crear las tablas de dimensiones](#4-crear-las-tablas-de-dimensiones)
@@ -42,7 +43,7 @@ Este laboratorio tarda aproximadamente 30 minutos en completarse.
 
 > **Nota:** Necesitas acceso a una capacidad de pago o de prueba de Fabric para completar este ejercicio. Para información sobre la prueba gratuita de Fabric, consulta la prueba de Fabric.
 
-1. Accede a la página principal de Microsoft Fabric en un navegador e inicia sesión con tus credenciales de Fabric. (`https://app.fabric.microsoft.com/home?experience=fabric`)
+1. Accede a la página principal de Microsoft Fabric en un navegador e inicia sesión con tus credenciales de Fabric. [Fabric](`https://app.fabric.microsoft.com/home?experience=fabric`)
 2. En la barra de menú de la izquierda, selecciona **Espacios de trabajo** (el icono se parece a 🗇).
 3. Elige un **tipo de espacio de trabajo de Fabric y Power BI** en la sección Avanzado. Las opciones podrían ser: Fabric, prueba de Fabric, Power BI Premium.
 4. Cuando abra tu nuevo espacio de trabajo, debería estar vacío.

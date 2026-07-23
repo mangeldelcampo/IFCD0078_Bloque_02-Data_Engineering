@@ -43,7 +43,7 @@ Este laboratorio tarda aproximadamente 30 minutos en completarse.
 
 > **Nota:** Necesitas acceso a una capacidad de pago o de prueba de Fabric para completar este ejercicio. Para información sobre la prueba gratuita de Fabric, consulta la prueba de Fabric.
 
-1. Accede a la página principal de Microsoft Fabric en un navegador e inicia sesión con tus credenciales de Fabric. [Fabric](`https://app.fabric.microsoft.com/home?experience=fabric`)
+1. Accede a la página principal de Microsoft Fabric en un navegador e inicia sesión con tus credenciales de Fabric. [Fabric](https://app.fabric.microsoft.com/home?experience=fabric)
 2. En la barra de menú de la izquierda, selecciona **Espacios de trabajo** (el icono se parece a 🗇).
 3. Elige un **tipo de espacio de trabajo de Fabric y Power BI** en la sección Avanzado. Las opciones podrían ser: Fabric, prueba de Fabric, Power BI Premium.
 4. Cuando abra tu nuevo espacio de trabajo, debería estar vacío.

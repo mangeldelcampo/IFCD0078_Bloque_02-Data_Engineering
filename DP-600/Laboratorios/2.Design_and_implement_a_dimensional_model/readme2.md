@@ -1,5 +1,5 @@
 2.Design_and_implement_a_dimensional_model
-# Laboratorio 2: Diseñar e implementar un modelo dimensional[cite: 2]
+# Laboratorio 2: Diseñar e implementar un modelo dimensional
 
 ## Índice
 * [Diseñar e implementar un modelo dimensional](#Diseñar-e-implementar-un-modelo-dimensional)

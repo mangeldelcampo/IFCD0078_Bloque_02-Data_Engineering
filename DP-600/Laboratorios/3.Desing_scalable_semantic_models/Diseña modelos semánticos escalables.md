@@ -26,15 +26,13 @@ En esta tarea, abrirás una solución Power BI Desktop predesarrollada para apre
 
 1. En Power BI Desktop, a la izquierda, cambia a la **vista de modelo**.
 
-![imagen1](./imagenes/image1n.png)
+![imagen1](./imagenes/Imagen1.png)
 
-Imagen1.png
 
 2. Utiliza el diagrama del modelo para revisar el diseño del modelo.
 
-![imagen2](./imagenes/imagen2.png)
+![imagen2](./imagenes/Imagen2.png)
 
-Imagen2.png
 
 3. Observa que hay tres relaciones entre las **tablas de Fecha** y **Ventas**.
 
@@ -101,9 +99,8 @@ Esta fórmula utiliza la función CALCULATE para modificar el contexto del filtr
 3. Añade la medida **de Ventas Enviadas** a la imagen de la tabla.  
 4. Ampliar la visualización de la tabla para que todas las columnas sean completamente visibles. Observa que la **fila Total** es la misma, pero el importe de ventas de cada año en **Ventas Totales** y **Ventas Enviadas** es diferente. Esa diferencia se debe a que los pedidos se reciben en un año determinado mientras se envían solo al año siguiente o que ni siquiera se han enviado aún.
 
-![][image9]
+![Imagen9.png](./imagenes/Imagen9.png)
 
-Imagen9.png
 
 Crear medidas que establezcan temporalmente las relaciones como activas es una forma de trabajar con dimensiones de rol de personaje. Sin embargo, puede volverse tedioso cuando hay que crear versiones de rol para muchos compases. Por ejemplo, si hubiera 10 medidas relacionadas con ventas y tres fechas de juego de rol, podría significar crear 30 medidas. Crearlas con grupos de cálculo facilita el proceso.
 
@@ -113,23 +110,20 @@ En esta tarea, crearás un grupo de cálculo para el análisis de Inteligencia T
 
 1. Cambiar a la **vista modelo**.
 
-![][image10]
+![Imagen10.png](./imagenes/Imagen10.png)
 
-Imagen10.png
 
 2. En la vista de modelo, selecciona **Grupo de cálculo** para crear una nueva tabla de grupo de cálculo, columna de grupo y elemento. Si aparece una ventana de advertencia, selecciona **Sí** para confirmar la creación del grupo de cálculo.
 
-![][image11]
+![Imagen11.png](./imagenes/Imagen11.png)
 
-Imagen11.png
 
 Nota: Una ***medida implícita*** ocurre cuando, en la vista de Informe, usas una columna de datos del panel de datos directamente en un aspecto visual. El visual te permite agregarlo como una SUMA, PROMEDIO, MÍNIMO, MÁXIMO u otra agregación básica, que se convierte en una medida implícita. Una vez que creas un grupo de cálculo, Power BI Desktop ya no crea medidas implícitas, lo que significa que debes crear medidas explícitamente para agregar columnas de datos.
 
 3. Renombra el grupo de cálculo como *Time Calculations* y la columna de cálculo como *Yearly Calculations*.
 
-![][image12]
+![Imagen12.png](./imagenes/Imagen12.png)
 
-Imagen12.png
 
 4. En la pestaña **Modelo** del panel **de Datos**, selecciona el ítem de cálculo creado automáticamente con tu grupo de cálculo.  
 5. Sustituye y compromete la fórmula del elemento por lo siguiente:
@@ -146,13 +140,13 @@ Imagen13.png
 
 7. Utiliza la siguiente fórmula DAX para el nuevo artículo:
 
-Código
+```DAX
 
 Previous Year (PY) \= CALCULATE(SELECTEDMEASURE(), PREVIOUSYEAR('Date'\[Date\]))
-
+```
 8. Crea un tercer elemento con la siguiente fórmula DAX:
 
-Código
+```DAX
 
 Year-over-Year (YoY) Growth \=
 
@@ -175,6 +169,7 @@ DIVIDE(
 	MeasurePriorYear
 
 )
+```
 
 El último ítem de cálculo debería devolver valores solo en porcentaje, por lo que necesita una ***cadena de formato dinámico*** para cambiar el formato de las medidas que afecta.
 

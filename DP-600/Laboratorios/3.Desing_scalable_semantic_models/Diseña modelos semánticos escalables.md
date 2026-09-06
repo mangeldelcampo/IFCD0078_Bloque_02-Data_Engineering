@@ -223,7 +223,6 @@ En esta tarea, crearás parámetros de campo para cambiar los visuales.
 
 ![Imagen19.png](./imagenes/Imagen19.png)
 
-
 5. Consulta las diferentes cifras de ventas en el segmentador y cómo cambia la matriz cuando se selecciona cada una.  
 6. Observa cómo se selecciona el campo Profit (Beneficio) usando el slicer para el parámetro de campo Sales figures (Cifras de Ventas). Esta es la misma matriz de arriba, así que puedes ver los tres elementos de cálculo (PY, YoY, YTD) pero solo se aplican a Profit (Beneficio) por el slicer.
 

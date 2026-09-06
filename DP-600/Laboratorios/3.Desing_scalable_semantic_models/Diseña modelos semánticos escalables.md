@@ -117,7 +117,7 @@ En esta tarea, crearás un grupo de cálculo para el análisis de Inteligencia T
 
 ![Imagen11.png](./imagenes/Imagen11.png)
 
-
+> **Nota:**
 Nota: Una ***medida implícita*** ocurre cuando, en la vista de Informe, usas una columna de datos del panel de datos directamente en un aspecto visual. El visual te permite agregarlo como una SUMA, PROMEDIO, MÍNIMO, MÁXIMO u otra agregación básica, que se convierte en una medida implícita. Una vez que creas un grupo de cálculo, Power BI Desktop ya no crea medidas implícitas, lo que significa que debes crear medidas explícitamente para agregar columnas de datos.
 
 3. Renombra el grupo de cálculo como *Time Calculations* y la columna de cálculo como *Yearly Calculations*.

@@ -26,21 +26,19 @@ En esta tarea, abrirás una solución Power BI Desktop predesarrollada para apre
 
 1. En Power BI Desktop, a la izquierda, cambia a la **vista de modelo**.
 
-![][image1]
+![imagen1](./imagenes/image1n.png)
 
 Imagen1.png
 
 2. Utiliza el diagrama del modelo para revisar el diseño del modelo.
 
-![][image2]
+![imagen2](./imagenes/imagen2.png)
 
 Imagen2.png
 
 3. Observa que hay tres relaciones entre las **tablas de Fecha** y **Ventas**.
 
-![][image3]
-
-Imagen3.png
+![Imagen3](./imagenes/Imagen3.png)
 
 La columna **de fechas** en la tabla **de fechas** es una columna única que representa el lado "uno" de las relaciones. Los filtros aplicados a cualquier columna de la **tabla de fechas** se propagan a la tabla **de ventas** usando una de las relaciones.\*
 
@@ -55,31 +53,23 @@ En esta tarea, visualizarás las ventas totales por año y usarás relaciones in
 
 1. Cambia a la vista **de informe**.
 
-![][image4]
-
-Imagen4.png
+![Imagen4](./imagenes/Imagen4.png)
 
 2. Para añadir una imagen de tabla, en el panel **de Visualizaciones**, selecciona el icono visual de **Tabla**.
 
-![][image5]
-
-Imagen5.png
-
+![Imagen5](./imagenes/Imagen5.png)
  
 
 3. Para añadir columnas a la visualización de la tabla, en el panel **de Datos** (ubicado a la derecha), primero expande la **tabla de fechas**.  
 4. Arrastra la columna **del Año** y suelta la imagen de la tabla.  
 5. Abre la tabla de **Ventas** y luego arrastra y suelta la columna **Total** Sales en la imagen de la tabla.
 
-![][image6]
-
-Imagen6.png
+![Imagen6.png](./imagenes/Imagen6.png)
 
 6. Revisa la imagen de la mesa.
 
-![][image7]
+![Imagen7.png](./imagenes/Imagen7.png)
 
-Imagen7.png
 
 La imagen de la tabla muestra la suma de la columna **de Ventas Totales** agrupada por año. ¿Pero qué significa **Año**? Debido a que existe una relación activa entre las **tablas de Fecha** y **Ventas** y la columna **de Fecha del Pedido**, **Año** significa el año fiscal en el que se realizaron los pedidos.
 
@@ -89,13 +79,12 @@ En esta tarea, usarás la función USERELATIONSHIP para activar una relación in
 
 1. En el panel **de Datos**, haz clic derecho en la tabla **de Ventas** y luego selecciona **Nueva medida**.
 
-![][image8]
+![Imagen8.png](./imagenes/Imagen8.png)
 
-Imagen8.png
 
 2. En la barra de fórmulas (situada debajo de la cinta), sustituye el texto por la siguiente definición de medida y luego pulsa **Enter**.
 
-Código
+```DAX
 
  Sales Shipped \=
 
@@ -106,7 +95,7 @@ Código
  USERELATIONSHIP('Date'\[Date\], 'Sales'\[ShipDate\])
 
  )
-
+```
 Esta fórmula utiliza la función CALCULATE para modificar el contexto del filtro. Es la función USERELATIONSHIP la que activa la **relación ShipData**, solo para esta medida.
 
 3. Añade la medida **de Ventas Enviadas** a la imagen de la tabla.  
@@ -145,10 +134,10 @@ Imagen12.png
 4. En la pestaña **Modelo** del panel **de Datos**, selecciona el ítem de cálculo creado automáticamente con tu grupo de cálculo.  
 5. Sustituye y compromete la fórmula del elemento por lo siguiente:
 
-Código
+```DAX
 
 Year-to-Date (YTD) \= CALCULATE(SELECTEDMEASURE(), DATESYTD('Date'\[Date\]))
-
+```
 6. Haz clic derecho en el campo **Elementos de cálculo** y selecciona **Nuevo elemento de cálculo**.
 
 ![][image13]

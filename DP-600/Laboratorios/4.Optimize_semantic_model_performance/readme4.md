@@ -273,3 +273,6 @@ Write a measure that calculates profit margin percentage using variables for Sal
 
 ## **Limpieza de recursos**
 
+[ÍNDICE](#índice)
+
+⬅️ [Anterior](../3.Desing_scalable_semantic_models/readme3.md) | 🏠 [Inicio](../../Readmedp-600.md) | ➡️ [Siguiente](../5.Enforce_semantic_model_security/readme5.md)

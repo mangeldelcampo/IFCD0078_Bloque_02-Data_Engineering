@@ -97,8 +97,11 @@ En esta tarea, exportas la consulta DAX para el **visual de la Tabla** y examina
      	TOPN(502, \_\_DS0Core, \[IsGrandTotalRowTotal\], 0, 'Date'\[Year\], 1\)
  EVALUATE
     	\_\_DS0PrimaryWindowed
+          
           ORDER BY
+     
      \[IsGrandTotalRowTotal\] DESC, 'Date'\[Year\]
+     
      '''
 
 >Nota: Esta consulta no es la definición de medida en sí. Power BI genera esta consulta para llenar el visual. agrupa los datos por año, añade la fila total y limita el recuento de filas. Las medidas ( y ) se mencionan por nombre, pero sus fórmulas no se muestran aquí porque están presentes en el modelo. Para ver la lógica real de la medida, tienes que mirar en la barra de fórmulas. SUMMARIZECOLUMNS ROLLUPADDISSUBTOTAL TOPN \[Total Sales\] \[Sales YoY Growth\]

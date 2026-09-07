@@ -79,7 +79,7 @@ En esta tarea, exportas la consulta DAX para el **visual de la Tabla** y examina
 3. Selecciona **Ejecutar** para ejecutar la consulta. La cuadrícula de resultados muestra los valores para cada año fiscal: y . Total\_Sales  Sales\_YoY\_Growth  
 4. Revisa la consulta generada. Se parece algo a esto:
 
-'''Código
+'''DAX
 
  DEFINE
  	VAR \_\_DS0Core \=

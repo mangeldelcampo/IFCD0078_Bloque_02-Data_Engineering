@@ -79,7 +79,7 @@ En esta tarea, exportas la consulta DAX para el **visual de la Tabla** y examina
 3. Selecciona **Ejecutar** para ejecutar la consulta. La cuadrícula de resultados muestra los valores para cada año fiscal: y . Total\_Sales  Sales\_YoY\_Growth  
 4. Revisa la consulta generada. Se parece algo a esto:
 
-'''DAX
+```DAX
 
  DEFINE
      VAR __DS0Core = 
@@ -96,9 +96,8 @@ En esta tarea, exportas la consulta DAX para el **visual de la Tabla** y examina
      __DS0PrimaryWindowed
 
  ORDER BY
-     [IsGrandTotalRowTotal] DESC, 'Date'[Year]
-     
-'''
+     [IsGrandTotalRowTotal] DESC, 'Date'[Year]  
+```
 
 >Nota: Esta consulta no es la definición de medida en sí. Power BI genera esta consulta para llenar el visual. **SUMMARIZECOLUMNS** agrupa los datos por año **ROLLUPADDISSUBTOTAL**, añade la fila total y **TOPN** limita el recuento de filas. Las medidas ( **\[Total Sales\]** y **[Sales YoY Growth\]**) se mencionan por nombre, pero sus fórmulas no se muestran aquí porque están presentes en el modelo. Para ver la lógica real de la medida, tienes que mirar en la barra de fórmulas.
 

@@ -254,3 +254,17 @@ Imagen9.png
 
 1. Cierre Power BI Desktop sin guardar.
 
+# Lab 17: Enforce Model Security (DP-600)
+
+## 📌 Resumen
+Implementación de seguridad a nivel de fila (RLS) en modelos semánticos de Microsoft Fabric para restringir el acceso a los datos según el usuario.
+
+## 🛠️ Tareas Principales
+1. **Creación de Roles:** Definición de roles en el modelo semántico.
+2. **Filtros DAX:** Aplicación de RLS estática (`[Region]="US"`) y dinámica (`[Email]=USERPRINCIPALNAME()`).
+3. **Validación:** Uso de "View As" para auditar la seguridad.
+
+## ⚠️ Notas Críticas para el Examen
+- **Workspace Roles:** RLS *solo* funciona si el usuario tiene rol de **Viewer** en el Workspace. Si es Contributor, Member o Admin, verá todos los datos.
+- **Rendimiento:** RLS dinámica con relaciones bidireccionales en tablas puente puede impactar el rendimiento del motor VertiPaq.
+

@@ -32,20 +32,20 @@ En esta tarea, revisarás la estructura del modelo semántico para comprender c�
 
 1. En Power BI Desktop, a la izquierda, cambie a la vista **Modelo** .
 
-![Imagen1.png](./imagenes/imagen1.png)
+![Imagen1.png](./imagenes/Imagen1.png)
 
 Imagen1.png
 
 2. Revise el diagrama del modelo para ver las relaciones entre las tablas.
 
 El modelo consta de seis tablas de dimensiones y una tabla de hechos en un esquema de estrella. La Sales tabla de hechos almacena los detalles de los pedidos de venta.
-![Imagen2.png](./imagenes/imagen2.png)
+![Imagen2.png](./imagenes/Imagen2.png)
 
 Imagen2.png
 
 3. Amplíe la Sales Territory tabla para ver sus columnas.
 
-![Imagen3.png](./imagenes/imagen3.png)
+![Imagen3.png](./imagenes/Imagen3.png)
 
 Imagen3.png
 
@@ -62,13 +62,13 @@ En esta tarea, deberá definir un filtro estático en la Sales Territory tabla p
 1. Cambiar a la vista **de informe** .  
 2. Observe que el gráfico de columnas apiladas muestra datos para todas las regiones. Esto cambia una vez que se aplica RLS.
 
-![Imagen3b.png](./imagenes/imagen3b.png)
+![Imagen3b.png](./imagenes/Imagen3b.png)
 
 Imagen3b.png
 
 3. En la cinta de **opciones Modelado** , en el grupo **Seguridad** , seleccione **Administrar roles** .
 
-![Imagen4.png](./imagenes/imagen4.png) 
+![Imagen4.png](./imagenes/Imagen4.png) 
 
 Imagen4.png
 
@@ -78,7 +78,7 @@ Imagen4.png
    * **Condición** \= Igual a  
    * **Valor** \= Australia
 
-![Imagen4b.png](./imagenes/imagen4b.png)
+![Imagen4b.png](./imagenes/Imagen4b.png)
 
 Imagen4b.png
 
@@ -90,13 +90,13 @@ En esta tarea, usted confirma que cada rol restringe el informe a la región que
 
 1. En la cinta **de opciones Modelado** , seleccione **Ver como** , seleccione el Australia rol y seleccione **Aceptar** .
 
-![Imagen4c.png](./imagenes/imagen4c.png)
+![Imagen4c.png](./imagenes/Imagen4c.png)
 
 Imagen4c.png
 
 2. Verifique que el gráfico muestre solo datos de Australia y, a continuación, seleccione **Dejar de ver** .
 
-![Imagen4d.png](./imagenes/imagen4d.png)
+![Imagen4d.png](./imagenes/Imagen4d.png)
 
 Imagen4d.png
 
@@ -122,7 +122,7 @@ En esta tarea, utilizará Power Query para importar Salesperson datos del archiv
 2. Navegue hasta la carpeta extraída **17-enforce-security y seleccione Salesperson.csv** , luego seleccione **Abrir** .  
 3. En la ventana de vista previa, verifique que vea tres columnas: EmployeeKey, SalesTerritoryKey, y EmailAddress.
 
-![Imagen4e.png](./imagenes/imagen4e)
+![Imagen4e.png](./imagenes/Imagen4e)
 Imagen4e.png
 
 4. Seleccione **Transformar datos** para abrir el Editor de Power Query.
@@ -153,7 +153,7 @@ En esta tarea, se crea una relación entre la Salesperson tabla y la Sales Terri
 4. En la ventana **Editar relación** , configure **la dirección del filtro cruzado** en **Ambos** .  
 5. Marque la casilla **Aplicar filtro de seguridad en ambas direcciones** y **haga clic en Aceptar** .
 
-![Imagen5.png](./imagenes/imagen5.png)
+![Imagen5.png](./imagenes/Imagen5.png)
 
 Imagen5.png
 
@@ -161,7 +161,7 @@ La Sales Territory tabla tiene una relación de uno a muchos con la Salesperson 
 
 Para que un filtro de seguridad se Salesperson propague hacia atrás Sales Territory y luego hacia abajo Sales, debe habilitar el filtrado cruzado bidireccional con la opción de filtro de seguridad.
 
-![Imagen5b.png](./imagenes/imagen5b.png)
+![Imagen5b.png](./imagenes/Imagen5b.png)
 
 Imagen5b.png
 
@@ -172,7 +172,7 @@ En esta tarea, ocultarás la Salesperson tabla para que no aparezca en las herra
 1. En la vista Modelo, seleccione el Salesperson encabezado de la tabla.  
 2. Haga clic con el botón derecho y seleccione **Ocultar en la vista de informe** (o seleccione el icono del ojo en la parte superior derecha de la tabla).
 
-![Imagen5c.png](./imagenes/imagen5c.png)
+![Imagen5c.png](./imagenes/Imagen5c.png)
 
 Imagen5c.png
 
@@ -186,13 +186,13 @@ En esta sección, se crea un rol dinámico que filtra la Salesperson tabla por n
 
 1. En la cinta **de opciones Modelado** , en el grupo **Seguridad** , seleccione **Administrar roles** .
 
-![Imagen6.png](./imagenes/imagen6.png)
+![Imagen6.png](./imagenes/Imagen6.png)
 
 Imagen6.png
 
 2. Seleccione **\+ Nuevo** , asigne un nombre al rol Salespeople, seleccione la Salesperson tabla y, a continuación, seleccione **Cambiar al editor DAX** .
 
-![Imagen7.png](./imagenes/imagen7.png)
+![Imagen7.png](./imagenes/Imagen7.png)
 
 Imagen7.png
 
@@ -204,7 +204,7 @@ Imagen7.png
 
 4. Seleccione **Guardar** .
 
-![Imagen7b.png](./imagenes/imagen7b.png)
+![Imagen7b.png](./imagenes/Imagen7b.png)
 
 Imagen7b.png
 
@@ -222,12 +222,12 @@ En esta tarea, usted confirma que el mismo rol devuelve un resultado filtrado di
 2. Seleccione **Otro usuario** e ingrese michael9@adventure-works.com.  
 3. Verifique el Salespeople rol y luego seleccione **Aceptar** .
 
-![Imagen8.png](./imagenes/imagen8.png)
+![Imagen8.png](./imagenes/Imagen8.png)
 
 Imagen8.png
 
 4. Verifique que el informe ahora muestre datos solo para la Northeast región (territorio asignado a michael9). 
-![Imagen8b.png](./imagenes/imagen8b.png)
+![Imagen8b.png](./imagenes/Imagen8b.png)
 
 Imagen8b.png
 

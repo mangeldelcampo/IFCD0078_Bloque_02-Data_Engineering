@@ -107,7 +107,7 @@ En esta tarea, exportas la consulta DAX para el **visual de la Tabla** y examina
 
 Imagen2.png
 
-5. Vuelve a **la vista de informe**. En el panel **de Datos**, amplía la tabla **de Sales (**Ventas) y selecciona la medida **de Sales YoY Growth** (crecimiento interanual de ventas). La barra de fórmulas muestra la definición de la medida:
+5. Vuelve a **la vista de informe**. En el panel de **Datos**, amplía la tabla **Sales**(Ventas) y selecciona la medida **de Sales YoY Growth** (crecimiento interanual de ventas). La barra de fórmulas muestra la definición de la medida:
 
 '''Codigo
 

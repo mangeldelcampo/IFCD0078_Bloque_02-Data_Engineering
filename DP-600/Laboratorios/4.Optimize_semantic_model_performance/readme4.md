@@ -220,8 +220,7 @@ Aquí tienes el desglose línea por línea de lo que está haciendo el motor:
   * Ordena los resultados basándose en la **Cardinalidad** de forma descendente.  
   * Las columnas con más valores únicos aparecerán en la parte superior.
 
->>**Nota>**:
-
+>**Nota>**:
 La cuadrícula de resultados devuelve una fila por columna en el modelo, ordenada por el número de valores distintos. El FILTER excluye las columnas internas del sistema que no forman parte de tu modelo. Las columnas con mayor cardinalidad aparecen en la parte superior.
 
 3. Revisa los resultados y observa de dónde provienen las columnas de mayor cardinalidad:  

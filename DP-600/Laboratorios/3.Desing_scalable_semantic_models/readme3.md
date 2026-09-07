@@ -276,4 +276,4 @@ Laboratorio completo
 Para terminar el ejercicio, cierra Power BI Desktop: no hace falta guardar el archivo.
 [ÍNDICE](#índice)
 
-⬅️ [Anterior](../2.Get_started_with_Copilot_in_Microsoft_Fabric_for_Data_Warehouse/readme2.md) | 🏠 [Inicio](../../Readmedp-600.md) | ➡️ [Siguiente](../2.Get_started_with_Copilot_in_Microsoft_Fabric_for_Data_Warehouse/readme2.md)
+⬅️ [Anterior](../2.Get_started_with_Copilot_in_Microsoft_Fabric_for_Data_Warehouse/readme2.md) | 🏠 [Inicio](../../Readmedp-600.md) | ➡️ [Siguiente](../4.Optimize_semantic_model_performance/readme4.md)

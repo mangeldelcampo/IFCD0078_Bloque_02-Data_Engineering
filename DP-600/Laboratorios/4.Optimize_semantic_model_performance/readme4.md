@@ -84,15 +84,15 @@ En esta tarea, exportas la consulta DAX para el **visual de la Tabla** y examina
  DEFINE
   VAR \_\_DS0Core \=
 
-     	SUMMARIZECOLUMNS(
+   	SUMMARIZECOLUMNS(
 
-         	ROLLUPADDISSUBTOTAL('Date'\[Year\], "IsGrandTotalRowTotal"),
+     	ROLLUPADDISSUBTOTAL('Date'\[Year\], "IsGrandTotalRowTotal"),
 
-         	"Total\_Sales", 'Sales'\[Total Sales\],
+       	"Total\_Sales", 'Sales'\[Total Sales\],
 
-         	"Sales\_YoY\_Growth", 'Sales'\[Sales YoY Growth\]
+       	"Sales\_YoY\_Growth", 'Sales'\[Sales YoY Growth\]
 
-     	)
+                   	)
  	VAR \_\_DS0PrimaryWindowed \=
 
      	TOPN(502, \_\_DS0Core, \[IsGrandTotalRowTotal\], 0, 'Date'\[Year\], 1\)

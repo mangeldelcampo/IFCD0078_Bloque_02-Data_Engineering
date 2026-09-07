@@ -243,7 +243,7 @@ En esta tarea, usted confirma que el RLS dinámico rechaza los datos cuando no e
 2. Introduzca nomatch@adventure-works.com, marque Salespeople y seleccione **Aceptar** .  
 3. Verifique que el informe no muestre datos.
 
-![Imagen9.png](./imagenes/imagen9.png)
+![Imagen9.png](./imagenes/Imagen9.png)
 
 Imagen9.png
 

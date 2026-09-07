@@ -24,7 +24,7 @@ Necesitas tener instalado [Power BI Desktop](https://www.microsoft.com/download/
 2. Guarda el archivo en la **carpeta Descargas** y extrae el archivo zip en la carpeta **17-enforce-security** .  
 3. Abra el archivo **17-Starter-Sales Analysis.pbix** de la carpeta extraída.
 
-> **Nota:** : Si una advertencia de seguridad le pide que aplique los cambios, seleccione **Ignorar** o **Cerrar** . No seleccione **Descartar cambios** . Si se le solicita información sobre la conexión a la fuente de datos, ignore la advertencia; no necesitará actualizar los datos en este laboratorio.
+> **Nota:** Si una advertencia de seguridad le pide que aplique los cambios, seleccione **Ignorar** o **Cerrar** . No seleccione **Descartar cambios** . Si se le solicita información sobre la conexión a la fuente de datos, ignore la advertencia; no necesitará actualizar los datos en este laboratorio.
 
 ## **Revisar el modelo de datos**
 
@@ -128,7 +128,7 @@ Imagen4e.png
 
 4. Seleccione **Transformar datos** para abrir el Editor de Power Query.
 
-> **Nota:** : Seleccionar **Transformar datos** en lugar de **Cargar** permite cambiar el nombre de la columna antes de cargarla en el modelo.
+> **Nota:** Seleccionar **Transformar datos** en lugar de **Cargar** permite cambiar el nombre de la columna antes de cargarla en el modelo.
 
 ### **Cambiar el nombre de la columna**
 
@@ -148,7 +148,7 @@ En esta tarea, se crea una relación entre la Salesperson tabla y la Sales Terri
 1. Cambiar a la vista **Modelo** .  
 2. Arrastra el SalesTerritoryKey campo de la Salesperson tabla al SalesTerritoryKey campo correspondiente en la Sales Territory tabla para crear una relación.
 
-> **Nota:** : Si la relación se creó automáticamente al cargar la tabla, puede omitir el paso de arrastrar y soltar y proceder a configurar sus propiedades.
+> **Nota:** Si la relación se creó automáticamente al cargar la tabla, puede omitir el paso de arrastrar y soltar y proceder a configurar sus propiedades.
 
 3. Haga clic con el botón derecho en la línea de relación entre Salesperson y Sales Territory, y luego seleccione **Propiedades** .  
 4. En la ventana **Editar relación** , configure **la dirección del filtro cruzado** en **Ambos** .  

@@ -268,3 +268,6 @@ Implementación de seguridad a nivel de fila (RLS) en modelos semánticos de Mic
 - **Workspace Roles:** RLS *solo* funciona si el usuario tiene rol de **Viewer** en el Workspace. Si es Contributor, Member o Admin, verá todos los datos.
 - **Rendimiento:** RLS dinámica con relaciones bidireccionales en tablas puente puede impactar el rendimiento del motor VertiPaq.
 
+[ÍNDICE](#índice)
+
+⬅️ [Anterior](../4.Optimize_semantic_model_performance/readme4.md) | 🏠 [Inicio](../../Readmedp-600.md) | ➡️ [Siguiente](../6.Gestionar_el_ciclo_de_vida_del_modelo_semantico/readme6.md)

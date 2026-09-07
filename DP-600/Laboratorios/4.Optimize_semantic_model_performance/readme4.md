@@ -80,7 +80,6 @@ En esta tarea, exportas la consulta DAX para el **visual de la Tabla** y examina
 4. Revisa la consulta generada. Se parece algo a esto:
 
 '''DAX
-
  DEFINE
   VAR \_\_DS0Core \=
 
@@ -95,7 +94,7 @@ En esta tarea, exportas la consulta DAX para el **visual de la Tabla** y examina
                    	)
  	VAR \_\_DS0PrimaryWindowed \=
      TOPN(502, \_\_DS0Core, \[IsGrandTotalRowTotal\], 0, 'Date'\[Year\], 1\) 
-      
+
   EVALUATE
     	\_\_DS0PrimaryWindowed
    

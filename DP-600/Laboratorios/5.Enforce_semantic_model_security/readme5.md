@@ -39,6 +39,7 @@ Imagen1.png
 2. Revise el diagrama del modelo para ver las relaciones entre las tablas.
 
 El modelo consta de seis tablas de dimensiones y una tabla de hechos en un esquema de estrella. La Sales tabla de hechos almacena los detalles de los pedidos de venta.
+
 ![Imagen2.png](./imagenes/Imagen2.png)
 
 Imagen2.png
@@ -122,7 +123,7 @@ En esta tarea, utilizará Power Query para importar Salesperson datos del archiv
 2. Navegue hasta la carpeta extraída **17-enforce-security y seleccione Salesperson.csv** , luego seleccione **Abrir** .  
 3. En la ventana de vista previa, verifique que vea tres columnas: EmployeeKey, SalesTerritoryKey, y EmailAddress.
 
-![Imagen4e.png](./imagenes/Imagen4e)
+![Imagen4e.png](./imagenes/Imagen4e.png)
 Imagen4e.png
 
 4. Seleccione **Transformar datos** para abrir el Editor de Power Query.

@@ -100,7 +100,7 @@ En esta tarea, exportas la consulta DAX para el **visual de la Tabla** y examina
      
 '''
 
->Nota: Esta consulta no es la definición de medida en sí. Power BI genera esta consulta para llenar el visual. **SUMMARIZECOLUMNS** agrupa los datos por año **ROLLUPADDISSUBTOTAL**, añade la fila total y **TOPN** limita el recuento de filas. Las medidas ( **\[Total Sales\]** y **[Sales YoY Growth\]**) se mencionan por nombre, pero sus fórmulas no se muestran aquí porque están presentes en el modelo. Para ver la lógica real de la medida, tienes que mirar en la barra de fórmulas.    \
+>Nota: Esta consulta no es la definición de medida en sí. Power BI genera esta consulta para llenar el visual. **SUMMARIZECOLUMNS** agrupa los datos por año **ROLLUPADDISSUBTOTAL**, añade la fila total y **TOPN** limita el recuento de filas. Las medidas ( **\[Total Sales\]** y **[Sales YoY Growth\]**) se mencionan por nombre, pero sus fórmulas no se muestran aquí porque están presentes en el modelo. Para ver la lógica real de la medida, tienes que mirar en la barra de fórmulas.
 
 ![Imagen2.png](./imagenes/Imagen2.png)
 

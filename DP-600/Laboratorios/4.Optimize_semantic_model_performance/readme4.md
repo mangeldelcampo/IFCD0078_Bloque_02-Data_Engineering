@@ -107,7 +107,7 @@ Imagen2.png
 
 5. Vuelve a **la vista de informe**. En el panel de **Datos**, amplía la tabla **Sales**(Ventas) y selecciona la medida **de Sales YoY Growth** (crecimiento interanual de ventas). La barra de fórmulas muestra la definición de la medida:
 
-'''Codigo
+```Codigo
 
  Sales YoY Growth \=
 
@@ -118,7 +118,7 @@ Imagen2.png
  	CALCULATE(\[Total Sales\], SAMEPERIODLASTYEAR('Date'\[Date\]))
 
  )
-'''
+```
 
 6. Mira la fórmula. La expresión CALCULATE(\[Total Sales\] , SAMEPERIODLASTYEAR('Date'\[Date\])) aparece dos veces, en el numerador y en el denominador, pero calcula el mismo valor en ambas ocasiones. **Esto significa que el motor evalúa el cálculo de ventas del año anterior dos veces por fila en la consulta, lo cual es un desperdicio.**
 
@@ -141,7 +141,7 @@ En esta tarea, reescribes la medida de **Sales YoY Growth** (crecimiento interan
 1. En **la vista de informe**, selecciona la medida de **Sales YoY Growth** (crecimiento interanual de ventas) en el panel de **Datos** para que su fórmula aparezca en la barra de fórmulas.  
 2. Selecciona todo el texto en la barra de fórmulas y reemplázalo por la siguiente versión optimizada:
 
-'''Código
+```Código
 
  Sales YoY Growth \=
 
@@ -152,7 +152,7 @@ En esta tarea, reescribes la medida de **Sales YoY Growth** (crecimiento interan
  RETURN
 
  	DIVIDE(\[Total Sales\] \- SalesPriorYear, SalesPriorYear)
-'''
+```
 
 ![Imagen4.png](./imagenes/Imagen4.png)
 
@@ -163,7 +163,7 @@ Las VAR tiendas muestran el resultado del prior-year (año anterior) una vez. La
 3. Pulsa **Enter** para confirmar el cambio de fórmula.  
 4. Para verificar que la medida sigue devolviendo los valores correctos, cambia a **la vista de consulta DAX**, abre una nueva pestaña de consulta y ejecuta la siguiente consulta:
 
-'''Código
+```Código
 
  EVALUATE
 
@@ -174,7 +174,7 @@ Las VAR tiendas muestran el resultado del prior-year (año anterior) una vez. La
  	"YoY Growth", \[Sales YoY Growth\]
 
  )
-'''
+```
 
 Compara los resultados con lo que viste antes. Los valores deberían ser los mismos — por ejemplo, el año fiscal 2019 debería seguir mostrando aproximadamente 0,7 y el año fiscal 2020 aproximadamente 0,18. La optimización cambia la velocidad, no los resultados.
 
@@ -189,7 +189,7 @@ En esta tarea, usas la función COLUMNSTATISTICS() DAX para ver cuántos valores
 1. Cambia a **la vista de consulta DAX** en Power BI Desktop.  
 2. En una nueva pestaña de consulta, introduce la siguiente consulta y **selecciona Ejecutar**:
 
-'''Código
+```Código
 
  DEFINE
 
@@ -200,7 +200,7 @@ En esta tarea, usas la función COLUMNSTATISTICS() DAX para ver cuántos valores
  	FILTER(\_stats, NOT CONTAINSSTRING(\[Column Name\], "RowNumber-"))
 
  ORDER BY \[Cardinality\] DESC
-'''
+```
 
 >Este código DAX es una consulta de diagnóstico diseñada para **identificar las columnas que más memoria consumen en tu modelo semántico**, ordenándolas de mayor a menor según su cantidad de valores únicos (cardinalidad).
 
@@ -258,7 +258,7 @@ Si Copilot está disponible en tu entorno Power BI Desktop, prueba estos pasos a
 
 Simplify this DAX query and suggest performance improvements.
 
-![](./imagenes/Imagen7.png)
+![Imagen7.png](./imagenes/Imagen7.png)
 Imagen7.png
 
 3. Revisa las sugerencias de Copilot. Compáralos con la optimización manual que aplicaste.  

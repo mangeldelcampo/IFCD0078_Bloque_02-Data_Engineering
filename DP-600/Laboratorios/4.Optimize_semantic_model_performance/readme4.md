@@ -82,7 +82,6 @@ En esta tarea, exportas la consulta DAX para el **visual de la Tabla** y examina
 '''Código
 
  DEFINE
-
  	VAR \_\_DS0Core \=
 
      	SUMMARIZECOLUMNS(
@@ -94,17 +93,12 @@ En esta tarea, exportas la consulta DAX para el **visual de la Tabla** y examina
          	"Sales\_YoY\_Growth", 'Sales'\[Sales YoY Growth\]
 
      	)
-
  	VAR \_\_DS0PrimaryWindowed \=
 
      	TOPN(502, \_\_DS0Core, \[IsGrandTotalRowTotal\], 0, 'Date'\[Year\], 1\)
-
  EVALUATE
-
  	\_\_DS0PrimaryWindowed
-
  ORDER BY
-
  	\[IsGrandTotalRowTotal\] DESC, 'Date'\[Year\]
 '''
 

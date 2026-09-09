@@ -839,6 +839,9 @@ Vamos a simular que **Ana García se muda de Madrid a Zaragoza**.
 ### 5.1 Construir el pipeline
 
 1. **New item → pipeline** → nombre `PL_Medallion`.
+
+![Pipeline1 ](./imagenes/pipeline1.png)
+
 2. Añade las actividades **en este orden**, conectando cada una a la siguiente con la flecha verde (**On success**):
     
     

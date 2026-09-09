@@ -177,6 +177,12 @@ Objetivo: corregir errores, estandarizar formatos, eliminar duplicados y escribi
 2. Añade **`LH_Silver`** como lakehouse por defecto en el Explorer.
 3. Ejecuta las celdas siguientes.
 
+**Celda 1 (Lectura desde Bronze):**
+
+Qué hace: Define la URI ABFS al directorio Files/raw/ de LH_Bronze y una función reutilizable leer() que carga cada archivo CSV infiriendo esquema y leyendo cabeceras para crear los DataFrames b_prod, b_cli, b_tie y b_ven.
+
+Objetivo de arquitectura: Conectar la capa Silver con la capa Bronze mediante OneLake para iniciar el procesamiento distribuido en Spark.
+
 ```python
 # NB_02_Silver_Limpieza  —  Celda 1: leer desde Bronze
 # Ruta ABFS al lakehouse Bronze (sustituye <WORKSPACE> por el nombre de tu workspace)
@@ -196,6 +202,12 @@ print(b_ven.count(), "líneas en bronze")
 
 > ⚠️ Si prefieres no escribir la ruta ABFS, añade también `LH_Bronze` al Explorer del notebook y usa el path relativo del lakehouse no predeterminado. La ruta ABFS es más explícita y menos frágil, por eso la usamos aquí.
 > 
+
+**Celda 2 (Limpieza de dimensiones: productos, clientes y tiendas):**
+
+Qué hace: Deduplica las tres entidades por su clave natural (ProductCode, CustomerCode, StoreCode). En productos sustituye los nulos con literales por defecto ("Sin subcategoría", "Sin marca") y castea el precio a decimal(10,2). En clientes rellena correos nulos con un valor genérico y genera la columna calculada FullName uniendo nombre y apellidos.
+
+Objetivo de arquitectura: Conformar las dimensiones maestras eliminando anomalías y preparando las fuentes antes del modelado relacional.
 
 ```python
 # Celda 2: limpiar productos y clientes
@@ -218,6 +230,11 @@ s_tie = b_tie.dropDuplicates(["StoreCode"])
 
 display(s_prod)
 ```
+**Celda 3 (Limpieza y enriquecimiento de hechos de ventas):**
+
+Qué hace: Aplica una secuencia de transformaciones sobre b_ven: deduplica líneas exactas (OrderNumber, OrderLine), filtra pedidos de prueba (TEST-), unifica las fechas de pedido y envío al tipo nativo date corrigiendo los dos formatos distintos, castea importes a tipos numéricos precisos (int y decimal), genera las métricas calculadas GrossAmount y NetAmount, y descarta filas con claves o fechas nulas.
+
+Objetivo de arquitectura: Asegurar la calidad e integridad analítica de las transacciones antes de su consumo, usando decimal en lugar de float para evitar errores acumulativos de redondeo en importes monetarios.
 
 ```python
 # Celda 3: limpiar ventas — el trabajo de verdad
@@ -243,6 +260,12 @@ s_ven = (b_ven
 print("Silver ventas:", s_ven.count(), "filas (esperado: 1200)")
 display(s_ven.limit(10))
 ```
+
+**Celda 4 (Persistencia en tablas Delta):**
+
+Qué hace: Itera sobre los DataFrames ya limpios (dim_producto_src, dim_cliente_src, dim_tienda_src, ventas) y los escribe en modo sobrescritura (overwrite) en formato Delta dentro de la sección administrada Tables del lakehouse LH_Silver.
+
+Objetivo de arquitectura: Consolidar la capa Silver en formato estándar Delta Lake, optimizado para consultas analíticas y accesible desde el Warehouse o SQL Endpoints.
 
 ```python
 # Celda 4: escribir las tablas Delta de Silver

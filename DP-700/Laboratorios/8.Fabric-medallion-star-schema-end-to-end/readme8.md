@@ -56,8 +56,8 @@ Los datos incluyen **suciedad deliberada** — duplicados, nulos, formatos de fe
 3. Pega y ejecuta la celda siguiente.
 
 * **Celda 1 (Generación y escritura en crudo):**
-  * **Qué hace:** Crea cuatro DataFrames de PySpark (`df_prod`, `df_cli`, `df_tie`, `df_ven`) simulando cuatro orígenes transaccionales (catálogo CRM, clientes ERP, tiendas y ventas POS) con semilla determinista (`random.seed(42)`)[cite: 1]. Introduce anomalías deliberadas: duplicado de producto (`P003`), nulos en subcategoría/marca, mezcla de formatos de fecha (`yyyy-MM-dd` y `dd/MM/yyyy`), 15 líneas de pedido duplicadas y 10 pedidos de test con prefijo `TEST-`[cite: 1]. Escribe los datos particionados a un único fichero CSV (`coalesce(1)`) con cabecera en el directorio `Files/raw/` del lakehouse `LH_Bronze` vía OneLake[cite: 1].
-  * **Objetivo de arquitectura:** Cumplir el principio de la capa Bronze: persistir los datos tal y como llegan del origen (*as-is*), sin corregir nulos, duplicados ni formatos[cite: 1].
+  * **Qué hace:** Crea cuatro DataFrames de PySpark (`df_prod`, `df_cli`, `df_tie`, `df_ven`) simulando cuatro orígenes transaccionales (catálogo CRM, clientes ERP, tiendas y ventas POS) con semilla determinista (`random.seed(42)`). Introduce anomalías deliberadas: duplicado de producto (`P003`), nulos en subcategoría/marca, mezcla de formatos de fecha (`yyyy-MM-dd` y `dd/MM/yyyy`), 15 líneas de pedido duplicadas y 10 pedidos de test con prefijo `TEST-`. Escribe los datos particionados a un único fichero CSV (`coalesce(1)`) con cabecera en el directorio `Files/raw/` del lakehouse `LH_Bronze` vía OneLake.
+  * **Objetivo de arquitectura:** Cumplir el principio de la capa Bronze: persistir los datos tal y como llegan del origen (*as-is*), sin corregir nulos, duplicados ni formatos.
 
 
 ```python
@@ -291,8 +291,8 @@ Abre `WH_Gold` → **New SQL query**
 ### 3.1 Crear el esquema y las tablas
 
 * **Script T-SQL 3.1 (DDL del Star Schema):**
-  * **Qué hace:** Crea el esquema `gold` y define cinco tablas relacionales: `Dim_Date` (clave entera `DateKey`), `Dim_Product` (SCD Tipo 1 con metadatos de auditoría), `Dim_Customer` (SCD Tipo 2 con fechas de validez `RecStartDate`, `RecEndDate` y flag `RecIsCurrent`), `Dim_Store` (SCD Tipo 1) y `Fact_Sales` (grano por línea de pedido, claves surrogadas, dimensión degenerada y métricas en `decimal`)[cite: 1].
-  * **Objetivo de arquitectura:** Desplegar el modelo dimensional relacional en el motor Warehouse de Fabric[cite: 1].
+  * **Qué hace:** Crea el esquema `gold` y define cinco tablas relacionales: `Dim_Date` (clave entera `DateKey`), `Dim_Product` (SCD Tipo 1 con metadatos de auditoría), `Dim_Customer` (SCD Tipo 2 con fechas de validez `RecStartDate`, `RecEndDate` y flag `RecIsCurrent`), `Dim_Store` (SCD Tipo 1) y `Fact_Sales` (grano por línea de pedido, claves surrogadas, dimensión degenerada y métricas en `decimal`).
+  * **Objetivo de arquitectura:** Desplegar el modelo dimensional relacional en el motor Warehouse de Fabric.
 
 ```sql
 -- ============================================================
@@ -381,7 +381,7 @@ GO
 
 
 * **Script de verificación rápida:**
-  * **Qué hace:** Consulta `sys.tables` y `sys.schemas` para validar que las cinco tablas del esquema `gold` existan formalmente en el Warehouse[cite: 1].
+  * **Qué hace:** Consulta `sys.tables` y `sys.schemas` para validar que las cinco tablas del esquema `gold` existan formalmente en el Warehouse.
 
 ```sql
 SELECT s.name AS Esquema, t.name AS Tabla
@@ -401,6 +401,11 @@ Deberías ver las cinco tablas: `Dim_Date`, `Dim_Product`, `Dim_Customer`, `Dim_
 ### 3.2 Poblar la dimensión de fecha
 
 Fabric Data Warehouse **no soporta CTE recursivas**, así que generamos el calendario con un *cross join* de listas de valores.
+
+* **Script T-SQL 3.2 (Generador de calendario y miembros especiales):**
+  * **Qué hace:** Genera un rango temporal continuo de 2024 a 2027 combinando productos cartesianos (`CROSS JOIN`) para suplir la falta de CTEs recursivas en Fabric Warehouse. Calcula desgloses de calendario y genera `DateKey` en formato entero `YYYYMMDD`. Añade el registro especial `-1` para fechas no asignadas o desconocidas.
+  * **Objetivo de arquitectura:** Proveer una dimensión de calendario con clave surrogada semántica calculable directamente en la carga del fact sin necesidad de recurrir a un *lookup*.
+
 
 ```sql
 -- ============================================================

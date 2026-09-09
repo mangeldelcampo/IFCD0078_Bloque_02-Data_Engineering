@@ -508,6 +508,7 @@ SELECT 'Product' AS Dim, COUNT(*) AS Filas FROM gold.Dim_Product
 UNION ALL SELECT 'Store',    COUNT(*) FROM gold.Dim_Store
 UNION ALL SELECT 'Customer', COUNT(*) FROM gold.Dim_Customer;
 ```
+![Carga inicial cruzada desde Silver`](./imagenes/Gold5.png)
 
 **Punto de control 3:** Product = 10 (9 + Unknown), Store = 4, Customer = 7.
 

@@ -38,7 +38,7 @@ Aplicamos el **Patrón 2** de Microsoft: Bronze y Silver como lakehouses, **Gold
 > 
 
 **Punto de control 0:** en el workspace debes ver tres ítems (`LH_Bronze`, `LH_Silver`, `WH_Gold`) más los dos *SQL analytics endpoint* asociados a los lakehouses.
-
+[Punto de Control 0](./imagenes/PuntoControl0.png)
 ---
 
 ## 1. Capa Bronze — generar e ingerir los datos crudos

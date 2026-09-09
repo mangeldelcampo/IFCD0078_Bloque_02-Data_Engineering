@@ -17,7 +17,7 @@ Bienvenido al repositorio de formación para la certificación DP-700.
 | 5 | [Eventstream](./Laboratorios/5.Use_Eventstream_in_Microsoft_Fabric/readme5.md) | Implementación de flujos de eventos. |
 | 6 | [Real-Time Dashboards](./Laboratorios/6.Create_Real-Time_Dashboards_with_Microsoft_Fabric/readme6.md) | Creación de paneles analíticos en tiempo real. |
 | 7 | [Medallion Architecture](./Laboratorios/7.Organize_a_Fabric_lakehouse_using_medallion_architecture_design/readme7.md) | Organización de Lakehouse mediante arquitectura Medallion. |
-| 8 | [medallion + star schema en Microsoft Fabric](./Laboratorios/7.Organize_a_Fabric_lakehouse_using_medallion_architecture_design/readme8.md) | Organización de Lakehouse mediante arquitectura Medallion. |
+| 8 | [Medallion + star schema en Microsoft Fabric](./Laboratorios/8.Fabric-medallion-star-schema-end-to-end/readme8.md) | Organización de Lakehouse mediante arquitectura Medallion. |
 
 ---
 

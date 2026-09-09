@@ -451,6 +451,8 @@ SELECT COUNT(*) AS FilasDimDate FROM gold.Dim_Date;   -- esperado: 1462
 El Warehouse lee las tablas Delta de `LH_Silver` mediante **consulta cross-database con nomenclatura de tres partes**. Requisito: ambos ítems en el **mismo workspace y misma región**.
 
 1. En el Explorer de `WH_Gold`, pulsa **+ Warehouses** y añade el **SQL analytics endpoint de `LH_Silver`**.
+![SQL analytics endpoint de `LH_Silver`](./imagenes/Gold4.png)
+
 2. Ejecuta:
 
 * **Script T-SQL 3.3 (Carga inicial cruzada desde Silver):**

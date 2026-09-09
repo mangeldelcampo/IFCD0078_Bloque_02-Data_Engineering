@@ -811,7 +811,10 @@ Vamos a simular que **Ana García se muda de Madrid a Zaragoza**.
     ![image.png](image.png)
     
 3. Comprueba ahora el efecto sobre los hechos:
-    
+ * **Script T-SQL (Impacto sobre Fact_Sales):**
+  * **Qué hace:** Ejecuta una consulta agregada cruzando la tabla de hechos `Fact_Sales` con la dimensión versionada `Dim_Customer` a través de la clave surrogada `Customer_SK`, filtrando por el código natural del cliente `C001` (Ana García) y agrupando por `City` y el flag `RecIsCurrent`:
+  * **Objetivo de arquitectura:** Demostrar la preservación del histórico transaccional en un modelo SCD Tipo 2: las ventas realizadas antes de la mudanza continúan vinculadas a la versión anterior (`Customer_SK` con `City = 'Madrid'` y `RecIsCurrent = 0`), evitando que el cambio de residencia a Zaragoza altere retroactivamente los datos históricos.
+     
     ```sql
     -- Las ventas históricas siguen apuntando a la versión "Madrid"
     SELECT c.City, c.RecIsCurrent, COUNT(*) AS Lineas, SUM(f.NetAmount) AS Importe

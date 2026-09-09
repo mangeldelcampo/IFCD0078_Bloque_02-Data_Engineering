@@ -569,9 +569,11 @@ FROM gold.Fact_Sales;
 ```
 
 **Punto de control 4:** 1.200 filas y **cero** lookups fallidos.
+![Punto de control4](./imagenes/PuntoControl4.png)
 
 > ⚠️ **El punto crítico de toda la práctica.** Fabric Warehouse **admite** foreign keys pero **no las impone**. Si el lookup falla, no salta ningún error: acabas con datos silenciosamente incorrectos. Por eso esta consulta de auditoría no es opcional — es parte del proceso de carga. En producción se convierte en un paso del pipeline que falla si el umbral se supera.
 > 
+
 
 ### 3.5 Declarar las constraints (no impuestas)
 

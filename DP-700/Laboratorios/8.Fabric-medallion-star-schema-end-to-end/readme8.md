@@ -277,6 +277,8 @@ for nombre, df in [("dim_producto_src", s_prod), ("dim_cliente_src", s_cli),
 
 **Punto de control 2:** `LH_Silver → Tables` debe mostrar cuatro tablas Delta. `ventas` debe tener **1.200 filas** (se eliminaron 15 duplicados y 10 de prueba).
 
+![Punto de Control 2](./imagenes/PuntoControl2.png)
+
 > 📊 **Por qué `decimal` y no `float` para importes:** `float` es un tipo aproximado; sumar millones de importes acumula error de redondeo. Es un error de diseño que aparece en auditorías reales. Además, `decimal` es un tipo soportado tanto en Delta como en Fabric Warehouse.
 > 
 
@@ -287,6 +289,10 @@ Aquí aplicamos **todo lo visto clases anteriores**: surrogate keys, special dim
 Abre `WH_Gold` → **New SQL query** 
 
 ### 3.1 Crear el esquema y las tablas
+
+* **Script T-SQL 3.1 (DDL del Star Schema):**
+  * **Qué hace:** Crea el esquema `gold` y define cinco tablas relacionales: `Dim_Date` (clave entera `DateKey`), `Dim_Product` (SCD Tipo 1 con metadatos de auditoría), `Dim_Customer` (SCD Tipo 2 con fechas de validez `RecStartDate`, `RecEndDate` y flag `RecIsCurrent`), `Dim_Store` (SCD Tipo 1) y `Fact_Sales` (grano por línea de pedido, claves surrogadas, dimensión degenerada y métricas en `decimal`)[cite: 1].
+  * **Objetivo de arquitectura:** Desplegar el modelo dimensional relacional en el motor Warehouse de Fabric[cite: 1].
 
 ```sql
 -- ============================================================
@@ -371,6 +377,7 @@ CREATE TABLE gold.Fact_Sales (
 );
 GO
 ```
+![Creacion esquema Gold](./imagenes/Gold1.png)
 
 Verificación rapida al terminar:
 

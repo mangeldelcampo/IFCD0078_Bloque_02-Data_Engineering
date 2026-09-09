@@ -158,6 +158,7 @@ for nombre, df in [("productos", df_prod), ("clientes", df_cli),
 ```
 
 **Punto de control 1:** en `LH_Bronze → Files → raw` deben aparecer cuatro carpetas. Ventas debe tener **1.225 filas** (1.200 + 15 duplicados + 10 de prueba).
+![Punto de Control 1](./imagenes/PuntoControl1.png)
 
 > 💡 **Principio Bronze:** *store everything exactly as it arrives, no changes are allowed*. No hemos corregido nada: los duplicados, los nulos y los dos formatos de fecha siguen ahí. Esa es la definición de la capa.
 > 

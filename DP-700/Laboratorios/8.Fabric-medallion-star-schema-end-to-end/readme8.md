@@ -809,6 +809,7 @@ Vamos a simular que **Ana García se muda de Madrid a Zaragoza**.
     | 7 | Zaragoza | *(hoy)* | 9999-12-31 | 1 |
    
     ![Punto Control5](PuntoControl5.png)
+    
     ![image.png](image.png)
     
 3. Comprueba ahora el efecto sobre los hechos:

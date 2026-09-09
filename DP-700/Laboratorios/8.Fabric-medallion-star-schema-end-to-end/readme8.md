@@ -453,6 +453,9 @@ El Warehouse lee las tablas Delta de `LH_Silver` mediante **consulta cross-datab
 1. En el Explorer de `WH_Gold`, pulsa **+ Warehouses** y añade el **SQL analytics endpoint de `LH_Silver`**.
 2. Ejecuta:
 
+* **Script T-SQL 3.3 (Carga inicial cruzada desde Silver):**
+  * **Qué hace:** Lee las tablas Delta de `LH_Silver` vía consulta cross-database (`LH_Silver.dbo...`). Inserta en cada tabla el miembro comodín (`-1`, `'Desconocido'`). Genera claves surrogadas correlativas mediante `ROW_NUMBER() OVER (...)`. En clientes inicializa el registro con vigencia completa (`2024-01-01` a `9999-12-31` con `RecIsCurrent = 1`).
+  * **Objetivo de arquitectura:** Establecer las dimensiones iniciales y blindar la integridad referencial para evitar huérfanos durante la carga del fact.
 ```sql
 -- ============================================================
 -- 3.3  Dim_Product  —  SCD tipo 1  (carga inicial)

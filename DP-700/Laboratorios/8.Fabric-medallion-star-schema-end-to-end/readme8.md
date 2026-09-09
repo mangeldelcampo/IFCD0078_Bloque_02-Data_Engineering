@@ -379,7 +379,9 @@ GO
 ```
 ![Creación esquema Gold](./imagenes/Gold1.png)
 
-Verificación rapida al terminar:
+
+* **Script de verificación rápida:**
+  * **Qué hace:** Consulta `sys.tables` y `sys.schemas` para validar que las cinco tablas del esquema `gold` existan formalmente en el Warehouse[cite: 1].
 
 ```sql
 SELECT s.name AS Esquema, t.name AS Tabla

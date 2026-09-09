@@ -766,7 +766,13 @@ GO
 
 ### 4.4 Ejercicio: provocar un cambio SCD tipo 2
 
+## Simulación y Validación de SCD Tipo 2
+
 Vamos a simular que **Ana García se muda de Madrid a Zaragoza**.
+
+* **Celda PySpark (Modificación en Silver):**
+  * **Qué hace:** Actualiza la ciudad de `C001` (Ana García) de "Madrid" a "Zaragoza" y sobrescribe la tabla `dim_cliente_src`.
+  * **Objetivo de arquitectura:** Emular la recepción de un cambio en los sistemas operacionales de origen.
 
 1. Abre `NB_02_Silver_Limpieza` y ejecuta esta celda nueva:
     

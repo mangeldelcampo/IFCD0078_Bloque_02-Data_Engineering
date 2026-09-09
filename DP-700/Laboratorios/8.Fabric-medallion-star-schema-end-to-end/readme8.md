@@ -441,6 +441,8 @@ INSERT INTO gold.Dim_Date VALUES
 SELECT COUNT(*) AS FilasDimDate FROM gold.Dim_Date;   -- esperado: 1462
 ```
 
+![Calendario](./imagenes/Gold3.png)
+
 > 📅 **Por qué `YYYYMMDD`.** Es la excepción aceptada a la regla de "no dar significado a las surrogate keys": la clave es legible, ocupa un `int` y, sobre todo, **se puede calcular** durante la carga del fact sin necesidad de lookup.
 > 
 

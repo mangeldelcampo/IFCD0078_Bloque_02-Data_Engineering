@@ -520,6 +520,10 @@ UNION ALL SELECT 'Customer', COUNT(*) FROM gold.Dim_Customer;
 ### 3.4 Cargar la tabla de hechos
 
 **Las dimensiones ya están cargadas — ahora y solo ahora se carga el fact.**
+* **Script T-SQL 3.4 (Carga de Fact_Sales):**
+  * **Qué hace:** Cruza las ventas de `LH_Silver` con las dimensiones. Resuelve `OrderDateKey` y `ShipDateKey` mediante cálculo sobre la tabla de fechas. Recupera las claves surrogadas de producto, tienda y cliente vigente (`RecIsCurrent = 1`) mediante `LEFT JOIN`, asignando `-1` con `ISNULL` si falla la coincidencia.
+  * **Objetivo de arquitectura:** Cargar los hechos transaccionales manteniendo la consistencia dimensional sin descartar registros no encontrados.
+
 
 ```sql
 -- ============================================================

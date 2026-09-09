@@ -626,6 +626,9 @@ Hasta aquí hemos hecho una carga inicial. Ahora convertimos la lógica en **sto
 ### 4.1 SCD tipo 1 con MERGE
 
 `MERGE` es **generalmente disponible** en Fabric Data Warehouse desde enero de 2026.
+* **Script T-SQL 4.1:**
+  * **Qué hace:** Ejecuta una sentencia `MERGE` entre `Dim_Product` y la fuente Delta. Si el código coincide y cambian los atributos, sobreescribe los valores (`UPDATE`); si el código no existe, crea la clave e inserta la fila (`INSERT`).
+  * **Objetivo de arquitectura:** Automatizar la actualización sin histórico para dimensiones tipo 1 de forma idempotente.
 
 ```sql
 -- ============================================================

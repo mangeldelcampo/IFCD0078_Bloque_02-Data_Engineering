@@ -577,6 +577,10 @@ FROM gold.Fact_Sales;
 
 ### 3.5 Declarar las constraints (no impuestas)
 
+* **Script T-SQL 3.5 (PKs y FKs NOT ENFORCED):**
+  * **Qué hace:** Crea restricciones de clave primaria y claves foráneas marcadas como `NOT ENFORCED` entre `Fact_Sales` y las dimensiones (incluyendo solo `OrderDateKey` para fecha).
+  * **Objetivo de arquitectura:** Documentar el modelo y permitir que Power BI Desktop o la capa semántica infieran automáticamente el diagrama relacional.
+
 Aunque no se validen, conviene crearlas: permiten que **Power BI Desktop detecte y cree las relaciones automáticamente**.
 
 ```sql
@@ -605,6 +609,9 @@ GO
 ### 3.6 Vista para la degenerate dimension
 
 `OrderNumber` vive en el fact porque está **al mismo grano que los hechos**. Si el negocio necesita consultarlo como dimensión, se expone mediante una vista:
+* **Script T-SQL 3.6 (`gold.Dim_Order`):**
+  * **Qué hace:** Define una vista con los valores únicos de `OrderNumber` presentes en `Fact_Sales`.
+  * **Objetivo de arquitectura:** Exponer el número de pedido como dimensión sin generar redundancia física en almacenamiento.
 
 ```sql
 CREATE VIEW gold.Dim_Order AS

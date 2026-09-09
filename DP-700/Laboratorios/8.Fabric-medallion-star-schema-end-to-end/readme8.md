@@ -730,6 +730,10 @@ GO
 
 ### 4.3 Carga incremental del fact
 
+* **Script T-SQL 4.3:**
+  * **Qué hace:** Inserta líneas de venta cruzando con las versiones vigentes de las dimensiones e incluye una cláusula `WHERE NOT EXISTS` contra `OrderNumber` y `OrderLine`.
+  * **Objetivo de arquitectura:** Evitar la duplicación de registros transaccionales ante reejecuciones del proceso.
+
 ```sql
 -- ============================================================
 -- 4.3  SP: cargar Fact_Sales (incremental por línea de pedido)

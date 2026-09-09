@@ -826,7 +826,7 @@ Vamos a simular que **Ana García se muda de Madrid a Zaragoza**.
     GROUP BY c.City, c.RecIsCurrent;
     ```
     
-![Imagen443 ](./imagenes/Imagen443.png)
+    ![Imagen443 ](./imagenes/Imagen443.png)
 
 > 💡 **La lección clave:** el histórico se ha preservado. Las ventas anteriores a la mudanza siguen agregándose bajo Madrid, y solo las nuevas irán a Zaragoza. Con SCD tipo 1 habríamos reescrito la historia: todas las ventas de Ana aparecerían bajo Zaragoza como si siempre hubiera vivido allí.
 > 

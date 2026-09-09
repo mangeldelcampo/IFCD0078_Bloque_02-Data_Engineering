@@ -377,7 +377,7 @@ CREATE TABLE gold.Fact_Sales (
 );
 GO
 ```
-![Creacion esquema Gold](./imagenes/Gold1.png)
+![Creación esquema Gold](./imagenes/Gold1.png)
 
 Verificación rapida al terminar:
 
@@ -390,6 +390,8 @@ ORDER BY t.name;
 ```
 
 Deberías ver las cinco tablas: `Dim_Date`, `Dim_Product`, `Dim_Customer`, `Dim_Store`, `Fact_Sales`.
+
+![Revisión esquema Gold](./imagenes/Gold2.png)
 
 > ⚙️ **Sobre las surrogate keys.** Usamos `bigint` poblado con `ROW_NUMBER()` en lugar de `IDENTITY` porque `IDENTITY` en Fabric Data Warehouse está **en preview**, solo admite `bigint`, no permite `IDENTITY_INSERT` ni configurar `SEED`/`INCREMENT`, y **no garantiza el orden ni la ausencia de huecos** (asigna rangos distintos por nodo de cómputo). Para una práctica reproducible, `ROW_NUMBER()` es más predecible. En producción cualquiera de las dos opciones es válida.
 > 

@@ -670,6 +670,14 @@ GO
 
 Recuerda la lógica de la Clase : **UPDATE que expira la versión vigente + INSERT de la nueva versión**.
 
+* **Script T-SQL 4.2:**
+  * **Qué hace:** Estructura la actualización en tres pasos consecutivos:
+    1. Aplica SCD Tipo 1 en atributos sin histórico (`Email`, `Segment`) en registros vigentes.
+    2. Cierra las versiones vigentes cuya ciudad cambió (`City <> src.City`), actualizando `RecEndDate = @Hoy` y `RecIsCurrent = 0`.
+    3. Inserta nuevas filas con `RecIsCurrent = 1` y fin en `9999-12-31` para clientes nuevos o con versiones recién expiradas mediante `WHERE NOT EXISTS`.
+  * **Objetivo de arquitectura:** Mantener la trazabilidad histórica de los cambios de atributos en la dimensión de clientes.
+
+
 ```sql
 -- ============================================================
 -- 4.2  SP: cargar Dim_Customer (SCD tipo 2 en City, tipo 1 en Email)

@@ -524,6 +524,10 @@ UNION ALL SELECT 'Customer', COUNT(*) FROM gold.Dim_Customer;
   * **Qué hace:** Cruza las ventas de `LH_Silver` con las dimensiones. Resuelve `OrderDateKey` y `ShipDateKey` mediante cálculo sobre la tabla de fechas. Recupera las claves surrogadas de producto, tienda y cliente vigente (`RecIsCurrent = 1`) mediante `LEFT JOIN`, asignando `-1` con `ISNULL` si falla la coincidencia.
   * **Objetivo de arquitectura:** Cargar los hechos transaccionales manteniendo la consistencia dimensional sin descartar registros no encontrados.
 
+  * **Script de auditoría de integridad:**
+  * **Qué hace:** Suma todas las claves surrogadas que resultaron en `-1` dentro de `Fact_Sales`.
+  * **Objetivo de arquitectura:** Monitorear y alertar sobre desalineaciones de datos en origen, supliendo la ausencia de validación forzada en el motor.
+
 
 ```sql
 -- ============================================================

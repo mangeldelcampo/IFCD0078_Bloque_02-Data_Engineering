@@ -770,12 +770,12 @@ GO
 
 Vamos a simular que **Ana García se muda de Madrid a Zaragoza**.
 
+1. Abre `NB_02_Silver_Limpieza` y ejecuta esta celda nueva:
+
 * **Celda PySpark (Modificación en Silver):**
   * **Qué hace:** Actualiza la ciudad de `C001` (Ana García) de "Madrid" a "Zaragoza" y sobrescribe la tabla `dim_cliente_src`.
   * **Objetivo de arquitectura:** Emular la recepción de un cambio en los sistemas operacionales de origen.
 
-1. Abre `NB_02_Silver_Limpieza` y ejecuta esta celda nueva:
-    
     ```python
     from pyspark.sql import functions as F
     df = spark.read.table("dim_cliente_src")
@@ -786,7 +786,11 @@ Vamos a simular que **Ana García se muda de Madrid a Zaragoza**.
     ```
     
 2. En `WH_Gold`, ejecuta el procedimiento y comprueba el resultado:
-    
+
+* **Scripts T-SQL de validación:**
+  * **Qué hace:** Ejecuta el procedimiento `sp_Load_Dim_Customer`, verifica la convivencia de dos registros para `C001` y analiza las ventas de dicho cliente agrupadas por `City` y vigencia.
+  * **Objetivo de arquitectura:** Comprobar que las ventas antiguas permanecen imputadas a Madrid y no sufren mutación hacia Zaragoza.
+
     ```sql
     EXEC gold.sp_Load_Dim_Customer;
     

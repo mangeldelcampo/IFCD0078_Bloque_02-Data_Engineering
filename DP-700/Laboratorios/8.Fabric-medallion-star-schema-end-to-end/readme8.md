@@ -53,6 +53,11 @@ Los datos incluyen **suciedad deliberada** — duplicados, nulos, formatos de fe
 2. En el panel **Explorer** izquierdo, **Add data items → From OneLake Catalog** → selecciona `LH_Bronze`. Debe quedar como lakehouse por defecto.
 3. Pega y ejecuta la celda siguiente.
 
+* **Celda 1 (Generación y escritura en crudo):**
+  * **Qué hace:** Crea cuatro DataFrames de PySpark (`df_prod`, `df_cli`, `df_tie`, `df_ven`) simulando cuatro orígenes transaccionales (catálogo CRM, clientes ERP, tiendas y ventas POS) con semilla determinista (`random.seed(42)`)[cite: 1]. Introduce anomalías deliberadas: duplicado de producto (`P003`), nulos en subcategoría/marca, mezcla de formatos de fecha (`yyyy-MM-dd` y `dd/MM/yyyy`), 15 líneas de pedido duplicadas y 10 pedidos de test con prefijo `TEST-`[cite: 1]. Escribe los datos particionados a un único fichero CSV (`coalesce(1)`) con cabecera en el directorio `Files/raw/` del lakehouse `LH_Bronze` vía OneLake[cite: 1].
+  * **Objetivo de arquitectura:** Cumplir el principio de la capa Bronze: persistir los datos tal y como llegan del origen (*as-is*), sin corregir nulos, duplicados ni formatos[cite: 1].
+
+
 ```python
 # NB_01_Bronze_Ingesta
 # Genera los ficheros crudos del sistema de origen y los deja en Files/raw/

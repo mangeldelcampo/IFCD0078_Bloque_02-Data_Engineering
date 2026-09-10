@@ -925,13 +925,14 @@ Estas tareas parecen cosméticas pero se preguntan en el examen:
 
 3. **Ocultar las columnas numéricas del fact** (`Quantity`, `NetAmount`, …) una vez creadas las medidas, para forzar el uso de las medidas. (haremos esto después de crear las medidas DAX, para no perder de vista los campos mientras las escribes)
 4. **Crear la jerarquía de fecha:** en `Dim_Date`, jerarquía `Calendario` con niveles `Year → QuarterName → MonthName → Day`.
-5. **Ordenar los meses:** selecciona `MonthName` → **Sort by column** → `Month`. Si no, los meses se ordenan alfabéticamente.
-
-> 🔷 **Recordatorio Direct Lake:** este modelo **no admite columnas calculadas**. Cualquier atributo que necesites para filtrar o agrupar tiene que existir ya en las tablas Gold. Por eso creamos `YearMonth`, `QuarterName`, `DayName` e `IsWeekend` en T-SQL y no en DAX.
 ![CrearJerarquia.png](./imagenes/CrearJerarquia.png)
 ![CrearJerarquia2.png](./imagenes/CrearJerarquia2.png)
 ![CrearJerarquia3.png](./imagenes/CrearJerarquia3.png)
 ![CrearJerarquia4.png](./imagenes/CrearJerarquia4.png)
+5. **Ordenar los meses:** selecciona `MonthName` → **Sort by column** → `Month`. Si no, los meses se ordenan alfabéticamente.
+
+> 🔷 **Recordatorio Direct Lake:** este modelo **no admite columnas calculadas**. Cualquier atributo que necesites para filtrar o agrupar tiene que existir ya en las tablas Gold. Por eso creamos `YearMonth`, `QuarterName`, `DayName` e `IsWeekend` en T-SQL y no en DAX.
+
 > 
 
 ### 6.4 Medidas DAX

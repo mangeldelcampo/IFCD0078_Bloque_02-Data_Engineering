@@ -907,7 +907,7 @@ En la vista de modelo, arrastra las claves para crear:
 
 ![Relation1.png](./imagenes/Relation1.png)
 
-![Relation1.png](./imagenes/Relation2.png)
+![Relation2.png](./imagenes/Relation2.png)
 
 > ⭐ **Aquí está la role-playing dimension.** Power BI solo permite **una relación activa** entre dos tablas. La segunda queda inactiva y se activa puntualmente con `USERELATIONSHIP` dentro de una medida.
 > 

@@ -1075,6 +1075,7 @@ FROM gold.Fact_Sales;
 
 **Punto de control 7:** los cuatro valores deben coincidir con las medidas DAX en una tarjeta sin filtros.
 
+![PuntoControl7.png](./imagenes/PuntoControl7.png)
 ---
 
 ## 7. Informe en Power BI
@@ -1096,6 +1097,7 @@ Desde `SM_Ventas` → New **report → Start from scratch**. Nombre: `RPT_Ventas
 
 > Prueba el **drill-down** en la matriz: Year → Quarter → Month → Day. Esto solo funciona porque construimos la jerarquía en una **única tabla desnormalizada**. Si `Dim_Date` estuviera normalizada en snowflake, tendrías que crear una vista que la volviera a unir.
 > 
+![DrillDown.png](./imagenes/DrillDown.png)
 
 ### 7.3 Página 2 — Logística (role-playing dimension)
 

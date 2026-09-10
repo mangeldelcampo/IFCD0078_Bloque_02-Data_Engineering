@@ -890,6 +890,7 @@ Vamos a simular que **Ana García se muda de Madrid a Zaragoza**.
 
 > 🔷 Al crear el modelo desde un Warehouse o desde un SQL analytics endpoint, obtienes **Direct Lake on SQL**. Si lo crearas desde el propio lakehouse o desde el OneLake catalog, obtendrías **Direct Lake on OneLake**. La diferencia está en cómo se resuelve la seguridad y el acceso a los datos.
 > 
+![SemanticModel.png](./imagenes/SemanticModel.png)
 
 ### 6.2 Crear las relaciones
 

@@ -918,11 +918,11 @@ Estas tareas parecen cosméticas pero se preguntan en el examen:
 
 1. **Marcar la tabla de fecha:** selecciona `Dim_Date` → **Mark as date table** → columna `FullDate`. Sin esto, las funciones de time intelligence de DAX pueden dar resultados incorrectos.
 
-![Dim_Date_TableDate.png](./imagenes/Dim_Date_TableDate.png)
-![Dim_Date_TableDate2.png](./imagenes/Dim_Date_TableDate2.png)
+    ![Dim_Date_TableDate.png](./imagenes/Dim_Date_TableDate.png)
+    ![Dim_Date_TableDate2.png](./imagenes/Dim_Date_TableDate2.png)
 
 2. **Ocultar las claves:** oculta `DateKey`, `Product_SK`, `Customer_SK`, `Store_SK`, `OrderDateKey`, `ShipDateKey` y todas las columnas `Rec*`. El usuario no debe verlas.
-[OcultaClaves.png](./imagenes/OcultaClaves.png)
+    ![OcultaClaves.png](./imagenes/OcultaClaves.png)
 
 3. **Ocultar las columnas numéricas del fact** (`Quantity`, `NetAmount`, …) una vez creadas las medidas, para forzar el uso de las medidas. (haremos esto después de crear las medidas DAX, para no perder de vista los campos mientras las escribes)
 4. **Crear la jerarquía de fecha:** en `Dim_Date`, jerarquía `Calendario` con niveles `Year → QuarterName → MonthName → Day`.

@@ -917,6 +917,7 @@ En la vista de modelo, arrastra las claves para crear:
 Estas tareas parecen cosméticas pero se preguntan en el examen:
 
 1. **Marcar la tabla de fecha:** selecciona `Dim_Date` → **Mark as date table** → columna `FullDate`. Sin esto, las funciones de time intelligence de DAX pueden dar resultados incorrectos.
+
 ![Dim_Date_TableDate.png](./imagenes/Dim_Date_TableDate.png)
 ![Dim_Date_TableDate2.png](./imagenes/Dim_Date_TableDate2.png)
 

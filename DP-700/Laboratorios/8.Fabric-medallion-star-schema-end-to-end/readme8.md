@@ -925,7 +925,9 @@ Estas tareas parecen cosméticas pero se preguntan en el examen:
     ![OcultaClaves.png](./imagenes/OcultaClaves.png)
 
 3. **Ocultar las columnas numéricas del fact** (`Quantity`, `NetAmount`, …) una vez creadas las medidas, para forzar el uso de las medidas. (haremos esto después de crear las medidas DAX, para no perder de vista los campos mientras las escribes)
+
 4. **Crear la jerarquía de fecha:** en `Dim_Date`, jerarquía `Calendario` con niveles `Year → QuarterName → MonthName → Day`.
+
     ![CrearJerarquia.png](./imagenes/CrearJerarquia.png)
     ![CrearJerarquia2.png](./imagenes/CrearJerarquia2.png)
     ![CrearJerarquia3.png](./imagenes/CrearJerarquia3.png)

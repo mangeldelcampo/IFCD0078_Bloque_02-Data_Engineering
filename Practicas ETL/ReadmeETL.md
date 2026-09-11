@@ -1,4 +1,4 @@
-# 🧑🏽‍💻 Clase 18 - Ejercicio 1 (Ingesta EL)
+# 🧑🏽‍💻 Prácticas ETL  - Ejercicio 1 (Ingesta EL)
 
 ---
 

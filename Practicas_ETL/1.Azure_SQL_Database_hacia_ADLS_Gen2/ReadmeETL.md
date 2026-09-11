@@ -27,13 +27,11 @@
 
 1. Buscar **SQL database**
     
-    ![image.png](image%201.png)
+    ![imagen2.png](./imagenes/imagen2.png)
     
 2. Seleccionar **Crear**.
 3. Selecciona Free offer
-    
-    ![image.png](image%202.png)
-    
+     
 4. Configurar:
     
     ```
@@ -43,21 +41,20 @@
     
 5. En **Servidor**, seleccionar **Crear nuevo**.
     
-    ![image.png](image%203.png)
+    ![imagen3.png](./imagenes/imagen3.png)
     
 6. Indicar:
     
     ```
-    Nombre del servidor: server-practica1
+    Nombre del servidor: server-etl1
     Ubicación: la misma región
     Método de autenticación: autenticación SQL
     Usuario administrador: practica
     Contraseña: Azure12345
     ```
     
-    ![image.png](image%204.png)
-    
-    ![image.png](image%205.png)
+       
+    ![imagen4.png](./imagenes/imagen4.png)
     
     Pulsar en OK.
     

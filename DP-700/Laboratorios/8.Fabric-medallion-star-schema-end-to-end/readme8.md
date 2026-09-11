@@ -1125,6 +1125,8 @@ Desde `SM_Ventas` → New **report → Start from scratch**. Nombre: `RPT_Ventas
 > 🔍 **Ana García aparece dos filas: Madrid y Zaragoza.** Sus ventas históricas se mantienen asignadas a Madrid. Este es exactamente el comportamiento que buscábamos, pero también explica por qué **no se debe aplicar SCD tipo 2 a todos los atributos**: el modelo se llena de versiones duplicadas de la misma entidad y los usuarios se confunden.
 > 
 > 
+![Registros de Ana García](./imagenes/Pagina3Informe.png)
+
 > **Ejercicio de discusión con los alumnos:** ¿cómo mostrarías las ventas totales de Ana consolidadas, independientemente de la ciudad? *(Pista: agrupa por `CustomerCode` o `FullName`, no por `City` — el código natural es estable entre versiones.)*
 > 
 

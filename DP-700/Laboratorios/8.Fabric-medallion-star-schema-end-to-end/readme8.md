@@ -1138,6 +1138,9 @@ Desde `SM_Ventas` → New **report → Start from scratch**. Nombre: `RPT_Ventas
 2. Conéctala desde el icono verde ✓ (On success) de `05 - Fact Sales`.
 3. Selecciona el bloque nuevo → pestaña **Settings**.
 4. En **Connection**, haz clic en el desplegable → **Browse all**.
+
+![semanticModelConf1.png](./imagenes/semanticModelConf1.png)
+
 5. En el diálogo "Get data", selecciona la tarjeta **"Power BI Semantic Model"** (bajo "New sources").
 6. En "Connect data source":
     - **Connection**: deja `Create new connection`.
@@ -1147,6 +1150,9 @@ Desde `SM_Ventas` → New **report → Start from scratch**. Nombre: `RPT_Ventas
     - Pulsa **Sign in** y autentica con tu cuenta de Microsoft/organización (la misma que usas en Fabric).
     - **Privacy Level**: `None` (o el que prefieras).
     - Pulsa **Connect**.
+
+![semanticModelConf2.png](./imagenes/semanticModelConf2.png)
+
 7. De vuelta en el pipeline, en **Settings**, verifica que queden rellenos los cuatro campos:
     - **Connection**: la conexión recién creada (`PowerBIDatasets <tu_usuario>`)
     - **Workspace**: `WS-DP600-Lab`

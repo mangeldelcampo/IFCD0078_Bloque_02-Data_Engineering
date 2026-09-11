@@ -1008,13 +1008,16 @@ CALCULATE (
 ```
 
 ```
-Días Medios de Envío =
+Días Medios de Envio = 
 AVERAGEX (
     Fact_Sales,
     DATEDIFF (
-        RELATED ( Dim_Date[FullDate] ),
-        CALCULATE ( MAX ( Dim_Date[FullDate] ),
-                    USERELATIONSHIP ( Fact_Sales[ShipDateKey], Dim_Date[DateKey] ) ),
+        RELATED(Dim_Date[FullDate]),
+        CALCULATE(
+            MAX(Dim_Date[FullDate]),
+            ALL(Dim_Date),
+            USERELATIONSHIP(Fact_Sales[ShipDateKey], Dim_Date[DateKey])
+        ),
         DAY
     )
 )

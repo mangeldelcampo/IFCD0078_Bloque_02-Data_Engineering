@@ -1159,6 +1159,7 @@ Desde `SM_Ventas` → New **report → Start from scratch**. Nombre: `RPT_Ventas
     - **Semantic model**: `SM_Ventas`
     - **Table(s)**: déjalo vacío (`No results found`) para que sea un full refresh de todo el modelo.
 
+![semanticModelConf3.png](./imagenes/semanticModelConf3.png)
 ---
 
 **Actividad 7 — Notificación con Office 365 Outlook (Legacy)**
@@ -1167,6 +1168,8 @@ Desde `SM_Ventas` → New **report → Start from scratch**. Nombre: `RPT_Ventas
 2. Conéctala arrastrando desde el icono verde ✓ (On success) de `Semantic model refresh` hasta este nuevo bloque.
 3. Selecciona el bloque → pestaña **Settings**.
 4. Pulsa **Sign in** para autenticar la conexión.
+[semanticModelConf4.png](./imagenes/semanticModelConf4.png)
+
 5. Aparece la pantalla de confirmación de Microsoft (*"Confirmation required — This connection was created from a different organization than yours"*) — es el aviso estándar del conector oficial de Outlook en Fabric, no indica ningún problema de seguridad real si el flujo procede del propio pipeline. Marca **"I have verified this request and trust the source"** → **Allow access**.
 6. Con la sesión ya iniciada (verás *"Signed in as: tu_correo"*), rellena:
     - **To**: tu correo (para la práctica, tu propia dirección).
@@ -1185,6 +1188,7 @@ Desde `SM_Ventas` → New **report → Start from scratch**. Nombre: `RPT_Ventas
         
 7. Los campos de **Sensitivity** y **Advanced** (From, Cc, Bcc, Reply to, Importance) se dejan vacíos/por defecto — no son obligatorios.
 
+![PipelineOutlook1.png](./imagenes/PipelineOutlook1.png)
 ---
 
 **Guardar y ejecutar**
@@ -1199,6 +1203,9 @@ Desde `SM_Ventas` → New **report → Start from scratch**. Nombre: `RPT_Ventas
 ![image.png](image%202.png)
 
 ![image.png](image%203.png)
+
+
+EjecucucionNotebook1.png
 
 ---
 

@@ -1168,7 +1168,7 @@ Desde `SM_Ventas` → New **report → Start from scratch**. Nombre: `RPT_Ventas
 2. Conéctala arrastrando desde el icono verde ✓ (On success) de `Semantic model refresh` hasta este nuevo bloque.
 3. Selecciona el bloque → pestaña **Settings**.
 4. Pulsa **Sign in** para autenticar la conexión.
-[semanticModelConf4.png](./imagenes/semanticModelConf4.png)
+![semanticModelConf4.png](./imagenes/semanticModelConf4.png)
 
 5. Aparece la pantalla de confirmación de Microsoft (*"Confirmation required — This connection was created from a different organization than yours"*) — es el aviso estándar del conector oficial de Outlook en Fabric, no indica ningún problema de seguridad real si el flujo procede del propio pipeline. Marca **"I have verified this request and trust the source"** → **Allow access**.
 6. Con la sesión ya iniciada (verás *"Signed in as: tu_correo"*), rellena:

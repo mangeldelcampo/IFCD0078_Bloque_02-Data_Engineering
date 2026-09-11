@@ -30,7 +30,7 @@
     ![imagen2.png](./imagenes/imagen2.png)
     
 2. Seleccionar **Crear**.
-3. Selecciona Free offer
+3. Selecciona Apply **Free offer**
      
 4. Configurar:
     
@@ -62,7 +62,7 @@
 8. No habilitar redundancias avanzadas (o configuración necesaria) innecesarias para el laboratorio.
 9. Seleccionar **Revisar y crear**.
     
-    ![image.png](image%206.png)
+    ![imagen5.png](./imagenes/imagen5.png)
     
 10. Seleccionar **Crear/Create**.
     

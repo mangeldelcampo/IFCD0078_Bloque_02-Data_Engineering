@@ -1008,19 +1008,22 @@ CALCULATE (
 ```
 
 ```
-Días Medios de Envio = 
+Días Medios de Envío = 
 AVERAGEX (
-    Fact_Sales,
-    DATEDIFF (
-        RELATED(Dim_Date[FullDate]),
-        CALCULATE(
-            MAX(Dim_Date[FullDate]),
-            ALL(Dim_Date),
-            USERELATIONSHIP(Fact_Sales[ShipDateKey], Dim_Date[DateKey])
-        ),
-        DAY
-    )
+    FILTER (
+        Fact_Sales,
+        NOT ISBLANK ( Fact_Sales[ShipDateKey] )
+            && NOT ISBLANK ( Fact_Sales[OrderDateKey] )
+    ),
+    VAR _FechaPedido = RELATED ( Dim_Date[FullDate] )
+    VAR _FechaEnvio  = LOOKUPVALUE ( Dim_Date[FullDate], Dim_Date[DateKey], Fact_Sales[ShipDateKey] )
+    RETURN
+        IF (
+            NOT ISBLANK ( _FechaPedido ) && NOT ISBLANK ( _FechaEnvio ),
+            DATEDIFF ( _FechaPedido, _FechaEnvio, DAY )
+        )
 )
+
 ```
 
 **Time intelligence**

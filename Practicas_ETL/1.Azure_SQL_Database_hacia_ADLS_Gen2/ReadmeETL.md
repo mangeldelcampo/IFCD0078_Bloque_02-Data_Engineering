@@ -58,8 +58,8 @@
     
     Pulsar en OK.
     
-7. Para una práctica educativa como esta, seleccionar una configuración pequeña de desarrollo o pruebas.
-8. No habilitar redundancias avanzadas (o configuración necesaria) innecesarias para el laboratorio.
+7. Para una práctica educativa como esta, seleccionar una configuración **pequeña de desarrollo o pruebas.**
+8. **No habilitar** redundancias avanzadas (o configuración necesaria) innecesarias para el laboratorio.
 9. Seleccionar **Revisar y crear**.
     
     ![imagen5.png](./imagenes/imagen5.png)
@@ -87,10 +87,11 @@ En el servidor lógico de Azure SQL:
 En la barra de búsqueda superior, escribe **SQL servers** o **Servidores SQL**. Abre el servidor que creaste para la práctica, por ejemplo: `server-practica1`
 
 </aside>
+imagen3_1.png
+![imagen3_1.png](image%2010.png)
+imagen3_2.png
+![imagen3_2.png](image%2011.png)
 
-![image.png](image%2010.png)
-
-![image.png](image%2011.png)
 
 1. Acceder a Security/**Networking** o **Redes**.
 2. Seleccionar acceso mediante **Public access** → **Public network access y** debes dejar seleccionada `Selected networks`
@@ -119,6 +120,7 @@ En la barra de búsqueda superior, escribe **SQL servers** o **Servidores SQL**.
     
     ![image.png](image%2014.png)
     
+Networking2.png
 
 > Esta configuración simplifica el laboratorio. En producción deberían utilizarse redes privadas, endpoints privados y autenticación administrada.
 > 
@@ -158,7 +160,7 @@ El editor de consultas de Azure Portal permite conectarse a Azure SQL Database y
     ![image.png](image%2015.png)
     
 - En el menú lateral busca: **Query editor (preview)** o **Editor de consultas (versión preliminar).**
-    
+    QueryEditor1.png
     ![image.png](image%2016.png)
     
     > Puedes escribir `Query editor` en el buscador del menú lateral si no aparece a primera vista. Este editor permite ejecutar sentencias T-SQL directamente desde el navegador.
@@ -167,15 +169,15 @@ El editor de consultas de Azure Portal permite conectarse a Azure SQL Database y
     
     ```
     Login: practica
-    Password: la contraseña que configuraste al crear el servidor
+    Password: la contraseña que configuraste al crear el servidor (Azure12345)
     ```
-    
+    QueryEditor2.png
     ![image.png](image%2017.png)
     
 - Pulsa en Connect.
 - Pulsa en New Query
-    
-    ![image.png](image%2018.png)
+    NewQuery1.png
+    ![NewQuery1.png](image%2018.png)
     
 - Ahora, dentro del **Query Editor**, haz primero una prueba rápida:
     
@@ -191,8 +193,8 @@ El editor de consultas de Azure Portal permite conectarse a Azure SQL Database y
     BaseDeDatos: sqldb-ventas
     UsuarioConectado: practica
     ```
-    
-    ![image.png](image%2019.png)
+    NewQuery2.png
+    ![NewQuery2.png](image%2019.png)
     
 - Borra la consulta de prueba.
 - Copia todo el contenido que tienes abajo

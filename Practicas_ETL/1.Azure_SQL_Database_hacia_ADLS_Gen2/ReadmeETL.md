@@ -63,7 +63,10 @@
 9. Seleccionar **Revisar y crear**.
     
     ![imagen5.png](./imagenes/imagen5.png)
-    
+
+10. Configuramos el apartado de Red - Networking
+![Networking1.png](./imagenes/Networking1.png)
+
 10. Seleccionar **Crear/Create**.
     
     ![image.png](image%207.png)
@@ -73,11 +76,11 @@
     ![DeplyComplete1.png](./imagenes/DeployComplete1.png)
     
 12. Despliega Deployment details y deberias ver esto:
-    
+    DeployDetails(network)1.png
     ![image.png](image%209.png)
     
 
-### Paso 3. Configurar la conectividad
+### Paso 3. Revisamos la configuración de conectividad
 
 En el servidor lógico de Azure SQL:
 

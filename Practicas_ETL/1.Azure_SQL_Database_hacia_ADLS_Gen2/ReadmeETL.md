@@ -70,7 +70,7 @@
     
 11. Tras un par de minutos,  deberias ver esto:
     
-    ![image.png](image%208.png)
+    ![DeplyComplete1.png](./imagenes/DeployComplete1.png)
     
 12. Despliega Deployment details y deberias ver esto:
     
@@ -194,7 +194,7 @@ El editor de consultas de Azure Portal permite conectarse a Azure SQL Database y
     UsuarioConectado: practica
     ```
     NewQuery2.png
-    ![NewQuery2.png](image%2019.png)
+    ![NewQuery2.png](.)
     
 - Borra la consulta de prueba.
 - Copia todo el contenido que tienes abajo

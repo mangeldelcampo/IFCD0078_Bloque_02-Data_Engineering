@@ -1209,7 +1209,7 @@ Desde `SM_Ventas` → New **report → Start from scratch**. Nombre: `RPT_Ventas
 
 
 EjecucucionNotebook1.png
-
+![EjecucucionPipeline1.png](./imagenes/EjecucucionPipeline1.png)
 ---
 
 ## 9. Limpieza

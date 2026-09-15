@@ -1165,11 +1165,11 @@ Desde `SM_Ventas` → New **report → Start from scratch**. Nombre: `RPT_Ventas
 ![semanticModelConf3.png](./imagenes/semanticModelConf3.png)
 ---
 
-**Actividad 7 — Notificación con Office 365 Outlook (Legacy)**
+**Actividad 7 — Notificación con Office 365 Outlook (Legacy) y Teams**
 
-1. En `PL_Medallion`, ve a la pestaña **Activities** → busca **"Outlook"** → añade la actividad **Office 365 Outlook (Legacy)** al lienzo.
-2. Conéctala arrastrando desde el icono verde ✓ (On success) de `Semantic model refresh` hasta este nuevo bloque.
-3. Selecciona el bloque → pestaña **Settings**.
+1. En `PL_Medallion`, ve a la pestaña **Activities** → busca **"Outlook"** → añade la actividad **Office 365 Outlook (Legacy)** al lienzo. y otra actividad de Teams
+2. Conéctalas arrastrando desde el icono verde ✓ (On success) de `Semantic model refresh` hasta los nuevos bloques.
+3. Para Outlook Selecciona el bloque → pestaña **Settings**.
 4. Pulsa **Sign in** para autenticar la conexión.
 ![semanticModelConf4.png](./imagenes/semanticModelConf4.png)
 
@@ -1192,24 +1192,26 @@ Desde `SM_Ventas` → New **report → Start from scratch**. Nombre: `RPT_Ventas
 7. Los campos de **Sensitivity** y **Advanced** (From, Cc, Bcc, Reply to, Importance) se dejan vacíos/por defecto — no son obligatorios.
 
 ![PipelineOutlook1.png](./imagenes/PipelineOutlook1.png)
+
+8. Para la actividad de notificación mediante Teams, se configura enviando la notificación aun Canal, contacto, etc.
+
 ---
 
 **Guardar y ejecutar**
 
 1. Ve a la cinta **Home** → botón **Save** (icono de disquete).
 2. Ve a la pestaña **Run** → botón **Run**.
-3. El pipeline se ejecuta de principio a fin (las 7 actividades). Puedes seguir el progreso en el panel inferior **Output**, con auto-refresh activo.
-4. Al terminar, revisa que las 7 actividades queden en verde (`Succeeded`), y comprueba tu bandeja de entrada de Outlook para confirmar que llegó el correo de notificación.
-
-![image.png](image%201.png)
-
-![image.png](image%202.png)
-
-![image.png](image%203.png)
-
+3. El pipeline se ejecuta de principio a fin (las 8 actividades). Puedes seguir el progreso en el panel inferior **Output**, con auto-refresh activo.
+4. Al terminar, revisa que las 8 actividades queden en verde (`Succeeded`), y comprueba tu bandeja de entrada de Outlook para confirmar que llegó el correo de notificación.
 
 EjecucucionNotebook1.png
 ![EjecucucionPipeline1.png](./imagenes/EjecucucionPipeline1.png)
+
+Correo de notificación y notificación en Teams:
+
+![NotificacionMedalionOutlook.png](./imagenes/NotificacionMedalionOutlook.png)
+
+![NotificacionMedalionTeams.png](./imagenes/NotificacionMedalionTeams.png)
 ---
 
 ## 9. Limpieza

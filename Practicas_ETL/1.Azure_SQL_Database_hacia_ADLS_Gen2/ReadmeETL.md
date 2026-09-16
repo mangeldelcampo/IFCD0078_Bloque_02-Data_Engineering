@@ -60,9 +60,12 @@
     
 7. Para una práctica educativa como esta, seleccionar una configuración **pequeña de desarrollo o pruebas.**
 8. **No habilitar** redundancias avanzadas (o configuración necesaria) innecesarias para el laboratorio.
+
+![imagen4.png](./imagenes/imagen4a.png)
+
 9. Seleccionar **Revisar y crear**.
     
-    ![imagen5.png](./imagenes/imagen5.png)
+    ![ReviewCreate1Networking.png](./imagenes/ReviewCreate1Networking.png)
 
 10. Configuramos el apartado de Red - Networking
 ![Networking1.png](./imagenes/Networking1.png)

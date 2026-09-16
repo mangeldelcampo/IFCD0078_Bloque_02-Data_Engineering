@@ -143,9 +143,7 @@ Se puede ejecutar desde:
 El editor de consultas de Azure Portal permite conectarse a Azure SQL Database y ejecutar sentencias T-SQL directamente.
 
 - Abrir la base de datos, pulsa en `sqldb-ventas (practica1-server/sqldb-ventas)`
-    
-    ![image.png](image%2015.png)
-    
+     
 - En el menú lateral busca: **Query editor (preview)** o **Editor de consultas (versión preliminar).**
     
     ![QueryEditor1.png](./imagenes/QueryEditor1.png)

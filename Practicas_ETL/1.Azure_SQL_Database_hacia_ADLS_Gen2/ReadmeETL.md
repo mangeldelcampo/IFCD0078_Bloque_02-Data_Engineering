@@ -53,7 +53,7 @@
     Contraseña: Azure12345
     ```
     
-       imagen4.png
+    
     ![CreaServer1.png](./imagenes/CreaServer1.png)
     
     Pulsar en OK.

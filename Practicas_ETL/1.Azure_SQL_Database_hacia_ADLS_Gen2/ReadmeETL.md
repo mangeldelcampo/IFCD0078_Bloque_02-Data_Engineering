@@ -70,7 +70,7 @@
 10. Configuramos el apartado de Red - Networking
 ![Networking1.png](./imagenes/Networking1.png)
 
-11. Seleccionar **Review + Create** y Luego pulsamos **create**
+11. Seleccionar **Review + create** y Luego pulsamos **Create**
          
 12. Tras un par de minutos,  deberias ver esto:
     

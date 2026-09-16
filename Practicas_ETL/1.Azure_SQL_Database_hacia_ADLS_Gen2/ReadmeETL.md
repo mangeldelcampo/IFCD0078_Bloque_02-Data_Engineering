@@ -70,10 +70,8 @@
 10. Configuramos el apartado de Red - Networking
 ![Networking1.png](./imagenes/Networking1.png)
 
-11. Seleccionar **Crear/Create**.
-    
-    ![image.png](image%207.png)
-    
+11. Seleccionar **Review + Create** y Luego pulsamos **create**
+         
 12. Tras un par de minutos,  deberias ver esto:
     
     ![DeplyComplete1.png](./imagenes/DeployComplete1.png)

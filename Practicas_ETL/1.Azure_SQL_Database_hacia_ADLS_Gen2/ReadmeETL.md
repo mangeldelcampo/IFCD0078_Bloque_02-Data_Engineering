@@ -89,7 +89,7 @@ En el servidor lógico de Azure SQL:
 <aside>
 💡
 
-En la barra de búsqueda superior, escribe **SQL servers** o **Servidores SQL**. Abre el servidor que creaste para la práctica, por ejemplo: `server-practica1`
+En la barra de búsqueda superior, escribe **SQL servers** o **Servidores SQL**. Abre el servidor lógico que creaste para la práctica, por ejemplo: `practica1-server`
 
 </aside>
 
@@ -106,26 +106,10 @@ En la barra de búsqueda superior, escribe **SQL servers** o **Servidores SQL**.
     <aside>
     💡
     
-    Eso significa que el servidor acepta conexiones mediante su endpoint público, pero únicamente desde las redes o direcciones IP autorizadas.
+    Comprobamos que se configuró correctamente para que el servidor acepte conexiones mediante su endpoint público, pero únicamente desde las redes o direcciones IP autorizadas.(la dirección IP actual del equipo. que se agregó en la configuración.) y también observamos en el apartado Exceptions que está habilitado para permitir la conexión desde Azure Data Factory durante el laboratorio, habilitar temporalmente.
     
-    </aside>
-    
-    En **Firewall rules**, pulsa: Add your client IPv4 address…
-    
-    ![image.png](image%2013.png)
-    
-3. Agregar la dirección IP actual del equipo.
-4. Para permitir la conexión desde Azure Data Factory durante el laboratorio, habilitar temporalmente:
-    
-    ```
-    Allow Azure services and resources to access this server
-    ```
-    
-5. Guardar los cambios, pulsar en Save.
-    
-    ![image.png](image%2014.png)
-    
-Networking2.png
+        
+![Networking2.png](./imagenes/Networking2.png)
 
 > Esta configuración simplifica el laboratorio. En producción deberían utilizarse redes privadas, endpoints privados y autenticación administrada.
 > 

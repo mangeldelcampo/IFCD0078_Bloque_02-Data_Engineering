@@ -46,7 +46,7 @@
 6. Indicar:
     
     ```
-    Nombre del servidor: server-etl1
+    Nombre del servidor: practica1-server
     Ubicación: la misma región
     Método de autenticación: autenticación SQL
     Usuario administrador: practica

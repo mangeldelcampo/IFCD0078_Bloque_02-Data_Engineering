@@ -90,10 +90,10 @@ En el servidor lógico de Azure SQL:
 En la barra de búsqueda superior, escribe **SQL servers** o **Servidores SQL**. Abre el servidor que creaste para la práctica, por ejemplo: `server-practica1`
 
 </aside>
-imagen3_1.png
-![imagen3_1.png](image%2010.png)
-imagen3_2.png
-![imagen3_2.png](image%2011.png)
+
+![imagen3_1.png](./imagenes/imagen3_1.png)
+
+![imagen3_2.png](./imagenes/imagen3_2.png)
 
 
 1. Acceder a Security/**Networking** o **Redes**.

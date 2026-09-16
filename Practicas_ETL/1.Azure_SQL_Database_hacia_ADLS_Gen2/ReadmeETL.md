@@ -61,7 +61,7 @@
 7. Para una práctica educativa como esta, seleccionar una configuración **pequeña de desarrollo o pruebas.**
 8. **No habilitar** redundancias avanzadas (o configuración necesaria) innecesarias para el laboratorio.
 
-![imagen4.png](./imagenes/imagen4a.png)
+![imagen4.png](./imagenes/imagen4.png)
 
 9. Seleccionar **Revisar y crear**.
     

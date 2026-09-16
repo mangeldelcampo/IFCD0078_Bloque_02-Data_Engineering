@@ -100,9 +100,7 @@ En la barra de búsqueda superior, escribe **SQL servers** o **Servidores SQL**.
 
 1. Acceder a Security/**Networking** o **Redes**.
 2. Seleccionar acceso mediante **Public access** → **Public network access y** debes dejar seleccionada `Selected networks`
-    
-    ![image.png](image%2012.png)
-    
+   
     <aside>
     💡
     
@@ -144,13 +142,13 @@ Se puede ejecutar desde:
 
 El editor de consultas de Azure Portal permite conectarse a Azure SQL Database y ejecutar sentencias T-SQL directamente.
 
-- Abrir la base de datos, pulsa en `sqldb-ventas (server-practica1/sqldb-ventas)`
+- Abrir la base de datos, pulsa en `sqldb-ventas (practica1-server/sqldb-ventas)`
     
     ![image.png](image%2015.png)
     
 - En el menú lateral busca: **Query editor (preview)** o **Editor de consultas (versión preliminar).**
-    QueryEditor1.png
-    ![image.png](image%2016.png)
+    
+    ![QueryEditor1.png](./imagenes/QueryEditor1.png)
     
     > Puedes escribir `Query editor` en el buscador del menú lateral si no aparece a primera vista. Este editor permite ejecutar sentencias T-SQL directamente desde el navegador.
     > 
@@ -160,13 +158,13 @@ El editor de consultas de Azure Portal permite conectarse a Azure SQL Database y
     Login: practica
     Password: la contraseña que configuraste al crear el servidor (Azure12345)
     ```
-    QueryEditor2.png
-    ![image.png](image%2017.png)
+    
+    ![QueryEditor2.png](./imagenes/QueryEditor2.png)
     
 - Pulsa en Connect.
 - Pulsa en New Query
-    NewQuery1.png
-    ![NewQuery1.png](image%2018.png)
+    
+    ![NewQuery1.png](./imagenes/NewQuery1.png)
     
 - Ahora, dentro del **Query Editor**, haz primero una prueba rápida:
     
@@ -182,8 +180,8 @@ El editor de consultas de Azure Portal permite conectarse a Azure SQL Database y
     BaseDeDatos: sqldb-ventas
     UsuarioConectado: practica
     ```
-    NewQuery2.png
-    ![NewQuery2.png](.)
+    
+    ![NewQuery2.png](./imagenes/NewQuery2.png)
     
 - Borra la consulta de prueba.
 - Copia todo el contenido que tienes abajo

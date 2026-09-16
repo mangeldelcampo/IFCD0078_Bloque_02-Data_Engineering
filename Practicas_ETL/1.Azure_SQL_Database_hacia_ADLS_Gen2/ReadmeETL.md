@@ -67,17 +67,17 @@
 10. Configuramos el apartado de Red - Networking
 ![Networking1.png](./imagenes/Networking1.png)
 
-10. Seleccionar **Crear/Create**.
+11. Seleccionar **Crear/Create**.
     
     ![image.png](image%207.png)
     
-11. Tras un par de minutos,  deberias ver esto:
+12. Tras un par de minutos,  deberias ver esto:
     
     ![DeplyComplete1.png](./imagenes/DeployComplete1.png)
     
-12. Despliega Deployment details y deberias ver esto:
-    DeployDetails(network)1.png
-    ![image.png](image%209.png)
+13. Despliega Deployment details y deberias ver esto:
+    
+    ![DeployDetailsNetworking1.png](./imagenes/DeployDetailsNetworking1.png)
     
 
 ### Paso 3. Revisamos la configuración de conectividad

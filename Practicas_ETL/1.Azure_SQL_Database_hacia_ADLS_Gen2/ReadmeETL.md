@@ -77,6 +77,7 @@
     ![DeplyComplete1.png](./imagenes/DeployComplete1.png)
     
 13. Despliega Deployment details y deberias ver esto:
+Ha creado la BD y el Server lógico, así como ha configurado la regla del firewall para la conexión de Red 
     
     ![DeployDetailsNetworking1.png](./imagenes/DeployDetailsNetworking1.png)
     

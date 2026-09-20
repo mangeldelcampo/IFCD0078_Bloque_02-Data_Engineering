@@ -1,6 +1,6 @@
 **PL-300-Microsoft-Power-BI-Data-Analyst**
 
-# Índice de Laboratorios PL-300                         
+# Índice de Laboratorios PL-300
 
 | # | Laboratorio | Resumen / Descripción |
 |---|---|---|

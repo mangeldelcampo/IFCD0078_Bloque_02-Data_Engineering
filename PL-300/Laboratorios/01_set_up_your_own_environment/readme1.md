@@ -1,4 +1,3 @@
-```markdown
 # **PL-300-Microsoft-Power-BI-Data-Analyst**
 
 ## **Setup local lab environment | PL-300-Microsoft-Power-BI-Data-Analyst**

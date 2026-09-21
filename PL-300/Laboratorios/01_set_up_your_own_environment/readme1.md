@@ -112,7 +112,7 @@ Esto confirma que:
 
 ---
 
-⬅️ **Anterior:** [Inicio del Repositorio](../../Readmedp-700.md)
+⬅️ **Anterior:** [Inicio del Repositorio](../../Readmedp-300.md)
 
 🏠 **Índice de Laboratorios:** [Laboratorios](../readmeLab.md)
 

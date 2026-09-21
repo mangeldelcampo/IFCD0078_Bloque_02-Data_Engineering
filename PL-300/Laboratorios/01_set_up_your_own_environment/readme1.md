@@ -114,7 +114,7 @@ Esto confirma que:
 
 ⬅️ **Anterior:** [Inicio del Repositorio](../../readmePL-300.md)
 
-🏠 **Índice de Laboratorios:** [Laboratorios](PL-300/readmePL-300.md)
+🏠 **Índice de Laboratorios:** [Laboratorios](../../readmePL-300.md)
 
 ➡️ **Siguiente:** [Get data in Power BI](../02_get_data_in_power_bi/readme2.md)
 

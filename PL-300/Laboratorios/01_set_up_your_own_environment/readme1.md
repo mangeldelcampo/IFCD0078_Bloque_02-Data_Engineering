@@ -44,10 +44,10 @@ For some of the exercises, you will need to log into Power BI with an organizati
 ---
 
 ![Imagen 1](./imagenes/Imagen1.png)
-Imagen1.png
+
 
 ![Imagen 2](./imagenes/Imagen2.png)
-Imagen2.png
+
 
 **Instancia- Cadena de conexión**
 ```text
@@ -65,27 +65,27 @@ C:\SQL2025\StdDev_ENU
 ```
 
 ![Imagen 3](./imagenes/Imagen3.png)
-Imagen3.png
+
 
 [https://learn.microsoft.com/en-us/ssms/install/install](https://learn.microsoft.com/en-us/ssms/install/install)
 
 ![Imagen 4](./imagenes/Imagen4.png)
-Imagen4.png
+
 
 ![Imagen 5](./imagenes/Imagen5.png)
-Imagen5.png
+
 
 ![Imagen 6](./imagenes/Imagen6.png)
-Imagen6.png
+
 
 ![Imagen 7](./imagenes/Imagen7.png)
-Imagen7.png
+
 
 ![Imagen 8](./imagenes/Imagen8.png)
-Imagen8.png
+
 
 ![Imagen 9](./imagenes/Imagen9.png)
-Imagen9.png
+
 
 ---
 
@@ -102,7 +102,7 @@ los parámetros ya están configurados con los valores idóneos:
 Haz clic en el botón **Connect** abajo a la derecha.
 
 ![Imagen 10](./imagenes/Imagen10.png)
-Imagen10.png
+
 
 Esto confirma que:
 

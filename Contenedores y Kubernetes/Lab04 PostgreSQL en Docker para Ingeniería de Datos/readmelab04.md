@@ -55,7 +55,7 @@ Este laboratorio reutiliza los comandos principales aprendidos en la Clase 1 de 
 
 # 1. Comprobar Docker
 
-Desde la terminal remota de **VS Code conectada a Ubuntu Server**:
+Desde la terminal remota de **conectada a Ubuntu Server**:
 
 ```bash
 docker --version

@@ -297,7 +297,7 @@ Ejecuta:
 ```bash
 docker exec -it postgres-data psql -U postgres -d empresa
 ```
-![10](./imagenes/10AccederaPostgrSQL.png)
+
 
 Estamos haciendo lo siguiente:
 
@@ -316,6 +316,7 @@ El prompt debería cambiar a algo parecido a:
 ```
 empresa=#
 ```
+![10](./imagenes/10AccederaPostgrSQL.png)
 
 Ya estamos dentro de PostgreSQL.
 

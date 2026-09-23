@@ -335,12 +335,14 @@ CREATE TABLE staging_ventas (
     precio NUMERIC(10,2)
 );
 ```
+![11](./imagenes/11CrearTabla.png)
 
 Comprobamos la tabla:
 
 ```sql
 SELECT * FROM staging_ventas;
 ```
+![12ComprobarTabla](./imagenes/12ComprobarTabla.png)
 
 Todavía estará vacía.
 
@@ -357,6 +359,20 @@ Salimos:
 Ahora estamos nuevamente en Ubuntu Server.
 
 Vamos a crear un archivo de datos:
+
+```bash
+cat << 'EOF' > ventas.csv
+id,fecha,producto,cantidad,precio
+1,2026-09-01,Portatil,2,1200.00
+2,2026-09-01,Monitor,5,350.00
+3,2026-09-02,Teclado,10,75.00
+4,2026-09-02,Raton,15,35.00
+5,2026-09-03,Portatil,1,1350.00
+EOF
+```
+![13CrearDataset%20CSV](./imagenes/13CrearDataset%20CSV.png)
+
+También podríamos hacerlo línea por línea:
 
 ```bash
 echo "id,fecha,producto,cantidad,precio" > ventas.csv

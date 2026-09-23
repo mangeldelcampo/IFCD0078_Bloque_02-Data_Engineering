@@ -36,7 +36,8 @@ Esta tarea te enseña cómo conectarte a una base de datos SQL Server e importar
     ![imagen1](./imagenes/imagen1.png)
 
 2. En la ventana **de la base de datos SQL Server**, en el cuadro **del servidor**, introduce **localhost** y deja **Base de datos** en blanco, luego **selecciona OK.**  
-   ***Nota:** En este laboratorio, te conectarás a la base de datos de SQL Server usando **localhost**. Aunque esto está bien para el laboratorio, no se considera una buena práctica para soluciones reales.*  
+   ***Nota:** En este laboratorio, te conectarás a la base de datos de SQL Server usando **localhost**. Aunque esto está bien para el laboratorio, no se considera una buena práctica para soluciones reales.* 
+    ![imagen2](./imagenes/imagen2.png)
 3. Si te piden las credenciales, selecciona **Windows \> Usar mis credenciales actuales** y luego **Conectar**.  
 4. Selecciona **Vale** si recibes una advertencia de que no se puede establecer una conexión cifrada.  
 5. En el panel **de Navigator**, amplía la base de datos **AdventureWorksDW2020**.  

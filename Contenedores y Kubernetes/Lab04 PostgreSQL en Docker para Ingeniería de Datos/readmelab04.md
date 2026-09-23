@@ -77,7 +77,7 @@ docker images
 ![3DockerImagenesDisponibles](./imagenes/3DockerImagenesDisponibles.png)
 ---
 
-# 2. Descargar PostgreSQL
+# 2. Descargar imagen PostgreSQL
 
 Vamos a utilizar la imagen oficial:
 

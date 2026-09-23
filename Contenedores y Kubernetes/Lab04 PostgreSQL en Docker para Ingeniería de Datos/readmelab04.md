@@ -419,6 +419,8 @@ id,fecha,producto,cantidad,precio
 
 Aquí tenemos nuestro pequeño **dataset de origen**.
 
+![14ComprobarDataset%20CSV](./imagenes/14ComprobarDataset%20CSV.png)
+
 ---
 
 # 9. Copiar el CSV al contenedor
@@ -428,6 +430,7 @@ Utiliza:
 ```bash
 docker cp ventas.csv postgres-data:/tmp/ventas.csv
 ```
+![15CopiaCSValContenedor](./imagenes/15CopiaCSValContenedor.png)
 
 El flujo es:
 

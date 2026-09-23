@@ -455,12 +455,14 @@ Debería aparecer:
 ```
 ventas.csv
 ```
+![16](./imagenes/16ComprobarCopiaCSValContenedor.png)
 
 También podemos visualizarlo desde fuera del contenedor:
 
 ```bash
 docker exec postgres-data cat /tmp/ventas.csv
 ```
+![17](./imagenes/17VisualizarCopiaCSVenContenedor.png)
 
 ---
 
@@ -486,6 +488,7 @@ PostgreSQL debería indicar:
 ```
 COPY 5
 ```
+![18](./imagenes/18CargaCSVenPostgres.png)
 
 Eso significa que ha cargado:
 
@@ -519,6 +522,7 @@ Resultado esperado:
 ```
 5
 ```
+![19](./imagenes/19ComprobarTablaCSVenPostgres.png)
 
 ## Calcular ventas
 
@@ -530,6 +534,8 @@ FROM staging_ventas
 GROUP BY producto
 ORDER BY importe_ventas DESC;
 ```
+
+![20](./imagenes/20CalcularVentas.png)
 
 Ahora ya estamos realizando una pequeña transformación analítica:
 
@@ -570,6 +576,9 @@ State
 Image
 Name
 ```
+![21](./imagenes/21InspecionarContenedor.png)
+
+![22](./imagenes/22InspecionarContenedor.png)
 
 ---
 
@@ -595,6 +604,7 @@ Container :5432
 Ubuntu :5432
 ```
 
+![23](./imagenes/23ConsultarPuerto.png)
 ---
 
 # 15. Consultar recursos utilizados
@@ -613,6 +623,7 @@ MEM USAGE
 MEM %
 NET I/O
 ```
+![24](./imagenes/24ConsultarRecursos.png)
 
 Para salir:
 
@@ -655,6 +666,7 @@ con estado similar a:
 ```
 Exited
 ```
+![25](./imagenes/25PararContenedorPostgres.png)
 
 > **Detener un contenedor no significa eliminarlo.**
 > 
@@ -677,6 +689,7 @@ docker ps
 
 PostgreSQL vuelve a estar funcionando.
 
+![26](./imagenes/26ArrancarContenedorPostgres.png)
 ---
 
 # 18. Comprobar si los datos siguen allí
@@ -700,6 +713,7 @@ Salimos:
 ```
 \q
 ```
+![27](./imagenes/27ComprobardatosPostgres.png)
 
 Esto refuerza la diferencia entre:
 
@@ -753,6 +767,9 @@ docker ps -a
 
 `postgres-data` ya no existe.
 
+![28](./imagenes/28PararEliminarContenedor.png)
+
+
 Aquí aparece una lección importante para futuras clases:
 
 > Los datos estaban almacenados dentro del contenedor. Al eliminar el contenedor, esos datos dejan de estar disponibles con él.
@@ -783,13 +800,13 @@ Recuperar los mismos datos
 
 # 21. La imagen PostgreSQL todavía existe
 
-Aunque hayamos eliminado el contenedor:
+Aunque hayamos eliminado el contenedor si ejecutamos:
 
 ```bash
 docker images
 ```
 
-seguiremos teniendo:
+observaremos que seguiremos teniendo la imagen:
 
 ```
 postgres:16
@@ -820,7 +837,9 @@ Comprobamos:
 ```bash
 docker images
 ```
+En la siguiente pantalla se observa el punto de comprobación de que existe la imagen y como se elimina:
 
+![29](./imagenes/29RevisarEliminarImagen.png)
 ---
 
 # 23. Comandos de la Clase 1 utilizados

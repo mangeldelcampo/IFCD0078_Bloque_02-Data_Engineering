@@ -40,7 +40,7 @@ Todo se realizará desde:
 ```
 Windows
    ↓
-VS Code
+Terminal Windows
    ↓ SSH
 Ubuntu Server
    ↓

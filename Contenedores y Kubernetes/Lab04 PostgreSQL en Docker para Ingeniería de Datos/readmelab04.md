@@ -67,6 +67,7 @@ Vamos a utilizar la imagen oficial:
 ```bash
 docker pull postgres:16
 ```
+![4DockerPullPostgres](./imagenes/4DockerPullPostgres.png)
 
 Comprobamos que se ha descargado:
 
@@ -79,7 +80,9 @@ Deberíamos encontrar algo parecido a:
 ```
 REPOSITORY   TAG
 postgres     16
+
 ```
+![5DockerImagenesDisponibles](./imagenes/5DockerImagenesDisponibles.png)
 
 Aquí estamos utilizando dos comandos vistos en la clase:
 

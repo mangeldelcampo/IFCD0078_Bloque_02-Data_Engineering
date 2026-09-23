@@ -49,7 +49,7 @@ Docker Engine
 PostgreSQL Container
 ```
 
-Este laboratorio reutiliza los comandos principales aprendidos en la Clase 1 de Docker.
+Este laboratorio reutiliza los comandos principales de Docker.
 
 ---
 

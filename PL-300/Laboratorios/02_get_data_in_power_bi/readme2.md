@@ -22,8 +22,9 @@ Extrae la carpeta a la **carpeta C:\\Users\\Student\\Downloads\\01-get-data**.
 Abre el archivo **01-Starter-Sales Analysis.pbik**.
 
 * Este archivo inicial ha sido configurado especialmente para ayudarte a completar el laboratorio. Las siguientes configuraciones a nivel de informe han sido desactivadas en el archivo inicial:  
-  * Relaciones de carga \> importación de datos desde fuentes de datos en la primera carga  
-  * Carga de datos \> Autodetección de nuevas relaciones después de que se carguen los datos
+  * Relaciones de carga \> importación de datos desde fuentes de datos en la primera carga (Import relationships from data sources on first load) 
+  * Carga de datos \> Autodetección de nuevas relaciones después de que se carguen los datos (Autodetect new relationships)
+  
 
 ## **Obtener datos de SQL Server**
 

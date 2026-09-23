@@ -33,7 +33,7 @@ Esta tarea te enseña cómo conectarte a una base de datos SQL Server e importar
 1. En la pestaña de **Inicio** de la cinta, desde dentro del grupo **de Datos**, selecciona **SQL Server**.
 
 
-![imagen1](./imagenes/imagen1.png)
+    ![imagen1](./imagenes/imagen1.png)
 
 2. En la ventana **de la base de datos SQL Server**, en el cuadro **del servidor**, introduce **localhost** y deja **Base de datos** en blanco, luego **selecciona OK.**  
    ***Nota:** En este laboratorio, te conectarás a la base de datos de SQL Server usando **localhost**. Aunque esto está bien para el laboratorio, no se considera una buena práctica para soluciones reales.*  

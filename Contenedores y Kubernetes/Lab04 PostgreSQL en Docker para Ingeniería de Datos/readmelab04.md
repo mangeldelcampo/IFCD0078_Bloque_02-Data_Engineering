@@ -1,5 +1,22 @@
 # 🧑🏽‍💻Practica 04 - PostgreSQL en Docker para Ingeniería de Datos
 
+Esta práctica reproduce el flujo básico de ingestión y explotación de datos en un entorno de **Ingeniería de Datos** utilizando contenedores:
+
+* **Despliegue ágil sin dependencias locales:** Permite aprovisionar un servidor relacional completo (PostgreSQL 16) en segundos sin alterar ni ensuciar el sistema operativo anfitrión (Ubuntu Server) con librerías o servicios persistentes del gestor de base de datos.
+
+
+* **Construcción de una capa de *Staging*:** Establece el patrón de ingestión directa (`ventas.csv` $\rightarrow$ contenedor $\rightarrow$ tabla temporal `staging_ventas`), habitual para recibir datos crudos de negocio antes de aplicar reglas de limpieza o normalización.
+
+
+* **Validación y analítica de datos en destino:** Facilita la carga masiva mediante comandos estándar de SQL (`COPY`) y la comprobación de calidad de datos (conteo de filas, comprobación de esquemas y agregaciones analíticas de importes por producto).
+
+
+* **Dominio del ciclo de vida de los contenedores:** Consolida la gestión práctica de estados (`docker run`, `stop`, `start`, `restart`, `rm` y `rmi`), la inspección de redes/puertos expuestos (`5432:5432`) y la monitorización de consumo (`docker stats`).
+
+
+* **Comprensión de la persistencia de datos (efimeridad):** Demuestra de forma experimental la diferencia crítica entre la **imagen** (plantilla inmutable) y el **contenedor** (instancia viva): los datos se mantienen al detener e iniciar la instancia, pero se pierden por completo al destruir el contenedor si no se emplean volúmenes dedicados (*Docker Volumes*).
+
+
 ## Escenario
 
 Una empresa de ingeniería de datos recibe diariamente archivos CSV procedentes de sus sistemas de ventas.
@@ -100,6 +117,7 @@ Ejecutamos:
 ```bash
 docker run -d --name postgres-data -e POSTGRES_PASSWORD=curso123 -e POSTGRES_DB=empresa -p 5432:5432 postgres:16
 ```
+![6Dockerrun](./imagenes/6Dockerrun.png)
 
 Vamos a analizar el comando.
 Has ejecutado con éxito el paso central de despliegue del contenedor de base de datos. Analicemos tanto la anatomía del comando como la salida que te devolvió el daemon de Docker.

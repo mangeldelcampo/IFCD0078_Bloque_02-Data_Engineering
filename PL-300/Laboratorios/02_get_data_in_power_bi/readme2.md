@@ -38,8 +38,10 @@ Esta tarea te enseña cómo conectarte a una base de datos SQL Server e importar
 2. En la ventana **de la base de datos SQL Server**, en el cuadro **del servidor**, introduce **localhost** y deja **Base de datos** en blanco, luego **selecciona OK.**  
    ***Nota:** En este laboratorio, te conectarás a la base de datos de SQL Server usando **localhost**. Aunque esto está bien para el laboratorio, no se considera una buena práctica para soluciones reales.* 
     ![imagen2](./imagenes/imagen2.png)
-3. Si te piden las credenciales, selecciona **Windows \> Usar mis credenciales actuales** y luego **Conectar**.  
-4. Selecciona **Vale** si recibes una advertencia de que no se puede establecer una conexión cifrada.  
+3. Si te piden las credenciales, selecciona **Windows \> Usar mis credenciales actuales** y luego **Conectar**.
+    ![imagen3](./imagenes/imagen3.png)
+4. Selecciona **Aceptar** si recibes una advertencia de que no se puede establecer una conexión cifrada.
+    ![imagen4](./imagenes/imagen4.png)  
 5. En el panel **de Navigator**, amplía la base de datos **AdventureWorksDW2020**.  
    ***Nota:** La base de datos **AdventureWorksDW2020** se basa en la base de datos de ejemplo **AdventureWorksDW2017**. Ha sido modificado para apoyar los objetivos de aprendizaje de los laboratorios del curso.*  
 6. Selecciona la **tabla DimEmployee** y observa la vista previa de los datos de la tabla.  

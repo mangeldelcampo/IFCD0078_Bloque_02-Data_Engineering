@@ -43,20 +43,21 @@ Desde la terminal remota de **VS Code conectada a Ubuntu Server**:
 ```bash
 docker --version
 ```
-![](./imagenes/1DockerVersion.png)
+![1DockerVersion](./imagenes/1DockerVersion.png)
 
 Comprobamos los contenedores actuales:
 
 ```bash
 docker ps
 ```
+![2DockerPS](./imagenes/2DockerPS.png)
 
 Y las imágenes disponibles:
 
 ```bash
 docker images
 ```
-
+![3DockerImagenesDisponibles](./imagenes/3DockerImagenesDisponibles.png)
 ---
 
 # 2. Descargar PostgreSQL

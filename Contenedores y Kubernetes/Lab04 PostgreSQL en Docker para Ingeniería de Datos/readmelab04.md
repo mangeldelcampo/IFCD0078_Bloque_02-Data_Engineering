@@ -130,7 +130,6 @@ Has ejecutado con éxito el paso central de despliegue del contenedor de base de
 docker run -d --name postgres-data -e POSTGRES_PASSWORD=curso123 -e POSTGRES_DB=empresa -p 5432:5432 postgres:16
 
 ```
-
 * **`docker run`**:
 * Es el comando compuesto que combina dos operaciones internas del motor: primero crea el contenedor (`docker create`) asignándole su capa de lectura/escritura sobre la imagen, y de inmediato lo inicializa (`docker start`).
 * Si la imagen `postgres:16` no estuviera descargada previamente en local, `docker run` la habría descargado (*pull*) de forma automática antes de crearlo.
@@ -234,6 +233,7 @@ Deberíamos observar algo similar a:
 CONTAINER ID   IMAGE         PORTS                    NAMES
 abc123...      postgres:16   0.0.0.0:5432->5432/tcp   postgres-data
 ```
+![7DockerPS](./imagenes/7DockerPS.png)
 
 Ahora tenemos:
 

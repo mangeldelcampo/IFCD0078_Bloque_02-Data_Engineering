@@ -268,12 +268,15 @@ Entre los mensajes deberíamos terminar encontrando algo parecido a:
 ```
 database system is ready to accept connections
 ```
+![8ConsultarLogsPostgreSQL](./imagenes/8ConsultarLogsPostgreSQL.png)
 
 También podemos seguir los logs en tiempo real:
 
 ```bash
 docker logs -f postgres-data
 ```
+
+![9ConsultarLogsTiempoRealPostgreSQL](./imagenes/9ConsultarLogsTiempoRealPostgreSQL.png)
 
 Para salir:
 

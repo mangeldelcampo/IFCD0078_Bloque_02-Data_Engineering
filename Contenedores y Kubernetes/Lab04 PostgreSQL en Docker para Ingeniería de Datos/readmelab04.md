@@ -155,7 +155,6 @@ docker run -d --name postgres-data -e POSTGRES_PASSWORD=curso123 -e POSTGRES_DB=
 
 
 
-
 * **`-e POSTGRES_PASSWORD=curso123`**:
 
 
@@ -166,7 +165,6 @@ docker run -d --name postgres-data -e POSTGRES_PASSWORD=curso123 -e POSTGRES_DB=
 
 
 
-
 * **`-e POSTGRES_DB=empresa`**:
 
 
@@ -174,7 +172,6 @@ docker run -d --name postgres-data -e POSTGRES_PASSWORD=curso123 -e POSTGRES_DB=
 
 
 * Durante el script de inicialización (`docker-entrypoint.sh`), PostgreSQL crea automáticamente una base de datos con este nombre además de la base predeterminada `postgres`. El entorno de staging queda listo desde el primer segundo.
-
 
 
 
@@ -189,7 +186,6 @@ docker run -d --name postgres-data -e POSTGRES_PASSWORD=curso123 -e POSTGRES_DB=
 
 
 
-
 * Gracias a esto, cualquier cliente externo (como DBeaver, pgAdmin o herramientas ETL desde Windows) puede conectarse apuntando a la IP de Ubuntu en el puerto 5432.
 
 
@@ -200,8 +196,6 @@ docker run -d --name postgres-data -e POSTGRES_PASSWORD=curso123 -e POSTGRES_DB=
 
 
 * Define la versión principal 16 de PostgreSQL compilada sobre Debian (la base oficial estándar).
-
-
 
 
 
@@ -223,86 +217,6 @@ e2d2ee2e1b62d5304c610b6c7c1f65685dd6810a55e8d3b59a3b9e2b31c3b383
 * Al devolver este identificador sin mensajes de error intermedios, Docker confirma que el contenedor se creó en el almacenamiento local, se le asignó una interfaz virtual de red (veth) conectada al puente `bridge` de Docker y se lanzó el proceso raíz `postgres`.
 
 
-
----
-
-### Siguiente paso según el laboratorio
-
-PostgreSQL realiza un proceso de inicialización en su primer arranque (creación de catálogos del sistema, configuración del usuario y creación de la BD `empresa`).
-
-Puedes comprobar que el servicio ya está listo para recibir conexiones revisando los logs (Paso 5 del guion):
-
-```bash
-docker logs postgres-data
-
-```
-
-*(Deberás ver la línea: `database system is ready to accept connections`)*.
-
-
-## `-d`
-
-```
--d
-```
-
-Ejecuta PostgreSQL en segundo plano.
-
-## `-name postgres-data`
-
-```
---name postgres-data
-```
-
-Asigna el nombre:
-
-```
-postgres-data
-```
-
-al contenedor.
-
-## `p 5432:5432`
-
-```
--p 5432:5432
-```
-
-Relaciona:
-
-```
-Puerto 5432 Ubuntu → Puerto 5432 PostgreSQL
-```
-
-## `e`
-
-La opción:
-
-```
--e
-```
-
-permite definir variables de entorno.
-
-En este caso:
-
-```bash
--e POSTGRES_PASSWORD=curso123
-```
-
-define la contraseña del usuario administrador de PostgreSQL.
-
-Y:
-
-```bash
--e POSTGRES_DB=empresa
-```
-
-hace que PostgreSQL cree inicialmente una base de datos llamada:
-
-```
-empresa
-```
 
 ---
 

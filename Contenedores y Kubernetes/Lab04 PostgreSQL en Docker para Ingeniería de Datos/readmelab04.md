@@ -84,11 +84,11 @@ postgres     16
 ```
 ![5DockerImagenesDisponibles](./imagenes/5DockerImagenesDisponibles.png)
 
-Aquí estamos utilizando dos comandos vistos en la clase:
+Aquí estamos utilizando dos comandos para Contenedores:
 
 ```
-docker pull
-docker images
+docker pull=>Descarga de imagenes
+docker images=>Revisión de imagenes
 ```
 
 ---

@@ -43,6 +43,7 @@ Desde la terminal remota de **VS Code conectada a Ubuntu Server**:
 ```bash
 docker --version
 ```
+![](./imagenes/1DockerVersion.png)
 
 Comprobamos los contenedores actuales:
 

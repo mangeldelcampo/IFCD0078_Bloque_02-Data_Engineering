@@ -38,14 +38,14 @@ En esta tarea, usarás Power Query Editor para configurar la consulta **de Sales
 > **Nota**: Si recibes un mensaje de advertencia pidiendo especificar cómo conectarte,
 > selecciona **Editar credenciales**, conéctate usando las credenciales actuales y **selecciona OK** para usar una conexión sin cifrar.
 
-4. Para renombrar la consulta, en el panel **de Configuración de la consulta** (ubicado a la derecha), en el cuadro **de Nombre**, sustituye el texto por **Vendedor** y luego pulsa **Enter**. Luego verifica que el nombre se haya actualizado en **el panel de Consultas**.  
+3. Para renombrar la consulta, en el panel **de Configuración de la consulta** (ubicado a la derecha), en el cuadro **de Nombre**, sustituye el texto por **Vendedor** y luego pulsa **Enter**. Luego verifica que el nombre se haya actualizado en **el panel de Consultas**.  
 ![imagen3-1.png](./imagenes/imagen3-1.png)
 > *El nombre de la consulta determina el nombre de la tabla de modelos. Se recomienda definir nombres concisos y fáciles de usar.*  
-6. Para localizar una columna específica, en la pestaña de **la cinta de inicio**, desde dentro del grupo **Gestionar columnas**, selecciona la flecha **descendente Elegir** columnas y luego **selecciona Ir a columna**.  
-7. ***Ir a Columna** es una función útil con muchas columnas. Si no, puedes desplazarte horizontalmente para encontrar columnas.*  
+4. Para localizar una columna específica, en la pestaña de **la cinta de inicio**, desde dentro del grupo **Gestionar columnas**, selecciona la flecha **descendente Elegir** columnas y luego **selecciona Ir a columna**.  
+> ***Ir a Columna** es una función útil con muchas columnas. Si no, puedes desplazarte horizontalmente para encontrar columnas.*  
 *Gestionar columnas \> Elegir columnas \> Ir a columna*  
 ![imagen4-1.png](./imagenes/imagen4-1.png)
-9. En la ventana **Ir a columna**, para ordenar la lista por nombre de columna, selecciona el botón **de ordenar AZ** y luego **selecciona Nombre**.  
+5. En la ventana **Ir a columna**, para ordenar la lista por nombre de columna, selecciona el botón **de ordenar AZ** y luego **selecciona Nombre**.  
 Ve a las opciones de ordenación de columnas
 
       ![imagen5-1.png](./imagenes/imagen5-1.png)

@@ -134,8 +134,7 @@ Esta tarea introduce el Power Query Editor y te permite revisar y perfilar los d
 6. Fíjate que la columna **Posición** tiene un 94% de filas vacías (nulas).  
 ![Imagen9.png](./imagenes/imagen9.png)
 
-    
-![Imagen10.png](./imagenes/imagen10.png)
+ ![Imagen10.png](./imagenes/imagen10.png)
  
 
 7. Para evaluar la distribución de columnas, en la pestaña **de cinta Vista**, desde dentro del grupo **de Vista previa de datos**, comprueba **Distribución de columnas**.  

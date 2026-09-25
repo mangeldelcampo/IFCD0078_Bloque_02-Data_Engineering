@@ -131,8 +131,9 @@ Esta tarea introduce el Power Query Editor y te permite revisar y perfilar los d
 
 5. Para evaluar la calidad de las columnas, en la pestaña **de Vista** de la cinta desde el grupo **de Vista previa de datos**, comprueba **Calidad de columna**. La función de calidad de columna te permite determinar fácilmente el porcentaje de valores válidos, de error o vacíos que se encuentran en las columnas.  
    imagen8c.png  
-6. Fíjate que la columna **Posición** tiene un 94% de filas vacías (nulas).  
-![Imagen9.png](./imagenes/imagen9.png)
+6. Fíjate que la columna **Posición** tiene un 94% de filas vacías (nulas). 
+
+  ![Imagen9.png](./imagenes/imagen9.png)
 
  ![Imagen10.png](./imagenes/imagen10.png)
  

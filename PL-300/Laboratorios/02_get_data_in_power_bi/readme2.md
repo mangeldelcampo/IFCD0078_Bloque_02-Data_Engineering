@@ -185,26 +185,27 @@ En esta tarea, crearás una nueva consulta basada en archivos CSV.
 4. En el **panel de Consultas**, observa la adición de la **consulta ResellerSalesTargets**.  
    *El archivo **CSV ResellerSalesTargets** contiene una fila por vendedor, por año. Cada fila registra 12 objetivos de ventas mensuales (expresados en miles). El año económico de la empresa Adventure Works comienza el 1 de julio.*
 ![Imagen18.png](./imagenes/imagen18.png)
-Imagen18.png
+
 
 5. Observa que ninguna columna contiene valores vacíos. Si falta un objetivo mensual de ventas, la columna muestra un guion en su lugar.  
 6. Revisa los iconos de cada encabezado de columna, a la izquierda del nombre de la columna. Los iconos representan el tipo de dato de la columna. **123** es número entero, y **ABC** es texto.
+![Imagen18a.png](./imagenes/imagen18a.png)
 
-Imagen18a.png
 
  
 
 7. Repite los pasos para crear una consulta basada en el **archivo ColorFormats.csv**.  
    *El archivo **CSV de ColorFormats** contiene una fila por color de producto. Cada fila registra los códigos HEX para formatear los colores de fondo y de fuente.*
 
-Imagen19.png
+![Imagen19.png](./imagenes/imagen19.png)
+
 
    
 Ahora deberías tener dos nuevas consultas, **ResellerSalesTargets** y **ColorFormats**.
 
  
+![Imagen20.png](./imagenes/imagen20.png)
 
-Imagen20.png
 
    
    

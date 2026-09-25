@@ -112,42 +112,43 @@ Esta tarea introduce el Power Query Editor y te permite revisar y perfilar los d
 2. Selecciona la consulta **DimEmployee**.  
    *La tabla **DimEmployee** en la base de datos de SQL Server almacena una fila para cada empleado. Un subconjunto de las filas de esta tabla representa a los vendedores, que serán relevantes para el modelo que vayas a desarrollar.*
 
-![imagen8b.png](./imágenes/imagen8b.png)
+![imagen8b.png](./imagenes/imagen8b.png)
 
  
 
 3. En la esquina inferior izquierda de la barra de estado se muestran algunas estadísticas de la tabla: la tabla tiene 33 columnas y 296 filas.
 
-![imagen8a.png](./imágenes/imagen8a.png)
+![imagen8a.png](./imagenes/imagen8a.png)
 
  
 
 4. En el panel de vista previa de datos, desplázate horizontalmente para revisar todas las columnas. Fíjate en que las últimas cinco columnas contienen enlaces **de Tabla** o **Valor**.  
    *Estas cinco columnas representan relaciones con otras tablas de la base de datos. Pueden usarse para unir mesas. Más adelante unirás estas tablas en **el Load Transformed Data en Power BI Desktop** Lab.*
 
-![imagen8b.png](./imágenes/imagen8b.png)
+![imagen8b.png](./imagenes/imagen8b.png)
 
  
 
 5. Para evaluar la calidad de las columnas, en la pestaña **de Vista** de la cinta desde el grupo **de Vista previa de datos**, comprueba **Calidad de columna**. La función de calidad de columna te permite determinar fácilmente el porcentaje de valores válidos, de error o vacíos que se encuentran en las columnas.  
    imagen8c.png  
 6. Fíjate que la columna **Posición** tiene un 94% de filas vacías (nulas).  
-![Imagen9.png](./imágenes/Imagen9.png)
+![Imagen9.png](./imagenes/imagen9.png)
 
  
 
    
-![Imagen10.png](./imágenes/Imagen10.png)
+![Imagen10.png](./imagenes/imagen10.png)
  
 
 7. Para evaluar la distribución de columnas, en la pestaña **de cinta Vista**, desde dentro del grupo **de Vista previa de datos**, comprueba **Distribución de columnas**.  
 8. Revisa de nuevo la columna **Posición** y observa que hay cuatro valores distintos y uno único.  
 9. Revisa la distribución de columnas para la columna **EmployeeKey**: hay 296 valores distintos y 296 valores únicos.  
-   Imagen11.png  
+   ![Imagen11.png](./imagenes/imagen11.png)
+
    ***Nota:** Cuando los recuentos distintos y únicos son los mismos, significa que la columna contiene valores únicos. Al modelar, es importante que algunas tablas de modelos tengan columnas únicas. Estas columnas únicas pueden usarse para crear relaciones de uno a muchos, que harás en el **Model Data en Power BI Desktop** Lab.*  
 10. En el panel **de Consultas**, selecciona la consulta **DimProduct**.  
     *La tabla **DimProduct** contiene una fila por cada producto vendido por la empresa.*  
-    Imagen12.png  
+    ![Imagen12.png](./imagenes/imagen12.png)  
        
 11. En el panel **de Consultas**, selecciona la **consulta DimRevendedor**.  
     *La tabla **de DimReseller** contiene una fila por distribuidor. Los revendedores venden, distribuyen o añaden valor a los productos de Adventure Works.*  
@@ -155,12 +156,12 @@ Esta tarea introduce el Power Query Editor y te permite revisar y perfilar los d
 12. Para ver los valores de las columnas, en la pestaña **de cinta Vista**, desde dentro del grupo **de Vista previa de datos**, marque **Perfil de columna**.  
 13. Selecciona la cabecera **de la columna BusinessType** y observa el nuevo panel debajo del panel de vista previa de datos. Revisa las estadísticas de las columnas y la distribución de valores en el panel de vista previa de datos.  
     *Fíjate en el problema de calidad de datos: hay dos etiquetas para almacén (**Warehouse** y el mal escrito **Warehouse**).*  
-    Imagen13.png  
+    ![Imagen13.png](./imagenes/imagen13.png)
        
 14. Pasa el cursor sobre la barra **de Ware** House y observa que hay cinco filas con este valor.  
 15. En el **panel de Consultas**, selecciona la consulta **DimSalesTerritory**.  
     *La tabla **DimSalesTerritory** contiene una fila por región de ventas, incluyendo **la sede corporativa** (sede central). Las regiones se asignan a un país y los países a grupos. En el **Model Data en Power BI Desktop** Lab crearás una jerarquía para apoyar el análisis a nivel regional, país o grupo.*  
-    Imagen15.png  
+    ![Imagen15.png](./imagenes/imagen15.png)  
        
 16. En el panel **de Consultas**, selecciona la consulta **FactResellerSales**.  
     *La tabla **FactResellerSales** contiene una fila por cada línea de pedido de venta: una orden de venta contiene uno o más elementos de línea.*  
@@ -177,14 +178,14 @@ En esta tarea, crearás una nueva consulta basada en archivos CSV.
 1. Para añadir una nueva consulta, en la ventana **del Editor de Power Query**, en la pestaña **de la cinta de inicio**, desde dentro del grupo **de Nuevas Consultas**, selecciona la flecha **hacia abajo Nueva Fuente** y luego **selecciona Texto/CSV**.  
 2. Ve a la **carpeta Downloads \> 01-get-data** que extrajiste antes y selecciona el **archivo ResellerSalesTargets.csv**. **Selecciona Abrir**.  
 3. En la **ventana ResellerSalesTargets.csv**, revisa los datos de vista previa. Selecciona **OK**.
+![Imagen17.png](./imagenes/imagen17.png)
 
-Imagen17.png
 
  
 
 4. En el **panel de Consultas**, observa la adición de la **consulta ResellerSalesTargets**.  
    *El archivo **CSV ResellerSalesTargets** contiene una fila por vendedor, por año. Cada fila registra 12 objetivos de ventas mensuales (expresados en miles). El año económico de la empresa Adventure Works comienza el 1 de julio.*
-
+![Imagen18.png](./imagenes/imagen18.png)
 Imagen18.png
 
 5. Observa que ninguna columna contiene valores vacíos. Si falta un objetivo mensual de ventas, la columna muestra un guion en su lugar.  

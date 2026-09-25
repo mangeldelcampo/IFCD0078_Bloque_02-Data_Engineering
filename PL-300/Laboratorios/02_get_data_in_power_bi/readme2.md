@@ -24,17 +24,17 @@ Desde SQL Magnament Server recuperamos el backup de la base de datos ***Adventur
 
 Primero nos conectamos a SQL SERVER del servidor Local.
 
-![5ConectSQLMagnamentStudio.png](./imágenes/5ConectSQLMagnamentStudio.png)
+![5ConectSQLMagnamentStudio.png](./imagenes/5ConectSQLMagnamentStudio.png)
 
 Ahora recuperamos el Backup de la BD AdventureWorksDW2020.bak
 
-![imagen5.png](./imágenes/imagen5.png)
+![imagen5.png](./imagenes/imagen5.png)
 
 Elegimos el dispositivo y la ruta del fichero de backup.
 
-![imagen6RestoreDB.png](./imágenes/imagen6RestoreDB.png)
+![imagen6RestoreDB.png](./imagenes/imagen6RestoreDB.png)
 
-![imagen6.png](./imágenes/imagen6.png)
+![imagen6.png](./imagenes/imagen6.png)
 
 Una vez restaurada la BD ya podemos Obtener datos de ella.
 
@@ -55,20 +55,20 @@ Esta tarea te enseña cómo conectarte a una base de datos SQL Server e importar
 
 1. En la pestaña de **Inicio** de la cinta, desde dentro del grupo **de Datos**, selecciona **SQL Server**.
 
-![imagen1.png](./imágenes/imagen1.png)
+![imagen1.png](./imagenes/imagen1.png)
 
  
 
 2. En la ventana **de la base de datos SQL Server**, en el cuadro **del servidor**, introduce **localhost** y deja **Base de datos** en blanco, luego **selecciona OK.**  
    ***Nota:** En este laboratorio, te conectarás a la base de datos de SQL Server usando **localhost**. Aunque esto está bien para el laboratorio, no se considera una buena práctica para soluciones reales.*
 
-![imagen0.png](./imágenes/imagen0.png)
+![imagen0.png](./imagenes/imagen0.png)
 
  
 
 3. Si te piden las credenciales, selecciona **Windows \> Usar mis credenciales actuales** y luego **Conectar**.
 
-![imagen3.png](./imágenes/imagen3.png)
+![imagen3.png](./imagenes/imagen3.png)
 
  
 
@@ -76,13 +76,13 @@ Esta tarea te enseña cómo conectarte a una base de datos SQL Server e importar
 
 4. Selecciona **Aceptar** si recibes una advertencia de que no se puede establecer una conexión cifrada.
 
-![imagen4.png](./imágenes/imagen4.png)
+![imagen4.png](./imagenes/imagen4.png)
 
 5. En el panel **de Navigator**, amplía la base de datos **AdventureWorksDW2020**.  
    ***Nota:** La base de datos **AdventureWorksDW2020** se basa en la base de datos de ejemplo **AdventureWorksDW2017**. Ha sido modificado para apoyar los objetivos de aprendizaje de los laboratorios del curso.*  
 6. Selecciona la **tabla DimEmployee** y observa la vista previa de los datos de la tabla.
 
-![imagen7.png](./imágenes/imagen7.png)
+![imagen7.png](./imagenes/imagen7.png)
 
    
 ***Nota:** Los datos de vista previa permiten ver las columnas y una muestra de filas.*
@@ -96,7 +96,7 @@ Esta tarea te enseña cómo conectarte a una base de datos SQL Server e importar
    * FactResellerSales  
 8. Completa esta tarea seleccionando **Transformar datos**, lo que abrirá Power Query Editor \- deja este espacio abierto para la siguiente tarea.
 
-![imagen8.png](./imágenes/imagen8.png)
+![imagen8.png](./imagenes/imagen8.png)
 
  
 

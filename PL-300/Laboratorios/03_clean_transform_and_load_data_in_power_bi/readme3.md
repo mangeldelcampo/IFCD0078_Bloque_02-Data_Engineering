@@ -33,7 +33,9 @@ En esta tarea, usarás Power Query Editor para configurar la consulta **de Sales
    ![Transformar datos en la cinta de inicio][image1]  
 2. En la ventana **del Editor de Power Consultas**, en el panel **de Consultas**, selecciona la **consulta DimEmployee**.  
    ![Imagen 1][image2]  
-3. **Nota:** Si recibes un mensaje de advertencia pidiendo especificar cómo conectarte, selecciona **Editar credenciales**, conéctate usando las credenciales actuales y **selecciona OK** para usar una conexión sin cifrar.  
+´´´
+**Nota:** Si recibes un mensaje de advertencia pidiendo especificar cómo conectarte, selecciona **Editar credenciales**, conéctate usando las credenciales actuales y **selecciona OK** para usar una conexión sin cifrar.  
+´´´
 4. Para renombrar la consulta, en el panel **de Configuración de la consulta** (ubicado a la derecha), en el cuadro **de Nombre**, sustituye el texto por **Vendedor** y luego pulsa **Enter**. Luego verifica que el nombre se haya actualizado en **el panel de Consultas**.  
 ![imagen3-1.png](./imagenes/imagen3-1.png)
 5. *El nombre de la consulta determina el nombre de la tabla de modelos. Se recomienda definir nombres concisos y fáciles de usar.*  
@@ -42,7 +44,8 @@ En esta tarea, usarás Power Query Editor para configurar la consulta **de Sales
 *Gestionar columnas \> Elegir columnas \> Ir a columna*  
 ![imagen4-1.png](./imagenes/imagen4-1.png)
 9. En la ventana **Ir a columna**, para ordenar la lista por nombre de columna, selecciona el botón **de ordenar AZ** y luego **selecciona Nombre**.  
-   Ve a las opciones de ordenación de columnas
+Ve a las opciones de ordenación de columnas
+
       ![imagen5-1.png](./imagenes/imagen5-1.png)
 10. Localiza la columna **SalesPersonFlag**, luego filtra la columna para seleccionar solo Salespeople (es decir, **TRUE**) y haz **clic en OK**.  
 11. En el panel **de Configuración de Consulta**, en la lista **de Pasos Aplicados**, observa la adición del paso **Filas Filtradas**.  

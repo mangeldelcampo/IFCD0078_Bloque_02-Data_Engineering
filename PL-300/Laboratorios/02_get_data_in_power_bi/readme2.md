@@ -1,4 +1,5 @@
 PL-300-Microsoft-Power-BI-Data-Analyst
+PL-300-Microsoft-Power-BI-Data-Analyst
 
 # **Obtener datos en Power BI**
 
@@ -7,12 +8,35 @@ PL-300-Microsoft-Power-BI-Data-Analyst
 Este laboratorio está diseñado para introducirte en la aplicación Power BI Desktop, cómo conectarte a los datos y cómo utilizar técnicas de vista previa para entender las características y la calidad de los datos fuente.  
 En este laboratorio, aprendes cómo:
 
-* Abre Power BI Desktop.  
-* Conéctate a diferentes fuentes de datos.  
+* Recuperar un fichero de Backup de Base de datos.  
+* Abrir Power BI Desktop.  
+* Conéctarte a diferentes fuentes de datos.  
 * Previsualizar los datos fuente con Power Query.  
-* Utiliza funciones de perfilado de datos en Power Query.
+* Utilizar funciones de perfilado de datos en Power Query.
 
 **Este laboratorio debería durar aproximadamente 30 minutos.**
+
+ 
+
+## **Recuperar Backup de base datos**
+
+Desde SQL Magnament Server recuperamos el backup de la base de datos ***AdventureWorksDW2020*** que existe en el directorio  D:\\Allfiles\\DatabaseBackup\\AdventureWorksDW2020.bak que descargamos en la preparación del entorno.
+
+Primero nos conectamos a SQL SERVER del servidor Local.
+
+\! \[5ConectSQLMagnamentStudio.png\](./imágenes/5ConectSQLMagnamentStudio.png)
+
+Ahora recuperamos el Backup de la BD AdventureWorksDW2020.bak
+
+\! \[imagen5.png\](./imágenes/imagen5.png)
+
+Elegimos el dispositivo y la ruta del fichero de backup.
+
+\! \[imagen6RestoreDB.png\](./imágenes/imagen6RestoreDB.png)
+
+\! \[imagen6.png\](./imágenes/imagen6.png)
+
+Una vez restaurada la BD ya podemos Obtener datos de ella.
 
 ## **Empieza con Power BI Desktop**
 
@@ -22,9 +46,8 @@ Extrae la carpeta a la **carpeta C:\\Users\\Student\\Downloads\\01-get-data**.
 Abre el archivo **01-Starter-Sales Analysis.pbik**.
 
 * Este archivo inicial ha sido configurado especialmente para ayudarte a completar el laboratorio. Las siguientes configuraciones a nivel de informe han sido desactivadas en el archivo inicial:  
-  * Relaciones de carga \> importación de datos desde fuentes de datos en la primera carga (Import relationships from data sources on first load) 
-  * Carga de datos \> Autodetección de nuevas relaciones después de que se carguen los datos (Autodetect new relationships)
-  
+  * Relaciones de carga \> importación de datos desde fuentes de datos en la primera carga  
+  * Carga de datos \> Autodetección de nuevas relaciones después de que se carguen los datos
 
 ## **Obtener datos de SQL Server**
 
@@ -32,22 +55,38 @@ Esta tarea te enseña cómo conectarte a una base de datos SQL Server e importar
 
 1. En la pestaña de **Inicio** de la cinta, desde dentro del grupo **de Datos**, selecciona **SQL Server**.
 
+\! \[imagen1.png\](./imágenes/imagen1.png)
 
-    ![imagen1](./imagenes/imagen1.png)
+ 
 
 2. En la ventana **de la base de datos SQL Server**, en el cuadro **del servidor**, introduce **localhost** y deja **Base de datos** en blanco, luego **selecciona OK.**  
-   ***Nota:** En este laboratorio, te conectarás a la base de datos de SQL Server usando **localhost**. Aunque esto está bien para el laboratorio, no se considera una buena práctica para soluciones reales.* 
-    ![imagen2](./imagenes/imagen2.png)
+   ***Nota:** En este laboratorio, te conectarás a la base de datos de SQL Server usando **localhost**. Aunque esto está bien para el laboratorio, no se considera una buena práctica para soluciones reales.*
+
+\! \[imagen0.png\](./imágenes/imagen0.png)
+
+ 
+
 3. Si te piden las credenciales, selecciona **Windows \> Usar mis credenciales actuales** y luego **Conectar**.
-    ![imagen3](./imagenes/imagen3.png)
+
+\! \[imagen3.png\](./imágenes/imagen3.png)
+
+ 
+
+ 
+
 4. Selecciona **Aceptar** si recibes una advertencia de que no se puede establecer una conexión cifrada.
-    ![imagen4](./imagenes/imagen4.png)  
+
+\! \[imagen4.png\](./imágenes/imagen4.png)
+
 5. En el panel **de Navigator**, amplía la base de datos **AdventureWorksDW2020**.  
    ***Nota:** La base de datos **AdventureWorksDW2020** se basa en la base de datos de ejemplo **AdventureWorksDW2017**. Ha sido modificado para apoyar los objetivos de aprendizaje de los laboratorios del curso.*  
-6. Selecciona la **tabla DimEmployee** y observa la vista previa de los datos de la tabla.  
-   ***![][image2]***  
-   \!\[\](./imagen2.png)  
-   ***Nota:** Los datos de vista previa permiten ver las columnas y una muestra de filas.*  
+6. Selecciona la **tabla DimEmployee** y observa la vista previa de los datos de la tabla.
+
+\! \[imagen7.png\](./imágenes/imagen7.png)
+
+   
+***Nota:** Los datos de vista previa permiten ver las columnas y una muestra de filas.*
+
 7. Selecciona las siguientes tablas **marcando las casillas** junto a sus nombres.  
    * DimEmployee  
    * DimEmployeeSalesTerritory  
@@ -57,6 +96,11 @@ Esta tarea te enseña cómo conectarte a una base de datos SQL Server e importar
    * FactResellerSales  
 8. Completa esta tarea seleccionando **Transformar datos**, lo que abrirá Power Query Editor \- deja este espacio abierto para la siguiente tarea.
 
+\! \[imagen8.png\](./imágenes/imagen8.png)
+
+ 
+
+   
 Ahora has conectado seis tablas de una base de datos SQL Server.
 
 ## **Datos de vista previa en Power Query Editor**
@@ -64,49 +108,67 @@ Ahora has conectado seis tablas de una base de datos SQL Server.
 Esta tarea introduce el Power Query Editor y te permite revisar y perfilar los datos. Esto te ayuda a determinar cómo limpiar y transformar los datos más adelante. También revisarás tanto las tablas dimensionales con el prefijo "Dim" como las tablas de hechos con el prefijo "Fact".
 
 1. En la ventana **del Editor de Power Consultes**, a la izquierda, fíjate en el panel **de Consultas**. El panel **de Consultas** contiene una consulta por cada tabla que has comprobado.  
-   ![][image3]  
-   \!\[\](./imagen3.png)  
+   imagen08.png  
 2. Selecciona la consulta **DimEmployee**.  
-   *La tabla **DimEmployee** en la base de datos de SQL Server almacena una fila para cada empleado. Un subconjunto de las filas de esta tabla representa a los vendedores, que serán relevantes para el modelo que vayas a desarrollar.*  
+   *La tabla **DimEmployee** en la base de datos de SQL Server almacena una fila para cada empleado. Un subconjunto de las filas de esta tabla representa a los vendedores, que serán relevantes para el modelo que vayas a desarrollar.*
+
+\! \[imagen8b.png\](./imágenes/imagen8b.png)
+
+ 
+
 3. En la esquina inferior izquierda de la barra de estado se muestran algunas estadísticas de la tabla: la tabla tiene 33 columnas y 296 filas.
 
-![][image4]
+\! \[imagen8a.png\](./imágenes/imagen8a.png)
 
-\!\[\](./imagen4.png)
+ 
 
 4. En el panel de vista previa de datos, desplázate horizontalmente para revisar todas las columnas. Fíjate en que las últimas cinco columnas contienen enlaces **de Tabla** o **Valor**.  
-   *Estas cinco columnas representan relaciones con otras tablas de la base de datos. Pueden usarse para unir mesas. Más adelante unirás estas tablas en **el Load Transformed Data en Power BI Desktop** Lab.*  
-5. Para evaluar la calidad de las columnas, en la pestaña **de Vista** de la cinta desde el grupo **de Vista previa de datos**, comprueba **Calidad de columna**. La función de calidad de columna te permite determinar fácilmente el porcentaje de valores válidos, de error o vacíos que se encuentran en las columnas.
+   *Estas cinco columnas representan relaciones con otras tablas de la base de datos. Pueden usarse para unir mesas. Más adelante unirás estas tablas en **el Load Transformed Data en Power BI Desktop** Lab.*
 
-![][image5]
+\! \[imagen8b.png\](./imágenes/imagen8b.png)
 
-\!\[\](./imagen5.png)
+ 
 
+5. Para evaluar la calidad de las columnas, en la pestaña **de Vista** de la cinta desde el grupo **de Vista previa de datos**, comprueba **Calidad de columna**. La función de calidad de columna te permite determinar fácilmente el porcentaje de valores válidos, de error o vacíos que se encuentran en las columnas.  
+   imagen8c.png  
 6. Fíjate que la columna **Posición** tiene un 94% de filas vacías (nulas).  
-   ![][image6]  
-   \!\[\](./imagen6.png)  
+   Imagen9.png
+
+ 
+
+   
+Imagen10.png  
+ 
+
 7. Para evaluar la distribución de columnas, en la pestaña **de cinta Vista**, desde dentro del grupo **de Vista previa de datos**, comprueba **Distribución de columnas**.  
 8. Revisa de nuevo la columna **Posición** y observa que hay cuatro valores distintos y uno único.  
 9. Revisa la distribución de columnas para la columna **EmployeeKey**: hay 296 valores distintos y 296 valores únicos.  
-   ***![][image7]***  
-   \!\[\](./imagen7.png)  
+   Imagen11.png  
    ***Nota:** Cuando los recuentos distintos y únicos son los mismos, significa que la columna contiene valores únicos. Al modelar, es importante que algunas tablas de modelos tengan columnas únicas. Estas columnas únicas pueden usarse para crear relaciones de uno a muchos, que harás en el **Model Data en Power BI Desktop** Lab.*  
 10. En el panel **de Consultas**, selecciona la consulta **DimProduct**.  
     *La tabla **DimProduct** contiene una fila por cada producto vendido por la empresa.*  
+    Imagen12.png  
+       
 11. En el panel **de Consultas**, selecciona la **consulta DimRevendedor**.  
     *La tabla **de DimReseller** contiene una fila por distribuidor. Los revendedores venden, distribuyen o añaden valor a los productos de Adventure Works.*  
+       
 12. Para ver los valores de las columnas, en la pestaña **de cinta Vista**, desde dentro del grupo **de Vista previa de datos**, marque **Perfil de columna**.  
 13. Selecciona la cabecera **de la columna BusinessType** y observa el nuevo panel debajo del panel de vista previa de datos. Revisa las estadísticas de las columnas y la distribución de valores en el panel de vista previa de datos.  
     *Fíjate en el problema de calidad de datos: hay dos etiquetas para almacén (**Warehouse** y el mal escrito **Warehouse**).*  
-    *![][image8]*  
-    \!\[\](./imagen8.png)  
+    Imagen13.png  
+       
 14. Pasa el cursor sobre la barra **de Ware** House y observa que hay cinco filas con este valor.  
 15. En el **panel de Consultas**, selecciona la consulta **DimSalesTerritory**.  
     *La tabla **DimSalesTerritory** contiene una fila por región de ventas, incluyendo **la sede corporativa** (sede central). Las regiones se asignan a un país y los países a grupos. En el **Model Data en Power BI Desktop** Lab crearás una jerarquía para apoyar el análisis a nivel regional, país o grupo.*  
+    Imagen15.png  
+       
 16. En el panel **de Consultas**, selecciona la consulta **FactResellerSales**.  
     *La tabla **FactResellerSales** contiene una fila por cada línea de pedido de venta: una orden de venta contiene uno o más elementos de línea.*  
 17. Revisa la calidad de la columna **CosteProducto Total**, y observa que el 8% de las filas están vacías.  
-    *La falta de valores de columna **TotalProductCost** es un problema de calidad de datos.*
+    *La falta de valores de columna **TotalProductCost** es un problema de calidad de datos.*  
+       
+       
+     
 
 ## **Obtener datos de un archivo CSV**
 
@@ -114,20 +176,39 @@ En esta tarea, crearás una nueva consulta basada en archivos CSV.
 
 1. Para añadir una nueva consulta, en la ventana **del Editor de Power Query**, en la pestaña **de la cinta de inicio**, desde dentro del grupo **de Nuevas Consultas**, selecciona la flecha **hacia abajo Nueva Fuente** y luego **selecciona Texto/CSV**.  
 2. Ve a la **carpeta Downloads \> 01-get-data** que extrajiste antes y selecciona el **archivo ResellerSalesTargets.csv**. **Selecciona Abrir**.  
-3. En la **ventana ResellerSalesTargets.csv**, revisa los datos de vista previa. Selecciona **OK**.  
+3. En la **ventana ResellerSalesTargets.csv**, revisa los datos de vista previa. Selecciona **OK**.
+
+Imagen17.png
+
+ 
+
 4. En el **panel de Consultas**, observa la adición de la **consulta ResellerSalesTargets**.  
-   *El archivo **CSV ResellerSalesTargets** contiene una fila por vendedor, por año. Cada fila registra 12 objetivos de ventas mensuales (expresados en miles). El año económico de la empresa Adventure Works comienza el 1 de julio.*  
+   *El archivo **CSV ResellerSalesTargets** contiene una fila por vendedor, por año. Cada fila registra 12 objetivos de ventas mensuales (expresados en miles). El año económico de la empresa Adventure Works comienza el 1 de julio.*
+
+Imagen18.png
+
 5. Observa que ninguna columna contiene valores vacíos. Si falta un objetivo mensual de ventas, la columna muestra un guion en su lugar.  
-6. Revisa los iconos de cada encabezado de columna, a la izquierda del nombre de la columna. Los iconos representan el tipo de dato de la columna. **123** es número entero, y **ABC** es texto.  
-   ![][image9]  
-   \!\[\](./imagen9.png)  
+6. Revisa los iconos de cada encabezado de columna, a la izquierda del nombre de la columna. Los iconos representan el tipo de dato de la columna. **123** es número entero, y **ABC** es texto.
+
+Imagen18a.png
+
+ 
+
 7. Repite los pasos para crear una consulta basada en el **archivo ColorFormats.csv**.  
    *El archivo **CSV de ColorFormats** contiene una fila por color de producto. Cada fila registra los códigos HEX para formatear los colores de fondo y de fuente.*
 
-Ahora deberías tener dos nuevas consultas, **ResellerSalesTargets** y **ColorFormats**.  
-![][image10]
+Imagen19.png
 
-\!\[\](./imagen10.png)
+   
+Ahora deberías tener dos nuevas consultas, **ResellerSalesTargets** y **ColorFormats**.
+
+ 
+
+Imagen20.png
+
+   
+   
+ 
 
 ## **Laboratorio completo**
 
@@ -139,3 +220,4 @@ Puedes optar por guardar tu informe de Power BI, aunque no es necesario para est
 4. Selecciona el botón **Guardar** para guardar tu informe como archivo .pbik.  
 5. Si aparece un cuadro de diálogo que te pide que apliques cambios pendientes en la consulta, selecciona **Aplicar**.  
 6. Cierra Power BI Desktop.
+

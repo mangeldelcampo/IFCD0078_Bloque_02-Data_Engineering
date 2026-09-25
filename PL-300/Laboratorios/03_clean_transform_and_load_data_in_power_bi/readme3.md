@@ -35,8 +35,9 @@ En esta tarea, usarás Power Query Editor para configurar la consulta **de Sales
    ![Imagen 1][image2]  
 
 ```
-**Nota:** Si recibes un mensaje de advertencia pidiendo especificar cómo conectarte, selecciona **Editar credenciales**, conéctate usando las credenciales actuales y **selecciona OK** para usar una conexión sin cifrar.
-  
+**Nota:** Si recibes un mensaje de advertencia pidiendo especificar cómo conectarte,
+ selecciona **Editar credenciales**, conéctate usando las credenciales actuales y **selecciona OK** para usar una conexión sin cifrar.
+
 ```
 
 4. Para renombrar la consulta, en el panel **de Configuración de la consulta** (ubicado a la derecha), en el cuadro **de Nombre**, sustituye el texto por **Vendedor** y luego pulsa **Enter**. Luego verifica que el nombre se haya actualizado en **el panel de Consultas**.  

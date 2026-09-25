@@ -42,7 +42,8 @@ En esta tarea, usarás Power Query Editor para configurar la consulta **de Sales
 *Gestionar columnas \> Elegir columnas \> Ir a columna*  
 ![imagen4-1.png](./imagenes/imagen4-1.png)
 9. En la ventana **Ir a columna**, para ordenar la lista por nombre de columna, selecciona el botón **de ordenar AZ** y luego **selecciona Nombre**.  
-   ![Ve a las opciones de ordenación de columnas][image4]  
+   Ve a las opciones de ordenación de columnas
+      ![imagen5-1.png](./imagenes/imagen5-1.png)
 10. Localiza la columna **SalesPersonFlag**, luego filtra la columna para seleccionar solo Salespeople (es decir, **TRUE**) y haz **clic en OK**.  
 11. En el panel **de Configuración de Consulta**, en la lista **de Pasos Aplicados**, observa la adición del paso **Filas Filtradas**.  
 12. *Cada transformación que creas da lugar a una lógica de paso más. Es posible editar o eliminar pasos. También es posible seleccionar un paso para previsualizar los resultados de la consulta en esa fase de la transformación de la consulta.*  

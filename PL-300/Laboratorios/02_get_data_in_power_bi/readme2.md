@@ -134,9 +134,7 @@ Esta tarea introduce el Power Query Editor y te permite revisar y perfilar los d
 6. Fíjate que la columna **Posición** tiene un 94% de filas vacías (nulas).  
 ![Imagen9.png](./imagenes/imagen9.png)
 
- 
-
-   
+    
 ![Imagen10.png](./imagenes/imagen10.png)
  
 
@@ -178,6 +176,7 @@ En esta tarea, crearás una nueva consulta basada en archivos CSV.
 1. Para añadir una nueva consulta, en la ventana **del Editor de Power Query**, en la pestaña **de la cinta de inicio**, desde dentro del grupo **de Nuevas Consultas**, selecciona la flecha **hacia abajo Nueva Fuente** y luego **selecciona Texto/CSV**.  
 2. Ve a la **carpeta Downloads \> 01-get-data** que extrajiste antes y selecciona el **archivo ResellerSalesTargets.csv**. **Selecciona Abrir**.  
 3. En la **ventana ResellerSalesTargets.csv**, revisa los datos de vista previa. Selecciona **OK**.
+
 ![Imagen17.png](./imagenes/imagen17.png)
 
 

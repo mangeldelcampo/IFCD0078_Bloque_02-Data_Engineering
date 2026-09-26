@@ -43,7 +43,7 @@ Una vez restaurada la BD ya podemos Obtener datos de ella.
 Para completar este ejercicio, primero abre un navegador web e introduce la siguiente URL para descargar la carpeta zip:  
 https://github.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/raw/Main/Allfiles/Labs/01-get-data-in-power-bi/01-get-data.zip  
 Extrae la carpeta a la **carpeta C:\\Users\\Student\\Downloads\\01-get-data**.  
-Abre el archivo **01-Starter-Sales Analysis.pbik**.
+Abre el archivo **01-Starter-Sales Analysis.pbix**.
 
 * Este archivo inicial ha sido configurado especialmente para ayudarte a completar el laboratorio. Las siguientes configuraciones a nivel de informe han sido desactivadas en el archivo inicial:  
   * Relaciones de carga \> importación de datos desde fuentes de datos en la primera carga  

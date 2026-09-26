@@ -19,7 +19,7 @@ https://github.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/raw/
 
 Extrae la carpeta a la **carpeta C:\\Users\\Student\\Downloads\\02-transform-data**.
 
-Abre el archivo **02-Starter-Sales Analysis.pbik**.
+Abre el archivo **02-Starter-Sales Analysis.pbix**.
 
 ***Nota:** Puede que veas un diálogo de inicio de sesión mientras carga el archivo. Selecciona **Cancelar** para cerrar el cuadro de inicio de sesión. Cierra cualquier otra ventana informativa. Selecciona **Solicitar más tarde**, si se le pide aplicar cambios.*
 

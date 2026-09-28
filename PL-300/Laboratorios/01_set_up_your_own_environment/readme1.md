@@ -66,24 +66,25 @@ C:\SQL2025\StdDev_ENU
 
 ![Imagen 3](./imagenes/Imagen3.png)
 
-
+Instalamos SSMS Sql Server Magnament Studio
 [https://learn.microsoft.com/en-us/ssms/install/install](https://learn.microsoft.com/en-us/ssms/install/install)
 
+Descargamos SSMS Sql Server Magnament Studio
 ![Imagen 4](./imagenes/Imagen4.png)
 
-
+Procedemos a instalar SSMS Sql Server Magnament Studio
 ![Imagen 5](./imagenes/Imagen5.png)
 
-
+Progreso de Instalación de SSMS Sql Server Magnament Studio
 ![Imagen 6](./imagenes/Imagen6.png)
 
-
+Abrimos el interfaz de SSMS Sql Server Magnament Studio
 ![Imagen 7](./imagenes/Imagen7.png)
 
-
+No creamos cuenta, saltamos el paso, conectaremos con la autenticación de Windows
 ![Imagen 8](./imagenes/Imagen8.png)
 
-
+Conexión al Motor de Base de Datos
 ![Imagen 9](./imagenes/Imagen9.png)
 
 

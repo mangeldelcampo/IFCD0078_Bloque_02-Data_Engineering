@@ -1,6 +1,6 @@
 # Limpiar, transformar y cargar datos en Power BI
 ## 📑 Índice del Laboratorio
-- [Introducción](#Objetivo y lógica de negocio)
+- [Introducción](#Objetivo%y%lógica de negocio)
 - [Configuración](#Contexto y Arquitectura Inicial)
 - [Despliegue](#despliegue)
 

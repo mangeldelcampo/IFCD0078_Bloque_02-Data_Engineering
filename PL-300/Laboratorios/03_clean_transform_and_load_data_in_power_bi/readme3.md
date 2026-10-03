@@ -1,13 +1,22 @@
 # Limpiar, transformar y cargar datos en Power BI
 ## 📑 Índice del Laboratorio
-- [Introducción](#introducción)
-- [Configuración](#configuración)
+- [Introducción](#Objetivo y lógica de negocio)
+- [Configuración](#Contexto y Arquitectura Inicial)
 - [Despliegue](#despliegue)
 
 
 [LINK AL Laboratorio de Microsoft: #Clean, transform, and load data in Power BI | PL-300-Microsoft-Power-BI-Data-Analyst](https://microsoftlearning.github.io/PL-300-Microsoft-Power-BI-Data-Analyst/Instructions/Labs/02-transform-data-power-bi.html)
 
-## Historia del laboratorio
+  
+#  Objetivo y lógica de negocio
+El propósito del laboratorio es pasar de un modelo relacional transaccional (OLTP/DW plano) a un esquema dimensional en estrella (Star Schema) limpio y eficiente para Power BI.
+
+ Los datos en origen vienen con columnas innecesarias, estructuras matriciales que impiden calcular con DAX y pequeñas erratas de datos.
+  El laboratorio resuelve eso en 6 bloques principales de trabajo
+  El objetivo central es limpiar, desnormalizar y transformar los datos de un esquema de Data Warehouse tradicional a un esquema en estrella (Star Schema) eficiente para el motor tabular VertiPaq.
+
+
+## ¿Qué se realiza en este Laboratorio?
 
 En este laboratorio, utilizarás técnicas de limpieza y transformación de datos para empezar a dar forma a tu modelo de datos. Luego aplicarás las consultas para cargar cada una como una tabla en el modelo semántico.
 
@@ -26,11 +35,6 @@ En este laboratorio, aprendes cómo:
   * **Parámetros**: SQLInstance (localhost) y Database (AdventureWorksDW2020).
   * **Tablas de SQL Server (Modo Import)**: DimEmployee, DimEmployeeSalesTerritory, DimProduct, DimReseller, DimSalesTerritory, FactResellerSales.   
   * **Archivos Planos (CSV)**: ResellerSalesTargets y ColorFormats.   
-  
-# ¿Qué se realiza en este Laboratorio? (Objetivo y lógica de negocio)
-El propósito del laboratorio es pasar de un modelo relacional transaccional (OLTP/DW plano) a un esquema dimensional en estrella (Star Schema) limpio y eficiente para Power BI.
- Los datos en origen vienen con columnas innecesarias, estructuras matriciales que impiden calcular con DAX y pequeñas erratas de datos. El laboratorio resuelve eso en 6 bloques principales de trabajo
-  El objetivo central es limpiar, desnormalizar y transformar los datos de un esquema de Data Warehouse tradicional a un esquema en estrella (Star Schema) eficiente para el motor tabular VertiPaq.
 
 
 ## Comenzamos

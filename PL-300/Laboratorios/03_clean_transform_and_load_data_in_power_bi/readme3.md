@@ -24,7 +24,7 @@ Para completar este ejercicio, primero abre un navegador web e introduce la sigu
 
 https://github.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/raw/Main/Allfiles/Labs/02-transform-data-power-bi/02-transform-data.zip
 
-Extrae la carpeta a la **carpeta C:\\Users\\Student\\Downloads\\02-transform-data**.
+Extrae la carpeta de trabajo , por ejemplo a la **carpeta C:\\Users\\Student\\Downloads\\02-transform-data**.
 
 Abre el archivo **02-Starter-Sales Analysis.pbix**.
 [**¿Que contiene el archivo?**](archivo2_pbix.md)

@@ -9,7 +9,7 @@
 
   
 #  Objetivo y lógica de negocio
-El propósito del laboratorio es pasar de un modelo relacional transaccional (OLTP/DW plano) a un esquema dimensional en estrella (Star Schema) limpio y eficiente para Power BI.
+El propósito del laboratorio es pasar de un **modelo relacional transaccional (OLTP/DW plano) a un esquema dimensional en estrella (Star Schema)** limpio y eficiente para Power BI.
 
  Los datos en origen vienen con columnas innecesarias, estructuras matriciales que impiden calcular con DAX y pequeñas erratas de datos.
   El laboratorio resuelve eso en 6 bloques principales de trabajo

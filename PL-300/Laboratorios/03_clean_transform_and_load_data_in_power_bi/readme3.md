@@ -18,14 +18,23 @@ En este laboratorio, aprendes cómo:
 
 
 # Contexto y Arquitectura Inicial
- El archivo de partida (02-Starter-Sales Analysis.pbix)[**¿Que contiene el archivo?**](archivo2_pbix.md)
+ El archivo de partida (02-Starter-Sales Analysis.pbix)
+ 
+ [**¿Explicación del contenido del archivo?**](archivo2_pbix.md)
+ 
   incluye 10 elementos en el panel de consultas de Power Query:   
-  Parámetros: SQLInstance (localhost) y Database (AdventureWorksDW2020).
-  Tablas de SQL Server (Modo Import): DimEmployee, DimEmployeeSalesTerritory, DimProduct, DimReseller, DimSalesTerritory, FactResellerSales.   
-  Archivos Planos (CSV): ResellerSalesTargets y ColorFormats.   El objetivo central es limpiar, desnormalizar y transformar los datos de un esquema de Data Warehouse tradicional a un esquema en estrella (Star Schema) eficiente para el motor tabular VertiPaq.
+  * **Parámetros**: SQLInstance (localhost) y Database (AdventureWorksDW2020).
+  * **Tablas de SQL Server (Modo Import)**: DimEmployee, DimEmployeeSalesTerritory, DimProduct, DimReseller, DimSalesTerritory, FactResellerSales.   
+  * **Archivos Planos (CSV)**: ResellerSalesTargets y ColorFormats.   
+  
+# ¿Qué se realiza en este Laboratorio? (Objetivo y lógica de negocio)
+El propósito del laboratorio es pasar de un modelo relacional transaccional (OLTP/DW plano) a un esquema dimensional en estrella (Star Schema) limpio y eficiente para Power BI.
+ Los datos en origen vienen con columnas innecesarias, estructuras matriciales que impiden calcular con DAX y pequeñas erratas de datos. El laboratorio resuelve eso en 6 bloques principales de trabajo
+  El objetivo central es limpiar, desnormalizar y transformar los datos de un esquema de Data Warehouse tradicional a un esquema en estrella (Star Schema) eficiente para el motor tabular VertiPaq.
 
 
-## Empieza
+## Comenzamos
+### Descarga de software
 
 Para completar este ejercicio, primero abre un navegador web e introduce la siguiente URL para descargar la carpeta zip:
 

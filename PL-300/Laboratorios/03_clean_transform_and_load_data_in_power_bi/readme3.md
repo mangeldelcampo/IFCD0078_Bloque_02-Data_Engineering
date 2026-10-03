@@ -16,7 +16,14 @@ En este laboratorio, aprendes cómo:
 * Aplica diversas transformaciones de datos.  
 * Carga consultas en el modelo semántico.
 
-**Este laboratorio debería durar aproximadamente 45 minutos.**
+
+# Contexto y Arquitectura Inicial
+ El archivo de partida (02-Starter-Sales Analysis.pbix)[**¿Que contiene el archivo?**](archivo2_pbix.md)
+  incluye 10 elementos en el panel de consultas de Power Query:   
+  Parámetros: SQLInstance (localhost) y Database (AdventureWorksDW2020).
+  Tablas de SQL Server (Modo Import): DimEmployee, DimEmployeeSalesTerritory, DimProduct, DimReseller, DimSalesTerritory, FactResellerSales.   
+  Archivos Planos (CSV): ResellerSalesTargets y ColorFormats.   El objetivo central es limpiar, desnormalizar y transformar los datos de un esquema de Data Warehouse tradicional a un esquema en estrella (Star Schema) eficiente para el motor tabular VertiPaq.
+
 
 ## Empieza
 
@@ -27,9 +34,10 @@ https://github.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/raw/
 Extrae la carpeta de trabajo , por ejemplo a la **carpeta C:\\Users\\Student\\Downloads\\02-transform-data**.
 
 Abre el archivo **02-Starter-Sales Analysis.pbix**.
-[**¿Que contiene el archivo?**](archivo2_pbix.md)
+
 
 ***Nota:** Puede que veas un diálogo de inicio de sesión mientras carga el archivo. Selecciona **Cancelar** para cerrar el cuadro de inicio de sesión. Cierra cualquier otra ventana informativa. Selecciona **Solicitar más tarde**, si se le pide aplicar cambios.*
+
 
 ## Configurar la consulta del Comercial
 

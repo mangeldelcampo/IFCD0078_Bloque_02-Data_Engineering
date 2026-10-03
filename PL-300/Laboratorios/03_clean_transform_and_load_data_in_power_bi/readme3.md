@@ -5,15 +5,16 @@
 - [Comenzar Laboratorio](#Comenzar-Laboratorio)
 
 
-[LINK AL Laboratorio de Microsoft: #Clean, transform, and load data in Power BI | PL-300-Microsoft-Power-BI-Data-Analyst](https://microsoftlearning.github.io/PL-300-Microsoft-Power-BI-Data-Analyst/Instructions/Labs/02-transform-data-power-bi.html)
+
+[LINK al Laboratorio de Microsoft: #Clean, transform, and load data in Power BI | PL-300-Microsoft-Power-BI-Data-Analyst](https://microsoftlearning.github.io/PL-300-Microsoft-Power-BI-Data-Analyst/Instructions/Labs/02-transform-data-power-bi.html)
 
   
 #  Objetivo y lógica de negocio
-El propósito del laboratorio es pasar de un **modelo relacional transaccional (OLTP/DW plano) a un esquema dimensional en estrella (Star Schema)** limpio y eficiente para Power BI.
+El propósito y objetivo del laboratorio es pasar de un **modelo relacional transaccional (OLTP/DW plano) a un esquema dimensional en estrella (Star Schema)** limpio y eficiente para el motor tabular VertiPaq de Power BI.
 
  Los datos en origen vienen con columnas innecesarias, estructuras matriciales que impiden calcular con DAX y pequeñas erratas de datos.
-  El laboratorio resuelve eso en 6 bloques principales de trabajo
-  El objetivo central es limpiar, desnormalizar y transformar los datos de un esquema de Data Warehouse tradicional a un esquema en estrella (Star Schema) eficiente para el motor tabular VertiPaq.
+  El laboratorio resuelve eso en 6 bloques principales de trabajo.
+  Y para ello se tienen que limpiar, desnormalizar y transformar los datos de un esquema de Data Warehouse tradicional a un esquema en estrella (Star Schema).
 
 
 ## ¿Qué se realiza en este Laboratorio?
@@ -24,7 +25,6 @@ En este laboratorio, aprendes cómo:
 
 * Aplica diversas transformaciones de datos.  
 * Carga consultas en el modelo semántico.
-
 
 # Contexto y Arquitectura Inicial
  El archivo de partida (02-Starter-Sales Analysis.pbix)
@@ -51,8 +51,9 @@ Abre el archivo **02-Starter-Sales Analysis.pbix**.
 
 ***Nota:** Puede que veas un diálogo de inicio de sesión mientras carga el archivo. Selecciona **Cancelar** para cerrar el cuadro de inicio de sesión. Cierra cualquier otra ventana informativa. Selecciona **Solicitar más tarde**, si se le pide aplicar cambios.*
 
-
-## Configurar la consulta del Comercial
+# Bloque 1: Filtrar y limpiar dimensiones
+DimEmployee $\rightarrow$ Salesperson:La tabla trae 296 personas. Como los informes son de ventas, se filtra por SalesPersonFlag = TRUE para dejar únicamente a los 18 comerciales.   Se eliminan columnas de horas médicas, vacaciones o salarios que no aportan valor analítico y saturan la memoria VertiPaq.Se combinan FirstName y LastName en una sola columna con el nombre completo.
+## Configurar la consulta del Comercial (Salesperson)
 
 En esta tarea, usarás Power Query Editor para configurar la consulta **de Salesperson**.
 

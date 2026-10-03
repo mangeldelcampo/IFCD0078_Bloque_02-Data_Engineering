@@ -1,8 +1,8 @@
 # Limpiar, transformar y cargar datos en Power BI
 ## 📑 Índice del Laboratorio
-- [Introducción](#Objetivo-y-lógica-de-negocio)
-- [Configuración](#Contexto y Arquitectura Inicial)
-- [Despliegue](#despliegue)
+- [Objetivo y lógica de negocio](#Objetivo-y-lógica-de-negocio)
+- [Contexto y Arquitectura Inicial](#Contexto-y-Arquitectura-Inicial)
+- [Comenzar Laboratorio](#Comenzar-Laboratorio)
 
 
 [LINK AL Laboratorio de Microsoft: #Clean, transform, and load data in Power BI | PL-300-Microsoft-Power-BI-Data-Analyst](https://microsoftlearning.github.io/PL-300-Microsoft-Power-BI-Data-Analyst/Instructions/Labs/02-transform-data-power-bi.html)
@@ -37,7 +37,7 @@ En este laboratorio, aprendes cómo:
   * **Archivos Planos (CSV)**: ResellerSalesTargets y ColorFormats.   
 
 
-## Comenzamos
+# Comenzar Laboratorio
 ### Descarga de software
 
 Para completar este ejercicio, primero abre un navegador web e introduce la siguiente URL para descargar la carpeta zip:

@@ -1,4 +1,9 @@
 # Limpiar, transformar y cargar datos en Power BI
+## 📑 Índice del Laboratorio
+- [Introducción](#introducción)
+- [Configuración](#configuración)
+- [Despliegue](#despliegue)
+
 
 ## Historia del laboratorio
 
@@ -322,6 +327,6 @@ Puedes optar por guardar tu informe de Power BI, aunque no es necesario para est
 1. Ve al menú **"Archivo"** en la esquina superior izquierda y **selecciona "Guardar como".**  
 2. Seleccione **Explorar este dispositivo**.  
 3. Selecciona la carpeta donde quieres guardar el archivo y ponle un nombre descriptivo.  
-4. Selecciona el botón **Guardar** para guardar tu informe como archivo .pbik.  
+4. Selecciona el botón **Guardar** para guardar tu informe como archivo .pbix.  
 5. Si aparece un cuadro de diálogo que te pide que apliques cambios pendientes en la consulta, selecciona **Aplicar**.  
 6. Cierra Power BI Desktop.

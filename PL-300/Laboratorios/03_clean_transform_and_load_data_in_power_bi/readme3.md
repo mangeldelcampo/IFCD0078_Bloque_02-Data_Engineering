@@ -61,6 +61,7 @@ En esta tarea, usarás Power Query Editor para configurar la consulta **de Sales
 
 1. Para abrir la ventana **del Editor de Power Querys**, en la pestaña de **la cinta de inicio**, desde dentro del **grupo de Consultas**, selecciona el icono **Transformar datos**.  
    ![Transformar datos en la cinta de inicio](./imagenes/imagen1.png)
+   
 2. En la ventana **del Editor de Power Consultas**, en el panel **de Consultas**, selecciona la **consulta DimEmployee**.  
    ![Imagen 1][image2]  
 

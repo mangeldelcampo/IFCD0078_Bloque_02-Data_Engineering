@@ -5,7 +5,7 @@
 - [Despliegue](#despliegue)
 
 
-[Clean, transform, and load data in Power BI | PL-300-Microsoft-Power-BI-Data-Analyst](https://microsoftlearning.github.io/PL-300-Microsoft-Power-BI-Data-Analyst/Instructions/Labs/02-load-data.html)
+[Clean, transform, and load data in Power BI | PL-300-Microsoft-Power-BI-Data-Analyst](https://microsoftlearning.github.io/PL-300-Microsoft-Power-BI-Data-Analyst/Instructions/Labs/02-transform-data-power-bi.html)
 
 ## Historia del laboratorio
 

@@ -278,7 +278,8 @@ En esta tarea, configurarás la consulta **Region**.
    * **SalesTerritoryGroup** to **Group to Group**
 
 **En la barra de estado, verifica que la consulta tenga 4 columnas y 10 filas.**
- 
+
+![ColumnasRegion1.png](./imagenes/ColumnasRegion1.png)
 
 ## Configurar la consulta de ventas
 

@@ -83,6 +83,7 @@ En esta tarea, usarás Power Query Editor para configurar la consulta **de Sales
 4. Para localizar una columna específica, en la pestaña de **la cinta de inicio**, desde dentro del grupo **Gestionar columnas**, selecciona la flecha **descendente Elegir** columnas y luego **selecciona Ir a columna**.  
 > ***Ir a Columna** es una función útil con muchas columnas. Si no, puedes desplazarte horizontalmente para encontrar columnas.*  
 *Gestionar columnas \> Elegir columnas \> Ir a columna*  
+
 ![imagen4-1.png](./imagenes/imagen4-1.png)
 5. En la ventana **Ir a columna**, para ordenar la lista por nombre de columna, selecciona el botón **de ordenar AZ** y luego **selecciona Nombre**.  
 Ve a las opciones de ordenación de columnas
@@ -116,7 +117,7 @@ Ve a las opciones de ordenación de columnas
 13. Haz clic con el botón derecho del ratón en cualquiera de los encabezados de las columnas seleccionadas y, a continuación, en el menú contextual, selecciona **Combinar columnas**.
 ![Merge Columns](./imagenes/imagen9.png)
 
- *Muchas de las transformaciones habituales se pueden aplicar haciendo clic con el botón derecho del ratón en el encabezado de la columna y seleccionándolas a continuación en el menú contextual. Ten en cuenta que hay transformaciones adicionales disponibles en la cinta de opciones.*
+> *Muchas de las transformaciones habituales se pueden aplicar haciendo clic con el botón derecho del ratón en el encabezado de la columna y seleccionándolas a continuación en el menú contextual. Ten en cuenta que hay transformaciones adicionales disponibles en la cinta de opciones.*
 
 14. En la ventana **Combinar columnas**, en la lista desplegable **Separador**, selecciona **Espacio**.  
 15. En el cuadro **Nombre de la nueva columna**, sustituye el texto por **Salesperson**.
@@ -126,7 +127,7 @@ Ve a las opciones de ordenación de columnas
       ![Renombrar columna](./imagenes/imagen11-1.png)  
 
 17. Cambia el nombre de la columna **EmailAddress** por **UPN**.  
-. *UPN son las siglas de «User Principal Name» (nombre principal de usuario).*
+>. *UPN son las siglas de «User Principal Name» (nombre principal de usuario).*
 
 **En la barra de estado situada en la esquina inferior izquierda del Editor de Power Query, comprueba que la consulta tenga 5 columnas y 18 filas.**
 ![Revisión](./imagenes/imagen12.png) 

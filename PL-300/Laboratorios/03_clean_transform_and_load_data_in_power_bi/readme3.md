@@ -121,11 +121,13 @@ Ve a las opciones de ordenación de columnas
 14. En la ventana **Combinar columnas**, en la lista desplegable **Separador**, selecciona **Espacio**.  
 15. En el cuadro **Nombre de la nueva columna**, sustituye el texto por **Salesperson**.
    ![Merge Columns](./imagenes/imagen10.png)  
-16. To rename the **EmployeeNationalIDAlternateKey** column, double-click the **EmployeeNationalIDAlternateKey** column header and replace the text with **EmployeeID**, and then press **Enter**.  
-17. Rename the **EmailAddress** column to **UPN**.  
-. *UPN is an acronym for User Principal Name.*
+16. Para cambiar el nombre de la columna **EmployeeNationalIDAlternateKey**, haz doble clic en el encabezado de la columna **EmployeeNationalIDAlternateKey**  y sustituye el texto por  **EmployeeID** a continuación, pulsa **Enter**.
+![Renombrar columna](./imagenes/imagen11-1.png)  
 
-**In the status bar at the bottom-left corner of the Power Query Editor, verify that the query has 5 columns and 18 rows.**
+17. Cambia el nombre de la columna **EmailAddress** por **UPN**.  
+. *UPN son las siglas de «User Principal Name» (nombre principal de usuario).*
+
+**En la barra de estado situada en la esquina inferior izquierda del Editor de Power Query, comprueba que la consulta tenga 5 columnas y 18 filas.**
 ![Revisión](./imagenes/imagen12.png) 
 
 # Bloque 2: Preparar la tabla puente (Bridge)

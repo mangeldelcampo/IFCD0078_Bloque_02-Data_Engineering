@@ -4,11 +4,11 @@
 - [Contexto y Arquitectura Inicial](#Contexto-y-Arquitectura-Inicial)
 - [Comenzar Laboratorio](#Comenzar-Laboratorio)
 - [Bloque 1: Filtrar y limpiar dimensiones](#bloque-1-filtrar-y-limpiar-dimensiones)
-- [Bloque 2: Preparar la tabla puente (Bridge)]()
-- [Bloque 3: Desnormalizar el catálogo de producto]()
-- [Bloque 4: Limpieza de calidad de datos]()
-- [Bloque 5: Desdinamización de datos (Unpivot)]()
-- [Bloque 6: Carga al modelo (Close & Apply)]()
+- [Bloque 2: Preparar la tabla puente (Bridge)](#bloque-2-preparar-la-tabla-puente-bridge)
+- [Bloque 3: Desnormalizar el catálogo de producto](#bloque-3-desnormalizar-el-catálogo-de-producto)
+- [Bloque 4: Limpieza de calidad de datos](#bloque-4-limpieza-de-calidad-de-datos)
+- [Bloque 5: Desdinamización de datos (Unpivot)](#bloque-5-desdinamización-de-datos-unpivot)
+- [Bloque 6: Carga al modelo (Close & Apply)](#bloque-6-carga-al-modelo-close--apply)
 
 
 
@@ -116,6 +116,7 @@ Ve a las opciones de ordenación de columnas
     ![Multi-select two columns to create single column](./imagenes/imagen8.png)
 
 13. Haz clic con el botón derecho del ratón en cualquiera de los encabezados de las columnas seleccionadas y, a continuación, en el menú contextual, selecciona **Combinar columnas**.
+
 ![Merge Columns](./imagenes/imagen9.png)
 
 > *Muchas de las transformaciones habituales se pueden aplicar haciendo clic con el botón derecho del ratón en el encabezado de la columna y seleccionándolas a continuación en el menú contextual. Ten en cuenta que hay transformaciones adicionales disponibles en la cinta de opciones.*
@@ -144,7 +145,9 @@ En esta tarea, configurarás la consulta **SalespersonRegion**.
 3. Para eliminar las dos últimas columnas, selecciona primero el encabezado de columna **DimEmployee**.
 4. Mientras mantienes pulsada la tecla **Ctrl**, selecciona el encabezado de columna **DimSalesTerritory**.
 5. Haz clic con el botón derecho del ratón en cualquiera de los encabezados de columna seleccionados y, a continuación, en el menú contextual, selecciona **Eliminar columnas**.
-![Eliminar columnas](./imagenes/imagen14.png) 
+
+![Eliminar columnas](./imagenes/imagen14.png)
+ 
 **En la barra de estado, comprueba que la consulta tenga 2 columnas y 39 filas.**
 ![Eliminar columnas](./imagenes/imagen15.png)
 

@@ -282,24 +282,26 @@ En esta tarea, configurarás la consulta **Region**.
 
 ![ColumnasRegion1.png](./imagenes/ColumnasRegion1.png)
 
-## Configurar la consulta de ventas
+## Configurar la consulta de Sales (ventas)
 
-En esta tarea, configurarás la consulta **de Ventas**.
+En esta tarea, configurarás la consulta **Sales**.
 
-1. Selecciona la consulta **FactResellerSales** y cámbela a **Ventas**.  
+1. Selecciona la consulta **FactResellerSales** y cámbela a **Sales**.  
 2. Eliminar todas las columnas, **excepto** las siguientes:  
-   * Número de Venta  
-   * Fecha de pedido  
-   * ProductKey  
-   * ResellerKey  
-   * EmployeeKey  
-   * ClaveTerritorioVentas  
-   * OrderQuantity  
-   * Precio unitario  
-   * CosteProducto Total  
-   * SalesAmount  
-   * DimProduct  
-3. ***Nota:** Puede que recuerdes en **el laboratorio Preparar Datos en Power BI Desktop** que un pequeño porcentaje de las filas **de FactResellerSales** tenían valores **TotalCostProducto** faltantes. La columna **DimProduct** se ha incluido para recuperar la columna de costes estándar del producto y así ayudar a corregir los valores faltantes.*  
+   * SalesOrderNumber
+   * OrderDate
+   * ProductKey
+   * ResellerKey
+   * EmployeeKey
+   * SalesTerritoryKey
+   * OrderQuantity
+   * UnitPrice
+   * TotalProductCost
+   * SalesAmount
+   * DimProduct 
+![Sales.png](./imagenes/Sales.png)
+
+> ***Nota:** Puede que recuerdes en **el laboratorio Preparar Datos en Power BI Desktop** que un pequeño porcentaje de las filas **de FactResellerSales** tenían valores **TotalCostProducto** faltantes. La columna **DimProduct** se ha incluido para recuperar la columna de costes estándar del producto y así ayudar a corregir los valores faltantes.*  
 4. Expande la columna **DimProduct**, desmarca todas las columnas e incluye solo la columna **Coste Estándar**.  
 5. Para crear una columna personalizada, en la pestaña de **Añadir columna**, desde dentro del grupo **General**, selecciona **Columna Personalizada**.  
    ![Imagen 5664][image11]  

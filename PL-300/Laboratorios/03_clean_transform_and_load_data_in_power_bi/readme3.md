@@ -237,6 +237,7 @@ En esta tarea, configurarás la consulta **de Reseller**.
    ![DimGeography](./imagenes/DimGeography.png)
 
 4. En la cabecera **de columna BusinessType**, selecciona la flecha hacia abajo y luego revisa los valores distintos de las columnas, y observa ambos valores **como Ware House** y **Warehouse**.
+
    ![BusinessType](./imagenes/BussinesType.png)
 
 5. Haz clic derecho en la cabecera **de la columna BusinessType** y luego **selecciona Reemplazar valores**.  

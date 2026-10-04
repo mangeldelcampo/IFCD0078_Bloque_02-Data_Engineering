@@ -169,6 +169,8 @@ En esta tarea, configurarás la consulta **Product**.
 
 4. Fíjate en que la columna **DimProductSubcategory** representa una tabla relacionada (contiene enlaces **Value**).
 ![DimProductSubcategory1](./imagenes/DimProductSubcategory.png)
+> El texto en color verde azulado «Value» aparece en esas celdas porque Power Query representa visualmente un registro complejo o entidad relacional anidada (Record / Table) en lugar de un dato escalar plano (como un texto o un número).
+
 
 5. En el encabezado de la columna **DimProductSubcategory**, a la derecha del nombre de la columna, selecciona el botón de expansión.
 

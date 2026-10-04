@@ -103,10 +103,11 @@ Ve a las opciones de ordenación de columnas
     * FirtsName  
     * LastName  
     * Título  
-    * Dirección de correo electrónico  
+    * Dirección de correo electrónico
+    ![Elegir columnas](./imagenes/imagen6.png)  
 11. En la lista **de Pasos Aplicados**, observa la adición de otro paso de consulta.  
     ![Eliminado otro paso de columnas](./imagenes/imagen7.png)
-      
+
 12. To create a single name column, first select the **FirstName** column header. While pressing the **Ctrl** key, select the **LastName** column.  
     ![Multi-select two columns to create single column](./imagenes/imagen8.png)
 

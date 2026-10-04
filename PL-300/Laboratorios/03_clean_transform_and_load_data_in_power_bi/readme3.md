@@ -149,22 +149,23 @@ En esta tarea, configurarás la consulta **SalespersonRegion**.
 ![Eliminar columnas](./imagenes/imagen15.png)
 
 # Bloque 3: Desnormalizar el catálogo de producto
-## Configure the Product query
+## Configurar la consulta «Product»
 
-In this task, you’ll configure the **Product** query.
+En esta tarea, configurarás la consulta **Product**.
 
-***Important**: When detailed instructions have already been provided, lab steps will provide more concise instructions. If you need the detailed instructions, you can refer back to the steps of previous tasks.*
 
-1. Select the **DimProduct** query and rename the query to **Product**.  
-2. Locate the **FinishedGoodsFlag** column, and then filter the column to retrieve products that are finished goods (that is, TRUE).  
-3. Remove all columns, **except** the following:  
-   * ProductKey  
-   * EnglishProductName  
-   * StandardCost  
-   * Color  
-   * DimProductSubcategory  
-4. Notice that the **DimProductSubcategory** column represents a related table (it contains **Value** links).  
-5. In the **DimProductSubcategory** column header, at the right of the column name, select the expand button.  
+***Importante**: Cuando ya se hayan proporcionado instrucciones detalladas, los pasos del laboratorio ofrecerán instrucciones más concisas. Si necesitas las instrucciones detalladas, puedes consultar los pasos de las tareas anteriores.*
+
+1. Selecciona la consulta **DimProduct** y cámbiale el nombre por **Product**.
+2. Localiza la columna **FinishedGoodsFlag** y, a continuación, filtra la columna para recuperar los productos que sean productos terminados (es decir, TRUE).
+3. Elimina todas las columnas, **excepto** las siguientes:
+   * ProductKey
+   * EnglishProductName
+   * StandardCost
+   * Color
+   * DimProductSubcategory
+4. Fíjate en que la columna **DimProductSubcategory** representa una tabla relacionada (contiene enlaces **Value**).
+5. En el encabezado de la columna **DimProductSubcategory**, a la derecha del nombre de la columna, selecciona el botón de expansión.
    ![Column expand icon][image8]  
 6. See the full list of columns, then select the **Select All Columns** box to unselect all columns.  
 7. Select **EnglishProductSubcategoryName** and **DimProductCategory**, and uncheck the **Use Original Column Name as Prefix** checkbox before selecting **OK**.  

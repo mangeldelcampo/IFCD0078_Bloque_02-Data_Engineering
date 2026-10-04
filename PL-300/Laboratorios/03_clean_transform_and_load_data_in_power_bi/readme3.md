@@ -105,9 +105,10 @@ Ve a las opciones de ordenación de columnas
     * Título  
     * Dirección de correo electrónico
 
-![Elegir columnas](./imagenes/imagen6.png)  
+![Elegir columnas](./imagenes/imagen6.png)
+
 11. En la lista **de Pasos Aplicados**, observa la adición de otro paso de consulta.  
-    ![Eliminado otro paso de columnas](./imagenes/imagen7.png)
+![Eliminado otro paso de columnas](./imagenes/imagen7.png)
 
 12. Para crear una columna con un solo nombre, selecciona primero el encabezado de la columna **FirstName**. Mantén pulsada la tecla **Ctrl** y selecciona la columna **LastName**.  
     ![Multi-select two columns to create single column](./imagenes/imagen8.png)
@@ -116,9 +117,10 @@ Ve a las opciones de ordenación de columnas
 ![Merge Columns](./imagenes/imagen9.png)
 
  *Muchas de las transformaciones habituales se pueden aplicar haciendo clic con el botón derecho del ratón en el encabezado de la columna y seleccionándolas a continuación en el menú contextual. Ten en cuenta que hay transformaciones adicionales disponibles en la cinta de opciones.*
-   
-14. In the **Merge Columns** window, in the **Separator** dropdown list, select **Space**.  
-15. In the **New Column Name** box, replace the text with **Salesperson**.  
+
+14. En la ventana **Combinar columnas**, en la lista desplegable **Separador**, selecciona **Espacio**.  
+15. En el cuadro **Nombre de la nueva columna**, sustituye el texto por **Salesperson**.
+   ![Merge Columns](./imagenes/imagen10.png)  
 16. To rename the **EmployeeNationalIDAlternateKey** column, double-click the **EmployeeNationalIDAlternateKey** column header and replace the text with **EmployeeID**, and then press **Enter**.  
 17. Rename the **EmailAddress** column to **UPN**.  
 . *UPN is an acronym for User Principal Name.*

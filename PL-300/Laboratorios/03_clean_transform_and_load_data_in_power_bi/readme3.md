@@ -122,6 +122,7 @@ Ve a las opciones de ordenación de columnas
 15. En el cuadro **Nombre de la nueva columna**, sustituye el texto por **Salesperson**.
    ![Merge Columns](./imagenes/imagen10.png)  
 16. Para cambiar el nombre de la columna **EmployeeNationalIDAlternateKey**, haz doble clic en el encabezado de la columna **EmployeeNationalIDAlternateKey**  y sustituye el texto por  **EmployeeID** a continuación, pulsa **Enter**.
+
       ![Renombrar columna](./imagenes/imagen11-1.png)  
 
 17. Cambia el nombre de la columna **EmailAddress** por **UPN**.  

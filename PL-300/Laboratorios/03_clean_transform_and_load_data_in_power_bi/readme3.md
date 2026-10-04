@@ -126,6 +126,7 @@ Ve a las opciones de ordenación de columnas
 . *UPN is an acronym for User Principal Name.*
 
 **In the status bar at the bottom-left corner of the Power Query Editor, verify that the query has 5 columns and 18 rows.**
+![Revisión](./imagenes/imagen12.png) 
 
 # Bloque 2: Preparar la tabla puente (Bridge)
 ## Configure the SalespersonRegion query

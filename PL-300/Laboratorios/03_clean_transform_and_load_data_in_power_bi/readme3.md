@@ -3,6 +3,14 @@
 - [Objetivo y lógica de negocio](#Objetivo-y-lógica-de-negocio)
 - [Contexto y Arquitectura Inicial](#Contexto-y-Arquitectura-Inicial)
 - [Comenzar Laboratorio](#Comenzar-Laboratorio)
+- [Bloque 1: Filtrar y limpiar dimensiones](#bloque-1-filtrar-y-limpiar-dimensiones)
+- [Bloque 2: Preparar la tabla puente (Bridge)]()
+- [Bloque 3: Desnormalizar el catálogo de producto]()
+- [Bloque 4: Limpieza de calidad de datos]()
+- [Bloque 5: Desdinamización de datos (Unpivot)]()
+- [Bloque 6: Carga al modelo (Close & Apply)]()
+
+
 
 
 
@@ -52,7 +60,7 @@ Abre el archivo **02-Starter-Sales Analysis.pbix**.
 ***Nota:** Puede que veas un diálogo de inicio de sesión mientras carga el archivo. Selecciona **Cancelar** para cerrar el cuadro de inicio de sesión. Cierra cualquier otra ventana informativa. Selecciona **Solicitar más tarde**, si se le pide aplicar cambios.*
 
 # Bloque 1: Filtrar y limpiar dimensiones
-DimEmployee $\rightarrow$ Salesperson:La tabla trae 296 personas. Como los informes son de ventas, se filtra por SalesPersonFlag = TRUE para dejar únicamente a los 18 comerciales.   Se eliminan columnas de horas médicas, vacaciones o salarios que no aportan valor analítico y saturan la memoria VertiPaq.Se combinan FirstName y LastName en una sola columna con el nombre completo.
+DimEmployee $\rightarrow$ Salesperson: La tabla trae 296 personas. Como los informes son de ventas, se filtra por **SalesPersonFlag = TRUE** para dejar únicamente a los 18 comerciales.   Se eliminan columnas de horas médicas, vacaciones o salarios que no aportan valor analítico y saturan la memoria VertiPaq.Se combinan FirstName y LastName en una sola columna con el nombre completo.
 ## Configurar la consulta del Comercial (Salesperson)
 
 En esta tarea, usarás Power Query Editor para configurar la consulta **de Salesperson**.
@@ -61,7 +69,7 @@ En esta tarea, usarás Power Query Editor para configurar la consulta **de Sales
 
 1. Para abrir la ventana **del Editor de Power Querys**, en la pestaña de **la cinta de inicio**, desde dentro del **grupo de Consultas**, selecciona el icono **Transformar datos**.  
    ![Transformar datos en la cinta de inicio](./imagenes/imagen1.png)
-   
+
 2. En la ventana **del Editor de Power Consultas**, en el panel **de Consultas**, selecciona la **consulta DimEmployee**.  
    ![Imagen 1][image2]  
 
@@ -107,6 +115,7 @@ Ve a las opciones de ordenación de columnas
 
 **In the status bar at the bottom-left corner of the Power Query Editor, verify that the query has 5 columns and 18 rows.**
 
+# Bloque 2: Preparar la tabla puente (Bridge)
 ## Configure the SalespersonRegion query
 
 In this task, you’ll configure the **SalespersonRegion** query.

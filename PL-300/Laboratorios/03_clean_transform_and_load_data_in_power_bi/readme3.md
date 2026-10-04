@@ -100,15 +100,19 @@ Ve a las opciones de ordenación de columnas
 10. Para incluir columnas, revisa las siguientes seis columnas:  
     * EmployeeKey  
     * EmployeeNationalIDAlternateKey  
-    * Nombre  
-    * Apellido  
+    * FirtsName  
+    * LastName  
     * Título  
     * Dirección de correo electrónico  
 11. En la lista **de Pasos Aplicados**, observa la adición de otro paso de consulta.  
-    ![Eliminado otro paso de columnas][image6]  
+    ![Eliminado otro paso de columnas](./imagenes/imagen7.png)
+      
 12. To create a single name column, first select the **FirstName** column header. While pressing the **Ctrl** key, select the **LastName** column.  
-    ![Multi-select two columns to create single column][image7]  
-13. Right-click either of the select column headers, and then in the context menu, select **Merge Columns**.  
+    ![Multi-select two columns to create single column](./imagenes/imagen8.png)
+
+13. Right-click either of the select column headers, and then in the context menu, select **Merge Columns**.
+![Merge Columns](./imagenes/imagen9.png)
+
  *Many common transformations can be applied by right-clicking the column header, and then choosing them from the context menu. Note that additional transformations are available in the ribbon.*  
 14. In the **Merge Columns** window, in the **Separator** dropdown list, select **Space**.  
 15. In the **New Column Name** box, replace the text with **Salesperson**.  

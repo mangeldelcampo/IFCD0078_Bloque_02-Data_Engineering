@@ -253,26 +253,29 @@ En esta tarea, configurarás la consulta **de Reseller**.
    * **EnglishCountryRegionName** a **Country-Region**
 
 **En la barra de estado, verifica que la consulta tenga 6 columnas y 701 filas.**
+![BusinessType](./imagenes/BussinesType2.png)
 
 ## Configurar la consulta por región
 
-En esta tarea, configurarás la consulta **de Región**.
+En esta tarea, configurarás la consulta **Region**.
 
-1. Selecciona la consulta **DimSalesTerritory** y renombra la consulta a **Región**.  
+1. Selecciona la consulta **DimSalesTerritory** y renombra la consulta a **Region**.  
 2. Aplica un filtro a la columna **SalesTerritoryAlternateKey** para eliminar el valor 0 (cero).  
-3. *Esto eliminará una fila.*  
-4. Eliminar todas las columnas, **excepto** las siguientes:  
-   * ClaveTerritorioVentas  
-   * RegiónTerritorioVentas  
-   * SalesTerritoryCountry  
-   * SalesTerritoryGroup  
-5. Renombra las siguientes tres columnas:  
+> *Esto eliminará una fila.*
+
+3. Eliminar todas las columnas, **excepto** las siguientes:  
+   * SalesTerritoryKey
+   * SalesTerritoryRegion
+   * SalesTerritoryCountry
+   * SalesTerritoryGroup
+
+4. Renombra las siguientes tres columnas:  
    * **SalesTerritorioRegión** a **Región**  
    * **Territoriode ventasPaís** a **país**  
    * **SalesTerritoryGroup** to **Group to Group**
 
 **En la barra de estado, verifica que la consulta tenga 4 columnas y 10 filas.**
- ![BusinessType](./imagenes/BussinesType2.png)
+ 
 
 ## Configurar la consulta de ventas
 

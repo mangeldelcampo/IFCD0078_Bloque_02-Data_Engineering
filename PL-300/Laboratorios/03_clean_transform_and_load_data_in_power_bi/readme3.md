@@ -128,6 +128,7 @@ In this task, you’ll configure the **SalespersonRegion** query.
 
 **In the status bar, verify that the query has 2 columns and 39 rows.**
 
+# Bloque 3: Desnormalizar el catálogo de producto
 ## Configure the Product query
 
 In this task, you’ll configure the **Product** query.
@@ -153,18 +154,19 @@ In this task, you’ll configure the **Product** query.
 10. Notice that the transformation resulted in the addition of two columns, and that the **DimProductSubcategory** column has been removed.  
 11. Expande la columna **DimProductCategory** y luego introduce solo la columna **EnglishProductCategoryName**.  
 12. Renombra las siguientes cuatro columnas:  
-    * **EnglishProductoNombre** a **Producto**  
+    * **EnglishProductoNombre** a **Product**  
     * **Coste estándar** a **coste estándar** (incluye un espacio)  
     * **InglésSubcategoríaProducto Nombre** a **Subcategoría**  
     * **InglésProductoCategoríaNombre** a **Categoría**
 
 **En la barra de estado, comprueba que la consulta tenga 6 columnas y 397 filas.**
 
-## Configurar la consulta de revendedor
+# Bloque 4: Limpieza de calidad de datos
+## Configurar la consulta de Reseller
 
-En esta tarea, configurarás la consulta **de revendedor**.
+En esta tarea, configurarás la consulta **de Reseller**.
 
-1. Selecciona la consulta **DimReseller** y cambia el nombre a **Revendedor**.  
+1. Selecciona la consulta **DimReseller** y cambia el nombre a **Reseller**.  
 2. Eliminar todas las columnas, **excepto** las siguientes:  
    * ResellerKey  
    * Tipo de negocio  
@@ -253,6 +255,7 @@ En esta tarea, configurarás la consulta **de Ventas**.
 
 **En la barra de estado, comprueba que la consulta tenga 10 columnas y 999+ filas.** Se *cargarán un máximo de 1000 filas como datos de vista previa para cada consulta.*
 
+# Bloque 5: Desdinamización de datos (Unpivot)
 ## Configurar la consulta de Targets
 
 En esta tarea, configurarás la consulta **Targets**.
@@ -294,6 +297,7 @@ En esta tarea, configurarás la consulta **Targets**.
 
 **En la barra de estado, verifica que la consulta tenga 3 columnas y 809 filas.**
 
+# Bloque 6: Carga al modelo (Close & Apply)
 ## Configurar la consulta ColorFormats
 
 En esta tarea, configurarás la consulta **ColorFormats**.

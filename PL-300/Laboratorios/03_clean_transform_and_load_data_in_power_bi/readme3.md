@@ -263,6 +263,7 @@ En esta tarea, configurarás la consulta **Region**.
 1. Selecciona la consulta **DimSalesTerritory** y renombra la consulta a **Region**.  
 2. Aplica un filtro a la columna **SalesTerritoryAlternateKey** para eliminar el valor 0 (cero).  
 > *Esto eliminará una fila.*
+
 ![SalesTerritoryAlternateKey0.png](./imagenes/SalesTerritoryAlternateKey0.png)
 
 3. Eliminar todas las columnas, **excepto** las siguientes:  

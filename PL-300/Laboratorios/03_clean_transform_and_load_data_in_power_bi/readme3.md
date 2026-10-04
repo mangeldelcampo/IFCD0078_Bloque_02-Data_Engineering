@@ -184,6 +184,7 @@ En esta tarea, configurarás la consulta **Product**.
       ![image31](./imagenes/02-transform-data-power-bi_image31.png)
 
 6. Consulta la lista completa de columnas y, a continuación, marca la casilla **Seleccionar todas las columnas** para desmarcar todas las columnas.
+
    ![DimProductSubcategory1](./imagenes/DimProductSubcategory1.png)
 
 7. Selecciona **EnglishProductSubcategoryName** y **DimProductCategory**, y desmarca la casilla **Usar el nombre original de la columna como prefijo** antes de hacer clic en **Aceptar**.  

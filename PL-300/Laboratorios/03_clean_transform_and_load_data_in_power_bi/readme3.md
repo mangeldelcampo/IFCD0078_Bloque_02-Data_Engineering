@@ -186,6 +186,17 @@ En esta tarea, configurarás la consulta **Product**.
 6. Consulta la lista completa de columnas y, a continuación, marca la casilla **Seleccionar todas las columnas** para desmarcar todas las columnas.
 
    ![DimProductSubcategory1](./imagenes/DimProductSubcategory1.png)
+> El botón con las flechas divergentes aparece en la cabecera porque esa columna no contiene un valor de texto o número simple, sino una tabla relacionada anidada ([Table] o [Value]).
+> 1. ¿Por qué aparece el botón?
+	Relación de clave externa en el origen: En la base de datos SQL Server (AdventureWorksDW2020), la tabla DimProduct tiene una relación de clave foránea con la tabla DimProductSubcategory. 
+	Navegación nativa en Power Query: Cuando el conector de SQL Server lee las tablas, detecta automáticamente las relaciones existentes y las expone al final como columnas de navegación jerárquica. Power Query sustituye el icono habitual de tipo de datos o filtro por el icono de expansión para indicar que esa celda contiene un registro/tabla vinculado completo. 
+> 2. ¿Qué es lo que permite realizar?
+> Permite realizar una desnormalización dimensional (Flattening o Join) sin necesidad de escribir código SQL manual:
+	Traer campos de otra tabla: Al desplegarlo, puedes seleccionar atributos específicos de la subcategoría (como EnglishProductSubcategoryName) y de la categoría (DimProductCategory) para incorporarlos como columnas directas dentro de la tabla de producto. 
+	Crear un esquema en estrella optimizado: En lugar de tener tres tablas separadas en el modelo relacional tipo copo de nieve (Snowflake)—Producto → Subcategoría → Categoría—, integras todo en una única dimensión Product consolidada. 
+	Mejorar el rendimiento: Al aplanar la jerarquía en una sola dimensión, se reduce el número de relaciones activas en el modelo tabular VertiPaq, simplificando los cálculos DAX y acelerando las consultas visuales.
+Por este motivo, en el paso 7 del laboratorio se desmarca la selección global y se eligen únicamente EnglishProductSubcategoryName y DimProductCategory, desmarcando también la casilla «Usar el nombre de columna original como prefijo» para evitar nombres excesivamente largos.
+
 
 7. Selecciona **EnglishProductSubcategoryName** y **DimProductCategory**, y desmarca la casilla **Usar el nombre original de la columna como prefijo** antes de hacer clic en **Aceptar**.  
   

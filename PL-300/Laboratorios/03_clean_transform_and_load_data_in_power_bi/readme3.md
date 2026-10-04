@@ -104,8 +104,8 @@ Ve a las opciones de ordenación de columnas
     * LastName  
     * Título  
     * Dirección de correo electrónico
-    
-    ![Elegir columnas](./imagenes/imagen6.png)  
+
+![Elegir columnas](./imagenes/imagen6.png)  
 11. En la lista **de Pasos Aplicados**, observa la adición de otro paso de consulta.  
     ![Eliminado otro paso de columnas](./imagenes/imagen7.png)
 

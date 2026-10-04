@@ -172,8 +172,10 @@ En esta tarea, configurarás la consulta **Product**.
    * Color
    * DimProductSubcategory
 
-4. Fíjate en que la columna **DimProductSubcategory** representa una tabla relacionada (contiene enlaces **Value**). [¿value?](value.md)
+4. Fíjate en que la columna **DimProductSubcategory** representa una tabla relacionada (contiene enlaces **Value**).  [¿Value?](value.md)
+   
    ![DimProductSubcategory1](./imagenes/DimProductSubcategory.png)
+
 > El texto en color verde azulado «Value» aparece en esas celdas porque Power Query representa visualmente un registro complejo o entidad relacional anidada (Record / Table) en lugar de un dato escalar plano (como un texto o un número).
 
 

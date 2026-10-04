@@ -184,11 +184,11 @@ En esta tarea, configurarás la consulta **Product**.
       ![image31](./imagenes/02-transform-data-power-bi_image31.png)
 
 6. Consulta la lista completa de columnas y, a continuación, marca la casilla **Seleccionar todas las columnas** para desmarcar todas las columnas.
-![DimProductSubcategory1](./imagenes/DimProductSubcategory1.png)
+   ![DimProductSubcategory1](./imagenes/DimProductSubcategory1.png)
 
 7. Selecciona **EnglishProductSubcategoryName** y **DimProductCategory**, y desmarca la casilla **Usar el nombre original de la columna como prefijo** antes de hacer clic en **Aceptar**.  
   
-  ![DimProductSubcategory1](./imagenes/DimProductSubcategory2.png) 
+   ![DimProductSubcategory1](./imagenes/DimProductSubcategory2.png) 
 > *Al seleccionar estas dos columnas, se aplicará una transformación para unirlas a la tabla **DimProductSubcategory** y, a continuación, incluir estas columnas. La columna **DimProductCategory** es, de hecho, otra tabla relacionada en la fuente de datos.*
 
 > *Los nombres de las columnas de la consulta deben ser siempre únicos. Si se deja marcada, esta casilla antepondría a cada columna el nombre completo de la columna (en este caso, **DimProductSubcategory**). Dado que se sabe que los nombres de las columnas seleccionadas no entran en conflicto con los nombres de las columnas de la consulta **Product**, la opción se desmarca.*  

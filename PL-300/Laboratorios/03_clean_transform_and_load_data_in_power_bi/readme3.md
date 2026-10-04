@@ -146,7 +146,7 @@ En esta tarea, configurarás la consulta **SalespersonRegion**.
 4. Mientras mantienes pulsada la tecla **Ctrl**, selecciona el encabezado de columna **DimSalesTerritory**.
 5. Haz clic con el botón derecho del ratón en cualquiera de los encabezados de columna seleccionados y, a continuación, en el menú contextual, selecciona **Eliminar columnas**.
 
-![Eliminar columnas](./imagenes/imagen14.png)
+   ![Eliminar columnas](./imagenes/imagen14.png)
 
 **En la barra de estado, comprueba que la consulta tenga 2 columnas y 39 filas.**
 

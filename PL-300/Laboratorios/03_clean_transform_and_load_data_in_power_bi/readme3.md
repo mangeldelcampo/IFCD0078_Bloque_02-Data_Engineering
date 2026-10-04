@@ -162,6 +162,7 @@ En esta tarea, configurarás la consulta **Product**.
 
 1. Selecciona la consulta **DimProduct** y cámbiale el nombre por **Product**.
 2. Localiza la columna **FinishedGoodsFlag** y, a continuación, filtra la columna para recuperar los productos que sean productos terminados (es decir, TRUE).
+
 ![Columna FinishedGoodsFlag](./imagenes/imagen16.png)
 
 3. Elimina todas las columnas, **excepto** las siguientes:

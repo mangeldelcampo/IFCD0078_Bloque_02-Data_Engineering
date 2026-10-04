@@ -128,22 +128,23 @@ Ve a las opciones de ordenación de columnas
       ![Renombrar columna](./imagenes/imagen11-1.png)  
 
 17. Cambia el nombre de la columna **EmailAddress** por **UPN**.  
->. *UPN son las siglas de «User Principal Name» (nombre principal de usuario).*
+> *UPN son las siglas de «User Principal Name» (nombre principal de usuario).*
 
 **En la barra de estado situada en la esquina inferior izquierda del Editor de Power Query, comprueba que la consulta tenga 5 columnas y 18 filas.**
 ![Revisión](./imagenes/imagen12.png) 
 
 # Bloque 2: Preparar la tabla puente (Bridge)
-## Configure the SalespersonRegion query
+## Configurar la consulta **SalespersonRegion**
 
-In this task, you’ll configure the **SalespersonRegion** query.
+En esta tarea, configurarás la consulta **SalespersonRegion**.
 
-1. In the **Queries** pane, select the **DimEmployeeSalesTerritory** query.  
-2. In the **Query Settings** pane, rename the query to **SalespersonRegion**.  
-3. To remove the last two columns, first select the **DimEmployee** column header.  
-4. While pressing the **Ctrl** key, select the **DimSalesTerritory** column header.  
-5. Right-click either of the select column headers, and then in the context menu, select **Remove Columns**.
-
+1. En el panel **Consultas**, selecciona la consulta **DimEmployeeSalesTerritory**.
+2. En el panel **Configuración de la consulta**, cambia el nombre de la consulta a **SalespersonRegion**.
+![Cambiar nombre consulta](./imagenes/imagen13.png) 
+3. Para eliminar las dos últimas columnas, selecciona primero el encabezado de columna **DimEmployee**.
+4. Mientras mantienes pulsada la tecla **Ctrl**, selecciona el encabezado de columna **DimSalesTerritory**.
+5. Haz clic con el botón derecho del ratón en cualquiera de los encabezados de columna seleccionados y, a continuación, en el menú contextual, selecciona **Eliminar columnas**.
+![Eliminar columnas](./imagenes/imagen14.png) 
 **In the status bar, verify that the query has 2 columns and 39 rows.**
 
 # Bloque 3: Desnormalizar el catálogo de producto

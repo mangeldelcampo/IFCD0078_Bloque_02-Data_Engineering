@@ -150,7 +150,7 @@ En esta tarea, configurarás la consulta **SalespersonRegion**.
 
 **En la barra de estado, comprueba que la consulta tenga 2 columnas y 39 filas.**
 
-![Eliminar columnas](./imagenes/imagen15.png)
+   ![Eliminar columnas](./imagenes/imagen15.png)
 
 # Bloque 3: Desnormalizar el catálogo de producto
 ## Configurar la consulta «Product»

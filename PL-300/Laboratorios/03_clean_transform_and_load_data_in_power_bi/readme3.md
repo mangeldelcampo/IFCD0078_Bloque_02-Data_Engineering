@@ -95,26 +95,26 @@ Ve a las opciones de ordenación de columnas
 ![imagen5-1.png](./imagenes/imagen5-4.png)  
  *Cada transformación que creas da lugar a una lógica de paso más. Es posible editar o eliminar pasos. También es posible seleccionar un paso para previsualizar los resultados de la consulta en esa fase de la transformación de la consulta.*  
 *![Pasos aplicados][image5]*  
-14. Para eliminar columnas, en la pestaña de **cinta de inicio**, desde dentro del **grupo Gestionar columnas**, selecciona el icono **Elegir columnas**.  
-15. En la ventana **Elegir columnas**, para desmarcar todas las columnas, desmarque el elemento **(Seleccionar todas las columnas**).  
-16. Para incluir columnas, revisa las siguientes seis columnas:  
+8. Para eliminar columnas, en la pestaña de **cinta de inicio**, desde dentro del **grupo Gestionar columnas**, selecciona el icono **Elegir columnas**.  
+9. En la ventana **Elegir columnas**, para desmarcar todas las columnas, desmarque el elemento **(Seleccionar todas las columnas**).  
+10. Para incluir columnas, revisa las siguientes seis columnas:  
     * EmployeeKey  
     * EmployeeNationalIDAlternateKey  
     * Nombre  
     * Apellido  
     * Título  
     * Dirección de correo electrónico  
-17. En la lista **de Pasos Aplicados**, observa la adición de otro paso de consulta.  
+11. En la lista **de Pasos Aplicados**, observa la adición de otro paso de consulta.  
     ![Eliminado otro paso de columnas][image6]  
-18. To create a single name column, first select the **FirstName** column header. While pressing the **Ctrl** key, select the **LastName** column.  
+12. To create a single name column, first select the **FirstName** column header. While pressing the **Ctrl** key, select the **LastName** column.  
     ![Multi-select two columns to create single column][image7]  
-19. Right-click either of the select column headers, and then in the context menu, select **Merge Columns**.  
-20. *Many common transformations can be applied by right-clicking the column header, and then choosing them from the context menu. Note that additional transformations are available in the ribbon.*  
-21. In the **Merge Columns** window, in the **Separator** dropdown list, select **Space**.  
-22. In the **New Column Name** box, replace the text with **Salesperson**.  
-23. To rename the **EmployeeNationalIDAlternateKey** column, double-click the **EmployeeNationalIDAlternateKey** column header and replace the text with **EmployeeID**, and then press **Enter**.  
-24. Rename the **EmailAddress** column to **UPN**.  
-25. *UPN is an acronym for User Principal Name.*
+13. Right-click either of the select column headers, and then in the context menu, select **Merge Columns**.  
+ *Many common transformations can be applied by right-clicking the column header, and then choosing them from the context menu. Note that additional transformations are available in the ribbon.*  
+14. In the **Merge Columns** window, in the **Separator** dropdown list, select **Space**.  
+15. In the **New Column Name** box, replace the text with **Salesperson**.  
+16. To rename the **EmployeeNationalIDAlternateKey** column, double-click the **EmployeeNationalIDAlternateKey** column header and replace the text with **EmployeeID**, and then press **Enter**.  
+17. Rename the **EmailAddress** column to **UPN**.  
+. *UPN is an acronym for User Principal Name.*
 
 **In the status bar at the bottom-left corner of the Power Query Editor, verify that the query has 5 columns and 18 rows.**
 

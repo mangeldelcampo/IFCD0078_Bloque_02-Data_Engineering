@@ -109,13 +109,14 @@ Ve a las opciones de ordenación de columnas
 11. En la lista **de Pasos Aplicados**, observa la adición de otro paso de consulta.  
     ![Eliminado otro paso de columnas](./imagenes/imagen7.png)
 
-12. To create a single name column, first select the **FirstName** column header. While pressing the **Ctrl** key, select the **LastName** column.  
+12. Para crear una columna con un solo nombre, selecciona primero el encabezado de la columna **FirstName**. Mantén pulsada la tecla **Ctrl** y selecciona la columna **LastName**.  
     ![Multi-select two columns to create single column](./imagenes/imagen8.png)
 
-13. Right-click either of the select column headers, and then in the context menu, select **Merge Columns**.
+13. Haz clic con el botón derecho del ratón en cualquiera de los encabezados de las columnas seleccionadas y, a continuación, en el menú contextual, selecciona **Combinar columnas**.
 ![Merge Columns](./imagenes/imagen9.png)
 
- *Many common transformations can be applied by right-clicking the column header, and then choosing them from the context menu. Note that additional transformations are available in the ribbon.*  
+ *Muchas de las transformaciones habituales se pueden aplicar haciendo clic con el botón derecho del ratón en el encabezado de la columna y seleccionándolas a continuación en el menú contextual. Ten en cuenta que hay transformaciones adicionales disponibles en la cinta de opciones.*
+   
 14. In the **Merge Columns** window, in the **Separator** dropdown list, select **Space**.  
 15. In the **New Column Name** box, replace the text with **Salesperson**.  
 16. To rename the **EmployeeNationalIDAlternateKey** column, double-click the **EmployeeNationalIDAlternateKey** column header and replace the text with **EmployeeID**, and then press **Enter**.  

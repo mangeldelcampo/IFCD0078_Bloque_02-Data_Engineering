@@ -194,9 +194,9 @@ En esta tarea, configurarás la consulta **Product**.
 
 > 2. ¿Qué es lo que permite realizar?
 > Permite realizar una desnormalización dimensional (Flattening o Join) sin necesidad de escribir código SQL manual:
-	- Traer campos de otra tabla: Al desplegarlo, puedes seleccionar atributos específicos de la subcategoría (como EnglishProductSubcategoryName) y de la categoría (DimProductCategory) para incorporarlos como columnas directas dentro de la tabla de producto. 
-	- Crear un esquema en estrella optimizado: En lugar de tener tres tablas separadas en el modelo relacional tipo copo de nieve (Snowflake)—Producto → Subcategoría → Categoría—, integras todo en una única dimensión Product consolidada. 
-	- Mejorar el rendimiento: Al aplanar la jerarquía en una sola dimensión, se reduce el número de relaciones activas en el modelo tabular VertiPaq, simplificando los cálculos DAX y acelerando las consultas visuales.
+>  - Traer campos de otra tabla: Al desplegarlo, puedes seleccionar atributos específicos de la subcategoría (como EnglishProductSubcategoryName) y de la categoría (DimProductCategory) para incorporarlos como columnas directas dentro de la tabla de producto. 
+>  - Crear un esquema en estrella optimizado: En lugar de tener tres tablas separadas en el modelo relacional tipo copo de nieve (Snowflake)—Producto → Subcategoría → Categoría—, integras todo en una única dimensión Product consolidada. 
+>  - Mejorar el rendimiento: Al aplanar la jerarquía en una sola dimensión, se reduce el número de relaciones activas en el modelo tabular VertiPaq, simplificando los cálculos DAX y acelerando las consultas visuales.
 Por este motivo, en el paso 7 del laboratorio se desmarca la selección global y se eligen únicamente EnglishProductSubcategoryName y DimProductCategory, desmarcando también la casilla «Usar el nombre de columna original como prefijo» para evitar nombres excesivamente largos.
 
 

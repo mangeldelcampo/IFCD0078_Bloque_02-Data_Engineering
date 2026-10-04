@@ -227,18 +227,22 @@ En esta tarea, configurarás la consulta **de Reseller**.
 1. Selecciona la consulta **DimReseller** y cambia el nombre a **Reseller**.  
 2. Eliminar todas las columnas, **excepto** las siguientes:  
    * ResellerKey  
-   * Tipo de negocio  
-   * Nombre del Distribuidor  
+   * BusinessType
+   * ResellerName  
    * DimGeography  
 3. Amplía la columna **DimGeography** para **incluir solo** las siguientes tres columnas:  
    * Ciudad  
    * EstadoNombre de la Provincia  
    * InglésPaísPaísNombre  
-4. En la cabecera **de columna BusinessType**, selecciona la flecha hacia abajo y luego revisa los valores distintos de las columnas, y observa ambos valores **como Almacén** y **Almacén**.  
+   ![DimGeography](./imagenes/DimGeography.png)
+
+4. En la cabecera **de columna BusinessType**, selecciona la flecha hacia abajo y luego revisa los valores distintos de las columnas, y observa ambos valores **como Ware House** y **Warehouse**.
+   |[BusinessType](./imagenes/BussinesType.png)
+
 5. Haz clic derecho en la cabecera **de la columna BusinessType** y luego **selecciona Reemplazar valores**.  
 6. En la ventana **de Reemplazar Valores**, configura los siguientes valores:  
-   * En la casilla **Valor para encontrar**, introduce **Warehouse**  
-   * En la **caja Reemplazar con**, introduce **Almacén**
+   * En la casilla **Valor para encontrar**, introduce **Ware House**  
+   * En la **caja Reemplazar con**, introduce **Warehouse**
 
 **![Cuadro de diálogo Reemplazar valores][image10]**
 

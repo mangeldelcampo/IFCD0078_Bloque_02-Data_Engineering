@@ -173,14 +173,14 @@ En esta tarea, configurarás la consulta **Product**.
 5. En el encabezado de la columna **DimProductSubcategory**, a la derecha del nombre de la columna, selecciona el botón de expansión.
    ![DimProductSubcategory1](./imagenes/DimProductSubcategory1.png)  
 
-6. See the full list of columns, then select the **Select All Columns** box to unselect all columns.  
-7. Select **EnglishProductSubcategoryName** and **DimProductCategory**, and uncheck the **Use Original Column Name as Prefix** checkbox before selecting **OK**.  
-   ![Expand column][image9]  
-8. *By selecting these two columns, a transformation will be applied to join to the **DimProductSubcategory** table, and then include these columns. The **DimProductCategory** column is, in fact, another related table in the data source.*  
-9. *Query column names must always be unique. If left checked, this checkbox would prefix each column with the expanded column name (in this case **DimProductSubcategory**). Because it’s known that the selected column names don’t collide with column names in the **Product** query, the option is deselected.*  
-10. Notice that the transformation resulted in the addition of two columns, and that the **DimProductSubcategory** column has been removed.  
-11. Expande la columna **DimProductCategory** y luego introduce solo la columna **EnglishProductCategoryName**.  
-12. Renombra las siguientes cuatro columnas:  
+6. Consulta la lista completa de columnas y, a continuación, marca la casilla **Seleccionar todas las columnas** para desmarcar todas las columnas.
+7. Selecciona **EnglishProductSubcategoryName** y **DimProductCategory**, y desmarca la casilla **Usar el nombre original de la columna como prefijo** antes de hacer clic en **Aceptar**.  
+  ![DimProductSubcategory1](./imagenes/DimProductSubcategory2.png) 
+> *Al seleccionar estas dos columnas, se aplicará una transformación para unirlas a la tabla **DimProductSubcategory** y, a continuación, incluir estas columnas. La columna **DimProductCategory** es, de hecho, otra tabla relacionada en la fuente de datos.*
+> *Los nombres de las columnas de la consulta deben ser siempre únicos. Si se deja marcada, esta casilla antepondría a cada columna el nombre completo de la columna (en este caso, **DimProductSubcategory**). Dado que se sabe que los nombres de las columnas seleccionadas no entran en conflicto con los nombres de las columnas de la consulta **Product**, la opción se desmarca.*  
+8. Fíjate en que la transformación ha dado lugar a la incorporación de dos columnas y en que se ha eliminado la columna **DimProductSubcategory**. 
+9. Expande la columna **DimProductCategory** y luego introduce solo la columna **EnglishProductCategoryName**.  
+10. Renombra las siguientes cuatro columnas:  
     * **EnglishProductoNombre** a **Product**  
     * **Coste estándar** a **coste estándar** (incluye un espacio)  
     * **InglésSubcategoríaProducto Nombre** a **Subcategoría**  

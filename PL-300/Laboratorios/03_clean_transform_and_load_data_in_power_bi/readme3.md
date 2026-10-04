@@ -166,9 +166,13 @@ En esta tarea, configurarás la consulta **Product**.
    * StandardCost
    * Color
    * DimProductSubcategory
+
 4. Fíjate en que la columna **DimProductSubcategory** representa una tabla relacionada (contiene enlaces **Value**).
+![DimProductSubcategory1](./imagenes/DimProductSubcategory.png)
+
 5. En el encabezado de la columna **DimProductSubcategory**, a la derecha del nombre de la columna, selecciona el botón de expansión.
-   ![Column expand icon][image8]  
+   ![DimProductSubcategory1](./imagenes/DimProductSubcategory1.png)  
+
 6. See the full list of columns, then select the **Select All Columns** box to unselect all columns.  
 7. Select **EnglishProductSubcategoryName** and **DimProductCategory**, and uncheck the **Use Original Column Name as Prefix** checkbox before selecting **OK**.  
    ![Expand column][image9]  

@@ -231,26 +231,26 @@ En esta tarea, configurarás la consulta **de Reseller**.
    * ResellerName  
    * DimGeography  
 3. Amplía la columna **DimGeography** para **incluir solo** las siguientes tres columnas:  
-   * Ciudad  
-   * EstadoNombre de la Provincia  
-   * InglésPaísPaísNombre  
+   * City  
+   * StateProvinceName  
+   * EnglishCountryRegionName  
    ![DimGeography](./imagenes/DimGeography.png)
 
 4. En la cabecera **de columna BusinessType**, selecciona la flecha hacia abajo y luego revisa los valores distintos de las columnas, y observa ambos valores **como Ware House** y **Warehouse**.
-   |[BusinessType](./imagenes/BussinesType.png)
+   ![BusinessType](./imagenes/BussinesType.png)
 
 5. Haz clic derecho en la cabecera **de la columna BusinessType** y luego **selecciona Reemplazar valores**.  
 6. En la ventana **de Reemplazar Valores**, configura los siguientes valores:  
    * En la casilla **Valor para encontrar**, introduce **Ware House**  
    * En la **caja Reemplazar con**, introduce **Warehouse**
 
-**![Cuadro de diálogo Reemplazar valores][image10]**
+   ![BusinessType](./imagenes/BussinesType1.png)
 
 1. Renombra las siguientes cuatro columnas:  
-   * **Tipo de negocio** a **tipo de negocio** (incluir un espacio)  
-   * **Nombre del revendedor** al **revendedor**  
-   * **EstadoProvinciaNombre** a **Estado-Provincia**  
-   * **InglésPaísRegiónNombre** a **País-Región**
+   * **BusinessType** a **Business Type** (incluir un espacio)  
+   * **ResellerName** al **Reseller**  
+   * **StateProvinceName** a **State-Province**  
+   * **EnglishCountryRegionName** a **Country-Region**
 
 **En la barra de estado, verifica que la consulta tenga 6 columnas y 701 filas.**
 
@@ -272,6 +272,7 @@ En esta tarea, configurarás la consulta **de Región**.
    * **SalesTerritoryGroup** to **Group to Group**
 
 **En la barra de estado, verifica que la consulta tenga 4 columnas y 10 filas.**
+ ![BusinessType](./imagenes/BussinesType2.png)
 
 ## Configurar la consulta de ventas
 

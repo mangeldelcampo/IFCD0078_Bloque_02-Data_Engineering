@@ -187,6 +187,7 @@ En esta tarea, configurarás la consulta **Product**.
 ![DimProductSubcategory1](./imagenes/DimProductSubcategory1.png)
 
 7. Selecciona **EnglishProductSubcategoryName** y **DimProductCategory**, y desmarca la casilla **Usar el nombre original de la columna como prefijo** antes de hacer clic en **Aceptar**.  
+  
   ![DimProductSubcategory1](./imagenes/DimProductSubcategory2.png) 
 > *Al seleccionar estas dos columnas, se aplicará una transformación para unirlas a la tabla **DimProductSubcategory** y, a continuación, incluir estas columnas. La columna **DimProductCategory** es, de hecho, otra tabla relacionada en la fuente de datos.*
 

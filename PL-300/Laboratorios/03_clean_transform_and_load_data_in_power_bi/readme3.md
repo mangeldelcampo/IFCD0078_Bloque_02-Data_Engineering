@@ -302,13 +302,13 @@ En esta tarea, configurarás la consulta **Sales**.
    ![Sales.png](./imagenes/Sales.png)
 
 > ***Nota:** Puede que recuerdes en **el laboratorio Preparar Datos en Power BI Desktop** que un pequeño porcentaje de las filas **de FactResellerSales** tenían valores **TotalCostProducto** faltantes. La columna **DimProduct** se ha incluido para recuperar la columna de costes estándar del producto y así ayudar a corregir los valores faltantes.*  
-4. Expande la columna **DimProduct**, desmarca todas las columnas e incluye solo la columna **StandarCost**. 
+3. Expande la columna **DimProduct**, desmarca todas las columnas e incluye solo la columna **StandarCost**. 
    ![StandarCost.png](./imagenes/StandarCost.png)
 
-5. Para crear una columna personalizada, en la pestaña de **Añadir columna**, desde dentro del grupo **General**, selecciona **Columna Personalizada**.  
+4. Para crear una columna personalizada, en la pestaña de **Añadir columna**, desde dentro del grupo **General**, selecciona **Columna Personalizada**.  
 
-6. En la ventana **de Columna Personalizada**, en el cuadro **de Nombre de Nueva Columna**, sustituye el texto por **Coste**.  
-7. En el cuadro **Fórmula de Columna Personalizada**, introduce la siguiente expresión (después del símbolo de iguales) y guarda la nueva columna:  
+5. En la ventana **de Columna Personalizada**, en el cuadro **de Nombre de Nueva Columna**, sustituye el texto por **Coste**.  
+6. En el cuadro **Fórmula de Columna Personalizada**, introduce la siguiente expresión (después del símbolo de iguales) y guarda la nueva columna:  
    ```powerquery
    if [TotalProductCost] = null then [OrderQuantity] * [StandardCost] else [TotalProductCost]
    ```
@@ -319,18 +319,18 @@ En esta tarea, configurarás la consulta **Sales**.
 
    ![NewColumnCost.png](./imagenes/NewColumnCost.png)
 
-10. Elimina las siguientes dos columnas:  
-    * CosteProducto Total  
-    * Coste Estándar  
-11. Renombra las siguientes tres columnas:  
-    * **OrdenCantidad** a **Cantidad**  
-    * **Precio unitario** a **precio unitario** (incluye un espacio)  
-    * **Ventas Cantidad** a **Ventas**  
-12. Para modificar el tipo de dato de la columna, en la cabecera **de la columna Cantidad**, a la izquierda del nombre de la columna, selecciona el icono **1.2** y luego selecciona **Número Entero**.  
-13. *Configurar el tipo de dato correcto es importante. Cuando la columna contiene valor numérico, también es importante elegir el tipo correcto si esperas realizar cálculos matemáticos.*  
-14. *![Imagen 5667][image12]*  
-15. Modificar los siguientes tres tipos de datos columnas a **Número Decimal Fijo**.  
-16. *El tipo de dato de número decimal fijo permite 19 dígitos y permite mayor precisión para evitar errores de redondeo. Es importante usar el tipo de número decimal fijo para valores financieros o tipos de cambio (como los tipos de cambio).*  
+7. Elimina las siguientes dos columnas:  
+    * TotalProductCost  
+    * StandardCost  
+8. Renombra las siguientes tres columnas:  
+    * **OrderQuantity** a **Quantity**  
+    * **UnitPrice** a **Unit Price** (incluye un espacio)  
+    * **SalesAmount** a **Sales**  
+9. Para modificar el tipo de dato de la columna, en la cabecera de la columna **Quantity**, a la izquierda del nombre de la columna, selecciona el icono **1.2** y luego selecciona **Número Entero(Whole Number)**.  
+>*Configurar el tipo de dato correcto es importante. Cuando la columna contiene valor numérico, también es importante elegir el tipo correcto si esperas realizar cálculos matemáticos.*  
+ *![Imagen 5667][image12]*  
+10. Modificar los siguientes tres tipos de datos columnas a **Número Decimal Fijo**.  
+ *El tipo de dato de número decimal fijo permite 19 dígitos y permite mayor precisión para evitar errores de redondeo. Es importante usar el tipo de número decimal fijo para valores financieros o tipos de cambio (como los tipos de cambio).*  
     * Precio unitario  
     * Ventas  
     * Coste

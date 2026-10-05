@@ -438,12 +438,15 @@ En esta tarea, actualizarás la consulta **Product** fusionando (by merging) la 
 
 6. Cuando se abra la ventana **de Niveles de Privacidad**, para cada una de las dos fuentes de datos, en la lista desplegable correspondiente, selecciona **Organizacional** y **luego Guardar**.  
 > *Se pueden configurar niveles de privacidad para la fuente de datos y así determinar si los datos pueden compartirse entre fuentes. Configurar cada fuente de datos como **Organizacional** les permite compartir datos, si es necesario. Las fuentes de datos privadas nunca pueden compartirse con otras fuentes. No significa que los datos privados no puedan compartirse; significa que el motor Power Query no puede compartir datos entre las fuentes.*  
-   ![ExpandColorFormats.png](./imagenes/ExpandColorFormats.png)
+  
+  ![MergeNivelPrivacidad.png](./imagenes/MergeNivelPrivacidad.png)
+
+  
 7. En la ventana **de Fusión**, usa el tipo de **unión** por defecto \- manteniendo la selección de Exterior Izquierdo y **selecciona OK**.  
 8. Amplíe la columna **ColorFormatos** para incluir las siguientes dos columnas:  
     * Background Color Format  
     * Font Color Format
-
+ ![ExpandColorFormats.png](./imagenes/ExpandColorFormats.png)
 
 **En la barra de estado, verifica que la consulta ahora tenga 8 columnas y 397 filas.**
 

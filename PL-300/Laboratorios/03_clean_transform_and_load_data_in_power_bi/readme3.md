@@ -365,7 +365,7 @@ En esta tarea, configurarás la consulta **Targets**.
    ![Unipivot3.png](./imagenes/Unipivot3.png)
 
 5. Aplica un filtro a la columna **Valor** para eliminar los valores del guion (-).
-![FiltroValor.png]
+   ![FiltroValor.png](./imagenes/FiltroValor.png)
 
 >*Quizá recuerdes que el carácter guion se usaba en el archivo CSV de origen para representar cero (0).*  
 6. Renombra las siguientes dos columnas:  
@@ -375,7 +375,7 @@ En esta tarea, configurarás la consulta **Targets**.
 > *Ahora aplicarás transformaciones para producir una columna de fecha. La fecha se derivará de las columnas **Year** y **MonthNumber**. Crearás la columna usando la función **Columnas de Ejemplos**.*
 
 8. En la ventana **Reemplazar Valores**, en el cuadro **Valor que buscar**, introduce **M** y deja **Reemplazar con** vacío.
-![reemplazarM.png]  
+   ![reemplazarM.png](./imagenes/reemplazarM.png)
 
 9. Modifica el tipo de dato de la columna **MonthNumber** a **Número Entero**.
 
@@ -384,7 +384,8 @@ En esta tarea, configurarás la consulta **Targets**.
 11. Fíjate que la primera fila corresponde al año **2017** y al mes **número 7**.  
 
 12. En la columna **Columna1**, en la primera celda de la cuadrícula, comienza a introducir **el 1/7/2017** y luego pulsa **Enter**.
-   ![ColumnaEjemplo1.png]
+   ![ColumnaEjemplo1.png](./imagenes/ColumnaEjemplo1.png)
+
 > ***Nota:** La máquina virtual utiliza configuraciones regionales de EE. UU., por lo que esta fecha es en realidad el 1 de julio de 2017\. Otros entornos regionales pueden requerir un **0** antes de la fecha.*  
 13. Fíjate que las celdas de la cuadrícula se actualizan con los valores predichos.  
 > *La función ha predicho con precisión que estás combinando valores de las columnas **Año** y **Número de Mes**.*  
@@ -399,11 +400,12 @@ En esta tarea, configurarás la consulta **Targets**.
     * **TargetMonth** como fecha (date)
 18. Para multiplicar los valores de **Target** por 1000, selecciona la cabecera de la columna **Target** y, en la pestaña de**Transformar**, desde dentro del grupo de**Columnas de Números**, **selecciona Estándar** y después **selecciona Multiplicar**.  
 > *Quizá recuerdes que los valores objetivo se almacenaban en miles.*  
-   ![MultiplicarTarget.png][image15]*  
+   ![MultiplicarTarget.png](./imagenes/MultiplicarTarget.png)
+
 19. En la ventana **de Multiplicar**, en el cuadro de **Valor**, introduce **1000** y selecciona **OK.**
 
 **En la barra de estado, verifica que la consulta tenga 3 columnas y 809 filas.**
-   ![VerificarTarget.png]
+   ![VerificarTarget.png](./imagenes/VerificarTarget.png)
 
 # Bloque 6: Carga al modelo (Close & Apply)
 ## Configurar la consulta ColorFormats
@@ -412,10 +414,10 @@ En esta tarea, configurarás la consulta **ColorFormats**.
 
 1. Selecciona la consulta **ColorFormatos** y observa que la primera fila contiene los nombres de las columnas.  
 2. En la pestaña de **la cinta de inicio**, desde dentro del grupo **Transformar**, selecciona **Usar Primera Fila como Cabeceras**.  
-   ![PrimeraFilaEncabezado.png][image16]
+   ![PrimeraFilaEncabezado.png](./imagenes/PrimeraFilaEncabezado.png)
 
 **En la barra de estado, verifica que la consulta tenga 3 columnas y 10 filas.**
-![VerificacionColorFormats.png]
+![VerificacionColorFormats.png](./imagenes/VerificacionColorFormats.png)
 ## Actualizar la consulta del producto
 
 En esta tarea, actualizarás la consulta **de Producto** fusionando la consulta **ColorFormats**.

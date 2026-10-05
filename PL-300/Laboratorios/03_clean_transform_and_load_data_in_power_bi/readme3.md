@@ -352,39 +352,48 @@ En esta tarea, configurarás la consulta **Sales**.
 En esta tarea, configurarás la consulta **Targets**.
 
 1. Selecciona la consulta **ResellerSalesTargets** y renombra a **Targets**.  
-2. **Nota:** Si recibes un mensaje de advertencia pidiendo especificar cómo conectarte, selecciona **Editar credenciales** y usa acceso anónimo.  
-3. Para despivotar las columnas de 12 meses (**M01-M12**), primero selecciona varias veces los encabezados **de las columnas Year** y **EmployeeID**.  
-4. Haz clic derecho en cualquiera de las cabeceras de seleccionar columnas y, en el menú contextual, **selecciona Despivotar otras columnas**.  
-5. Fíjate que los nombres de las columnas ahora aparecen en la columna **de Atributos**, y los valores en la columna **de Valor**.  
-6. Aplica un filtro a la columna **Valor** para eliminar los valores del guion (-).  
-7. *Quizá recuerdes que el carácter guion se usaba en el archivo CSV de origen para representar cero (0).*  
-8. Renombra las siguientes dos columnas:  
+>**Nota:** Si recibes un mensaje de advertencia pidiendo especificar cómo conectarte, selecciona **Editar credenciales** y usa acceso anónimo.  
+   ![CredencialesTargets.png](./imagenes/CredencialesTargets.png)
+
+2. Para despivotar las columnas de 12 meses (**M01-M12**), primero selecciona varias veces los encabezados de las columnas **Year** y **EmployeeID**.
+   ![Unipivot1.png](./imagenes/Unipivot1.png)
+
+3. Haz clic derecho en cualquiera de las cabeceras de seleccionar columnas y, en el menú contextual, selecciona **Anulación de dinamización de otras columnas (Unipivot other columns)**. 
+   ![Unipivot2.png](./imagenes/Unipivot2.png) 
+
+4. Fíjate que los nombres de las columnas ahora aparecen en la columna **Atributos**, y los valores en la columna **Valor**.
+   ![Unipivot3.png](./imagenes/Unipivot3.png)
+
+5. Aplica un filtro a la columna **Valor** para eliminar los valores del guion (-).  
+>*Quizá recuerdes que el carácter guion se usaba en el archivo CSV de origen para representar cero (0).*  
+6. Renombra las siguientes dos columnas:  
    * **Atributo** a **Número de Mes** (no hay espacio)  
    * **Valor** para **el objetivo**  
-9. Para preparar los valores de la columna **MonthNumber**, haz clic derecho en la cabecera **de la columna MonthNumber** y luego **selecciona Reemplazar valores**.  
-10. *Ahora aplicarás transformaciones para producir una columna de fecha. La fecha se derivará de las columnas **Año** y **Número de Mes**. Crearás la columna usando la función **Columnas de Ejemplos**.*  
-11. En la ventana **Reemplazar Valores**, en el cuadro **Valor A Encontrar**, introduce **M** y deja **Reemplazar con** vacío.  
-12. Modifica el tipo de dato de la columna **Número de Mes** a **Número Entero**.  
-13. En la pestaña **de Añadir columna**, desde el grupo **General**, selecciona el icono **La columna de ejemplos**.  
+7. Para preparar los valores de la columna **MonthNumber**, haz clic derecho en la cabecera **de la columna MonthNumber** y luego **selecciona Reemplazar valores**.  
+> *Ahora aplicarás transformaciones para producir una columna de fecha. La fecha se derivará de las columnas **Año** y **Número de Mes**. Crearás la columna usando la función **Columnas de Ejemplos**.*
+
+8. En la ventana **Reemplazar Valores**, en el cuadro **Valor A Encontrar**, introduce **M** y deja **Reemplazar con** vacío.  
+9. Modifica el tipo de dato de la columna **Número de Mes** a **Número Entero**.  
+10. En la pestaña **de Añadir columna**, desde el grupo **General**, selecciona el icono **La columna de ejemplos**.  
     ![Imagen 5675][image13]  
-14. Fíjate que la primera fila corresponde al año **2017** y al mes **número 7**.  
-15. En la columna **Columna1**, en la primera celda de la cuadrícula, comienza a introducir **el 1/7/2017** y luego pulsa **Enter**.  
-16. ***Nota:** La máquina virtual utiliza configuraciones regionales de EE. UU., por lo que esta fecha es en realidad el 1 de julio de 2017\. Otros entornos regionales pueden requerir un **0** antes de la fecha.*  
-17. Fíjate que las celdas de la cuadrícula se actualizan con los valores predichos.  
-18. *La función ha predicho con precisión que estás combinando valores de las columnas **Año** y **Número de Mes**.*  
-19. Fíjate también en la fórmula presentada sobre la cuadrícula de consulta.  
+11. Fíjate que la primera fila corresponde al año **2017** y al mes **número 7**.  
+12. En la columna **Columna1**, en la primera celda de la cuadrícula, comienza a introducir **el 1/7/2017** y luego pulsa **Enter**.  
+> ***Nota:** La máquina virtual utiliza configuraciones regionales de EE. UU., por lo que esta fecha es en realidad el 1 de julio de 2017\. Otros entornos regionales pueden requerir un **0** antes de la fecha.*  
+13. Fíjate que las celdas de la cuadrícula se actualizan con los valores predichos.  
+> *La función ha predicho con precisión que estás combinando valores de las columnas **Año** y **Número de Mes**.*  
+14. Fíjate también en la fórmula presentada sobre la cuadrícula de consulta.  
     ![Imagen 5679][image14]  
-20. Para renombrar la nueva columna, haz doble clic en el encabezado **de la columna Fusionado** y cambia el nombre a la columna como **TargetMonth**.  
-21. Elimina las siguientes columnas:  
-    * Año  
-    * Número de mes  
-22. Modificar los siguientes tipos de datos de columna:  
-    * **Objetivo** como número decimal fijo  
-    * **TargetMonth** en la fecha  
-23. Para multiplicar los valores **de Objetivo** por 1000, selecciona la cabecera de la columna **Destino** y, en la pestaña **de Transformar**, desde dentro del grupo **de Columnas de Números**, **selecciona Estándar** y después **selecciona Multiplicar**.  
-24. *Quizá recuerdes que los valores objetivo se almacenaban en miles.*  
-25. *![Imagen 5682][image15]*  
-26. En la ventana **de Multiplicar**, en el cuadro **de Valor**, introduce **1000** y selecciona **OK.**
+15. Para renombrar la nueva columna, haz doble clic en el encabezado **de la columna Fusionado** y cambia el nombre a la columna como **TargetMonth**.  
+16. Elimina las siguientes columnas:  
+    * Year  
+    * MonthNumber  
+17. Modificar los siguientes tipos de datos de columna:  
+    * **Target** como número decimal fijo(fixed decimal number)
+    * **TargetMonth** como fecha (date)
+18. Para multiplicar los valores de **Target** por 1000, selecciona la cabecera de la columna **Target** y, en la pestaña de**Transformar**, desde dentro del grupo de**Columnas de Números**, **selecciona Estándar** y después **selecciona Multiplicar**.  
+> *Quizá recuerdes que los valores objetivo se almacenaban en miles.*  
+ *![Imagen 5682][image15]*  
+19. En la ventana **de Multiplicar**, en el cuadro de **Valor**, introduce **1000** y selecciona **OK.**
 
 **En la barra de estado, verifica que la consulta tenga 3 columnas y 809 filas.**
 

@@ -386,7 +386,7 @@ En esta tarea, configurarás la consulta **Targets**.
 
 12. En la columna **Columna1**, en la primera celda de la cuadrícula, comienza a introducir **el 1/7/2017** y luego pulsa **Enter**.
    
-> ***Nota:** La máquina virtual utiliza configuraciones regionales de EE. UU., por lo que esta fecha es en realidad el 1 de julio de 2017\. Otros entornos regionales pueden requerir un **0** antes de la fecha.*  
+> ***Nota:** Dependiendo de la configuración regional de España o EE. UU., por lo que esta fecha es en realidad el 1 de julio de 2017\. Otros entornos regionales pueden requerir un **0** antes de la fecha.*  
 13. Fíjate que las celdas de la cuadrícula se actualizan con los valores predichos.  
 > *La función ha predicho con precisión que estás combinando valores de las columnas **Año** y **Número de Mes**.*
    ![ColumnaEjemplo1.png](./imagenes/ColumnaEjemplo1.png)

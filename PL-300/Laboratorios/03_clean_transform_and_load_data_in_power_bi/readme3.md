@@ -135,6 +135,8 @@ Ve a las opciones de ordenación de columnas
 ![Revisión](./imagenes/imagen12.png) 
 
 # Bloque 2: Preparar la tabla puente (Bridge)
+* DimEmployeeSalesTerritory $\rightarrow$ SalespersonRegion:
+   - Se eliminan las columnas complejas que apuntan a otras tablas y se dejan únicamente EmployeeKey y SalesTerritoryKey (2 columnas y 39 filas) para resolver más adelante la relación muchos a muchos ($M:N$).
 ## Configurar la consulta **SalespersonRegion**
 
 En esta tarea, configurarás la consulta **SalespersonRegion**.
@@ -153,6 +155,8 @@ En esta tarea, configurarás la consulta **SalespersonRegion**.
    ![Eliminar columnas](./imagenes/imagen15.png)
 
 # Bloque 3: Desnormalizar el catálogo de producto
+* DimProduct $\rightarrow$ Product:
+   - En las bases de datos relacionales, la categoría y la subcategoría suelen estar en tablas separadas. Aquí se expanden dentro de Product para que la categoría (Bikes, Accessories...) y la subcategoría queden en una sola tabla, simplificando el modelo final.
 ## Configurar la consulta «Product»
 
 En esta tarea, configurarás la consulta **Product**.
@@ -220,6 +224,10 @@ Por este motivo, en el paso 7 del laboratorio se desmarca la selección global y
 ![DimProductcategory1](./imagenes/DimProductcategory2.png)
 
 # Bloque 4: Limpieza de calidad de datos
+* DimReseller $\rightarrow$ Reseller:
+   - Se subsana el error tipográfico detectado en el perfilado: se reemplaza el texto "Ware House" por "Warehouse" para que las agregaciones por tipo de negocio no salgan duplicadas.
+* DimSalesTerritory $\rightarrow$ Region:
+   - Se excluye la fila correspondiente a Corporate HQ (Sede central) para no distorsionar el análisis de ventas sobre territorios operativos reales. 
 ## Configurar la consulta de Reseller
 
 En esta tarea, configurarás la consulta **de Reseller**.
@@ -347,6 +355,9 @@ En esta tarea, configurarás la consulta **Sales**.
 
 
 # Bloque 5: Desdinamización de datos (Unpivot)
+* ResellerSalesTargets:
+   - Viene en formato de tabla cruzada: una fila por vendedor y 12 columnas para los meses del año fiscal (M01, M02...).
+   - Las bases de datos tabulares y DAX no pueden crear relaciones de fecha con 12 columnas separadas. Se aplica una desdinamización de columnas (Unpivot Columns) para convertirlo en dos únicas columnas: Mes y Objetivo (formato tabular vertical normalizado), calculando luego una fecha real para poder cruzarlo con el calendario.
 ## Configurar la consulta de Targets
 
 En esta tarea, configurarás la consulta **Targets**.
@@ -411,6 +422,7 @@ En esta tarea, configurarás la consulta **Targets**.
    ![VerificarTarget.png](./imagenes/VerificarTarget.png)
 
 # Bloque 6: Carga al modelo (Close & Apply)
+* Una vez depuradas y renombradas todas las consultas a nombres descriptivos de negocio (sin prefijos técnicos Dim ni Fact), se aplica la carga para que los datos pasen al motor analítico de Power BI Desktop y queden listos para la fase de relaciones y DAX.
 ## Configurar la consulta ColorFormats
 
 En esta tarea, configurarás la consulta **ColorFormats**.

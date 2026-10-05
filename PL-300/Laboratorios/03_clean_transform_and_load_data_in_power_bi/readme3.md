@@ -443,6 +443,7 @@ En esta tarea, actualizarás la consulta **Product** fusionando (by merging) la 
 12. Amplíe la columna **ColorFormatos** para incluir las siguientes dos columnas:  
     * Background Color Format  
     * Font Color Format
+    
 ![ExpandColorFormats.png](./imagenes/ExpandColorFormats.png)
 
 

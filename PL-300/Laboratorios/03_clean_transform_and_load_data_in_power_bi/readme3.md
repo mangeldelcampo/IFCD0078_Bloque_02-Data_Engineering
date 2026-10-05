@@ -423,24 +423,26 @@ En esta tarea, configurarás la consulta **ColorFormats**.
 ![VerificacionColorFormats.png](./imagenes/VerificacionColorFormats.png)
 ## Actualizar la consulta del producto
 
-En esta tarea, actualizarás la consulta **de Producto** fusionando la consulta **ColorFormats**.
+En esta tarea, actualizarás la consulta **Product** fusionando (by merging) la consulta **ColorFormats**.
 
-1. Selecciona la consulta **de producto**.  
-2. Para fusionar la consulta **ColorFormats**, en la pestaña de **cinta de inicio**, desde dentro del grupo **Combinar**, selecciona **Combinar consultas**.  
+1. Selecciona la consulta de **Product**.  
+2. Para fusionar la consulta **ColorFormats**, en la pestaña de **cinta de inicio**, desde dentro del grupo **Combinar**, selecciona **Combinar consultas**(Merge Querys).  
 > *La fusión de consultas permite integrar datos, en este caso de diferentes fuentes de datos (SQL Server y un archivo CSV).*  
    ![][image17] 
 5. En la ventana **de Fusionar**, en la cuadrícula **de consultas de Producto**, selecciona la cabecera de la columna **Color**.  
    ![Imagen 5655][image18]  
 6. Debajo de la cuadrícula de **consultas de producto**, en la lista desplegable, selecciona la consulta **ColorFormats**.  
-   ![Imagen 21][image19]  
+   ![MergeNivelPrivacidad.png][image19]  
 7. En la cuadrícula **de consulta ColorFormatos**, selecciona el encabezado de columna **Color**.  
 8. Cuando se abra la ventana **de Niveles de Privacidad**, para cada una de las dos fuentes de datos, en la lista desplegable correspondiente, selecciona **Organizacional** y **luego Guardar**.  
 > *Se pueden configurar niveles de privacidad para la fuente de datos y así determinar si los datos pueden compartirse entre fuentes. Configurar cada fuente de datos como **Organizacional** les permite compartir datos, si es necesario. Las fuentes de datos privadas nunca pueden compartirse con otras fuentes. No significa que los datos privados no puedan compartirse; significa que el motor Power Query no puede compartir datos entre las fuentes.*  
    ![Imagen 5691][image20]
 11. En la ventana **de Fusión**, usa el tipo de **unión** por defecto \- manteniendo la selección de Exterior Izquierdo y **selecciona OK**.  
 12. Amplíe la columna **ColorFormatos** para incluir las siguientes dos columnas:  
-    * Formato de color de fondo  
-    * Formato de color de fuente
+    * Background Color Format  
+    * Font Color Format
+![ExpandColorFormats.png]
+
 
 **En la barra de estado, verifica que la consulta ahora tenga 8 columnas y 397 filas.**
 

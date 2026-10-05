@@ -365,6 +365,7 @@ En esta tarea, configurarás la consulta **Targets**.
    ![Unipivot3.png](./imagenes/Unipivot3.png)
 
 5. Aplica un filtro a la columna **Valor** para eliminar los valores del guion (-).
+  
    ![FiltroValor.png](./imagenes/FiltroValor.png)
 
 >*Quizá recuerdes que el carácter guion se usaba en el archivo CSV de origen para representar cero (0).*  

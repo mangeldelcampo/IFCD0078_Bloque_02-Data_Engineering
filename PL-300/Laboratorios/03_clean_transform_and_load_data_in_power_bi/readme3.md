@@ -306,7 +306,7 @@ En esta tarea, configurarás la consulta **Sales**.
    ![StandarCost.png](./imagenes/StandarCost.png)
 
 5. Para crear una columna personalizada, en la pestaña de **Añadir columna**, desde dentro del grupo **General**, selecciona **Columna Personalizada**.  
-   ![Imagen 5664][image11]  
+
 6. En la ventana **de Columna Personalizada**, en el cuadro **de Nombre de Nueva Columna**, sustituye el texto por **Coste**.  
 7. En el cuadro **Fórmula de Columna Personalizada**, introduce la siguiente expresión (después del símbolo de iguales) y guarda la nueva columna:  
    ```powerquery
@@ -314,8 +314,10 @@ En esta tarea, configurarás la consulta **Sales**.
    ```
 
 > ***Nota:** Tienes la expresión en el archivo **Snippets.txt** en la carpeta 02-transform-data.*
-  
-9. *Esta expresión prueba si falta el valor **de CostoProducto Total**. Si falta, produce un valor multiplicando el **valor de Cantidad de Orden** por el valor **de Coste Estándar**; de lo contrario, utiliza el valor **TotalCostoProducto** existente.*  
+
+> *Esta expresión prueba si falta el valor **TotalProductCost**. Si falta, produce un valor multiplicando el **OrderQuantity** por el valor **StandardCost**; de lo contrario, utiliza el valor **TotalProductCost** existente.*
+   ![NewColumnCost.png](./imagenes/NewColumnCost.png)
+   
 10. Elimina las siguientes dos columnas:  
     * CosteProducto Total  
     * Coste Estándar  

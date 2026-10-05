@@ -364,20 +364,27 @@ En esta tarea, configurarás la consulta **Targets**.
 4. Fíjate que los nombres de las columnas ahora aparecen en la columna **Atributos**, y los valores en la columna **Valor**.
    ![Unipivot3.png](./imagenes/Unipivot3.png)
 
-5. Aplica un filtro a la columna **Valor** para eliminar los valores del guion (-).  
+5. Aplica un filtro a la columna **Valor** para eliminar los valores del guion (-).
+![FiltroValor.png]
+
 >*Quizá recuerdes que el carácter guion se usaba en el archivo CSV de origen para representar cero (0).*  
 6. Renombra las siguientes dos columnas:  
-   * **Atributo** a **Número de Mes** (no hay espacio)  
-   * **Valor** para **el objetivo**  
-7. Para preparar los valores de la columna **MonthNumber**, haz clic derecho en la cabecera **de la columna MonthNumber** y luego **selecciona Reemplazar valores**.  
-> *Ahora aplicarás transformaciones para producir una columna de fecha. La fecha se derivará de las columnas **Año** y **Número de Mes**. Crearás la columna usando la función **Columnas de Ejemplos**.*
+   * **Atributo** a **MonthNumber** (no hay espacio)  
+   * **Valor** a **Target**  
+7. Para preparar los valores de la columna **MonthNumber**, haz clic derecho en la cabecera de la columna **MonthNumber** y luego selecciona **Reemplazar valores**.  
+> *Ahora aplicarás transformaciones para producir una columna de fecha. La fecha se derivará de las columnas **Year** y **MonthNumber**. Crearás la columna usando la función **Columnas de Ejemplos**.*
 
-8. En la ventana **Reemplazar Valores**, en el cuadro **Valor A Encontrar**, introduce **M** y deja **Reemplazar con** vacío.  
-9. Modifica el tipo de dato de la columna **Número de Mes** a **Número Entero**.  
+8. En la ventana **Reemplazar Valores**, en el cuadro **Valor que buscar**, introduce **M** y deja **Reemplazar con** vacío.
+![reemplazarM.png]  
+
+9. Modifica el tipo de dato de la columna **MonthNumber** a **Número Entero**.
+
 10. En la pestaña **de Añadir columna**, desde el grupo **General**, selecciona el icono **La columna de ejemplos**.  
-    ![Imagen 5675][image13]  
+    
 11. Fíjate que la primera fila corresponde al año **2017** y al mes **número 7**.  
-12. En la columna **Columna1**, en la primera celda de la cuadrícula, comienza a introducir **el 1/7/2017** y luego pulsa **Enter**.  
+
+12. En la columna **Columna1**, en la primera celda de la cuadrícula, comienza a introducir **el 1/7/2017** y luego pulsa **Enter**.
+   ![ColumnaEjemplo1.png]
 > ***Nota:** La máquina virtual utiliza configuraciones regionales de EE. UU., por lo que esta fecha es en realidad el 1 de julio de 2017\. Otros entornos regionales pueden requerir un **0** antes de la fecha.*  
 13. Fíjate que las celdas de la cuadrícula se actualizan con los valores predichos.  
 > *La función ha predicho con precisión que estás combinando valores de las columnas **Año** y **Número de Mes**.*  
@@ -392,10 +399,11 @@ En esta tarea, configurarás la consulta **Targets**.
     * **TargetMonth** como fecha (date)
 18. Para multiplicar los valores de **Target** por 1000, selecciona la cabecera de la columna **Target** y, en la pestaña de**Transformar**, desde dentro del grupo de**Columnas de Números**, **selecciona Estándar** y después **selecciona Multiplicar**.  
 > *Quizá recuerdes que los valores objetivo se almacenaban en miles.*  
- *![Imagen 5682][image15]*  
+   ![MultiplicarTarget.png][image15]*  
 19. En la ventana **de Multiplicar**, en el cuadro de **Valor**, introduce **1000** y selecciona **OK.**
 
 **En la barra de estado, verifica que la consulta tenga 3 columnas y 809 filas.**
+   ![VerificarTarget.png]
 
 # Bloque 6: Carga al modelo (Close & Apply)
 ## Configurar la consulta ColorFormats
@@ -403,27 +411,27 @@ En esta tarea, configurarás la consulta **Targets**.
 En esta tarea, configurarás la consulta **ColorFormats**.
 
 1. Selecciona la consulta **ColorFormatos** y observa que la primera fila contiene los nombres de las columnas.  
-2. En la pestaña de **la cinta de inicio**, desde dentro del **grupo Transformar**, selecciona **Usar Primera Fila como Cabeceras**.  
-   ![Imagen 5688][image16]
+2. En la pestaña de **la cinta de inicio**, desde dentro del grupo **Transformar**, selecciona **Usar Primera Fila como Cabeceras**.  
+   ![PrimeraFilaEncabezado.png][image16]
 
 **En la barra de estado, verifica que la consulta tenga 3 columnas y 10 filas.**
-
+![VerificacionColorFormats.png]
 ## Actualizar la consulta del producto
 
 En esta tarea, actualizarás la consulta **de Producto** fusionando la consulta **ColorFormats**.
 
 1. Selecciona la consulta **de producto**.  
 2. Para fusionar la consulta **ColorFormats**, en la pestaña de **cinta de inicio**, desde dentro del grupo **Combinar**, selecciona **Combinar consultas**.  
-3. *La fusión de consultas permite integrar datos, en este caso de diferentes fuentes de datos (SQL Server y un archivo CSV).*  
-4. *![Imagen 5654][image17]*  
+> *La fusión de consultas permite integrar datos, en este caso de diferentes fuentes de datos (SQL Server y un archivo CSV).*  
+   ![][image17] 
 5. En la ventana **de Fusionar**, en la cuadrícula **de consultas de Producto**, selecciona la cabecera de la columna **Color**.  
    ![Imagen 5655][image18]  
 6. Debajo de la cuadrícula de **consultas de producto**, en la lista desplegable, selecciona la consulta **ColorFormats**.  
    ![Imagen 21][image19]  
 7. En la cuadrícula **de consulta ColorFormatos**, selecciona el encabezado de columna **Color**.  
 8. Cuando se abra la ventana **de Niveles de Privacidad**, para cada una de las dos fuentes de datos, en la lista desplegable correspondiente, selecciona **Organizacional** y **luego Guardar**.  
-9. *Se pueden configurar niveles de privacidad para la fuente de datos y así determinar si los datos pueden compartirse entre fuentes. Configurar cada fuente de datos como **Organizacional** les permite compartir datos, si es necesario. Las fuentes de datos privadas nunca pueden compartirse con otras fuentes. No significa que los datos privados no puedan compartirse; significa que el motor Power Query no puede compartir datos entre las fuentes.*  
-10. *![Imagen 5691][image20]*  
+> *Se pueden configurar niveles de privacidad para la fuente de datos y así determinar si los datos pueden compartirse entre fuentes. Configurar cada fuente de datos como **Organizacional** les permite compartir datos, si es necesario. Las fuentes de datos privadas nunca pueden compartirse con otras fuentes. No significa que los datos privados no puedan compartirse; significa que el motor Power Query no puede compartir datos entre las fuentes.*  
+   ![Imagen 5691][image20]
 11. En la ventana **de Fusión**, usa el tipo de **unión** por defecto \- manteniendo la selección de Exterior Izquierdo y **selecciona OK**.  
 12. Amplíe la columna **ColorFormatos** para incluir las siguientes dos columnas:  
     * Formato de color de fondo  
@@ -440,7 +448,7 @@ En esta tarea, actualizarás los **ColorFormatos** para desactivar su carga.
    ![Imagen 322][image21]  
 3. En la ventana **de Propiedades de consulta**, desmarca la **casilla Habilitar Cargar para Informar**.  
 4. *Desactivar la carga significa que no se cargará como tabla en el modelo de datos. Esto se hace porque la consulta se fusionó con la **consulta de Producto**, que está habilitada para cargar en el modelo de datos.*  
-5. *![Imagen 323][image22]*
+   ![Imagen 323][image22]
 
 ## Revisión del producto final
 

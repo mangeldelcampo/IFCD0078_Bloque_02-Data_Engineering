@@ -421,7 +421,7 @@ En esta tarea, configurarás la consulta **ColorFormats**.
 
 **En la barra de estado, verifica que la consulta tenga 3 columnas y 10 filas.**
 ![VerificacionColorFormats.png](./imagenes/VerificacionColorFormats.png)
-## Actualizar la consulta del producto
+## Actualizar la consulta Product
 
 En esta tarea, actualizarás la consulta **Product** fusionando (by merging) la consulta **ColorFormats**.
 

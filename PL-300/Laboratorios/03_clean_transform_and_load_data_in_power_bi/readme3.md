@@ -431,8 +431,9 @@ En esta tarea, actualizarás la consulta **Product** fusionando (by merging) la 
    ![][image17] 
 5. En la ventana **de Fusionar**, en la cuadrícula **de consultas de Producto**, selecciona la cabecera de la columna **Color**.  
    ![Imagen 5655][image18]  
-6. Debajo de la cuadrícula de **consultas de producto**, en la lista desplegable, selecciona la consulta **ColorFormats**.  
-   ![MergeNivelPrivacidad.png](./imagenes/MergeNivelPrivacidad.png)  
+6. Debajo de la cuadrícula de **consultas de producto**, en la lista desplegable, selecciona la consulta **ColorFormats**.
+
+![MergeNivelPrivacidad.png](./imagenes/MergeNivelPrivacidad.png)
 
 7. En la cuadrícula **de consulta ColorFormatos**, selecciona el encabezado de columna **Color**.  
 8. Cuando se abra la ventana **de Niveles de Privacidad**, para cada una de las dos fuentes de datos, en la lista desplegable correspondiente, selecciona **Organizacional** y **luego Guardar**.  

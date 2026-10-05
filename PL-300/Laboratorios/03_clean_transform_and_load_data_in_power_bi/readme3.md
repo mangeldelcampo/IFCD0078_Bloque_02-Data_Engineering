@@ -312,8 +312,9 @@ En esta tarea, configurarás la consulta **Sales**.
    ```powerquery
    if [TotalProductCost] = null then [OrderQuantity] * [StandardCost] else [TotalProductCost]
    ```
-   
-8. ***Nota:** Puedes copiar la expresión del archivo **Snippets.txt** en la carpeta 02-transform-data.*  
+
+> ***Nota:** Tienes la expresión en el archivo **Snippets.txt** en la carpeta 02-transform-data.*
+  
 9. *Esta expresión prueba si falta el valor **de CostoProducto Total**. Si falta, produce un valor multiplicando el **valor de Cantidad de Orden** por el valor **de Coste Estándar**; de lo contrario, utiliza el valor **TotalCostoProducto** existente.*  
 10. Elimina las siguientes dos columnas:  
     * CosteProducto Total  

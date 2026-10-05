@@ -428,14 +428,14 @@ En esta tarea, actualizarás la consulta **Product** fusionando (by merging) la 
 1. Selecciona la consulta de **Product**.  
 2. Para fusionar la consulta **ColorFormats**, en la pestaña de **cinta de inicio**, desde dentro del grupo **Combinar**, selecciona **Combinar consultas**(Merge Querys).  
 > *La fusión de consultas permite integrar datos, en este caso de diferentes fuentes de datos (SQL Server y un archivo CSV).*  
-   ![][image17] 
+
 3. En la ventana **de Fusionar**, en la cuadrícula **de consultas de Producto**, selecciona la cabecera de la columna **Color**.  
-   ![Imagen 5655][image18]  
+
 4. Debajo de la cuadrícula de **consultas de producto**, en la lista desplegable, selecciona la consulta **ColorFormats**.
 
+5. En la cuadrícula **de consulta ColorFormatos**, selecciona el encabezado de columna **Color**. 
 ![MergeColorFormats](./imagenes/MergeColorFormats.png)
 
-5. En la cuadrícula **de consulta ColorFormatos**, selecciona el encabezado de columna **Color**.  
 6. Cuando se abra la ventana **de Niveles de Privacidad**, para cada una de las dos fuentes de datos, en la lista desplegable correspondiente, selecciona **Organizacional** y **luego Guardar**.  
 > *Se pueden configurar niveles de privacidad para la fuente de datos y así determinar si los datos pueden compartirse entre fuentes. Configurar cada fuente de datos como **Organizacional** les permite compartir datos, si es necesario. Las fuentes de datos privadas nunca pueden compartirse con otras fuentes. No significa que los datos privados no puedan compartirse; significa que el motor Power Query no puede compartir datos entre las fuentes.*  
    ![ExpandColorFormats.png](./imagenes/ExpandColorFormats.png)
@@ -445,9 +445,9 @@ En esta tarea, actualizarás la consulta **Product** fusionando (by merging) la 
     * Font Color Format
 
 
-
-
 **En la barra de estado, verifica que la consulta ahora tenga 8 columnas y 397 filas.**
+
+![VerificacionUpdateProdcutMergeColorFormats.png](./imagenes/VerificacionUpdateProdcutMergeColorFormats.png)
 
 ## Actualizar la consulta ColorFormats
 

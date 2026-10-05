@@ -385,13 +385,15 @@ En esta tarea, configurarás la consulta **Targets**.
 11. Fíjate que la primera fila corresponde al año **2017** y al mes **número 7**.  
 
 12. En la columna **Columna1**, en la primera celda de la cuadrícula, comienza a introducir **el 1/7/2017** y luego pulsa **Enter**.
-   ![ColumnaEjemplo1.png](./imagenes/ColumnaEjemplo1.png)
-
+   
 > ***Nota:** La máquina virtual utiliza configuraciones regionales de EE. UU., por lo que esta fecha es en realidad el 1 de julio de 2017\. Otros entornos regionales pueden requerir un **0** antes de la fecha.*  
 13. Fíjate que las celdas de la cuadrícula se actualizan con los valores predichos.  
-> *La función ha predicho con precisión que estás combinando valores de las columnas **Año** y **Número de Mes**.*  
+> *La función ha predicho con precisión que estás combinando valores de las columnas **Año** y **Número de Mes**.*
+   ![ColumnaEjemplo1.png](./imagenes/ColumnaEjemplo1.png)
+
 14. Fíjate también en la fórmula presentada sobre la cuadrícula de consulta.  
-    ![Imagen 5679][image14]  
+    ![ColumnaEjemplo0](./imagenes/ColumnaEjemplo0.png)
+
 15. Para renombrar la nueva columna, haz doble clic en el encabezado **de la columna Fusionado** y cambia el nombre a la columna como **TargetMonth**.  
 16. Elimina las siguientes columnas:  
     * Year  

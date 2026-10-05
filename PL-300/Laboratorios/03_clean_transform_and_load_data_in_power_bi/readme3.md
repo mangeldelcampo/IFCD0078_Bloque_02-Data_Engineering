@@ -458,10 +458,9 @@ En esta tarea, actualizarás los **ColorFormatos** para desactivar su carga.
 
 1. Selecciona la consulta **ColorFormats**.  
 2. En el panel **de Configuración de consulta**, selecciona el enlace **Todas las propiedades**.  
-   ![Imagen 322][image21]  
 3. En la ventana **de Propiedades de consulta**, desmarca la **casilla Habilitar Cargar para Informar**.  
-4. *Desactivar la carga significa que no se cargará como tabla en el modelo de datos. Esto se hace porque la consulta se fusionó con la **consulta de Producto**, que está habilitada para cargar en el modelo de datos.*  
-   ![Imagen 323][image22]
+> *Desactivar la carga significa que no se cargará como tabla en el modelo de datos. Esto se hace porque la consulta se fusionó con la **consulta de Producto**, que está habilitada para cargar en el modelo de datos.*  
+   ![UpdateColorFormatsquery.png](./imagenes/UpdateColorFormatsquery.png)
 
 ## Revisión del producto final
 
@@ -475,9 +474,10 @@ En esta tarea, actualizarás los **ColorFormatos** para desactivar su carga.
    * Objetivos  
    * ColorFormats (que no se carga en el modelo de datos)  
 2. **Selecciona Cerrar y Aplicar** para cargar los datos en el modelo y cierra la ventana del Editor de Power Consultas.  
-   ![Imagen 326][image23]  
+   ![CerraryAplicar.png](./imagenes/CerraryAplicar.png)  
 3. Ahora puedes ver el lienzo en Power BI Desktop, con los paneles de Filtros, Visualizaciones y Datos a la derecha. En el panel de datos, fíjate en las **7 tablas** cargadas en el modelo de datos.  
-   ![Imagen 3][image24]
+   
+   ![ModeloFinal.png](./imagenes/ModeloFinal.png)
 
 ## Laboratorio completo
 

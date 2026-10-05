@@ -321,19 +321,24 @@ En esta tarea, configurarás la consulta **Sales**.
 
 7. Elimina las siguientes dos columnas:  
     * TotalProductCost  
-    * StandardCost  
+    * StandardCost
+   ![RemoveColumns.png]  
 8. Renombra las siguientes tres columnas:  
     * **OrderQuantity** a **Quantity**  
     * **UnitPrice** a **Unit Price** (incluye un espacio)  
-    * **SalesAmount** a **Sales**  
-9. Para modificar el tipo de dato de la columna, en la cabecera de la columna **Quantity**, a la izquierda del nombre de la columna, selecciona el icono **1.2** y luego selecciona **Número Entero(Whole Number)**.  
+    * **SalesAmount** a **Sales**
+    RenombrarColumns.png 
+9. Para modificar el tipo de dato de la columna, en la cabecera de la columna **Quantity**, a la izquierda del nombre de la columna, selecciona el icono **1.2** y luego selecciona **Número Entero(Whole Number)**.
+  
 >*Configurar el tipo de dato correcto es importante. Cuando la columna contiene valor numérico, también es importante elegir el tipo correcto si esperas realizar cálculos matemáticos.*  
- *![Imagen 5667][image12]*  
-10. Modificar los siguientes tres tipos de datos columnas a **Número Decimal Fijo**.  
- *El tipo de dato de número decimal fijo permite 19 dígitos y permite mayor precisión para evitar errores de redondeo. Es importante usar el tipo de número decimal fijo para valores financieros o tipos de cambio (como los tipos de cambio).*  
-    * Precio unitario  
-    * Ventas  
-    * Coste
+![Cambiar_a_Entero.png][image12]  
+
+10. Modificar los siguientes tres tipos de datos columnas a **Número Decimal Fijo(Fixed Decimal Number)**.  
+ *El tipo de dato de número decimal fijo permite 19 dígitos y permite mayor precisión para evitar errores de redondeo. Es importante usar el tipo de número decimal fijo para valores financieros o tipos de cambio (como los tipos de cambio).*
+
+    * Unit Price  
+    * Sales  
+    * Cost
 
 **En la barra de estado, comprueba que la consulta tenga 10 columnas y 999+ filas.** Se *cargarán un máximo de 1000 filas como datos de vista previa para cada consulta.*
 

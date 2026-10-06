@@ -432,7 +432,7 @@ En esta tarea, configurarás la consulta **ColorFormats**.
    ![PrimeraFilaEncabezado.png](./imagenes/PrimeraFilaEncabezado.png)
 
 **En la barra de estado, verifica que la consulta tenga 3 columnas y 10 filas.**
-![VerificacionColorFormats.png](./imagenes/VerificacionColorFormats.png)
+   ![VerificacionColorFormats.png](./imagenes/VerificacionColorFormats.png)
 ## Actualizar la consulta Product
 
 En esta tarea, actualizarás la consulta **Product** fusionando (by merging) la consulta **ColorFormats**.
@@ -446,7 +446,7 @@ En esta tarea, actualizarás la consulta **Product** fusionando (by merging) la 
 4. Debajo de la cuadrícula de **consultas de producto**, en la lista desplegable, selecciona la consulta **ColorFormats**.
 
 5. En la cuadrícula **de consulta ColorFormatos**, selecciona el encabezado de columna **Color**. 
-![MergeColorFormats](./imagenes/MergeColorFormats.png)
+   ![MergeColorFormats](./imagenes/MergeColorFormats.png)
 
 6. Cuando se abra la ventana **de Niveles de Privacidad**, para cada una de las dos fuentes de datos, en la lista desplegable correspondiente, selecciona **Organizacional** y **luego Guardar**.  
 > *Se pueden configurar niveles de privacidad para la fuente de datos y así determinar si los datos pueden compartirse entre fuentes. Configurar cada fuente de datos como **Organizacional** les permite compartir datos, si es necesario. Las fuentes de datos privadas nunca pueden compartirse con otras fuentes. No significa que los datos privados no puedan compartirse; significa que el motor Power Query no puede compartir datos entre las fuentes.*  
@@ -461,32 +461,34 @@ En esta tarea, actualizarás la consulta **Product** fusionando (by merging) la 
  ![ExpandColorFormats.png](./imagenes/ExpandColorFormats.png)
 
 **En la barra de estado, verifica que la consulta ahora tenga 8 columnas y 397 filas.**
-
-![VerificacionUpdateProdcutMergeColorFormats.png](./imagenes/VerificacionUpdateProdcutMergeColorFormats.png)
+   ![VerificacionUpdateProdcutMergeColorFormats.png](./imagenes/VerificacionUpdateProdcutMergeColorFormats.png)
 
 ## Actualizar la consulta ColorFormats
 
-En esta tarea, actualizarás los **ColorFormatos** para desactivar su carga.
+En esta tarea, actualizarás los **ColorFormats** para desactivar su carga.
 
 1. Selecciona la consulta **ColorFormats**.  
+2. En el panel de **Configuración de consulta**, selecciona el enlace **Todas las propiedades**.  
 2. En el panel **de Configuración de consulta**, selecciona el enlace **Todas las propiedades**.  
 3. En la ventana **de Propiedades de consulta**, desmarca la **casilla Habilitar Cargar para Informar**.  
+
 > *Desactivar la carga significa que no se cargará como tabla en el modelo de datos. Esto se hace porque la consulta se fusionó con la **consulta de Producto**, que está habilitada para cargar en el modelo de datos.*  
    ![UpdateColorFormatsquery.png](./imagenes/UpdateColorFormatsquery.png)
 
 ## Revisión del producto final
 
 1. En Power Query Editor, verifica que tienes **8 consultas**, correctamente nombradas de la siguiente manera:  
-   * Comercial  
-   * Región de Vendedores  
-   * Producto  
-   * Revendedor  
-   * Región  
-   * Ventas  
-   * Objetivos  
+   * Salesperson
+   * SalespersonRegion
+   * Product
+   * Reseller
+   * Region
+   * Sales
+   * Targets
    * ColorFormats (que no se carga en el modelo de datos)  
 2. **Selecciona Cerrar y Aplicar** para cargar los datos en el modelo y cierra la ventana del Editor de Power Consultas.  
-   ![CerraryAplicar.png](./imagenes/CerraryAplicar.png)  
+      ![CerraryAplicar.png](./imagenes/CerraryAplicar.png)  
+
 3. Ahora puedes ver el lienzo en Power BI Desktop, con los paneles de Filtros, Visualizaciones y Datos a la derecha. En el panel de datos, fíjate en las **7 tablas** cargadas en el modelo de datos.  
    
    ![ModeloFinal.png](./imagenes/ModeloFinal.png)

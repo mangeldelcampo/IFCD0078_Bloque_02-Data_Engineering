@@ -222,3 +222,8 @@ Puedes optar por guardar tu informe de Power BI, aunque no es necesario para est
 5. Si aparece un cuadro de diálogo que te pide que apliques cambios pendientes en la consulta, selecciona **Aplicar**.  
 6. Cierra Power BI Desktop.
 
+## 🧭 Navegación entre Laboratorios
+
+| ⬅️ Laboratorio Anterior | 🏠 Índice de Laboratorios | ➡️ Siguiente Laboratorio |
+| :--- | :---: | :---: |
+| [Lab 01: Set up your own enviroment](../01_set_up_your_own_environment/readme1.md) [📚 Índice General PL-300](../../readmePL-300.md) | [Lab 03: Clean transform and load data in PowerBi](../03_clean_transform_and_load_data_in_power_bi/readme3.md) |

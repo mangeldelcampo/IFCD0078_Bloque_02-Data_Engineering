@@ -503,3 +503,9 @@ Puedes optar por guardar tu informe de Power BI, aunque no es necesario para est
 4. Selecciona el botón **Guardar** para guardar tu informe como archivo .pbix.  
 5. Si aparece un cuadro de diálogo que te pide que apliques cambios pendientes en la consulta, selecciona **Aplicar**.  
 6. Cierra Power BI Desktop.
+
+## 🧭 Navegación entre Laboratorios
+
+| ⬅️ Laboratorio Anterior | 🏠 Índice de Laboratorios | ➡️ Siguiente Laboratorio |
+| :--- | :---: | :---: |
+| [Lab 02: Get Data in Power BI](../02_get_data_in_power_bi/readme2.md) [📚 Índice General PL-300](../../readmePL-300.md) | [Lab 04: Configure a semantic model in PowerBi](../04_configure_a_semantic_model_in_power_bi/readme4.md) |

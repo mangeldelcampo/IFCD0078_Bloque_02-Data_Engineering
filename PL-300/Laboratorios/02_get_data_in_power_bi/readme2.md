@@ -230,10 +230,4 @@ Puedes optar por guardar tu informe de Power BI, aunque no es necesario para est
 
 | ⬅️ Laboratorio Anterior | 🏠 Índice de Laboratorios | ➡️ Siguiente Laboratorio |
 | :--- | :---: | :---: |
-| [Lab 02: Load and Transform Data in Power BI](../lab-02-load-transform-data/README.md) | [📚 Índice General PL-300](../../README.md) | [Lab 04: Create DAX Calculations in Power BI Desktop](../lab-04-create-dax-calculations/README.md) |
-
-## 🧭 Navegación entre Laboratorios
-
-| ⬅️ Laboratorio Anterior | 🏠 Índice de Laboratorios | ➡️ Siguiente Laboratorio |
-| :--- | :---: | :---: |
-| [Lab 03: Load and Transform Data in Power BI](../lab-03-load-transform-data/README.md) | [📚 Índice General PL-300](../../README.md) | [Lab 05: Create DAX Calculations in Power BI Desktop](../lab-05-create-dax-calculations/README.md) |
+| [Lab 01: Setup local lab environment](../01_set_up_your_own_environment/readme1.md) | [📚 Índice General PL-300](../../readmePL-300.md) | [Lab 03: Clean, transform, and load data in Power BI](../03_clean_transform_and_load_data_in_power_bi/readme3.md) |

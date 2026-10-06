@@ -1,6 +1,8 @@
 PL-300-Microsoft-Power-BI-Data-Analyst
 PL-300-Microsoft-Power-BI-Data-Analyst
 
+- [🧭 Navegación entre Laboratorios](#-navegación-entre-laboratorios)
+
 # **Obtener datos en Power BI**
 
 ## **Historia del laboratorio**

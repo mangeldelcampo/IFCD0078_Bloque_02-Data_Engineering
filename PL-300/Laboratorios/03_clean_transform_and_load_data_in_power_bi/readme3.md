@@ -9,7 +9,7 @@
 - [Bloque 4: Limpieza de calidad de datos](#bloque-4-limpieza-de-calidad-de-datos)
 - [Bloque 5: Desdinamización de datos (Unpivot)](#bloque-5-desdinamización-de-datos-unpivot)
 - [Bloque 6: Carga al modelo (Close & Apply)](#bloque-6-carga-al-modelo-close--apply)
-
+- [🧭 Navegación entre Laboratorios](#-navegación-entre-laboratorios)
 
 
 

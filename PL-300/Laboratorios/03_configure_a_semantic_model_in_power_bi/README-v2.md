@@ -62,8 +62,8 @@ El propósito de este laboratorio consiste en transformar las consultas aisladas
 .
 ├── README.md                      # Documentación del laboratorio
 ├── pbix/
-│   ├── 04-Starter-Sales Analysis.pbix
-│   └── 04-Final-Sales Analysis.pbix  # Modelo semántico configurado
+│   ├── 03-Starter-Sales Analysis.pbix
+│   └── 03-Final-Sales Analysis.pbix  # Modelo semántico configurado
 └── assets/                        # Capturas de pantalla de evidencia
     ├── 01-model-view-star-schema.png
     └── 02-report-view-performance-matrix.png
@@ -81,7 +81,7 @@ El propósito de este laboratorio consiste en transformar las consultas aisladas
 ## 📝 Guía Paso a Paso del Laboratorio
 
 ### Paso 1: Configuración Inicial del Archivo
-1. Abrir el archivo inicial `04-Starter-Sales Analysis.pbix` en Power BI Desktop.
+1. Abrir el archivo inicial `03-Starter-Sales Analysis.pbix` en Power BI Desktop.
 2. Desactivar **Inteligencia de tiempo automática**:
    * Ir a **Archivo > Opciones y configuración > Opciones**.
    * En **Archivo actual > Carga de datos**, desmarcar **Fecha/hora automática**.

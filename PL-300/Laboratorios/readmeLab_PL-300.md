@@ -1,5 +1,8 @@
 **PL-300-Microsoft-Power-BI-Data-Analyst**
 
+# Proceso
+![Proceso total](pl300_main_course_banner.jpg)
+
 # Índice de Laboratorios PL-300
 
 | # | Laboratorio | Resumen / Descripción |
@@ -19,6 +22,6 @@
 | 13 | [(Optional) Create dashboards in Power BI](./12_create_dashboards_in_power_bi/readme12.md) | Creación de paneles interactivos (dashboards) en el servicio web de Power BI. |
 
 ---
-![Proceso total](pl300_main_course_banner.jpg)
+
 
 🏠 **Página principal PL-300:** [Volver al Inicio PL-300](../readmePL-300.md)

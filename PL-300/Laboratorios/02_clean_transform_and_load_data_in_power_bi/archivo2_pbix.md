@@ -21,4 +21,4 @@ Contiene 2 orígenes auxiliares basados en ficheros locales:
 ## C. Parámetros auxiliares
 * **SQLInstance** (apuntando a `localhost`) y **Database** (apuntando a `AdventureWorksDW2020`): Variables para parametrizar el origen y no escribir los nombres fijos en cada consulta.
 
-[Volver al laboratorio](readme3.md)
+[Volver al laboratorio](readme2.md)

@@ -217,3 +217,4 @@ in
 
 
 Al tratarse de una instancia limpia de Analysis Services generada desde cero, las 7 tablas se cargarán directamente en el panel de datos sin encontrar ninguna referencia nula en el modelo. Guarda el archivo resultante con el nombre del laboratorio (`02-Sales Analysis.pbix`).
+[Volver al laboratorio](readme2.md)

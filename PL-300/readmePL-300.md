@@ -20,4 +20,4 @@
 
 ---
 
-🏠 **Página principal PL-300:** [Volver al Inicio PL-300](../README.md)
+🏠 **Página principal PL-300:** [Volver al Inicio PL-300](../PL-300/

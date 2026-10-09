@@ -10,4 +10,4 @@
     - Es la indicación explícita de que no necesitas hacer un Merge (combinación) tradicional con otra consulta, porque la relación ya viene resuelta desde el origen de datos relacional.
     - Al pulsar el botón de expansión en la esquina superior derecha de la cabecera, ese enlace Value se «desempaqueta» y sus campos pasan a ser columnas normales de la tabla. 
 
-    [Volver al laboratorio](readme3.md)
+    [Volver al laboratorio](readme2.md)

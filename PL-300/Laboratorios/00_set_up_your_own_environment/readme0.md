@@ -115,7 +115,7 @@ Esto confirma que:
 
 | ⬅️ Laboratorio Anterior | 🏠 Índice de Laboratorios | ➡️ Siguiente Laboratorio |
 | :--- | :---: | :---: |
-| [Lab 00: Setup local lab environment](../00_set_up_your_own_environment/readme0.md) | [📚 Índice General PL-300](../../readmePL-300.md) | [Lab 02: Clean, transform, and load data in Power BI](../02_clean_transform_and_load_data_in_power_bi/readme2.md) |
+| [Lab 00: Setup local lab environment](../00_set_up_your_own_environment/readme0.md) | [📚 Índice de laboratorios](../../readmePL-300.md) | ➡️ **Siguiente:** [Lab 01: Get data in PowerBi](../01_get_data_in_power_bi/readme1.md) |
 
 ---
 

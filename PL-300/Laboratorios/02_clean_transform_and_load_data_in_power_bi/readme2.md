@@ -103,6 +103,7 @@ Ve a las opciones de ordenación de columnas
 7. En el panel **de Configuración de Consulta**, en la lista **de Pasos Aplicados**, observa la adición del paso **Filas Filtradas**.
 
 ![imagen5-1.png](./imagenes/imagen5-4.png)  
+> [!NOTE]
 > *Cada transformación que creas da lugar a una lógica de paso más. Es posible editar o eliminar pasos. También es posible seleccionar un paso para previsualizar los resultados de la consulta en esa fase de la transformación de la consulta.*  
 *![Pasos aplicados][image5]*  
 8. Para eliminar columnas, en la pestaña de **cinta de inicio**, desde dentro del **grupo Gestionar columnas**, selecciona el icono **Elegir columnas**.  

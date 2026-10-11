@@ -8,8 +8,8 @@ PL-300-Microsoft-Power-BI-Data-Analyst
 - [Empieza con Power BI Desktop](#Empieza-con-Power-BI-Desktop)
 - [Obtener datos de SQL Server](#Obtener-datos-de-SQL-Server)
 - [Datos de vista previa en Power Query Editor](#Datos-de-vista-previa-en-Power-Query-Editor)
-- [Obtener datos de un archivo CSV](Obtener-datos-de-un-archivo-CSV)
-- [Laboratorio completo](Laboratorio-completo)
+- [Obtener datos de un archivo CSV](#obtener-datos-de-un-archivo-csv)
+- [Laboratorio completo](#-navegación-entre-laboratorios)
 - [🧭 Navegación entre Laboratorios](#-navegación-entre-laboratorios)
 ---
 

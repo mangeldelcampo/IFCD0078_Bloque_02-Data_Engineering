@@ -59,7 +59,7 @@ Abre el archivo **02-Starter-Sales Analysis.pbix**.
 
 
 >![NOTE]
->***Nota:** Puede que veas un diálogo de inicio de sesión mientras carga el archivo. Selecciona **Cancelar** para cerrar el cuadro de inicio de sesión. Cierra cualquier otra ventana informativa. Selecciona **Solicitar más tarde**, si se le pide aplicar cambios.*
+> Puede que veas un diálogo de inicio de sesión mientras carga el archivo. Selecciona **Cancelar** para cerrar el cuadro de inicio de sesión. Cierra cualquier otra ventana informativa. Selecciona **Solicitar más tarde**, si se le pide aplicar cambios.*
 
 # Bloque 1: Filtrar y limpiar dimensiones
 DimEmployee $\rightarrow$ Salesperson: La tabla trae 296 personas. Como los informes son de ventas, se filtra por **SalesPersonFlag = TRUE** para dejar únicamente a los 18 comerciales.   Se eliminan columnas de horas médicas, vacaciones o salarios que no aportan valor analítico y saturan la memoria VertiPaq.Se combinan FirstName y LastName en una sola columna con el nombre completo.

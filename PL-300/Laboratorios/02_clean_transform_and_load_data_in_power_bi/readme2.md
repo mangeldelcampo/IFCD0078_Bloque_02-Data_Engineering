@@ -339,7 +339,7 @@ En esta tarea, configurarás la consulta **Sales**.
    if [TotalProductCost] = null then [OrderQuantity] * [StandardCost] else [TotalProductCost]
    ```
 > [!NOTE]
->  *** Tienes la expresión en el archivo **Snippets.txt** en la carpeta 02-transform-data.*
+>  ** Tienes la expresión en el archivo **Snippets.txt** en la carpeta 02-transform-data.*
 > *Esta expresión prueba si falta el valor **TotalProductCost**. Si falta, produce un valor multiplicando el **OrderQuantity** por el valor **StandardCost**; de lo contrario, utiliza el valor **TotalProductCost** existente.*
 
    ![NewColumnCost.png](./imagenes/NewColumnCost.png)

@@ -111,6 +111,12 @@ Esto confirma que:
 2. La autenticación de Windows funciona con tu usuario actual.  
 3. Power BI Desktop podrá conectarse a localhost sin requerir configuraciones de red adicionales.
 
+## 🧭 Navegación entre Laboratorios
+
+| ⬅️ Laboratorio Anterior | 🏠 Índice de Laboratorios | ➡️ Siguiente Laboratorio |
+| :--- | :---: | :---: |
+| [Lab 00: Setup local lab environment](../00_set_up_your_own_environment/readme0.md) | [📚 Índice General PL-300](../../readmePL-300.md) | [Lab 02: Clean, transform, and load data in Power BI](../02_clean_transform_and_load_data_in_power_bi/readme2.md) |
+
 ---
 
 ⬅️ **Anterior:** [Inicio del Repositorio](../../readmePL-300.md)

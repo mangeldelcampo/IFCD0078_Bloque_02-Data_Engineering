@@ -224,6 +224,7 @@ Por este motivo, en el paso 7 del laboratorio se desmarca la selección global y
 > *Los nombres de las columnas de la consulta deben ser siempre únicos. Si se deja marcada, esta casilla antepondría a cada columna el nombre completo de la columna (en este caso, **DimProductSubcategory**). Dado que se sabe que los nombres de las columnas seleccionadas no entran en conflicto con los nombres de las columnas de la consulta **Product**, la opción se desmarca.*  
 8. Fíjate en que la transformación ha dado lugar a la incorporación de dos columnas y en que se ha eliminado la columna **DimProductSubcategory**. 
 9. Expande la columna **DimProductCategory** y luego introduce solo la columna **EnglishProductCategoryName**.
+
 ![DimProductcategory1](./imagenes/DimProductcategory1.png)
 
 10. Renombra las siguientes cuatro columnas:  

@@ -173,7 +173,7 @@ En esta tarea, configurarás la consulta **SalespersonRegion**.
 En esta tarea, configurarás la consulta **Product**.
 
 > [!IMPORTANT]
->  ***Importante**: Cuando ya se hayan proporcionado instrucciones detalladas, los pasos del laboratorio ofrecerán instrucciones más concisas. Si necesitas las instrucciones detalladas, puedes consultar los pasos de las tareas anteriores.*
+> Cuando ya se hayan proporcionado instrucciones detalladas, los pasos del laboratorio ofrecerán instrucciones más concisas. Si necesitas las instrucciones detalladas, puedes consultar los pasos de las tareas anteriores.*
 
 1. Selecciona la consulta **DimProduct** y cámbiale el nombre por **Product**.
 2. Localiza la columna **FinishedGoodsFlag** y, a continuación, filtra la columna para recuperar los productos que sean productos terminados (es decir, TRUE).

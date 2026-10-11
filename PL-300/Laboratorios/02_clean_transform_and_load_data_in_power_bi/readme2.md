@@ -24,6 +24,7 @@ El propósito y objetivo del laboratorio es pasar de un **modelo relacional tran
   El laboratorio resuelve eso en 6 bloques principales de trabajo.
   Y para ello se tienen que limpiar, desnormalizar y transformar los datos de un esquema de Data Warehouse tradicional a un esquema en estrella (Star Schema).
 
+![situación Inicial02](./imagenes/lab02_start_setup.jpg)
 
 ## ¿Qué se realiza en este Laboratorio?
 
@@ -492,6 +493,8 @@ En esta tarea, actualizarás los **ColorFormats** para desactivar su carga.
 3. Ahora puedes ver el lienzo en Power BI Desktop, con los paneles de Filtros, Visualizaciones y Datos a la derecha. En el panel de datos, fíjate en las **7 tablas** cargadas en el modelo de datos.  
    
    ![ModeloFinal.png](./imagenes/ModeloFinal.png)
+   
+   ![situación Final02](./imagenes/lab02_final_getdata.jpg)
 
 ## Laboratorio completo
 

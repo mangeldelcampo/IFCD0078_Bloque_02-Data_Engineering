@@ -16,7 +16,9 @@ PL-300-Microsoft-Power-BI-Data-Analyst
 - [🧭 Navegación entre Laboratorios](#-navegación-entre-laboratorios)
 ---
 
-
+Objetivo: Ingesta de datos desde SQL Server (tablas FactResellerSales, DimProduct, DimReseller, DimEmployee, DimSalesTerritory) y fuentes secundarias (CSV ColorFormats y Web Targets).
+Estado Inicial (Herencia de Lab 00): --Image of: --Lab 01 Inicio
+Evidencia Final: --Image of: --Lab 01 Final
 
 
 ## **Historia del laboratorio**

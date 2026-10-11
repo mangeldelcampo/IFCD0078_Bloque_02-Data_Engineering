@@ -202,6 +202,7 @@ En esta tarea, configurarás la consulta **Product**.
 6. Consulta la lista completa de columnas y, a continuación, marca la casilla **Seleccionar todas las columnas** para desmarcar todas las columnas.
 
    ![DimProductSubcategory1](./imagenes/DimProductSubcategory1.png)
+> [!NOTE]
 > 1. **¿Por qué aparece el botón?**
 > El botón con las flechas divergentes aparece en la cabecera porque esa columna no contiene un valor de texto o número simple, sino una tabla relacionada anidada ([Table] o [Value]).
 >  - Relación de clave externa en el origen:

@@ -10,12 +10,12 @@
 
 [4. Realización](#4-----realización)
 
-   [4.1 Antes de empezar](#41-------------------------antes-de-empezar)
+- [4.1 Antes de empezar](#41-------------------------antes-de-empezar)
 
-   [4.2 Crea una cuenta de cosmos en la base de datos](#42-------------------------crea-una-cuenta-de-cosmos-en-la-base-de-datos)
+- [4.2 Crea una cuenta de cosmos en la base de datos](#42-------------------------crea-una-cuenta-de-cosmos-en-la-base-de-datos)
 
-   [4.3 Crea una BD de Ejemplo](#43-------------------------crea-una-base-de-datos-de-ejemplo)
-   
+ - [4.3 Crea una BD de Ejemplo](#43-------------------------crea-una-base-de-datos-de-ejemplo)
+
 [5. Limpieza](#5-------------------------limpieza)
 
 

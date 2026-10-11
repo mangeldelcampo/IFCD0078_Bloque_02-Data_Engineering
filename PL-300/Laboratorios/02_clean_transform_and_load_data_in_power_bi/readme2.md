@@ -383,7 +383,7 @@ En esta tarea, configurarás la consulta **Sales**.
 En esta tarea, configurarás la consulta **Targets**.
 
 1. Selecciona la consulta **ResellerSalesTargets** y renombra a **Targets**.  
->![NOTE] Si recibes un mensaje de advertencia pidiendo especificar cómo conectarte, selecciona **Editar credenciales** y usa acceso anónimo.  
+> [!NOTE] Si recibes un mensaje de advertencia pidiendo especificar cómo conectarte, selecciona **Editar credenciales** y usa acceso anónimo.  
 
    ![CredencialesTargets.png](./imagenes/CredencialesTargets.png)
 

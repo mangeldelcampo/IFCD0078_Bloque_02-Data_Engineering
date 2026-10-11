@@ -67,7 +67,8 @@ DimEmployee $\rightarrow$ Salesperson: La tabla trae 296 personas. Como los info
 
 En esta tarea, usarás Power Query Editor para configurar la consulta **de Salesperson**.
 
-***Importante**: Cuando se indica que renombres columnas, es importante que las renombres exactamente como se describe.*
+> [!IMPORTANT]
+> ***Importante**: Cuando se indica que renombres columnas, es importante que las renombres exactamente como se describe.*
 
 1. Para abrir la ventana **del Editor de Power Querys**, en la pestaña de **la cinta de inicio**, desde dentro del **grupo de Consultas**, selecciona el icono **Transformar datos**.  
    ![Transformar datos en la cinta de inicio](./imagenes/imagen1.png)

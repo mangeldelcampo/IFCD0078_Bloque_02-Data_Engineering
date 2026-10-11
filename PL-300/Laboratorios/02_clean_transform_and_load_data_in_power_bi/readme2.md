@@ -294,12 +294,13 @@ En esta tarea, configurarás la consulta **Region**.
    * SalesTerritoryRegion
    * SalesTerritoryCountry
    * SalesTerritoryGroup
+
 ![ColumnasRegion.png](./imagenes/ColumnasRegion.png)
 
 4. Renombra las siguientes tres columnas:  
    * **SalesTerritorioRegión** a **Región**  
    * **Territoriode ventasPaís** a **país**  
-   * **SalesTerritoryGroup** to **Group to Group**
+   * **SalesTerritoryGroup** a **Group to Group**
 
 **En la barra de estado, verifica que la consulta tenga 4 columnas y 10 filas.**
 
@@ -321,11 +322,13 @@ En esta tarea, configurarás la consulta **Sales**.
    * UnitPrice
    * TotalProductCost
    * SalesAmount
-   * DimProduct 
+   * DimProduct
+    
    ![Sales.png](./imagenes/Sales.png)
+> [!NOTE]
+>  **** Puede que recuerdes en **el laboratorio Preparar Datos en Power BI Desktop** que un pequeño porcentaje de las filas **de FactResellerSales** tenían valores **TotalCostProducto** faltantes. La columna **DimProduct** se ha incluido para recuperar la columna de costes estándar del producto y así ayudar a corregir los valores faltantes.*  
+3. Expande la columna **DimProduct**, desmarca todas las columnas e incluye solo la columna **StandarCost**.
 
-> ***Nota:** Puede que recuerdes en **el laboratorio Preparar Datos en Power BI Desktop** que un pequeño porcentaje de las filas **de FactResellerSales** tenían valores **TotalCostProducto** faltantes. La columna **DimProduct** se ha incluido para recuperar la columna de costes estándar del producto y así ayudar a corregir los valores faltantes.*  
-3. Expande la columna **DimProduct**, desmarca todas las columnas e incluye solo la columna **StandarCost**. 
    ![StandarCost.png](./imagenes/StandarCost.png)
 
 4. Para crear una columna personalizada, en la pestaña de **Añadir columna**, desde dentro del grupo **General**, selecciona **Columna Personalizada**.  
@@ -335,9 +338,8 @@ En esta tarea, configurarás la consulta **Sales**.
    ```powerquery
    if [TotalProductCost] = null then [OrderQuantity] * [StandardCost] else [TotalProductCost]
    ```
-
-> ***Nota:** Tienes la expresión en el archivo **Snippets.txt** en la carpeta 02-transform-data.*
-
+> [!NOTE]
+>  ***Nota:** Tienes la expresión en el archivo **Snippets.txt** en la carpeta 02-transform-data.*
 > *Esta expresión prueba si falta el valor **TotalProductCost**. Si falta, produce un valor multiplicando el **OrderQuantity** por el valor **StandardCost**; de lo contrario, utiliza el valor **TotalProductCost** existente.*
 
    ![NewColumnCost.png](./imagenes/NewColumnCost.png)

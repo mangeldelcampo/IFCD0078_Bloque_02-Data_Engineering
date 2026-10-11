@@ -1,4 +1,5 @@
 PL-300-Microsoft-Power-BI-Data-Analyst
+# **Obtener datos en Power BI**
 
 ---
 
@@ -14,7 +15,7 @@ PL-300-Microsoft-Power-BI-Data-Analyst
 ---
 
 
-# **Obtener datos en Power BI**
+
 
 ## **Historia del laboratorio**
 

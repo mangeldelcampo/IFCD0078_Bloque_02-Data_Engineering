@@ -23,10 +23,10 @@ Aquí encontrarás la teoría principal dividida en sus respectivas rutas de apr
 Los laboratorios son guías paso a paso diseñadas para afianzar los conocimientos teóricos trabajando directamente en entornos reales (Portal de Azure, Microsoft Fabric, Power BI, etc.).
 
 * 🗃️ **[Lab01: Explore Azure SQL Database](Explore_Azure_SQL_Database/Explore_Azure_SQL_Database.md)**
-    * 🗃️ **[Lab01: Explore Azure SQL Database - MYSQL ](Explore_Azure_SQL_Database/Azure-MySQL/2Azure-MySQL.md)**
-    * 🗃️ **[Lab01: Explore Azure SQL Database - PostgreSql ](Explore_Azure_SQL_Database/Azure-PostgreSql/Azure_PostgreSQL.md)**
-    * 🗃️ **[Lab 01: Explore Azure SQL Database](Explore_Azure_SQL_Database/Azure-SQL_Database/Azure-SQL_Database.md)**
-    * 🗃️ **[Laboratorio: Explore Azure SQL Database - SQL_Database ](Explore_Azure_SQL_Database/Azure-MySQL/2Azure-MySQL.md)**
+    * 🗃️ **[Lab01: MYSQL ](Explore_Azure_SQL_Database/Azure-MySQL/2Azure-MySQL.md)**
+    * 🗃️ **[Lab01: PostgreSql ](Explore_Azure_SQL_Database/Azure-PostgreSql/Azure_PostgreSQL.md)**
+    * 🗃️ **[Lab 01: SQL_Database](Explore_Azure_SQL_Database/Azure-SQL_Database/Azure-SQL_Database.md)**
+    
 * 📦 **[Laboratorio: Explore Azure Storage](laboratorios/Explore_Azure_Storage/Explore_Azure_Storage.md)**
 * 🪐 **[Laboratorio: Explore Azure Cosmos DB](laboratorios/Explore_Azure_Cosmos_DB/Explore_Azure_Cosmos_DB.md)**
 * 🏗️ **[Laboratorio: Explore data analytics in Microsoft Fabric](Explore_data_analytics_in_Microsoft_Fabric/Explore_data_analytics_in_Microsoft_Fabric.md)**

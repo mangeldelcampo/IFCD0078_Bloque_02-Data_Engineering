@@ -2,12 +2,20 @@
 
 ## **Índice**
 - [1.📌Objetivo del Laboratorio](#1-----objetivo-del-laboratorio)
+- [2. Resumen del Laboratorio](#2-----resumen-del-laboratorio)
+- [3. Puntos Clave a Tener en Cuenta](#3-----puntos-clave-a-tener-en-cuenta)
+- [4. Realización](#4-----realización)
+    - [Antes de empezar](#41-------------------------antes-de-empezar)
+    - [Crea una cuenta de cosmos en la base de datos](#42-------------------------crea-una-cuenta-de-cosmos-en-la-base-de-datos)
+    - [Crea una BD de Ejemplo](#43-------------------------crea-una-base-de-datos-de-ejemplo)
+- [5. Limpieza](#5-------------------------limpieza)
+
 
 ## **1\.**     **📌Objetivo del Laboratorio**
 
 El objetivo principal de este ejercicio es aprender a aprovisionar, configurar y explorar los diferentes servicios de almacenamiento no relacional dentro de una cuenta de Azure Storage. El laboratorio busca que experimentes de forma directa cómo cambia el comportamiento de la gestión de archivos al pasar de un almacenamiento plano (Flat Namespace) a uno jerárquico (Hierarchical Namespace / Data Lake Gen2) , además de comprender el uso de recursos compartidos de archivos.
 
-## **2\.**     **Resumen del Ejercicio**
+## **2\.**     **Resumen del Laboratorio**
 
 El documento guía al usuario a través de un escenario dividido en 4 fases principales:
 
@@ -24,7 +32,7 @@ El documento guía al usuario a través de un escenario dividido en 4 fases prin
 * **Metadatos Automáticos:** Al guardar un registro JSON, verás que aparecen campos que tú no escribiste (como \_rid, \_self, \_etag, \_ts). Estos son identificadores internos y marcas de tiempo Unix que Cosmos DB inyecta para controlar la consistencia y la indexación.  
 * **Workload de tipo Learning:** Asegúrate de seleccionar **Learning** en la primera pestaña. Esto activa límites por defecto ideales para estudiantes y evita que consumas crédito innecesario por aprovisionar rendimiento excesivo.
 
-## **4\.**     **Ejecución**
+## **4\.**     **Realización**
 
 En este laboratorio, crearás tu primera base de datos **NoSQL** usando **Azure Cosmos DB.** Las bases de datos "NoSQL" almacenan los datos de forma flexible, en lugar de las estrictas tablas de filas y columnas de una base de datos relacional. Cosmos DB almacena cada dato como un **elemento JSON** (un formato de texto sencillo que lista propiedades y sus valores, como )."price": 48.74
 
@@ -187,7 +195,7 @@ SELECT * FROM c WHERE CONTAINS(c.name,"Helmet")
 
 Has visto cómo crear y consultar entidades JSON en una base de datos de Cosmos DB usando la interfaz del explorador de datos en el portal de Azure. En un escenario real, un desarrollador de aplicaciones usaría uno de los muchos kits de desarrollo de software específicos de un lenguaje de programación (SDK) para llamar a la API NoSQL y trabajar con los datos de la base de datos.
 
-### **4.4.**                         **Limpieza**
+## **5.**                         **Limpieza**
 
 Cuando termines de explorar Azure Cosmos DB, deberías eliminar los recursos que creaste para no tener más costes.
 

@@ -3,6 +3,7 @@
 ## **Índice**
 
 [1.📌Objetivo del Laboratorio](#1-----objetivo-del-laboratorio)
+
 [2. Resumen del Laboratorio](#2-----resumen-del-laboratorio)
 [3. Puntos Clave a Tener en Cuenta](#3-----puntos-clave-a-tener-en-cuenta)
 [4. Realización](#4-----realización)

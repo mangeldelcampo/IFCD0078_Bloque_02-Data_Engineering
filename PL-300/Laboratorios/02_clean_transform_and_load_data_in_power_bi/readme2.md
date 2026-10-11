@@ -139,6 +139,7 @@ Ve a las opciones de ordenación de columnas
       ![Renombrar columna](./imagenes/imagen11-1.png)  
 
 17. Cambia el nombre de la columna **EmailAddress** por **UPN**.  
+> [!NOTE]
 > *UPN son las siglas de «User Principal Name» (nombre principal de usuario).*
 
 **En la barra de estado situada en la esquina inferior izquierda del Editor de Power Query, comprueba que la consulta tenga 5 columnas y 18 filas.**

@@ -162,7 +162,7 @@ El propósito de este laboratorio consiste en transformar las consultas aisladas
 
 | ⬅️ Laboratorio Anterior | 🏠 Índice de Laboratorios | ➡️ Siguiente Laboratorio |
 | :--- | :---: | :--- |
-| [Lab 02: Load and Transform Data in Power BI](../lab-02-load-transform-data/README.md) | [📚 Índice General PL-300](../../README.md) | [Lab 05: Create DAX Calculations in Power BI Desktop](../lab-04-create-dax-calculations/README.md) |
+| [Lab 02: Load and Transform Data in Power BI](../02_clean_transform_and_load_data_in_power_bi/readme2.md) | [📚 Índice General PL-300](../../README.md) | [Lab 04: Create DAX Calculations in Power BI Desktop](../04_create_dax_calculations_in_semantic_models/) |
 
 ---
 *Documentación estructurada a partir del archivo de fuente `readme4.md` para el repositorio de evidencias PL-300.*

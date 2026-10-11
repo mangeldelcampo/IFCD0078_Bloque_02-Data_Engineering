@@ -1,14 +1,14 @@
 # **Explore Azure Cosmos DB**
 
 ## **Índice**
-- [1.📌Objetivo del Laboratorio](#1-----objetivo-del-laboratorio)
-- [2. Resumen del Laboratorio](#2-----resumen-del-laboratorio)
-- [3. Puntos Clave a Tener en Cuenta](#3-----puntos-clave-a-tener-en-cuenta)
-- [4. Realización](#4-----realización)
-    - [Antes de empezar](#41-------------------------antes-de-empezar)
-    - [Crea una cuenta de cosmos en la base de datos](#42-------------------------crea-una-cuenta-de-cosmos-en-la-base-de-datos)
-    - [Crea una BD de Ejemplo](#43-------------------------crea-una-base-de-datos-de-ejemplo)
-- [5. Limpieza](#5-------------------------limpieza)
+[1.📌Objetivo del Laboratorio](#1-----objetivo-del-laboratorio)
+[2. Resumen del Laboratorio](#2-----resumen-del-laboratorio)
+[3. Puntos Clave a Tener en Cuenta](#3-----puntos-clave-a-tener-en-cuenta)
+[4. Realización](#4-----realización)
+    [4.1 Antes de empezar](#41-------------------------antes-de-empezar)
+    [4.2 Crea una cuenta de cosmos en la base de datos](#42-------------------------crea-una-cuenta-de-cosmos-en-la-base-de-datos)
+    [4.3 Crea una BD de Ejemplo](#43-------------------------crea-una-base-de-datos-de-ejemplo)
+[5. Limpieza](#5-------------------------limpieza)
 
 
 ## **1\.**     **📌Objetivo del Laboratorio**

@@ -128,6 +128,7 @@ Ve a las opciones de ordenación de columnas
 
 ![Merge Columns](./imagenes/imagen9.png)
 
+> [!NOTE]
 > *Muchas de las transformaciones habituales se pueden aplicar haciendo clic con el botón derecho del ratón en el encabezado de la columna y seleccionándolas a continuación en el menú contextual. Ten en cuenta que hay transformaciones adicionales disponibles en la cinta de opciones.*
 
 14. En la ventana **Combinar columnas**, en la lista desplegable **Separador**, selecciona **Espacio**.  

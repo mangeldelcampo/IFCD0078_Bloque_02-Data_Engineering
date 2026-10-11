@@ -422,9 +422,12 @@ En esta tarea, configurarás la consulta **Targets**.
 12. En la columna **Columna1**, en la primera celda de la cuadrícula, comienza a introducir **el 1/7/2017** y luego pulsa **Enter**.
    
 > [!NOTE]
-> Dependiendo de la configuración regional de España o EE. UU., por lo que esta fecha es en realidad el 1 de julio de 2017\. Otros entornos regionales pueden requerir un **0** antes de la fecha.*  
+> Dependiendo de la configuración regional de España o EE. UU., por lo que esta fecha es en realidad el 1 de julio de 2017\. Otros entornos regionales pueden requerir un **0** antes de la fecha.
+
 13. Fíjate que las celdas de la cuadrícula se actualizan con los valores predichos.  
+> [!NOTE]
 > *La función ha predicho con precisión que estás combinando valores de las columnas **Año** y **Número de Mes**.*
+
    ![ColumnaEjemplo1.png](./imagenes/ColumnaEjemplo1.png)
 
 14. Fíjate también en la fórmula presentada sobre la cuadrícula de consulta.  
@@ -438,6 +441,7 @@ En esta tarea, configurarás la consulta **Targets**.
     * **Target** como número decimal fijo(fixed decimal number)
     * **TargetMonth** como fecha (date)
 18. Para multiplicar los valores de **Target** por 1000, selecciona la cabecera de la columna **Target** y, en la pestaña de**Transformar**, desde dentro del grupo de**Columnas de Números**, **selecciona Estándar** y después **selecciona Multiplicar**.  
+> [!NOTE]
 > *Quizá recuerdes que los valores objetivo se almacenaban en miles.*  
    ![MultiplicarTarget.png](./imagenes/MultiplicarTarget.png)
 
@@ -464,6 +468,7 @@ En esta tarea, actualizarás la consulta **Product** fusionando (by merging) la 
 
 1. Selecciona la consulta de **Product**.  
 2. Para fusionar la consulta **ColorFormats**, en la pestaña de **cinta de inicio**, desde dentro del grupo **Combinar**, selecciona **Combinar consultas**(Merge Querys).  
+> [!NOTE]
 > *La fusión de consultas permite integrar datos, en este caso de diferentes fuentes de datos (SQL Server y un archivo CSV).*  
 
 3. En la ventana **de Fusionar**, en la cuadrícula **de consultas de Producto**, selecciona la cabecera de la columna **Color**.  
@@ -474,7 +479,8 @@ En esta tarea, actualizarás la consulta **Product** fusionando (by merging) la 
    ![MergeColorFormats](./imagenes/MergeColorFormats.png)
 
 6. Cuando se abra la ventana **de Niveles de Privacidad**, para cada una de las dos fuentes de datos, en la lista desplegable correspondiente, selecciona **Organizacional** y **luego Guardar**.  
-> *Se pueden configurar niveles de privacidad para la fuente de datos y así determinar si los datos pueden compartirse entre fuentes. Configurar cada fuente de datos como **Organizacional** les permite compartir datos, si es necesario. Las fuentes de datos privadas nunca pueden compartirse con otras fuentes. No significa que los datos privados no puedan compartirse; significa que el motor Power Query no puede compartir datos entre las fuentes.*  
+> [!IMPORTANT]
+>  *Se pueden configurar niveles de privacidad para la fuente de datos y así determinar si los datos pueden compartirse entre fuentes. Configurar cada fuente de datos como **Organizacional** les permite compartir datos, si es necesario. Las fuentes de datos privadas nunca pueden compartirse con otras fuentes. No significa que los datos privados no puedan compartirse; significa que el motor Power Query no puede compartir datos entre las fuentes.*  
   
   ![MergeNivelPrivacidad.png](./imagenes/MergeNivelPrivacidad.png)
 
@@ -496,7 +502,7 @@ En esta tarea, actualizarás los **ColorFormats** para desactivar su carga.
 2. En el panel de **Configuración de consulta**, selecciona el enlace **Todas las propiedades**.  
 2. En el panel **de Configuración de consulta**, selecciona el enlace **Todas las propiedades**.  
 3. En la ventana **de Propiedades de consulta**, desmarca la **casilla Habilitar Cargar para Informar**.  
-
+> [!NOTE]
 > *Desactivar la carga significa que no se cargará como tabla en el modelo de datos. Esto se hace porque la consulta se fusionó con la **consulta de Producto**, que está habilitada para cargar en el modelo de datos.*  
    ![UpdateColorFormatsquery.png](./imagenes/UpdateColorFormatsquery.png)
 

@@ -1,7 +1,17 @@
 PL-300-Microsoft-Power-BI-Data-Analyst
 PL-300-Microsoft-Power-BI-Data-Analyst
 
+---
+
+## 📑 Índice del Laboratorio
+- [Historia del laboratorio](#**Historia del laboratorio**)
+- [Power BI Desktop](#power-bi-desktop)
+- [Microsoft 365 Developer account](#microsoft-365-developer-account)
+- [SQL Server Database Engine](#sql-server-database-engine)
+- [SQL Server Management Studio (SSMS)](#sql-server-management-studio-ssms)
 - [🧭 Navegación entre Laboratorios](#-navegación-entre-laboratorios)
+---
+
 
 # **Obtener datos en Power BI**
 

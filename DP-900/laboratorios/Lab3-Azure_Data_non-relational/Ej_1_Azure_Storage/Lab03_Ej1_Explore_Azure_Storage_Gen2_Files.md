@@ -1,7 +1,7 @@
 # **Explore Azure Storage**
 
 ## INDICE
-
+- [Objetivo, Resumen y Puntos Clave](#objetivo-resumen-y-puntos-clave)
 - [Realización Laboratorio](#️-realización-laboratorio)
 - [Antes de Empezar](#antes-de-empezar)
 - [Aprovisionar una Cuenta de Almacenamiento en Azure](#aprovisionar-una-azure-storage-account)
@@ -10,7 +10,7 @@
 - [Azure Files](#explore-azure-files)
 - [Limpieza Recursos en Azure](#limpieza)
 
-
+## Objetivo, Resumen y Puntos Clave
 **📌 1\. Objetivo del Laboratorio**  
 El objetivo principal de este ejercicio es aprender a aprovisionar, configurar y explorar los diferentes servicios de almacenamiento no relacional dentro de una cuenta de Azure Storage. El laboratorio busca que experimentes de forma directa cómo cambia el comportamiento de la gestión de archivos al pasar de un almacenamiento plano (Flat Namespace) a uno jerárquico (Hierarchical Namespace / Data Lake Gen2) , además de comprender el uso de recursos compartidos de archivos.
 

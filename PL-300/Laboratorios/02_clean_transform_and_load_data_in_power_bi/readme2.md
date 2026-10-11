@@ -58,7 +58,7 @@ Extrae la carpeta de trabajo , por ejemplo a la **carpeta C:\\Users\\Student\\Do
 Abre el archivo **02-Starter-Sales Analysis.pbix**.
 
 
->![NOTE]
+> [!NOTE]
 > Puede que veas un diálogo de inicio de sesión mientras carga el archivo. Selecciona **Cancelar** para cerrar el cuadro de inicio de sesión. Cierra cualquier otra ventana informativa. Selecciona **Solicitar más tarde**, si se le pide aplicar cambios.*
 
 # Bloque 1: Filtrar y limpiar dimensiones

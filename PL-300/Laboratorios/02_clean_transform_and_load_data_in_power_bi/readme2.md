@@ -323,10 +323,10 @@ En esta tarea, configurarás la consulta **Sales**.
    * TotalProductCost
    * SalesAmount
    * DimProduct
-    
+
    ![Sales.png](./imagenes/Sales.png)
 > [!NOTE]
->  **** Puede que recuerdes en **el laboratorio Preparar Datos en Power BI Desktop** que un pequeño porcentaje de las filas **de FactResellerSales** tenían valores **TotalCostProducto** faltantes. La columna **DimProduct** se ha incluido para recuperar la columna de costes estándar del producto y así ayudar a corregir los valores faltantes.*  
+>  ** Puede que recuerdes en **el laboratorio Preparar Datos en Power BI Desktop** que un pequeño porcentaje de las filas **de FactResellerSales** tenían valores **TotalCostProducto** faltantes. La columna **DimProduct** se ha incluido para recuperar la columna de costes estándar del producto y así ayudar a corregir los valores faltantes.*  
 3. Expande la columna **DimProduct**, desmarca todas las columnas e incluye solo la columna **StandarCost**.
 
    ![StandarCost.png](./imagenes/StandarCost.png)

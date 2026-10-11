@@ -239,7 +239,7 @@ Por este motivo, en el paso 7 del laboratorio se desmarca la selección global y
 # Bloque 4: Limpieza de calidad de datos
 * **DimReseller $\rightarrow$ Reseller**:
    - Se subsana el error tipográfico detectado en el perfilado: se reemplaza el texto "Ware House" por "Warehouse" para que las agregaciones por tipo de negocio no salgan duplicadas.
-* DimSalesTerritory $\rightarrow$ Region:
+* **DimSalesTerritory $\rightarrow$ Region:**
    - Se excluye la fila correspondiente a Corporate HQ (Sede central) para no distorsionar el análisis de ventas sobre territorios operativos reales. 
 ## Configurar la consulta de Reseller
 
@@ -254,7 +254,8 @@ En esta tarea, configurarás la consulta **de Reseller**.
 3. Amplía la columna **DimGeography** para **incluir solo** las siguientes tres columnas:  
    * City  
    * StateProvinceName  
-   * EnglishCountryRegionName  
+   * EnglishCountryRegionName
+
    ![DimGeography](./imagenes/DimGeography.png)
 
 4. En la cabecera **de columna BusinessType**, selecciona la flecha hacia abajo y luego revisa los valores distintos de las columnas, y observa ambos valores **como Ware House** y **Warehouse**.
@@ -283,7 +284,8 @@ En esta tarea, configurarás la consulta **Region**.
 
 1. Selecciona la consulta **DimSalesTerritory** y renombra la consulta a **Region**.  
 2. Aplica un filtro a la columna **SalesTerritoryAlternateKey** para eliminar el valor 0 (cero).  
-> *Esto eliminará una fila.*
+> [!IMPORTANT]
+>  *Esto eliminará una fila.*
 
 ![SalesTerritoryAlternateKey0.png](./imagenes/SalesTerritoryAlternateKey0.png)
 

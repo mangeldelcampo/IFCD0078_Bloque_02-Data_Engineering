@@ -18,7 +18,7 @@ Ideally, you should complete these labs in a hosted lab environment. If you want
 - [Microsoft 365 Developer account](#microsoft-365-developer-account)
 - [SQL Server Database Engine](#sql-server-database-engine)
 - [SQL Server Management Studio (SSMS)](#sql-server-management-studio-ssms)
-
+- [Navegación](#-navegación-entre-laboratorios)
 ---
 
 ## Instructions using Windows 11

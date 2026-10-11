@@ -1,4 +1,4 @@
-# Lab 04: Configure a Semantic Model in Power BI (PL-300)
+# Lab 03: Configure a Semantic Model in Power BI (PL-300)
 
 Este repositorio contiene la guía de laboratorio, arquitectura de datos y plantilla de evidencias para el **Lab 04: Configure a Semantic Model in Power BI** del curso **PL-300: Microsoft Power BI Data Analyst**.
 

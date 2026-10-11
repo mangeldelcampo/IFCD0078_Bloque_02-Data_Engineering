@@ -1,9 +1,14 @@
 # **Explore Azure Storage**
 
-[INDICE]
-[Realización Laboratorio](#️-realización-laboratorio)
-[]
+## INDICE
 
+[Realización Laboratorio](#️-realización-laboratorio)
+[Antes de Empezar](#antes-de-empezar)
+[Aprovisionar una Cuenta de Almacenamiento en Azure](#aprovisionar-una-azure-storage-account)
+[Crear Contenedor de Datos Blob](#explore-blob-storage)
+[Actualizar Azure Storage a Data Lake Storage 2](#explore-azure-data-lake-storage-gen2)
+[Azure Files](#explore-azure-files)
+[Limpieza Recursos en Azure](#limpieza)
 
 
 **📌 1\. Objetivo del Laboratorio**  
@@ -231,3 +236,5 @@ Cuando haya terminado de explorar **Azure Storage**, debe eliminar los recursos 
 💡 **Consejo:** Eliminar el grupo de recursos quita la cuenta de almacenamiento y todo lo que hay dentro en un solo paso. Esta es la forma más rápida de asegurarse de que no quede nada en ejecución y costando dinero.
 
 En este laboratorio, creó una **Azure Storage account** y exploró **blob storage**, **Data Lake Storage Gen2** y **Azure Files**. ¡Ahora ha visto las principales formas en que Azure almacena datos no relacionales\!
+
+[TOP](#indice)

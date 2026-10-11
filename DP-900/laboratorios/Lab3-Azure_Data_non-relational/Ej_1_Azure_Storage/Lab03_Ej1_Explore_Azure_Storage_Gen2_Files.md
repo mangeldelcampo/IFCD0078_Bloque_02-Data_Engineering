@@ -2,13 +2,13 @@
 
 ## INDICE
 
-[Realización Laboratorio](#️-realización-laboratorio)
-[Antes de Empezar](#antes-de-empezar)
-[Aprovisionar una Cuenta de Almacenamiento en Azure](#aprovisionar-una-azure-storage-account)
-[Crear Contenedor de Datos Blob](#explore-blob-storage)
-[Actualizar Azure Storage a Data Lake Storage 2](#explore-azure-data-lake-storage-gen2)
-[Azure Files](#explore-azure-files)
-[Limpieza Recursos en Azure](#limpieza)
+- [Realización Laboratorio](#️-realización-laboratorio)
+- [Antes de Empezar](#antes-de-empezar)
+- [Aprovisionar una Cuenta de Almacenamiento en Azure](#aprovisionar-una-azure-storage-account)
+- [Crear Contenedor de Datos Blob](#explore-blob-storage)
+- [Actualizar Azure Storage a Data Lake Storage 2](#explore-azure-data-lake-storage-gen2)
+- [Azure Files](#explore-azure-files)
+- [Limpieza Recursos en Azure](#limpieza)
 
 
 **📌 1\. Objetivo del Laboratorio**  

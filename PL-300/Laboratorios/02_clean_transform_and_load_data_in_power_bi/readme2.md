@@ -237,7 +237,7 @@ Por este motivo, en el paso 7 del laboratorio se desmarca la selección global y
 ![DimProductcategory1](./imagenes/DimProductcategory2.png)
 
 # Bloque 4: Limpieza de calidad de datos
-* DimReseller $\rightarrow$ Reseller:
+* **DimReseller $\rightarrow$ Reseller**:
    - Se subsana el error tipográfico detectado en el perfilado: se reemplaza el texto "Ware House" por "Warehouse" para que las agregaciones por tipo de negocio no salgan duplicadas.
 * DimSalesTerritory $\rightarrow$ Region:
    - Se excluye la fila correspondiente a Corporate HQ (Sede central) para no distorsionar el análisis de ventas sobre territorios operativos reales. 

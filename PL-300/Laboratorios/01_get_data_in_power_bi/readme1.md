@@ -5,10 +5,12 @@ PL-300-Microsoft-Power-BI-Data-Analyst
 
 ## 📑 Índice del Laboratorio
 - [Historia del laboratorio](#Historia-del-laboratorio)
-- [Power BI Desktop](#power-bi-desktop)
-- [Microsoft 365 Developer account](#microsoft-365-developer-account)
-- [SQL Server Database Engine](#sql-server-database-engine)
-- [SQL Server Management Studio (SSMS)](#sql-server-management-studio-ssms)
+- [Recuperar Backup de base datos](#Recuperar-Backup-de-base-datos)
+- [Empieza con Power BI Desktop](#Empieza-con-Power-BI-Desktop)
+- [Obtener datos de SQL Server](#Obtener-datos-de-SQL-Server)
+- [Datos de vista previa en Power Query Editor](#Datos-de-vista-previa-en-Power-Query-Editor)
+- [Obtener datos de un archivo CSV](Obtener-datos-de-un-archivo-CSV)
+- [Laboratorio completo](Laboratorio-completo)
 - [🧭 Navegación entre Laboratorios](#-navegación-entre-laboratorios)
 ---
 

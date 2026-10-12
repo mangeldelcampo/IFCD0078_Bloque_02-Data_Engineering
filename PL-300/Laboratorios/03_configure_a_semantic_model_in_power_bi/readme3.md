@@ -1,4 +1,4 @@
-# Lab 04: Configure a Semantic Model in Power BI (PL-300)
+# Lab 03: Configure a Semantic Model in Power BI (PL-300)
 
 ## 📑 Tabla de Contenidos
 - [🎯 Objetivo y Lógica de Negocio](#-objetivo-y-lógica-de-negocio)

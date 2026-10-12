@@ -101,7 +101,7 @@ Hay una forma más sencilla de crear una relación. En el diagrama del modelo, p
 1. Para crear una nueva relación usando una técnica diferente, cambia a la **vista de Modelo**.
 2. Desde la tabla `Reseller`, arrastra la columna `ResellerKey` a la columna `ResellerKey` de la tabla `Sales`.
 
-***Importante:*** *A veces una columna no quiere arrastrarse. Si surge esta situación, selecciona otra columna, luego selecciona de nuevo la columna que quieres arrastrar, e inténtalo de nuevo. Asegúrate de ver la nueva relación añadida al diagrama.*
+>[!IMPORTANT] *A veces una columna no quiere arrastrarse. Si surge esta situación, selecciona otra columna, luego selecciona de nuevo la columna que quieres arrastrar, e inténtalo de nuevo. Asegúrate de ver la nueva relación añadida al diagrama.*
 
 ![lab3_img07](./imagenes/lab3_img07.png)
 

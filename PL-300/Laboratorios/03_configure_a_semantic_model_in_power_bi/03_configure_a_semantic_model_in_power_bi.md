@@ -255,8 +255,8 @@ En esta tarea, actualizarás varias columnas usando actualizaciones masivas indi
 
 
 > [!NOTE]
-> *Las columnas estaban ocultas porque son usadas por relaciones o se usarán en la lógica de configuración o cálculo de seguridad a nivel de fila.*
-*Usarás la columna SalesOrderNumber en un cálculo en el laboratorio Crear Cálculos DAX en Power BI Desktop.*
+> Las columnas estaban ocultas porque son usadas por relaciones o se usarán en la lógica de configuración o cálculo de seguridad a nivel de fila.*
+>Usarás la columna SalesOrderNumber en un cálculo en el laboratorio Crear Cálculos DAX en Power BI Desktop.*
 
 4. Selecciona de forma múltiple las siguientes tres columnas:
    * `Product | Standard Cost`

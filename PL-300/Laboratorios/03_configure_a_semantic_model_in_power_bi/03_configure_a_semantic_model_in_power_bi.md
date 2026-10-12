@@ -101,7 +101,8 @@ Hay una forma más sencilla de crear una relación. En el diagrama del modelo, p
 1. Para crear una nueva relación usando una técnica diferente, cambia a la **vista de Modelo**.
 2. Desde la tabla `Reseller`, arrastra la columna `ResellerKey` a la columna `ResellerKey` de la tabla `Sales`.
 
->[!IMPORTANT] *A veces una columna no quiere arrastrarse. Si surge esta situación, selecciona otra columna, luego selecciona de nuevo la columna que quieres arrastrar, e inténtalo de nuevo. Asegúrate de ver la nueva relación añadida al diagrama.*
+>[!IMPORTANT]
+> *A veces una columna no quiere arrastrarse. Si surge esta situación, selecciona otra columna, luego selecciona de nuevo la columna que quieres arrastrar, e inténtalo de nuevo. Asegúrate de ver la nueva relación añadida al diagrama.*
 
 ![lab3_img07](./imagenes/lab3_img07.png)
 
@@ -162,7 +163,7 @@ En esta tarea, configurarás la tabla de `Product` con una jerarquía y una carp
 
 ![lab3_img14](./imagenes/lab3_img14.png)
 
-*Las carpetas de visualización son una excelente forma de organizar tablas, especialmente para tablas que comprenden muchos campos. Son solo para presentación lógica.*
+>*Las carpetas de visualización son una excelente forma de organizar tablas, especialmente para tablas que comprenden muchos campos. Son solo para presentación lógica.*
 
 #### Configurar la tabla de Regiones
 
@@ -177,7 +178,7 @@ En esta tarea, configurarás la tabla de `Region` con una jerarquía y categorí
 
 ![lab3_img15](./imagenes/lab3_img15.png)
 
-*La categorización de datos puede proporcionar pistas al diseñador del informe. En este caso, categorizar la columna como país o región proporciona información más precisa a Power BI cuando se realiza una visualización de mapa.*
+>*La categorización de datos puede proporcionar pistas al diseñador del informe. En este caso, categorizar la columna como país o región proporciona información más precisa a Power BI cuando se realiza una visualización de mapa.*
 
 #### Configurar la tabla de revendedores
 
@@ -226,7 +227,8 @@ En esta tarea, configurarás la tabla de `Sales` con descripciones actualizadas,
 6. En el **panel de Propiedades**, desde la sección de **Formato**, establece la propiedad de **Decimales** en *2*.
 7. En el grupo **Avanzado** (puede que necesites desplazarte hacia abajo para localizarlo), en la lista desplegable **Resumir por**, selecciona **Promedio**.
 
-*NOTA: Por defecto, las columnas numéricas se resumen sumando valores. Este comportamiento por defecto no es adecuado para una columna como Precio por Unidad, que representa una tasa. Poner el resumen por defecto en promedio producirá un resultado significativo.*
+> [!NOTE]
+> *Por defecto, las columnas numéricas se resumen sumando valores. Este comportamiento por defecto no es adecuado para una columna como Precio por Unidad, que representa una tasa. Poner el resumen por defecto en promedio producirá un resultado significativo.*
 
 #### Propiedades de actualización masiva
 
@@ -251,7 +253,9 @@ En esta tarea, actualizarás varias columnas usando actualizaciones masivas indi
 
 ![lab3_img16](./imagenes/lab3_img16.png)
 
-*NOTA: Las columnas estaban ocultas porque son usadas por relaciones o se usarán en la lógica de configuración o cálculo de seguridad a nivel de fila.*
+
+> [!NOTE]
+> *Las columnas estaban ocultas porque son usadas por relaciones o se usarán en la lógica de configuración o cálculo de seguridad a nivel de fila.*
 *Usarás la columna SalesOrderNumber en un cálculo en el laboratorio Crear Cálculos DAX en Power BI Desktop.*
 
 4. Selecciona de forma múltiple las siguientes tres columnas:
@@ -276,7 +280,9 @@ En esta tarea cambiarás a la **vista de informe**, revisarás la interfaz del m
 
 ![lab3_img17](./imagenes/lab3_img17.png)
 
-***Importante:*** *Estas jerarquías no fueron creadas por ti. Se crearon automáticamente como configuración predeterminada. Sin embargo, hay un problema. El año fiscal de Adventure Works comienza el 1 de julio de cada año. Pero, en estas jerarquías de fechas creadas automáticamente, el año de jerarquía de fechas comienza el 1 de enero de cada año.*
+> [!IMPORTANT]
+> *Estas jerarquías no fueron creadas por ti. Se crearon automáticamente como configuración predeterminada. Sin embargo, hay un problema. El año fiscal de Adventure Works comienza el 1 de julio de cada año. Pero, en estas jerarquías de fechas creadas automáticamente, el año de jerarquía de fechas comienza el 1 de enero de cada año.*
+
 
 4. Para desactivar la configuración automática de fecha/hora, navega a **Archivo > Opciones y configuración > Opciones**.
 5. En la ventana de **Opciones**, en la sección **Archivo actual**, navega a **Carga de datos > Inteligencia temporal** y desmarca **Fecha/hora automática**.

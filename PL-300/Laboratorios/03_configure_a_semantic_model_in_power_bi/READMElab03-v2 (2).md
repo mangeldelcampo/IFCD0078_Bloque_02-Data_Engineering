@@ -1,4 +1,5 @@
-### Lab 03: Configure a Semantic Model in Power BI (PL-300)
+# PL-300 Lab 03: Configuración de un Modelo Semántico en Power BI
+
 Este repositorio contiene la guía de laboratorio, arquitectura de datos y plantilla de evidencias para el  **Lab 03: Configure a Semantic Model in Power BI**  del curso  **PL-300: Microsoft Power BI Data Analyst** .
 
 --------------------------------------------------------------------------------
@@ -81,7 +82,7 @@ El propósito de este laboratorio consiste en transformar las consultas aisladas
 ├── pbix/
 │   ├── 03-Starter-Sales Analysis.pbix
 │   └── 03-Final-Sales Analysis.pbix  # Modelo semántico configurado
-└── assets/                        # Capturas de pantalla de evidencia
+└── imagenes/                        # Capturas de pantalla de evidencia
     ├── 01-model-view-star-schema.png
     └── 02-report-view-performance-matrix.png
 
@@ -151,7 +152,8 @@ Extrae el archivo a la carpeta **C:\Users\Student\Downloads\03-model-data**.
 
 Abre el archivo **03-Starter-Sales Analysis.pbix**.
 
-***Nota:*** *Puede que veas un diálogo de inicio de sesión mientras carga el archivo. Selecciona **Cancelar** para cerrar el cuadro de inicio de sesión. Cierra cualquier otra ventana informativa. Selecciona **Aplicar más tarde**, si se le pide aplicar cambios.*
+> [!NOTE]
+> *Puede que veas un diálogo de inicio de sesión mientras carga el archivo. Selecciona **Cancelar** para cerrar el cuadro de inicio de sesión. Cierra cualquier otra ventana informativa. Selecciona **Aplicar más tarde**, si se le pide aplicar cambios.*
 
 ---
 
@@ -183,7 +185,8 @@ Los laboratorios usan una notación abreviada para referenciar un campo. Se ver�
 
 ![lab3_img01](./imagenes/lab3_img01.png)
 
-*El problema es que la tabla se basa en campos de diferentes tablas. Se espera que cada categoría de producto muestre las ventas de esa categoría. Sin embargo, como no hay una relación de modelo entre estas tablas, la tabla de ventas no está filtrada. Ahora añadirás una relación para propagar filtros entre las tablas.*
+> [!NOTE]
+> *El problema es que la tabla se basa en campos de diferentes tablas. Se espera que cada categoría de producto muestre las ventas de esa categoría. Sin embargo, como no hay una relación de modelo entre estas tablas, la tabla de ventas no está filtrada. Ahora añadirás una relación para propagar filtros entre las tablas.*
 
 5. Para cambiar al diseñador de modelos, a la izquierda selecciona el **icono de vista de modelo**.
 
@@ -209,12 +212,14 @@ Los laboratorios usan una notación abreviada para referenciar un campo. Se ver�
 
 ![lab3_img05](./imagenes/lab3_img05.png)
 
-*Puedes interpretar muchas de las propiedades de la relación mirando la línea de la relación en el diagrama:*
+> [!NOTE]
+> *Puedes interpretar muchas de las propiedades de la relación mirando la línea de la relación en el diagrama:*
 * *La cardinalidad se representa mediante los indicadores **1** y *****.*
 * *La dirección del filtro se representa con la punta de flecha.*
 * *Una línea continua representa una relación activa; una línea punteada representa una relación inactiva.*
 
-*Consejo: Si pasas el cursor sobre la relación se resaltan las columnas relacionadas.*
+> [!TIP]
+> *Si pasas el cursor sobre la relación se resaltan las columnas relacionadas.*
 
 13. Cambia a la **vista de Informe** y luego observa que la imagen de la tabla se actualizó para mostrar valores diferentes para cada categoría de producto.
 
@@ -228,8 +233,8 @@ Hay una forma más sencilla de crear una relación. En el diagrama del modelo, p
 
 1. Para crear una nueva relación usando una técnica diferente, cambia a la **vista de Modelo**.
 2. Desde la tabla `Reseller`, arrastra la columna `ResellerKey` a la columna `ResellerKey` de la tabla `Sales`.
-
-***Importante:*** *A veces una columna no quiere arrastrarse. Si surge esta situación, selecciona otra columna, luego selecciona de nuevo la columna que quieres arrastrar, e inténtalo de nuevo. Asegúrate de ver la nueva relación añadida al diagrama.*
+> [!IMPORTANT]
+>  *A veces una columna no quiere arrastrarse. Si surge esta situación, selecciona otra columna, luego selecciona de nuevo la columna que quieres arrastrar, e inténtalo de nuevo. Asegúrate de ver la nueva relación añadida al diagrama.*
 
 ![lab3_img07](./imagenes/lab3_img07.png)
 
@@ -345,8 +350,8 @@ En esta tarea, configurarás la tabla de `Sales` con descripciones actualizadas,
 
 1. En la tabla de `Sales`, selecciona la columna `Cost`.
 2. En el **panel de Propiedades**, en el cuadro de **Descripción**, introduce: *Based on standard cost*.
-
-*NOTA: Las descripciones pueden aplicarse a tablas, columnas, jerarquías o medidas. En el panel de datos, el texto de la descripción se revela en una descripción emergente cuando el autor del informe pasa el cursor sobre el campo.*
+> [!NOTE]
+> *Las descripciones pueden aplicarse a tablas, columnas, jerarquías o medidas. En el panel de datos, el texto de la descripción se revela en una descripción emergente cuando el autor del informe pasa el cursor sobre el campo.*
 
 3. Selecciona la columna `Quantity`.
 4. En el **panel de Propiedades**, desde la sección de **Formato**, establece la propiedad **Separador de miles** en *Sí*.
@@ -354,7 +359,8 @@ En esta tarea, configurarás la tabla de `Sales` con descripciones actualizadas,
 6. En el **panel de Propiedades**, desde la sección de **Formato**, establece la propiedad de **Decimales** en *2*.
 7. En el grupo **Avanzado** (puede que necesites desplazarte hacia abajo para localizarlo), en la lista desplegable **Resumir por**, selecciona **Promedio**.
 
-*NOTA: Por defecto, las columnas numéricas se resumen sumando valores. Este comportamiento por defecto no es adecuado para una columna como Precio por Unidad, que representa una tasa. Poner el resumen por defecto en promedio producirá un resultado significativo.*
+> [!NOTE]
+> *Por defecto, las columnas numéricas se resumen sumando valores. Este comportamiento por defecto no es adecuado para una columna como Precio por Unidad, que representa una tasa. Poner el resumen por defecto en promedio producirá un resultado significativo.*
 
 #### Propiedades de actualización masiva
 
@@ -379,7 +385,8 @@ En esta tarea, actualizarás varias columnas usando actualizaciones masivas indi
 
 ![lab3_img16](./imagenes/lab3_img16.png)
 
-*NOTA: Las columnas estaban ocultas porque son usadas por relaciones o se usarán en la lógica de configuración o cálculo de seguridad a nivel de fila.*
+> [!NOTE]
+> *Las columnas estaban ocultas porque son usadas por relaciones o se usarán en la lógica de configuración o cálculo de seguridad a nivel de fila.*
 *Usarás la columna SalesOrderNumber en un cálculo en el laboratorio Crear Cálculos DAX en Power BI Desktop.*
 
 4. Selecciona de forma múltiple las siguientes tres columnas:
@@ -404,7 +411,8 @@ En esta tarea cambiarás a la **vista de informe**, revisarás la interfaz del m
 
 ![lab3_img17](./imagenes/lab3_img17.png)
 
-***Importante:*** *Estas jerarquías no fueron creadas por ti. Se crearon automáticamente como configuración predeterminada. Sin embargo, hay un problema. El año fiscal de Adventure Works comienza el 1 de julio de cada año. Pero, en estas jerarquías de fechas creadas automáticamente, el año de jerarquía de fechas comienza el 1 de enero de cada año.*
+> [!IMPORTANT]
+> ***Estas jerarquías no fueron creadas por ti. Se crearon automáticamente como configuración predeterminada. Sin embargo, hay un problema. El año fiscal de Adventure Works comienza el 1 de julio de cada año. Pero, en estas jerarquías de fechas creadas automáticamente, el año de jerarquía de fechas comienza el 1 de enero de cada año.***
 
 4. Para desactivar la configuración automática de fecha/hora, navega a **Archivo > Opciones y configuración > Opciones**.
 5. En la ventana de **Opciones**, en la sección **Archivo actual**, navega a **Carga de datos > Inteligencia temporal** y desmarca **Fecha/hora automática**.
@@ -530,7 +538,6 @@ En esta tarea, crearás una relación de muchos a muchos entre la tabla de `Sale
 
 *Considera que la tabla Salesperson filtra la tabla Sales. También filtra la tabla SalespersonRegion, pero no continúa propagando filtros a la tabla Region (la punta de flecha apunta en la dirección equivocada).*
 
-![Imagen29](./imagenes/Imagen29.png)
 
 8. Para editar la relación entre las tablas `Region` y `SalespersonRegion`, haz doble clic en la relación.
 9. En la ventana **Editar relaciones**, en la lista desplegable **Dirección de filtro cruzado**, selecciona **Ambos**.

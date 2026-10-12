@@ -502,7 +502,7 @@ En esta tarea, actualizarás los **ColorFormats** para desactivar su carga.
 2. En el panel de **Configuración de consulta**, selecciona el enlace **Todas las propiedades**.  
 2. En el panel **de Configuración de consulta**, selecciona el enlace **Todas las propiedades**.  
 3. En la ventana **de Propiedades de consulta**, desmarca la **casilla Habilitar Cargar para Informar**.  
-> [!NOTE]
+> [!IMPORTANT]
 > *Desactivar la carga significa que no se cargará como tabla en el modelo de datos. Esto se hace porque la consulta se fusionó con la **consulta de Producto**, que está habilitada para cargar en el modelo de datos.*  
    ![UpdateColorFormatsquery.png](./imagenes/UpdateColorFormatsquery.png)
 

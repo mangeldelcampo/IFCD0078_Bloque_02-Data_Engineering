@@ -333,6 +333,10 @@ En esta tarea, crearás dos medidas rápidas para calcular el beneficio y el mar
 
 8. En la tabla de `Sales`, añade una segunda medida rápida, basada en los siguientes requisitos:
 
+> [!NOTE]
+> Las columnas estaban ocultas porque son usadas por relaciones...
+> Usarás la columna SalesOrderNumber en un cálculo...
+
 > [!IMPORTANT]
 > *Si la opción de crear una medida rápida no aparece en el menú contextual, usa el comando que se encuentra en la cinta de inicio, desde dentro del grupo de Cálculos.*
 

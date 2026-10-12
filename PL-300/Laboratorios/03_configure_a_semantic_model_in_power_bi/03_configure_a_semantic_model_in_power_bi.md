@@ -333,7 +333,8 @@ En esta tarea, crearás dos medidas rápidas para calcular el beneficio y el mar
 
 8. En la tabla de `Sales`, añade una segunda medida rápida, basada en los siguientes requisitos:
 
-***Importante:*** *Si la opción de crear una medida rápida no aparece en el menú contextual, usa el comando que se encuentra en la cinta de inicio, desde dentro del grupo de Cálculos.*
+> [!IMPORTANT]
+> *Si la opción de crear una medida rápida no aparece en el menú contextual, usa el comando que se encuentra en la cinta de inicio, desde dentro del grupo de Cálculos.*
 
 * Utiliza la operación matemática de **División**.
 * Ajusta el numerador al campo `Sales | Profit`.
@@ -407,8 +408,6 @@ En esta tarea, crearás una relación de muchos a muchos entre la tabla de `Sale
 7. Vuelve a la **vista de Modelo** y luego sigue la dirección del filtro de relación (punta de flecha) desde la tabla de `Salesperson`.
 
 *Considera que la tabla Salesperson filtra la tabla Sales. También filtra la tabla SalespersonRegion, pero no continúa propagando filtros a la tabla Region (la punta de flecha apunta en la dirección equivocada).*
-
-![Imagen29](./imagenes/Imagen29.png)
 
 8. Para editar la relación entre las tablas `Region` y `SalespersonRegion`, haz doble clic en la relación.
 9. En la ventana **Editar relaciones**, en la lista desplegable **Dirección de filtro cruzado**, selecciona **Ambos**.

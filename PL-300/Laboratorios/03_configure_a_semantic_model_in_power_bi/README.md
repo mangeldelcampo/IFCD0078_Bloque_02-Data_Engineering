@@ -60,12 +60,12 @@ El propósito de este laboratorio consiste en transformar las consultas aisladas
     *   **Ocultación en masa:**  Ocultar 13 claves técnicas foráneas y subrogadas (ProductKey, EmployeeKey, etc.) para impedir que se utilicen como métricas sumables en los visuales.
     *   **Agregaciones por defecto:**  Configuración de Unit Price en modo promedio ( *Average* ) para evitar la suma inconsistente de tipos unitarios, así como la normalización de posiciones decimales a cero en costes y ventas consolidadas.
     *   **Supresión de Time Intelligence automático:**  Desactivación global de la opción de fecha/hora automática en el archivo, evitando tablas ocultas que asumen año natural frente al calendario fiscal corporativo (inicio en julio) de Adventure Works.
-##### Bloque 4: Capa de Métricas de Rentabilidad (Medidas Rápidas)
+### Bloque 4: Capa de Métricas de Rentabilidad (Medidas Rápidas)
 *   **Objetivo:**  Modelar indicadores financieros dinámicos evaluados bajo cualquier contexto de filtro.
 *   **Lógica de negocio:**  Creación de las métricas clave de margen bruto:
     *  $\text{Profit} = \text{Sales} - \text{Cost}$
     *  $\text{Profit Margin} = \frac{\text{Profit}}{\text{Sales}}$ (formateada como porcentaje con dos decimales)
-##### Bloque 5: Resolución de Relaciones Muchos a Muchos y Rendimiento
+### Bloque 5: Resolución de Relaciones Muchos a Muchos y Rendimiento
 *   **Objetivo:**  Resolver el desacoplamiento entre las ventas directas y el rendimiento global por áreas comerciales.
 *   **Lógica de negocio:**
     *  Un comercial puede tener asignados múltiples territorios y un territorio contar con varios representantes. Se implementa una relación  *many-to-many*  utilizando SalespersonRegion como tabla puente ( *bridge table* ).
@@ -73,16 +73,16 @@ El propósito de este laboratorio consiste en transformar las consultas aisladas
 
 --------------------------------------------------------------------------------
 
-#### 🛠️ Tecnologías y Entorno
+## 🛠️ Tecnologías y Entorno
 *   **Herramienta:**  Microsoft Power BI Desktop
 *   **Origen de datos:**  SQL Server (AdventureWorksDW2020) / Archivos del repositorio PL-300
 *   **Enfoque de diseño:**  Modelado dimensional tabular, Kimball star-schema, desambiguación de relaciones cruzadas
 
 --------------------------------------------------------------------------------
 
-### 🛠️ Realización del Laboratorio
+## 🛠️ Realización del Laboratorio
 
-#### **Historia del laboratorio**
+### **Historia del laboratorio**
 
 En este laboratorio, comenzarás a desarrollar el modelo de datos. Implicará crear relaciones entre tablas y luego configurar propiedades de tablas y columnas para mejorar la facilidad y usabilidad del modelo de datos. También crearás jerarquías y medidas rápidas.
 
@@ -95,7 +95,7 @@ En este laboratorio, aprendes cómo:
 
 **Este laboratorio debería durar aproximadamente 45 minutos.**
 
-#### **Inicio**
+### **Inicio**
 
 Para completar este ejercicio, primero abre un navegador web e introduce la siguiente URL para descargar el archivo zip:
 
@@ -556,7 +556,7 @@ En esta tarea, crearás una relación con la tabla de Objetivos.
 
 4. Guarda el archivo de Power BI Desktop.
 
-#### Laboratorio completo
+### Laboratorio completo
 
 Puedes optar por guardar tu informe de Power BI, aunque no es necesario para este laboratorio. En el siguiente ejercicio, trabajarás con un archivo inicial predefinido.
 
@@ -569,13 +569,13 @@ Puedes optar por guardar tu informe de Power BI, aunque no es necesario para est
 
 --------------------------------------------------------------------------------
 
-#### 🧠 Decisiones Técnicas Destacadas (Key Takeaways)
+## 🧠 Decisiones Técnicas Destacadas (Key Takeaways)
 1.  **Filtro cruzado bidireccional en tablas puente:**  Se aplicó dirección de filtro cruzado en ambas direcciones ( *Both* ) junto con la regla de seguridad entre Region y SalespersonRegion para permitir que el filtro de vendedores alcance las ventas regionales.
 2.  **Relación inactiva intencionada:**  La relación directa Salesperson $\rightarrow$ Sales se marca como inactiva para evitar caminos alternativos ( *loops* ) que el motor de Analysis Services resolvería de forma impredecible por distancia de saltos.
 
 --------------------------------------------------------------------------------
 
-#### ✅ Lista de Verificación (Checklist)
+## ✅ Lista de Verificación (Checklist)
 *  [x] Esquema en estrella configurado con Sales como tabla de hechos central.
 *  [x] Desactivada la opción de  *Auto Date/Time* .
 *  [x] Jerarquías Products, Regions, Resellers y Geography creadas y verificadas.
@@ -588,7 +588,7 @@ Puedes optar por guardar tu informe de Power BI, aunque no es necesario para est
 
 --------------------------------------------------------------------------------
 
-#### 🧭 Navegación entre Laboratorios
+### 🧭 Navegación entre Laboratorios
 | ⬅️ Laboratorio Anterior | 🏠 Índice de Laboratorios | ➡️ Siguiente Laboratorio |
 | ------ | ------ | ------ |
 | [Lab 02: Load and Transform Data in Power BI<br>](../02_clean_transform_and_load_data_in_power_bi/readme2.md) | [📚 Índice General PL-300<br>](../../README.md) | [Lab 04: Create DAX Calculations in Power BI Desktop<br>](../04_create_dax_calculations_in_semantic_models/readme4.md) |

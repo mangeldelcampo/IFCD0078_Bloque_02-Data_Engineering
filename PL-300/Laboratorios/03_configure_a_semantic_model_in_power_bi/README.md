@@ -568,12 +568,6 @@ Puedes optar por guardar tu informe de Power BI, aunque no es necesario para est
 5. Si aparece un cuadro de diálogo que te pide que apliques cambios pendientes en la consulta, selecciona **Aplicar**.
 6. Cierra Power BI Desktop.
 
-
---------------------------------------------------------------------------------
-
-#### 📸 Arquitectura Final y Evidencias
-*Inserta aquí las capturas de pantalla de tus resultados:*
-
 --------------------------------------------------------------------------------
 
 #### 🧠 Decisiones Técnicas Destacadas (Key Takeaways)

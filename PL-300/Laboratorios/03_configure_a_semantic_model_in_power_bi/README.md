@@ -4,7 +4,7 @@ Este repositorio contiene la guía de laboratorio, arquitectura de datos y plant
 
 --------------------------------------------------------------------------------
 
-#### 📑 Tabla de Contenidos
+### 📑 Tabla de Contenidos
 *  [🎯 Objetivo y Lógica de Negocio](#-objetivo-y-lógica-de-negocio)
     *  [Bloque 1: Arquitectura de Relaciones y Esquema en Estrella](#bloque-1-arquitectura-de-relaciones-y-esquema-en-estrella)
     *  [Bloque 2: Ergonomía del Modelo y Navegación Jerárquica](#bloque-2-ergonomía-del-modelo-y-navegación-jerárquica)
@@ -43,18 +43,18 @@ Este repositorio contiene la guía de laboratorio, arquitectura de datos y plant
 
 --------------------------------------------------------------------------------
 
-#### 🎯 Objetivo y Lógica de Negocio
+## 🎯 Objetivo y Lógica de Negocio
 El propósito de este laboratorio consiste en transformar las consultas aisladas e importadas durante la fase ETL en un  **modelo semántico dimensional (esquema en estrella)**  optimizado para el autoservicio de análisis ( *Self-Service BI* ). Se definen caminos claros de propagación de filtros, se estructuran jerarquías de agregación y se resuelve la ambigüedad en relaciones complejas para garantizar la integridad métrica.
-##### Bloque 1: Arquitectura de Relaciones y Esquema en Estrella
+### Bloque 1: Arquitectura de Relaciones y Esquema en Estrella
 *   **Objetivo:**  Garantizar la propagación unívoca del contexto de filtro desde las entidades maestras hacia la tabla de transacciones de ventas.
 *   **Lógica de negocio:**  Conexión de la tabla transaccional Sales con sus dimensiones satélite (Product, Reseller, Region, Salesperson) mediante relaciones de cardinalidad uno a varios ($1:*$) y dirección de filtro cruzado única ( *Single* ). Esto garantiza que los filtros fluyan desde el extremo dimensional hacia el granular sin introducir ciclos cerrados ni duplicidades.
-##### Bloque 2: Ergonomía del Modelo y Navegación Jerárquica
+### Bloque 2: Ergonomía del Modelo y Navegación Jerárquica
 *   **Objetivo:**  Habilitar experiencias de exploración multinivel ( *drill-down* ) y simplificar el catálogo de datos.
 *   **Lógica de negocio:**
     *   **Jerarquías analíticas:**  Modelado de jerarquías en Product (Products: Category $\rightarrow$ Subcategory $\rightarrow$ Product) y territorios en Region y Reseller (Regions y Geography), optimizando el análisis desde la dirección corporativa hasta la tienda o código local.
     *   ***Carpetas de visualización (Display Folders):***  Aislamiento de atributos auxiliares (como Background Color Format y Font Color Format dentro de la carpeta Formatting) para evitar ruido analítico al crear informes.
     *   **Categorización geográfica:**  Declaración explícita de metadatos espaciales (Country/Region, State or Province, City) para habilitar el motor de geolocalización en mapas interactivos de Power BI.
-##### Bloque 3: Optimización de Tipos, Formatos y Ocultación Técnica
+### Bloque 3: Optimización de Tipos, Formatos y Ocultación Técnica
 *   **Objetivo:**  Prevenir agregaciones incorrectas de negocio y ocultar claves del pipeline relacional.
 *   **Lógica de negocio:**
     *   **Ocultación en masa:**  Ocultar 13 claves técnicas foráneas y subrogadas (ProductKey, EmployeeKey, etc.) para impedir que se utilicen como métricas sumables en los visuales.

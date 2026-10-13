@@ -11,9 +11,8 @@ Este repositorio contiene la guía de laboratorio, arquitectura de datos y plant
     *  [Bloque 3: Optimización de Tipos, Formatos y Ocultación Técnica](#bloque-3-optimización-de-tipos-formatos-y-ocultación-técnica)
     *  [Bloque 4: Capa de Métricas de Rentabilidad (Medidas Rápidas)](#bloque-4-capa-de-métricas-de-rentabilidad-medidas-rápidas)
     *  [Bloque 5: Resolución de Relaciones Muchos a Muchos y Rendimiento](#bloque-5-resolución-de-relaciones-muchos-a-muchos-y-rendimiento)
-*  [📁 Estructura del Repositorio Recomendada](#-estructura-del-repositorio-recomendada)
 *  [🛠️ Tecnologías y Entorno](#️-tecnologías-y-entorno)
-*  [🛠️ Realización del Laboratorio](#️-realización-del-laboratorio)
+* [🛠️ Realización del Laboratorio](#️-realización-del-laboratorio)
     *  [Historia del laboratorio](#historia-del-laboratorio)
     *  [Empieza](#empieza)
     *  [Bloque 1: Arquitectura de Relaciones y Esquema en Estrella](#bloque-1-arquitectura-de-relaciones-y-esquema-en-estrella)
@@ -75,21 +74,6 @@ El propósito de este laboratorio consiste en transformar las consultas aisladas
 
 --------------------------------------------------------------------------------
 
-#### 📁 Estructura del Repositorio Recomendada
-```text
-.
-├── README.md                      # Documentación del laboratorio
-├── pbix/
-│   ├── 03-Starter-Sales Analysis.pbix
-│   └── 03-Final-Sales Analysis.pbix  # Modelo semántico configurado
-└── imagenes/                        # Capturas de pantalla de evidencia
-    ├── 01-model-view-star-schema.png
-    └── 02-report-view-performance-matrix.png
-
-```
-
---------------------------------------------------------------------------------
-
 #### 🛠️ Tecnologías y Entorno
 *   **Herramienta:**  Microsoft Power BI Desktop
 *   **Origen de datos:**  SQL Server (AdventureWorksDW2020) / Archivos del repositorio PL-300
@@ -97,37 +81,7 @@ El propósito de este laboratorio consiste en transformar las consultas aisladas
 
 --------------------------------------------------------------------------------
 
-#### 🛠️ Realización del Laboratorio
-
-> 📑 **Índice Interno de Ejecución del Laboratorio (Bloques y Secciones)**
->
-> * 📌 [**Historia del laboratorio**](#historia-del-laboratorio)
-> * 📌 [**Empieza**](#empieza)
-> * 🧩 [**Bloque 1: Arquitectura de Relaciones y Esquema en Estrella**](#bloque-1-arquitectura-de-relaciones-y-esquema-en-estrella)
->   * 🔹 [Crear relaciones con modelos](#crear-relaciones-con-modelos)
->   * 🔹 [Crea relaciones adicionales](#crea-relaciones-adicionales)
-> * 🧩 [**Bloque 2: Ergonomía del Modelo y Navegación Jerárquica**](#bloque-2-ergonomía-del-modelo-y-navegación-jerárquica)
->   * 🔹 [Configurar la tabla de productos](#configurar-la-tabla-de-productos)
->   * 🔹 [Configurar la tabla de Regiones](#configurar-la-tabla-de-regiones)
->   * 🔹 [Configurar la tabla de revendedores](#configurar-la-tabla-de-revendedores)
-> * 🧩 [**Bloque 3: Optimización de Tipos, Formatos y Ocultación Técnica**](#bloque-3-optimización-de-tipos-formatos-y-ocultación-técnica)
->   * 🔹 [Configurar la tabla de ventas](#configurar-la-tabla-de-ventas)
->   * 🔹 [Propiedades de actualización masiva](#propiedades-de-actualización-masiva)
->   * 🔹 [Explora la interfaz del modelo](#explora-la-interfaz-del-modelo)
-> * 🧩 [**Bloque 4: Capa de Métricas de Rentabilidad (Medidas Rápidas)**](#bloque-4-capa-de-métricas-de-rentabilidad-medidas-rápidas)
->   * 🔹 [Crea medidas rápidas](#crea-medidas-rápidas)
-> * 🧩 [**Bloque 5: Resolución de Relaciones Muchos a Muchos y Rendimiento**](#bloque-5-resolución-de-relaciones-muchos-a-muchos-y-rendimiento)
->   * 🔹 [Crea una relación de muchos a muchos](#crea-una-relación-de-muchos-a-muchos)
->     * ▫️ [Paso 1: Crear el visual de rendimiento base](#paso-1-crear-el-visual-de-rendimiento-base)
->     * ▫️ [Paso 2: Conectar la tabla puente](#paso-2-conectar-la-tabla-puente)
->     * ▫️ [Paso 3: Configurar el filtro cruzado bidireccional](#paso-3-configurar-el-filtro-cruzado-bidireccional)
->     * ▫️ [Paso 4: Desactivar la relación directa y renombrar](#paso-4-desactivar-la-relación-directa-y-renombrar)
->   * 🔹 [Relacionar la tabla de Objetivos](#relacionar-la-tabla-de-objetivos)
->     * ▫️ [Paso 5: Vincular la tabla de objetivos Targets](#paso-5-vincular-la-tabla-de-objetivos-targets)
->   * 🔹 [Laboratorio completo](#laboratorio-completo)
-
----
-
+### 🛠️ Realización del Laboratorio
 
 #### **Historia del laboratorio**
 

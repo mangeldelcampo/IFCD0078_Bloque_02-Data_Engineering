@@ -12,6 +12,7 @@ Este repositorio contiene la guía de laboratorio, arquitectura de datos y plant
     *  [Bloque 4: Capa de Métricas de Rentabilidad (Medidas Rápidas)](#bloque-4-capa-de-métricas-de-rentabilidad-medidas-rápidas)
     *  [Bloque 5: Resolución de Relaciones Muchos a Muchos y Rendimiento](#bloque-5-resolución-de-relaciones-muchos-a-muchos-y-rendimiento)
 *  [🛠️ Tecnologías y Entorno](#️-tecnologías-y-entorno)
+--------------------------------------------------------------------------------
 * [🛠️ Realización del Laboratorio](#️-realización-del-laboratorio)
     *  [Historia del laboratorio](#historia-del-laboratorio)
     *  [Inicio](#inicio)

@@ -14,7 +14,7 @@ Este repositorio contiene la guía de laboratorio, arquitectura de datos y plant
 *  [🛠️ Tecnologías y Entorno](#️-tecnologías-y-entorno)
 * [🛠️ Realización del Laboratorio](#️-realización-del-laboratorio)
     *  [Historia del laboratorio](#historia-del-laboratorio)
-    *  [Empieza](#empieza)
+    *  [Inicio](#inicio)
     *  [Bloque 1: Arquitectura de Relaciones y Esquema en Estrella](#bloque-1-arquitectura-de-relaciones-y-esquema-en-estrella)
         *  [Crear relaciones con modelos](#crear-relaciones-con-modelos)
         *  [Crea relaciones adicionales](#crea-relaciones-adicionales)
@@ -37,7 +37,6 @@ Este repositorio contiene la guía de laboratorio, arquitectura de datos y plant
         *  [Relacionar la tabla de Objetivos](#relacionar-la-tabla-de-objetivos)
             *  [Paso 5: Vincular la tabla de objetivos Targets](#paso-5-vincular-la-tabla-de-objetivos-targets)
         *  [Laboratorio completo](#laboratorio-completo)
-*  [📸 Arquitectura Final y Evidencias](#-arquitectura-final-y-evidencias)
 *  [🧠 Decisiones Técnicas Destacadas (Key Takeaways)](#-decisiones-técnicas-destacadas-key-takeaways)
 *  [✅ Lista de Verificación (Checklist)](#-lista-de-verificación-checklist)
 *  [🧭 Navegación entre Laboratorios](#-navegación-entre-laboratorios)
@@ -96,7 +95,7 @@ En este laboratorio, aprendes cómo:
 
 **Este laboratorio debería durar aproximadamente 45 minutos.**
 
-#### **Empieza**
+#### **Inicio**
 
 Para completar este ejercicio, primero abre un navegador web e introduce la siguiente URL para descargar el archivo zip:
 

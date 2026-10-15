@@ -333,15 +333,19 @@ En esta tarea, marcarás la tabla `Date` como una tabla de fechas oficial.
 
 4. En la ventana **Marcar como tabla de fechas**, activa la propiedad **Marcar como tabla de fechas**.
 
-![lab4_img22](./imagenes/lab4_img22.png)
+
 
 5. En la lista desplegable **Elegir una columna de fecha**, selecciona **Date**.
 
-![lab4_img23](./imagenes/lab4_img23.png)
+![lab4_img22](./imagenes/lab4_img22.png)
 
 
 6. Selecciona **Guardar**.
 7. Guarda el archivo de Power BI Desktop.
+
+Power BI Desktop ahora entiende que esta tabla define la fecha (hora).
+
+Este enfoque de diseño para una tabla de fechas es adecuado cuando no tienes una tabla de fechas en tu fuente de datos. Si tienes un almacén de datos, sería apropiado cargar datos de fechas desde su tabla de dimensiones de fechas en lugar de "redefinir" la lógica de fechas en tu modelo de datos.
 
 ---
 
@@ -362,6 +366,8 @@ En esta tarea, marcarás la tabla `Date` como una tabla de fechas oficial.
 En esta tarea, crearás medidas sencillas. Las medidas simples agregan valores en una sola columna o cuentan filas de una tabla.
 
 1. En la vista de informe, en la Página 2, desde el panel de datos, arrastra el campo `Sales | Unit Price` a la matriz visual.
+
+![lab4_img23](./imagenes/lab4_img23.png)
 
 ![lab4_img24](./imagenes/lab4_img24.png)
 

@@ -446,7 +446,14 @@ Order Lines = COUNTROWS(Sales)
 ![lab4_img28](./imagenes/lab4_img28.png)
 
 14. Aumenta el tamaño de la matriz visual.
-15. Añade las cinco medidas a la matriz visual (`Median Price`, `Min Price`, `Max Price`, `Orders`, `Order Lines`).
+15. Añade las cinco medidas a la matriz visual
+    
+    -`Median Price`
+    -`Min Price`
+    -`Max Price`
+    -`Orders`
+    -`Order Lines`
+
 16. Verifica que los resultados estén formateados correctamente.
 
 ![lab4_img29](./imagenes/lab4_img29.png)
@@ -505,6 +512,7 @@ IF(
 > Puedes hacer clic derecho en la columna del panel de **datos** y luego seleccionar **Ocultar**.
 
 7. Fíjate que la tabla `Targets` aparece ahora en la parte superior de la lista.
+
 ![lab4_img31](./imagenes/lab4_img31.png)
 
 Al contener sólo medidas visibles, la tabla `Targets` se mueve automáticamente a la parte superior de la lista en el panel de datos.
@@ -512,6 +520,7 @@ Al contener sólo medidas visibles, la tabla `Targets` se mueve automáticamente
 8. Añade la medida `Target` a la tabla visual.
 
 9. Observa que el total de la columna **Target**(Objetivo) es ahora **`BLANK`**.
+
 ![lab4_img32](./imagenes/lab4_img32.png)
 
 10. Crea las siguientes dos medidas para la tabla `Targets`:

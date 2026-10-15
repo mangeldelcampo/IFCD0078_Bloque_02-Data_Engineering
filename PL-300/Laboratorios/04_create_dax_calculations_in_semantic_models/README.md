@@ -240,10 +240,10 @@ Month = FORMAT('Date'[Date], "yyyy MMM")
 4. Verifica que se hayan añadido las nuevas columnas en la vista de tabla.
 
 ![lab4_img09](./imagenes/lab4_img09.png)
-![lab4_img10](./imagenes/lab4_img010.png)
 
 5. Para validar los cálculos, cambia a la **vista de informe**.
 6. Para crear una nueva página de informe, selecciona el icono de más (`+`) junto a la Página 1.
+![lab4_img10](./imagenes/lab4_img10.png)
 
 ![lab4_img10](./imagenes/lab4_img11.png)
 

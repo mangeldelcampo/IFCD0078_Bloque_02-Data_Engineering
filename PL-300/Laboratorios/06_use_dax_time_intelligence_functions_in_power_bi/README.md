@@ -131,7 +131,6 @@ TOTALYTD(
 )
 ```
 
-![lab6_img01](./imagenes/lab6_img01.png)
 
 > [!NOTE]
  > La función `TOTALYTD` evalúa una expresión (en este caso, la suma de la columna `Sales`) sobre una columna de fechas determinada. La columna de fechas debe pertenecer a una tabla de fechas marcada como tal. La función también puede tomar un tercer argumento opcional que representa la última fecha de un año. La ausencia de esta fecha significa que el 31 de diciembre es la última fecha del año. Para Adventure Works, junio es el último mes de su año fiscal, por lo que se utiliza `"6-30"`.
@@ -139,7 +138,7 @@ TOTALYTD(
 3. Añade el campo `Sales` y la medida `Sales YTD` al objeto visual de matriz.
 4. Observa la acumulación de valores de ventas a lo largo del año.
 
-![lab6_img02](./imagenes/lab6_img02.png)
+![lab6_img01](./imagenes/lab6_img01.png)
 
 > [!NOTE]
 > La función `TOTALYTD` realiza una manipulación del filtro, específicamente una manipulación del filtro de tiempo. Por ejemplo, para calcular las ventas YTD para septiembre de 2017 (el tercer mes del año fiscal), se eliminan todos los filtros de la tabla `Date` y se reemplazan con un nuevo filtro de fechas que comienza al principio del año (1 de julio de 2017) y se extiende hasta la última fecha del periodo en contexto (30 de septiembre de 2017). Hay muchas funciones de inteligencia de tiempo disponibles en DAX para admitir manipulaciones comunes de filtros de tiempo.
@@ -183,7 +182,6 @@ RETURN
     SalesPriorYear
 ```
 
-![lab6_img03](./imagenes/lab6_img03.png)
 
 > [!NOTE]
 > A la variable `SalesPriorYear` se le asigna una expresión que calcula la suma de la columna `Sales` en un contexto modificado. Ese contexto utiliza la función `PARALLELPERIOD` para retroceder 12 meses desde cada fecha en el contexto de filtro.
@@ -192,7 +190,7 @@ RETURN
 3. Observa que la nueva medida devuelve `BLANK` para los primeros 12 meses (porque no se registraron ventas antes del año fiscal 2017).
 4. Observa que el valor de la medida `Sales YoY Growth` para julio de 2018 es el valor de ventas de julio de 2017.
 
-![lab6_img04](./imagenes/lab6_img04.png)
+![lab6_img02](./imagenes/lab6_img02.png)
 
 > [!TIP]
 > Ahora que se ha probado la "parte difícil" de la fórmula, puedes sobrescribir la medida con la fórmula final que calcula el resultado del crecimiento.
@@ -217,19 +215,18 @@ RETURN
     )
 ```
 
-![lab6_img05](./imagenes/lab6_img05.png)
 
 6. En la fórmula, en la cláusula `RETURN`, observa que se hace referencia a la variable dos veces.
 7. Comprueba que el crecimiento interanual para julio de 2018 es del **392.83%**.
 
-![lab6_img06](./imagenes/lab6_img06.png)
+![lab6_img03](./imagenes/lab6_img03.png)
 
 > [!NOTE]
 > La medida de crecimiento interanual identifica un aumento de casi el 400 por ciento (o 4 veces más) de las ventas durante el mismo periodo del año anterior.
 
 8. En la **vista de Modelo**, coloca las dos nuevas medidas dentro de una carpeta de visualización (*Display Folder*) llamada `Time intelligence`.
 
-![lab6_img07](./imagenes/lab6_img07.png)
+![lab6_img04](./imagenes/lab6_img04.png)
 
 9. Guarda el archivo de Power BI Desktop.
 

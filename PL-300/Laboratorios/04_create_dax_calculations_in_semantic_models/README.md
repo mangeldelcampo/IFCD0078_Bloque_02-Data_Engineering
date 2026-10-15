@@ -329,12 +329,15 @@ En esta tarea, marcarás la tabla `Date` como una tabla de fechas oficial.
 3. En la cinta contextual de **Herramientas de Tablas**, desde el grupo **Calendarios**, selecciona **Marcar como Tabla de Fechas**.
 
 ![lab4_img21](./imagenes/lab4_img21.png)
-![lab4_img22](./imagenes/lab4_img22.png)
 
-![lab4_img23](./imagenes/lab4_img23.png)
 
 4. En la ventana **Marcar como tabla de fechas**, activa la propiedad **Marcar como tabla de fechas**.
+
+![lab4_img22](./imagenes/lab4_img22.png)
+
 5. En la lista desplegable **Elegir una columna de fecha**, selecciona **Date**.
+
+![lab4_img23](./imagenes/lab4_img23.png)
 
 ![lab4_img24](./imagenes/lab4_img24.png)
 

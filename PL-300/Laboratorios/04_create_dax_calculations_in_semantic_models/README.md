@@ -245,17 +245,21 @@ Month = FORMAT('Date'[Date], "yyyy MMM")
 6. Para crear una nueva página de informe, selecciona el icono de más (`+`) junto a la Página 1.
 ![lab4_img10](./imagenes/lab4_img10.png)
 
-![lab4_img10](./imagenes/lab4_img11.png)
 
 7. Para añadir una matriz visual a la nueva página de informe, en el panel de **Visualizaciones**, selecciona el tipo de matriz visual.
 
-![lab4_img11](./imagenes/lab4_img12.png)
+![lab4_img11](./imagenes/lab4_img11.png)
+
 
 8. En el panel de datos, desde dentro de la tabla `Date`, arrastra el campo `Year` al área de **Filas**.
 
-![lab4_img12](./imagenes/lab4_img13.png)
+![lab4_img12](./imagenes/lab4_img12.png)
+
 
 9. Arrastra el campo `Month` hacia el área de las **Filas**, justo debajo del campo `Year`.
+
+![lab4_img13](./imagenes/lab4_img13.png)
+
 10. En la parte superior derecha del visual de la matriz, selecciona el icono de doble flecha bifurcada (que expandirá todos los años un nivel hacia abajo).
 
 ![lab4_img13](./imagenes/lab4_img14.png)

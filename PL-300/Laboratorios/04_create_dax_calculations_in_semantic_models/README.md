@@ -258,15 +258,16 @@ Month = FORMAT('Date'[Date], "yyyy MMM")
 
 9. Arrastra el campo `Month` hacia el área de las **Filas**, justo debajo del campo `Year`.
 
-![lab4_img13](./imagenes/lab4_img13.png)
 
 10. En la parte superior derecha del visual de la matriz, selecciona el icono de doble flecha bifurcada (que expandirá todos los años un nivel hacia abajo).
 
-![lab4_img13](./imagenes/lab4_img14.png)
+![lab4_img13](./imagenes/lab4_img13.png)
+
 
 11. Fíjate que los años se expanden a meses, y que los meses están ordenados alfabéticamente en lugar de cronológicamente.
 
-![lab4_img14](./imagenes/lab4_img15.png)
+![lab4_img14](./imagenes/lab4_img14.png)
+
 
 12. Para personalizar el orden de ordenación del campo `Month`, cambia a la **vista de tabla**.
 13. Añade la columna `MonthKey` a la tabla `Date`:
@@ -275,11 +276,12 @@ Month = FORMAT('Date'[Date], "yyyy MMM")
 MonthKey = (YEAR('Date'[Date]) * 100) + MONTH('Date'[Date])
 ```
 
-![lab4_img15](./imagenes/lab4_img16.png)
-
 14. En la vista de tabla, comprueba que la nueva columna contiene valores numéricos (por ejemplo, `201707` para julio de 2017).
+![lab4_img15](./imagenes/lab4_img15.png)
 
-![lab4_img16](./imagenes/lab4_img17.png)
+![lab4_img16](./imagenes/lab4_img16.png)
+
+![lab4_img17](./imagenes/lab4_img17.png)
 
 15. Vuelve a la **vista de informe**.
 16. En el panel de datos, selecciona el campo `Month`.

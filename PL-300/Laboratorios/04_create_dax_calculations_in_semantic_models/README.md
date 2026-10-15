@@ -1,10 +1,10 @@
-### Lab 04: Create DAX Calculations in Power BI (PL-300)
+# Lab 04: Create DAX Calculations in Power BI (PL-300)
 
 Este repositorio contiene la guía de laboratorio, arquitectura de datos y plantilla de evidencias para el **Lab 04: Create DAX Calculations in Power BI** del curso **PL-300: Microsoft Power BI Data Analyst**.
 
 ---
 
-#### 📑 Tabla de Contenidos
+## 📑 Tabla de Contenidos
 * [🎯 Objetivo y Lógica de Negocio](#-objetivo-y-lógica-de-negocio)
     * [Bloque 1: Tablas Calculadas y Relaciones Directas](#bloque-1-tablas-calculadas-y-relaciones-directas)
     * [Bloque 2: Columnas Calculadas, Ordenación Personalizada y Jerarquía Fiscal](#bloque-2-columnas-calculadas-ordenación-personalizada-y-jerarquía-fiscal)
@@ -20,30 +20,30 @@ Este repositorio contiene la guía de laboratorio, arquitectura de datos y plant
 
 ---
 
-#### 🎯 Objetivo y Lógica de Negocio
+## 🎯 Objetivo y Lógica de Negocio
 El propósito de este laboratorio consiste en enriquecer el modelo semántico dimensional mediante el lenguaje **DAX (Data Analysis Expressions)**. Se crean tablas calculadas, columnas calculadas para soportar la inteligencia de tiempo fiscal, y medidas explícitas complejas que controlan la agregación en totales y organizan el catálogo métrico corporativo.
 
-##### Bloque 1: Tablas Calculadas y Relaciones Directas
+### Bloque 1: Tablas Calculadas y Relaciones Directas
 * **Objetivo:** Proporcionar perspectivas de análisis independientes para los vendedores (ventas directas vs. rendimiento territorial) y construir una dimensión de calendario en memoria.
 * **Lógica de negocio:**
     * **Tabla calculada `Salesperson`:** Duplicación mediante DAX de `Salesperson (Performance)` para conectarla directamente con `Sales` mediante relación $1:*$, permitiendo evaluar ventas por comercial individual.
     * **Tabla calculada `Date`:** Generación automática del calendario continuo con `CALENDARAUTO(6)`, ajustando el cierre del año fiscal a junio para alinearse con el ejercicio financiero de Adventure Works.
 
-##### Bloque 2: Columnas Calculadas, Ordenación Personalizada y Jerarquía Fiscal
+### Bloque 2: Columnas Calculadas, Ordenación Personalizada y Jerarquía Fiscal
 * **Objetivo:** Habilitar el filtrado temporal por año fiscal, trimestre y mes, solucionando problemas de ordenación alfabética en visualizaciones.
 * **Lógica de negocio:**
     * **Cálculo de año fiscal (`Year`):** Expresión DAX que suma 1 al año natural para fechas posteriores a junio (`FY2018`, `FY2019`, etc.).
     * **Clave de ordenación (`MonthKey`):** Generación de la columna numérica `(YEAR * 100) + MONTH` y aplicación de la propiedad **Ordenar por columna** (*Sort by Column*) sobre el campo `Month` para garantizar el orden cronológico fiscal.
     * **Jerarquía `Fiscal` y Marcado como Tabla de Fechas:** Estructuración de la jerarquía `Year` $\rightarrow$ `Quarter` $\rightarrow$ `Month` y declaración oficial de *Mark as Date Table* para asegurar el correcto funcionamiento de las funciones Time Intelligence.
 
-##### Bloque 3: Capa de Medidas Simples y Ergonomía del Modelo
+### Bloque 3: Capa de Medidas Simples y Ergonomía del Modelo
 * **Objetivo:** Prevenir agregaciones implícitas incorrectas en informes (como la suma de precios unitarios) y centralizar los cálculos clave.
 * **Lógica de negocio:**
     * **Ocultación de columnas numéricas:** Ocultación de `Unit Price` para forzar a los autores de informes a utilizar medidas DAX explícitas.
     * **Medidas explícitas de precios y recuentos:** Creación de `Avg Price`, `Median Price`, `Min Price`, `Max Price`, `Orders` (`DISTINCTCOUNT`) y `Order Lines` (`COUNTROWS`).
     * **Organización en carpetas de presentación:** Agrupación visual en carpetas `Pricing` y `Counts` con formato estandarizado (2 decimales y separador de miles).
 
-##### Bloque 4: Medidas Avanzadas y Control de Contexto de Evaluación
+### Bloque 4: Medidas Avanzadas y Control de Contexto de Evaluación
 * **Objetivo:** Evitar la suma inconsistente de objetivos de ventas en filas de total general y calcular métricas de desviación de cuotas.
 * **Lógica de negocio:**
     * **Control de total con `HASONEVALUE`:** Evaluación del contexto mediante `HASONEVALUE('Salesperson (Performance)'[Salesperson])` para devolver el objetivo de cuota sólo cuando se filtra un único comercial, devolviendo `BLANK` en las filas de total.
@@ -52,8 +52,8 @@ El propósito de este laboratorio consiste en enriquecer el modelo semántico di
 
 ---
 
-#### 📁 Estructura del Repositorio Recomendada
-```text
+## 📁 Estructura del Repositorio Recomendada
+``` ext
 .
 ├── README.md                      # Documentación del laboratorio
 ├── pbix/
@@ -67,7 +67,7 @@ El propósito de este laboratorio consiste en enriquecer el modelo semántico di
 
 ---
 
-#### 🛠️ Tecnologías y Entorno
+## 🛠️ Tecnologías y Entorno
 * **Herramienta:** Microsoft Power BI Desktop
 * **Lenguaje:** DAX (Data Analysis Expressions)
 * **Funciones clave:** `CALENDARAUTO`, `YEAR`, `MONTH`, `AVERAGE`, `MEDIAN`, `MIN`, `MAX`, `DISTINCTCOUNT`, `COUNTROWS`, `HASONEVALUE`, `IF`, `DIVIDE`
@@ -75,7 +75,7 @@ El propósito de este laboratorio consiste en enriquecer el modelo semántico di
 
 ---
 
-#### 🛠️ Realización del Laboratorio
+## 🛠️ Realización del Laboratorio
 
 > 📑 **Índice Interno de Ejecución del Laboratorio (Bloques y Secciones)**
 >
@@ -96,7 +96,7 @@ El propósito de este laboratorio consiste en enriquecer el modelo semántico di
 
 ---
 
-#### **Historia del laboratorio**
+## **Historia del laboratorio**
 
 En este laboratorio, crearás tablas calculadas, columnas calculadas y medidas sencillas utilizando Expresiones de Análisis de Datos (DAX).
 
@@ -107,7 +107,7 @@ En este laboratorio, aprendes cómo:
 
 **Este laboratorio debería durar aproximadamente 45 minutos.**
 
-#### **Empieza**
+## **Empieza**
 
 Para completar este ejercicio, descarga los recursos del laboratorio desde el repositorio oficial de Microsoft Learning para PL-300.
 https://github.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/raw/Main/Allfiles/Labs/04-create-dax-calculations\04-dax-calculations.zip
@@ -120,7 +120,7 @@ Abre el archivo **04-Starter-Sales Analysis.pbix**.
 > Puede que veas un diálogo de inicio de sesión mientras carga el archivo. Selecciona **Cancelar** para cerrar el cuadro de inicio de sesión. Cierra cualquier otra ventana informativa. Selecciona **Solicitar más tarde**, si se le pide aplicar cambios.
 ---
 
-### Bloque 1: Tablas Calculadas y Relaciones Directas
+## Bloque 1: Tablas Calculadas y Relaciones Directas
 
 **Secciones del laboratorio incluidas:**
 * Crea la tabla calculada para Salesperson (Pasos 1 al 10).
@@ -132,7 +132,7 @@ Abre el archivo **04-Starter-Sales Analysis.pbix**.
 * Ocultación de claves técnicas (`EmployeeID`, `EmployeeKey`, `UPN`) y configuración de descripciones de tablas en el panel de propiedades.
 * Generación de la tabla de calendario calculada `Date = CALENDARAUTO(6)` para abarcar años fiscales completos finalizados en junio.
 
-#### Crea la tabla calculada para Salesperson
+## Crea la tabla calculada para Salesperson
 
 En esta tarea, crearás la tabla calculada `Salesperson` (que tendrá una relación directa con la tabla `Sales`).
 
@@ -169,7 +169,7 @@ Salesperson = 'Salesperson (Performance)'
 
 *El modelo de datos ahora ofrece dos alternativas al analizar a los vendedores. La tabla `Salesperson` permite analizar las ventas realizadas por un comercial, mientras que la tabla `Salesperson (Performance)` permite analizar las ventas realizadas en la(s) región(es) de ventas asignadas al comercial.*
 
-#### Crea la tabla de fechas
+### Crea la tabla de fechas
 
 En esta tarea, crearás la tabla `Date`.
 
@@ -196,7 +196,7 @@ Date = CALENDARAUTO(6)
 ![lab4_img07](./imagenes/lab4_img07.png)
 ---
 
-### Bloque 2: Columnas Calculadas, Ordenación Personalizada y Jerarquía Fiscal
+## Bloque 2: Columnas Calculadas, Ordenación Personalizada y Jerarquía Fiscal
 
 **Secciones del laboratorio incluidas:**
 * Crear columnas calculadas (Pasos 1 al 18).
@@ -210,7 +210,7 @@ Date = CALENDARAUTO(6)
 * Marcado formal de la tabla como **Tabla de fechas** (*Mark as Date Table*) sobre `Date [Date]`.
 * Vinculación de `Date [Date]` hacia `Sales [OrderDate]` y `Targets [TargetMonth]`, ocultando las claves originales.
 
-#### Crear columnas calculadas
+### Crear columnas calculadas
 
 En esta tarea, añadirás más columnas para permitir el filtrado y agrupar por diferentes periodos de tiempo. También crearás una columna calculada para controlar el orden de ordenación de otras columnas.
 
@@ -460,7 +460,7 @@ Order Lines = COUNTROWS(Sales)
 
 ---
 
-### Bloque 4: Medidas Avanzadas y Control de Contexto de Evaluación
+## Bloque 4: Medidas Avanzadas y Control de Contexto de Evaluación
 
 **Secciones del laboratorio incluidas:**
 * Crear medidas adicionales (Pasos 1 al 15).
@@ -552,13 +552,13 @@ Variance Margin = DIVIDE([Variance], [Target])
 
 ---
 
-#### 📸 Arquitectura Final y Evidencias
+## 📸 Arquitectura Final y Evidencias
 * **Estado Inicial:** Modelo sin tablas calculadas de calendario ni medidas DAX explícitas (`./imagenes/lab04_start_dax_calc.jpg`).
 * **Estado Final:** Modelo enriquecido con tabla de calendario fiscal, jerarquía `Fiscal`, medidas organizadas en carpetas de presentación (`Pricing`, `Counts`) y métricas de cuotas con control `HASONEVALUE` (`./imagenes/lab04_final_dax_calc.jpg`).
 
 ---
 
-#### 🧠 Decisiones Técnicas Destacadas (Key Takeaways)
+## 🧠 Decisiones Técnicas Destacadas (Key Takeaways)
 1. **Materialización de Tablas Calculadas:** La función `CALENDARAUTO(6)` genera y almacena datos en memoria dentro del modelo. Es ideal cuando el origen de datos carece de una dimensión de tiempo corporativa.
 2. **Propiedad Ordenar por Columna (*Sort by Column*):** Los campos de texto como nombres de meses se ordenan alfabéticamente por defecto. Asignar la clave numérica `MonthKey` garantiza el orden cronológico fiscal en todos los informes.
 3. **Control del Contexto en Totales (`HASONEVALUE`):** Previene la suma inconsistente de cuotas de ventas no aditivas devolviendo `BLANK` en agregaciones generales donde no hay un único vendedor seleccionado.
@@ -583,7 +583,7 @@ Variance Margin = DIVIDE([Variance], [Target])
 #### 🧭 Navegación entre Laboratorios
 | ⬅️ Laboratorio Anterior | 🏠 Índice General | ➡️ Siguiente Laboratorio |
 | :--- | :---: | :--- |
-| [Lab 03: Configure a Semantic Model in Power BI](../03_configure_a_semantic_model_in_power_bi/README.md) | [📚 Índice General PL-300](../../README.md) | [Lab 05: Modify DAX Filter Context in Power BI](../05_modify_dax_filter_context/README.md) |
+| [Lab 03: Configure a Semantic Model in Power BI](../03_configure_a_semantic_model_in_power_bi/README.md) | [📚 Índice General PL-300](../readmeLab_PL-300.md) | [Lab 05: Modify DAX Filter Context in Power BI](../05_modify_dax_filter_context/README.md) |
 
 ---
 *Documentación estructurada a partir del archivo oficial para el repositorio de evidencias PL-300.*

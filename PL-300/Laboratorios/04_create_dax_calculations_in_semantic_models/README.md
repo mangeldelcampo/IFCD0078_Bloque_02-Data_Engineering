@@ -216,7 +216,7 @@ En esta tarea, añadirás más columnas para permitir el filtrado y agrupar por 
 
 1. En la cinta contextual de **Herramientas de Tabla**, desde dentro del grupo de **Cálculos**, selecciona **Nueva columna**.
 
-![lab4_img07](./imagenes/lab4_img07.png)
+![lab4_img07](./imagenes/lab4_img08.png)
 
 2. En la barra de fórmulas, escribe la siguiente fórmula DAX y pulsa **Enter**:
 
@@ -224,7 +224,7 @@ En esta tarea, añadirás más columnas para permitir el filtrado y agrupar por 
 Year = "FY" & YEAR('Date'[Date]) + IF(MONTH('Date'[Date]) > 6, 1)
 ```
 
-![lab4_img08](./imagenes/lab4_img08.png)
+![lab4_img08](./imagenes/lab4_img09.png)
 
 *La fórmula utiliza el valor anual de la fecha pero añade uno al valor del año cuando el mes es posterior a junio (inicio del año fiscal de Adventure Works).*
 
@@ -240,29 +240,29 @@ Month = FORMAT('Date'[Date], "yyyy MMM")
 
 4. Verifica que se hayan añadido las nuevas columnas en la vista de tabla.
 
-![lab4_img09](./imagenes/lab4_img09.png)
+![lab4_img09](./imagenes/lab4_img010.png)
 
 5. Para validar los cálculos, cambia a la **vista de informe**.
 6. Para crear una nueva página de informe, selecciona el icono de más (`+`) junto a la Página 1.
 
-![lab4_img10](./imagenes/lab4_img10.png)
+![lab4_img10](./imagenes/lab4_img11.png)
 
 7. Para añadir una matriz visual a la nueva página de informe, en el panel de **Visualizaciones**, selecciona el tipo de matriz visual.
 
-![lab4_img11](./imagenes/lab4_img11.png)
+![lab4_img11](./imagenes/lab4_img12.png)
 
 8. En el panel de datos, desde dentro de la tabla `Date`, arrastra el campo `Year` al área de **Filas**.
 
-![lab4_img12](./imagenes/lab4_img12.png)
+![lab4_img12](./imagenes/lab4_img13.png)
 
 9. Arrastra el campo `Month` hacia el área de las **Filas**, justo debajo del campo `Year`.
 10. En la parte superior derecha del visual de la matriz, selecciona el icono de doble flecha bifurcada (que expandirá todos los años un nivel hacia abajo).
 
-![lab4_img13](./imagenes/lab4_img13.png)
+![lab4_img13](./imagenes/lab4_img14.png)
 
 11. Fíjate que los años se expanden a meses, y que los meses están ordenados alfabéticamente en lugar de cronológicamente.
 
-![lab4_img14](./imagenes/lab4_img14.png)
+![lab4_img14](./imagenes/lab4_img15.png)
 
 12. Para personalizar el orden de ordenación del campo `Month`, cambia a la **vista de tabla**.
 13. Añade la columna `MonthKey` a la tabla `Date`:
@@ -271,21 +271,21 @@ Month = FORMAT('Date'[Date], "yyyy MMM")
 MonthKey = (YEAR('Date'[Date]) * 100) + MONTH('Date'[Date])
 ```
 
-![lab4_img15](./imagenes/lab4_img15.png)
+![lab4_img15](./imagenes/lab4_img16.png)
 
 14. En la vista de tabla, comprueba que la nueva columna contiene valores numéricos (por ejemplo, `201707` para julio de 2017).
 
-![lab4_img16](./imagenes/lab4_img16.png)
+![lab4_img16](./imagenes/lab4_img17.png)
 
 15. Vuelve a la **vista de informe**.
 16. En el panel de datos, selecciona el campo `Month`.
 17. En la cinta contextual de **Herramientas de Columna**, desde dentro del grupo **Ordenar**, selecciona **Ordenar por columna** y luego selecciona **MonthKey**.
 
-![lab4_img17](./imagenes/lab4_img17.png)
+![lab4_img17](./imagenes/lab4_img18.png)
 
 18. En la matriz visual, fíjate que los meses ahora están ordenados cronológicamente.
 
-![lab4_img18](./imagenes/lab4_img18.png)
+![lab4_img18](./imagenes/lab4_img19.png)
 
 #### Completar la tabla de fechas
 
@@ -295,15 +295,15 @@ En esta tarea, completarás el diseño de la tabla `Date` ocultando una columna 
 2. En la tabla `Date`, oculta la columna `MonthKey` (establece **Está oculto** en **Sí**).
 3. En el panel de Datos, selecciona la tabla `Date`, haz clic derecho en la columna `Year` y selecciona **Crear jerarquía**.
 
-![lab4_img19](./imagenes/lab4_img19.png)
+![lab4_img19](./imagenes/lab4_img20.png)
 
 4. En el panel de **Propiedades**, en el cuadro de **Nombre**, sustituye el valor por **`Fiscal`**.
 
-![lab4_img20](./imagenes/lab4_img20.png)
+![lab4_img20](./imagenes/lab4_img21.png)
 
 5. Añade dos niveles a la jerarquía: en la lista desplegable de la jerarquía, selecciona `Quarter` y luego `Month`. Después, haz clic en **Aplicar cambios de nivel**.
 
-![lab4_img21](./imagenes/lab4_img21.png)
+![lab4_img21](./imagenes/lab4_img22.png)
 
 6. Crea las siguientes dos relaciones de modelo:
     * `Date | Date` a `Sales | OrderDate`
@@ -320,12 +320,12 @@ En esta tarea, marcarás la tabla `Date` como una tabla de fechas oficial.
 2. En el panel de Datos, selecciona la tabla `Date` (no un campo individual).
 3. En la cinta contextual de **Herramientas de Tablas**, desde el grupo **Calendarios**, selecciona **Marcar como Tabla de Fechas**.
 
-![lab4_img22](./imagenes/lab4_img22.png)
+![lab4_img22](./imagenes/lab4_img23.png)
 
 4. En la ventana **Marcar como tabla de fechas**, activa la propiedad **Marcar como tabla de fechas**.
 5. En la lista desplegable **Elegir una columna de fecha**, selecciona **Date**.
 
-![lab4_img23](./imagenes/lab4_img23.png)
+![lab4_img23](./imagenes/lab4_img24.png)
 
 6. Selecciona **Guardar**.
 7. Guarda el archivo de Power BI Desktop.
@@ -350,15 +350,15 @@ En esta tarea, crearás medidas sencillas. Las medidas simples agregan valores e
 
 1. En la vista de informe, en la Página 2, desde el panel de datos, arrastra el campo `Sales | Unit Price` a la matriz visual.
 
-![lab4_img24](./imagenes/lab4_img24.png)
+![lab4_img24](./imagenes/lab4_img25.png)
 
 2. En el panel de campos visuales (ubicado en el panel de Visualizaciones), en el área de **Valores**, observa que el campo `Unit Price` está configurado como **Promedio del Precio Unitario**.
 
-![lab4_img25](./imagenes/lab4_img25.png)
+![lab4_img25](./imagenes/lab4_img26.png)
 
 3. Selecciona la flecha hacia abajo para **Promedio de Precio Unitario** y observa las opciones disponibles en el menú.
 
-![lab4_img26](./imagenes/lab4_img26.png)
+![lab4_img26](./imagenes/lab4_img27.png)
 
 *Las columnas numéricas visibles permiten a los autores de informes decidir la agregación en tiempo de diseño. Para evitar cálculos inconsistentes, el enfoque recomendado es ocultar estas columnas y exponer medidas explícitas.*
 
@@ -369,7 +369,7 @@ En esta tarea, crearás medidas sencillas. Las medidas simples agregan valores e
 Avg Price = AVERAGE(Sales[Unit Price])
 ```
 
-![lab4_img27](./imagenes/lab4_img27.png)
+![lab4_img27](./imagenes/lab4_img28.png)
 
 6. Añade la medida `Avg Price` a la matriz visual y observa que produce el mismo resultado que la columna `Unit Price`.
 7. En el área de Valores, abre el menú contextual del campo `Avg Price` y observa que no es posible cambiar la técnica de agregación de una medida.
@@ -400,21 +400,21 @@ Order Lines = COUNTROWS(Sales)
     * Establece el formato con **2 decimales**.
     * Asigna la **Carpeta de presentación**: `Pricing`.
 
-![lab4_img28](./imagenes/lab4_img28.png)
+![lab4_img28](./imagenes/lab4_img29.png)
 
 11. Oculta la columna `Unit Price`.
 12. Selecciona las medidas `Order Lines` y `Orders` y configura:
     * Activa el **Separador de millares**.
     * Asigna la **Carpeta de presentación**: `Counts`.
 
-![lab4_img29](./imagenes/lab4_img29.png)
+![lab4_img29](./imagenes/lab4_img30.png)
 
 13. En la vista de informe, en el área de valores del gráfico matricial, elimina `Average of Unit Price`.
 14. Aumenta el tamaño de la matriz visual.
 15. Añade las cinco medidas a la matriz visual (`Median Price`, `Min Price`, `Max Price`, `Orders`, `Order Lines`).
 16. Verifica que los resultados estén formateados correctamente.
 
-![lab4_img30](./imagenes/lab4_img30.png)
+![lab4_img30](./imagenes/lab4_img31.png)
 
 ---
 
@@ -437,7 +437,7 @@ En esta tarea, crearás más medidas que usan fórmulas más complejas.
 
 1. En la vista de informe, selecciona la Página 1 y revisa la imagen de la tabla de los vendedores (a la derecha), observando el total incorrecto de la columna **Suma de objetivos** ($676,210,000).
 
-![lab4_img31](./imagenes/lab4_img31.png)
+![lab4_img31](./imagenes/lab4_img32.png)
 
 2. Selecciona la tabla visual y elimina **Suma de Objetivos**.
 3. Renombra la columna `Targets | Target` como `TargetAmount`.
@@ -458,7 +458,7 @@ IF(
 5. Formatea la medida `Target` con **0 decimales**.
 6. Oculta la columna `TargetAmount`.
 
-![lab4_img32](./imagenes/lab4_img32.png)
+![lab4_img34](./imagenes/lab4_img34.png)
 
 *Al contener sólo medidas visibles, la tabla `Targets` se mueve automáticamente a la parte superior de la lista en el panel de datos.*
 

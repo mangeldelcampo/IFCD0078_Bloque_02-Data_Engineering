@@ -1,10 +1,10 @@
-### Lab 05: Modify DAX Filter Context in Power BI (PL-300)
+## Lab 05: Modify DAX Filter Context in Power BI (PL-300)
 
 Este repositorio contiene la guía de laboratorio, arquitectura de datos y plantilla de evidencias para el **Lab 05: Modify DAX Filter Context in Power BI** del curso **PL-300: Microsoft Power BI Data Analyst**.
 
 ---
 
-#### 📑 Tabla de Contenidos
+### 📑 Tabla de Contenidos
 * [🎯 Objetivo y Lógica de Negocio](#-objetivo-y-lógica-de-negocio)
     * [Bloque 1: Configuración de la Matriz Visual de Validación](#bloque-1-configuración-de-la-matriz-visual-de-validación)
     * [Bloque 2: Modificación del Contexto de Filtro con CALCULATE y REMOVEFILTERS](#bloque-2-modificación-del-contexto-de-filtro-con-calculate-y-removefilters)
@@ -18,10 +18,10 @@ Este repositorio contiene la guía de laboratorio, arquitectura de datos y plant
 
 ---
 
-#### 🎯 Objetivo y Lógica de Negocio
+### 🎯 Objetivo y Lógica de Negocio
 El propósito de este laboratorio consiste en dominar la manipulación del **contexto de filtro** (*filter context*) en expresiones **DAX** utilizando las funciones `CALCULATE`, `REMOVEFILTERS` e `ISINSCOPE`. Se construyen métricas relativas escalonadas (porcentaje sobre total general, porcentaje sobre total país y porcentaje sobre total grupo) para permitir la navegación analítica jerárquica en los informes corporativos.
 
-##### Bloque 1: Configuración de la Matriz Visual de Validación
+### Bloque 1: Configuración de la Matriz Visual de Validación
 * **Secciones del laboratorio incluidas:**
     * **Crear un objeto visual de matriz** (Pasos 1 al 10).
 * **Puntos técnicos a ejecutar:**
@@ -31,7 +31,7 @@ El propósito de este laboratorio consiste en dominar la manipulación del **con
     * Configuración del formato de la matriz a diseño **Tabular** (*Tabular layout*) para mostrar las columnas independientes de `Group`, `Country` y `Region`.
 * **Objetivo y Lógica de negocio:** Establecer un lienzo de pruebas estructurado y jerárquico que permita validar el comportamiento dinámico de los subtotales y totales generales al aplicar fórmulas DAX con alteración del contexto de filtro.
 
-##### Bloque 2: Modificación del Contexto de Filtro con CALCULATE y REMOVEFILTERS
+### Bloque 2: Modificación del Contexto de Filtro con CALCULATE y REMOVEFILTERS
 * **Secciones del laboratorio incluidas:**
     * **Manipular el contexto de filtro** (Pasos 1 al 19).
     * **Laboratorio completo** (Pasos 1 al 6).
@@ -47,7 +47,7 @@ El propósito de este laboratorio consiste en dominar la manipulación del **con
 
 ---
 
-#### 📁 Estructura del Repositorio Recomendada
+### 📁 Estructura del Repositorio Recomendada
 ```text
 .
 ├── README.md                      # Documentación del laboratorio
@@ -62,7 +62,7 @@ El propósito de este laboratorio consiste en dominar la manipulación del **con
 
 ---
 
-#### 🛠️ Tecnologías y Entorno
+### 🛠️ Tecnologías y Entorno
 * **Herramienta:** Microsoft Power BI Desktop
 * **Lenguaje:** DAX (Data Analysis Expressions)
 * **Funciones clave:** `CALCULATE`, `REMOVEFILTERS`, `DIVIDE`, `IF`, `ISINSCOPE`
@@ -70,7 +70,7 @@ El propósito de este laboratorio consiste en dominar la manipulación del **con
 
 ---
 
-#### 🛠️ Realización del Laboratorio
+### 🛠️ Realización del Laboratorio
 
 > 📑 **Índice Interno de Ejecución del Laboratorio (Bloques y Secciones)**
 >
@@ -84,7 +84,7 @@ El propósito de este laboratorio consiste en dominar la manipulación del **con
 
 ---
 
-#### **Historia del laboratorio**
+### **Historia del laboratorio**
 
 En este laboratorio, crearás medidas con expresiones DAX que implican la manipulación del contexto de filtro.
 
@@ -93,7 +93,7 @@ En este laboratorio, aprendes cómo:
 
 **Este laboratorio debería durar aproximadamente 30 minutos.**
 
-#### **Empieza**
+### **Empieza**
 
 Para completar este ejercicio, descarga los recursos del laboratorio desde el repositorio oficial de Microsoft Learning para PL-300.
 

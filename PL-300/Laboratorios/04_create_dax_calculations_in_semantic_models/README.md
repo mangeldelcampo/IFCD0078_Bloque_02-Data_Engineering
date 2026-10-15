@@ -394,6 +394,8 @@ Avg Price = AVERAGE(Sales[Unit Price])
 
 ![lab4_img25](./imagenes/lab4_img25.png)
 
+>No es posible modificar el comportamiento de agregación de una medida
+
 8. Crea las siguientes cinco medidas adicionales para la tabla `Sales`:
 
 ```dax
@@ -415,6 +417,10 @@ Orders = DISTINCTCOUNT(Sales[SalesOrderNumber])
 ```dax
 Order Lines = COUNTROWS(Sales)
 ```
+
+>La función **DISTINCTCOUNT** utilizada en la medida solo cuenta los **pedidos(Orders)** una vez (ignorando duplicados). La función **COUNTROWS** utilizada en la medida **Order Lines** opera sobre una tabla.
+
+>En este caso, el número de órdenes se calcula contando los valores de columna distintos**SalesOrderNumber**, mientras que el número de líneas de orden es simplemente el número de filas de la tabla (cada fila es una línea de un orden).
 
 9. Cambia a la **vista de modelo** y selecciona con `Ctrl` las cuatro medidas de precio: `Avg Price`, `Max Price`, `Median Price` y `Min Price`.
 10. Para la selección múltiple de medidas:

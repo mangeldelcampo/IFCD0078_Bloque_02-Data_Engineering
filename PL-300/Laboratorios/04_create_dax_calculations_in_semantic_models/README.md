@@ -495,7 +495,7 @@ IF(
 ![lab4_img32](./imagenes/lab4_img32.png)
 ![lab4_img33](./imagenes/lab4_img33.png)
 
-*La función `HASONEVALUE` evalúa si hay un único vendedor filtrado en el contexto. Si es verdadero, devuelve la suma de los objetivos del vendedor; si es falso (como en la fila de total), devuelve `BLANK`.*
+*La función `HASONEVALUE` evalúa si hay un único vendedor `Salesperson` filtrado en el contexto. Si es verdadero, devuelve la suma de los objetivos del vendedor; si es falso (como en la fila de total), devuelve `BLANK`.*
 
 5. Formatea la medida `Target` con **0 decimales**.
 >[!TIP]

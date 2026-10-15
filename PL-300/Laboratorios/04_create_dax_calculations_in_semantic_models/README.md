@@ -378,9 +378,9 @@ En esta tarea, crearás medidas sencillas. Las medidas simples agregan valores e
 
 3. Selecciona la flecha hacia abajo para **Promedio de Precio Unitario** y observa las opciones disponibles en el menú.
 
-![lab4_img27](./imagenes/lab4_img27.png)
+>*Las columnas numéricas visibles permiten a los autores del informe en el momento del diseño decidir cómo se resumirán (o no) los valores de columna. Sin embargo, puede resultar en una notificación inapropiada.*
 
-*Las columnas numéricas visibles permiten a los autores de informes decidir la agregación en tiempo de diseño. Para evitar cálculos inconsistentes, el enfoque recomendado es ocultar estas columnas y exponer medidas explícitas.*
+>*Algunos modeladores de datos no prefieren dejar las cosas al azar, así que prefieren ocultar estas columnas y en su lugar exponer la lógica de agregación definida en medidas. Es el enfoque que ahora vas a adoptar en este laboratorio.*
 
 4. Para crear una medida, en el panel de Datos, haz clic derecho en la tabla `Sales` y selecciona **Nueva medida**.
 5. En la barra de fórmulas, añade la siguiente definición de medida:
@@ -388,8 +388,6 @@ En esta tarea, crearás medidas sencillas. Las medidas simples agregan valores e
 ```dax
 Avg Price = AVERAGE(Sales[Unit Price])
 ```
-
-![lab4_img28](./imagenes/lab4_img28.png)
 
 6. Añade la medida `Avg Price` a la matriz visual y observa que produce el mismo resultado que la columna `Unit Price`.
 7. En el área de Valores, abre el menú contextual del campo `Avg Price` y observa que no es posible cambiar la técnica de agregación de una medida.
@@ -424,6 +422,9 @@ Order Lines = COUNTROWS(Sales)
     * Asigna la **Carpeta de presentación**: `Pricing`.
 
 ![lab4_img26](./imagenes/lab4_img26.png)
+![lab4_img27](./imagenes/lab4_img27.png)
+![lab4_img28](./imagenes/lab4_img28.png)
+
 
 ![lab4_img29](./imagenes/lab4_img29.png)
 

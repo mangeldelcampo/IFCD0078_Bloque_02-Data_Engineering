@@ -193,6 +193,7 @@ Date = CALENDARAUTO(6)
 
 4. En la esquina inferior izquierda, en la barra de estado, observa las estadísticas de la tabla que confirman que se han generado 1,826 filas de datos, lo que representa datos de cinco años completos.
 
+![lab4_img07](./imagenes/lab4_img07.png)
 ---
 
 ### Bloque 2: Columnas Calculadas, Ordenación Personalizada y Jerarquía Fiscal

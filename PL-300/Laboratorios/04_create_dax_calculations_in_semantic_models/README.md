@@ -288,12 +288,9 @@ MonthKey = (YEAR('Date'[Date]) * 100) + MONTH('Date'[Date])
 
 ![lab4_img16](./imagenes/lab4_img16.png)
 
-![lab4_img17](./imagenes/lab4_img17.png)
-![lab4_img17](./imagenes/lab4_img18.png)
-
 18. En la matriz visual, fíjate que los meses ahora están ordenados cronológicamente.
 
-![lab4_img18](./imagenes/lab4_img19.png)
+![lab4_img17](./imagenes/lab4_img17.png)
 
 #### Completar la tabla de fechas
 
@@ -303,9 +300,14 @@ En esta tarea, completarás el diseño de la tabla `Date` ocultando una columna 
 2. En la tabla `Date`, oculta la columna `MonthKey` (establece **Está oculto** en **Sí**).
 3. En el panel de Datos, selecciona la tabla `Date`, haz clic derecho en la columna `Year` y selecciona **Crear jerarquía**.
 
-![lab4_img19](./imagenes/lab4_img20.png)
+![lab4_img17](./imagenes/lab4_img18.png)
 
 4. En el panel de **Propiedades**, en el cuadro de **Nombre**, sustituye el valor por **`Fiscal`**.
+
+
+![lab4_img19](./imagenes/lab4_img19.png)
+
+![lab4_img19](./imagenes/lab4_img20.png)
 
 ![lab4_img20](./imagenes/lab4_img21.png)
 

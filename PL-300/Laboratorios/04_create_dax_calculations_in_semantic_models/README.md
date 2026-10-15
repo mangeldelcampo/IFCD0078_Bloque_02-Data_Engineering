@@ -493,29 +493,33 @@ IF(
 ```
 ![lab4_img31](./imagenes/lab4_img31.png)
 ![lab4_img32](./imagenes/lab4_img32.png)
-![lab4_img33](./imagenes/lab4_img33.png)
 
-*La función `HASONEVALUE` evalúa si hay un único vendedor `Salesperson` filtrado en el contexto. Si es verdadero, devuelve la suma de los objetivos del vendedor; si es falso (como en la fila de total), devuelve `BLANK`.*
+
+>*La función `HASONEVALUE` evalúa si hay un único vendedor `Salesperson` filtrado en el contexto. Si es verdadero, devuelve la suma de los objetivos del vendedor; si es falso (como en la fila de total), devuelve `BLANK`.*
 
 5. Formatea la medida `Target` con **0 decimales**.
+
 >[!TIP]
 > Puedes usar la cinta contextual de **Herramientas de Medición.**
 
 6. Oculta la columna `TargetAmount`.
+
 >[!TIP] 
 > Puedes hacer clic derecho en la columna del panel de **datos** y luego seleccionar **Ocultar**.
 
-7. Añade la medida `Target` a la tabla visual.
+7. Fíjate que la tabla `Targets` aparece ahora en la parte superior de la lista.
+![lab4_img33](./imagenes/lab4_img33.png)
+
+Al contener sólo medidas visibles, la tabla `Targets` se mueve automáticamente a la parte superior de la lista en el panel de datos.
+
+8. Añade la medida `Target` a la tabla visual.
+
+9. Observa que el total de la columna **Target**(Objetivo) es ahora **`BLANK`**.
 
 ![lab4_img34](./imagenes/lab4_img34.png)
 
->[!NOTE] 
-> *Al contener sólo medidas visibles, la tabla `Targets` se mueve automáticamente a la parte superior de la lista en el panel de datos.*
-8. Observa que el total de la columna Objetivo es ahora **`BLANK`**.
+10. Crea las siguientes dos medidas para la tabla `Targets`:
 
-
-
-9. Crea las siguientes dos medidas para la tabla `Targets`:
 
 ```dax
 Variance = [Sales] - [Target]
@@ -525,16 +529,18 @@ Variance = [Sales] - [Target]
 Variance Margin = DIVIDE([Variance], [Target])
 ```
 
-10. Formatea `Variance` con **0 decimales**.
-11. Formatea `Variance Margin` como **Porcentaje** con **2 decimales**.
-12. Añade las medidas `Variance` y `Variance Margin` a la tabla visual.
-13. Redimensiona la tabla para visualizar correctamente todas las filas y columnas.
+11. Formatea `Variance` con **0 decimales**.
+12. Formatea `Variance Margin` como **Porcentaje** con **2 decimales**.
+13. Añade las medidas `Variance` y `Variance Margin` a la tabla visual.
+14. Redimensiona la tabla para visualizar correctamente todas las filas y columnas.
 
 ![lab4_img35](./imagenes/lab4_img35.png)
 
-14. Guarda el archivo de Power BI Desktop.
+>Aunque parece que no todos los comerciales(Salespeople) están cumpliendo el objetivo, recuerda que la imagen de la tabla aún no está filtrada por un periodo de tiempo específico. Producirás informes de rendimiento de ventas que se filtrarán por un periodo de tiempo seleccionado por el usuario en el **Diseño de un Informe en Power BI Desktop **Lab.
 
-#### Laboratorio completo
+15. Guarda el archivo de Power BI Desktop.
+
+### Laboratorio completo
 
 1. Ve al menú **Archivo** y selecciona **Guardar como**.
 2. Guarda el archivo como `04-Final-Sales Analysis.pbix`.

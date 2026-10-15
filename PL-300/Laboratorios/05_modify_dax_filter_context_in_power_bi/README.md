@@ -1,10 +1,10 @@
-## Lab 05: Modify DAX Filter Context in Power BI (PL-300)
+# Lab 05: Modify DAX Filter Context in Power BI (PL-300)
 
 Este repositorio contiene la guía de laboratorio, arquitectura de datos y plantilla de evidencias para el **Lab 05: Modify DAX Filter Context in Power BI** del curso **PL-300: Microsoft Power BI Data Analyst**.
 
 ---
 
-### 📑 Tabla de Contenidos
+## 📑 Tabla de Contenidos
 * [🎯 Objetivo y Lógica de Negocio](#-objetivo-y-lógica-de-negocio)
     * [Bloque 1: Configuración de la Matriz Visual de Validación](#bloque-1-configuración-de-la-matriz-visual-de-validación)
     * [Bloque 2: Modificación del Contexto de Filtro con CALCULATE y REMOVEFILTERS](#bloque-2-modificación-del-contexto-de-filtro-con-calculate-y-removefilters)

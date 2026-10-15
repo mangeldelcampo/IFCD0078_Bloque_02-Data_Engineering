@@ -280,14 +280,15 @@ MonthKey = (YEAR('Date'[Date]) * 100) + MONTH('Date'[Date])
 
 ![lab4_img15](./imagenes/lab4_img15.png)
 
-![lab4_img16](./imagenes/lab4_img16.png)
-
-![lab4_img17](./imagenes/lab4_img17.png)
 
 15. Vuelve a la **vista de informe**.
 16. En el panel de datos, selecciona el campo `Month`.
 17. En la cinta contextual de **Herramientas de Columna**, desde dentro del grupo **Ordenar**, selecciona **Ordenar por columna** y luego selecciona **MonthKey**.
 
+
+![lab4_img16](./imagenes/lab4_img16.png)
+
+![lab4_img17](./imagenes/lab4_img17.png)
 ![lab4_img17](./imagenes/lab4_img18.png)
 
 18. En la matriz visual, fíjate que los meses ahora están ordenados cronológicamente.

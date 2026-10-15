@@ -369,13 +369,12 @@ En esta tarea, crearás medidas sencillas. Las medidas simples agregan valores e
 
 ![lab4_img23](./imagenes/lab4_img23.png)
 
-![lab4_img24](./imagenes/lab4_img24.png)
 
-![lab4_img25](./imagenes/lab4_img25.png)
 
 2. En el panel de campos visuales (ubicado en el panel de Visualizaciones), en el área de **Valores**, observa que el campo `Unit Price` está configurado como **Promedio del Precio Unitario**.
 
-![lab4_img26](./imagenes/lab4_img26.png)
+![lab4_img24](./imagenes/lab4_img24.png)
+
 
 3. Selecciona la flecha hacia abajo para **Promedio de Precio Unitario** y observa las opciones disponibles en el menú.
 
@@ -394,6 +393,9 @@ Avg Price = AVERAGE(Sales[Unit Price])
 
 6. Añade la medida `Avg Price` a la matriz visual y observa que produce el mismo resultado que la columna `Unit Price`.
 7. En el área de Valores, abre el menú contextual del campo `Avg Price` y observa que no es posible cambiar la técnica de agregación de una medida.
+
+![lab4_img25](./imagenes/lab4_img25.png)
+
 8. Crea las siguientes cinco medidas adicionales para la tabla `Sales`:
 
 ```dax
@@ -420,6 +422,8 @@ Order Lines = COUNTROWS(Sales)
 10. Para la selección múltiple de medidas:
     * Establece el formato con **2 decimales**.
     * Asigna la **Carpeta de presentación**: `Pricing`.
+
+![lab4_img26](./imagenes/lab4_img26.png)
 
 ![lab4_img29](./imagenes/lab4_img29.png)
 

@@ -110,6 +110,7 @@ En este laboratorio, aprendes cómo:
 #### **Empieza**
 
 Para completar este ejercicio, descarga los recursos del laboratorio desde el repositorio oficial de Microsoft Learning para PL-300.
+https://github.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/raw/Main/Allfiles/Labs/04-create-dax-calculations\04-dax-calculations.zip
 
 Extrae los archivos en la carpeta de trabajo del laboratorio.
 

@@ -292,7 +292,7 @@ MonthKey = (YEAR('Date'[Date]) * 100) + MONTH('Date'[Date])
 
 ![lab4_img17](./imagenes/lab4_img17.png)
 
-#### Completar la tabla de fechas
+### Completar la tabla de fechas
 
 En esta tarea, completarás el diseño de la tabla `Date` ocultando una columna y creando una jerarquía. Luego crearás relaciones con las tablas `Sales` y `Targets`.
 

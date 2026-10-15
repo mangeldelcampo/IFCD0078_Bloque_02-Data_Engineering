@@ -452,6 +452,9 @@ En esta tarea, crearás más medidas que usan fórmulas más complejas.
 
 2. Selecciona la tabla visual y elimina **Suma de Objetivos**.
 3. Renombra la columna `Targets | Target` como `TargetAmount`.
+>[!TIP]
+>Hay varias formas de renombrar la columna en la vista de informe: en el panel de Datos, puedes hacer clic derecho en la columna y luego seleccionar Renombrar—o hacer doble clic en la columna, o pulsar F2.
+
 4. Crea la siguiente medida en la tabla `Targets`:
 
 ```dax

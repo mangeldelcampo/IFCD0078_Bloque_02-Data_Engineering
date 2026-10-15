@@ -475,8 +475,6 @@ En esta tarea, crearás más medidas que usan fórmulas más complejas.
 
 ![lab4_img30](./imagenes/lab4_img30.png)
 
-![lab4_img31](./imagenes/lab4_img31.png)
-![lab4_img32](./imagenes/lab4_img32.png)
 
 2. Selecciona la tabla visual y elimina **Suma de Objetivos**.
 3. Renombra la columna `Targets | Target` como `TargetAmount`.
@@ -493,7 +491,8 @@ IF(
     SUM(Targets[TargetAmount])
 )
 ```
-
+![lab4_img31](./imagenes/lab4_img31.png)
+![lab4_img32](./imagenes/lab4_img32.png)
 ![lab4_img33](./imagenes/lab4_img33.png)
 
 *La función `HASONEVALUE` evalúa si hay un único vendedor filtrado en el contexto. Si es verdadero, devuelve la suma de los objetivos del vendedor; si es falso (como en la fila de total), devuelve `BLANK`.*

@@ -339,14 +339,13 @@ En esta tarea, marcarás la tabla `Date` como una tabla de fechas oficial.
 
 ![lab4_img23](./imagenes/lab4_img23.png)
 
-![lab4_img24](./imagenes/lab4_img24.png)
 
 6. Selecciona **Guardar**.
 7. Guarda el archivo de Power BI Desktop.
 
 ---
 
-### Bloque 3: Capa de Medidas Simples y Ergonomía del Modelo
+## Bloque 3: Capa de Medidas Simples y Ergonomía del Modelo
 
 **Secciones del laboratorio incluidas:**
 * Crea medidas simples (Pasos 1 al 16).
@@ -358,11 +357,13 @@ En esta tarea, marcarás la tabla `Date` como una tabla de fechas oficial.
 * Organización de medidas en las carpetas de presentación `Pricing` y `Counts`.
 * Formato masivo (2 decimales y separadores de miles).
 
-#### Crea medidas simples
+### Crea medidas simples
 
 En esta tarea, crearás medidas sencillas. Las medidas simples agregan valores en una sola columna o cuentan filas de una tabla.
 
 1. En la vista de informe, en la Página 2, desde el panel de datos, arrastra el campo `Sales | Unit Price` a la matriz visual.
+
+![lab4_img24](./imagenes/lab4_img24.png)
 
 ![lab4_img25](./imagenes/lab4_img25.png)
 

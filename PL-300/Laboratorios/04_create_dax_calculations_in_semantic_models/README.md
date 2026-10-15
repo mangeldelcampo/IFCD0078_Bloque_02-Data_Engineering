@@ -277,6 +277,7 @@ MonthKey = (YEAR('Date'[Date]) * 100) + MONTH('Date'[Date])
 ```
 
 14. En la vista de tabla, comprueba que la nueva columna contiene valores numéricos (por ejemplo, `201707` para julio de 2017).
+
 ![lab4_img15](./imagenes/lab4_img15.png)
 
 ![lab4_img16](./imagenes/lab4_img16.png)

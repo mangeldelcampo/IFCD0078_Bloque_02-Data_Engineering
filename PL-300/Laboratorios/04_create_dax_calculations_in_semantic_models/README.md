@@ -320,7 +320,7 @@ En esta tarea, completarás el diseño de la tabla `Date` ocultando una columna 
     * `Sales | OrderDate`
     * `Targets | TargetMonth`
 
-#### Marca la tabla de fechas
+### Marca la tabla de fechas
 
 En esta tarea, marcarás la tabla `Date` como una tabla de fechas oficial.
 

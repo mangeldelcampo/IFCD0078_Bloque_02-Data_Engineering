@@ -307,13 +307,11 @@ En esta tarea, completarás el diseño de la tabla `Date` ocultando una columna 
 
 ![lab4_img19](./imagenes/lab4_img19.png)
 
-![lab4_img19](./imagenes/lab4_img20.png)
-
-![lab4_img20](./imagenes/lab4_img21.png)
 
 5. Añade dos niveles a la jerarquía: en la lista desplegable de la jerarquía, selecciona `Quarter` y luego `Month`. Después, haz clic en **Aplicar cambios de nivel**.
 
-![lab4_img21](./imagenes/lab4_img22.png)
+![lab4_img20](./imagenes/lab4_img20.png)
+
 
 6. Crea las siguientes dos relaciones de modelo:
     * `Date | Date` a `Sales | OrderDate`
@@ -330,12 +328,15 @@ En esta tarea, marcarás la tabla `Date` como una tabla de fechas oficial.
 2. En el panel de Datos, selecciona la tabla `Date` (no un campo individual).
 3. En la cinta contextual de **Herramientas de Tablas**, desde el grupo **Calendarios**, selecciona **Marcar como Tabla de Fechas**.
 
-![lab4_img22](./imagenes/lab4_img23.png)
+![lab4_img21](./imagenes/lab4_img21.png)
+![lab4_img22](./imagenes/lab4_img22.png)
+
+![lab4_img23](./imagenes/lab4_img23.png)
 
 4. En la ventana **Marcar como tabla de fechas**, activa la propiedad **Marcar como tabla de fechas**.
 5. En la lista desplegable **Elegir una columna de fecha**, selecciona **Date**.
 
-![lab4_img23](./imagenes/lab4_img24.png)
+![lab4_img24](./imagenes/lab4_img24.png)
 
 6. Selecciona **Guardar**.
 7. Guarda el archivo de Power BI Desktop.
@@ -360,15 +361,15 @@ En esta tarea, crearás medidas sencillas. Las medidas simples agregan valores e
 
 1. En la vista de informe, en la Página 2, desde el panel de datos, arrastra el campo `Sales | Unit Price` a la matriz visual.
 
-![lab4_img24](./imagenes/lab4_img25.png)
+![lab4_img25](./imagenes/lab4_img25.png)
 
 2. En el panel de campos visuales (ubicado en el panel de Visualizaciones), en el área de **Valores**, observa que el campo `Unit Price` está configurado como **Promedio del Precio Unitario**.
 
-![lab4_img25](./imagenes/lab4_img26.png)
+![lab4_img26](./imagenes/lab4_img26.png)
 
 3. Selecciona la flecha hacia abajo para **Promedio de Precio Unitario** y observa las opciones disponibles en el menú.
 
-![lab4_img26](./imagenes/lab4_img27.png)
+![lab4_img27](./imagenes/lab4_img27.png)
 
 *Las columnas numéricas visibles permiten a los autores de informes decidir la agregación en tiempo de diseño. Para evitar cálculos inconsistentes, el enfoque recomendado es ocultar estas columnas y exponer medidas explícitas.*
 
@@ -379,7 +380,7 @@ En esta tarea, crearás medidas sencillas. Las medidas simples agregan valores e
 Avg Price = AVERAGE(Sales[Unit Price])
 ```
 
-![lab4_img27](./imagenes/lab4_img28.png)
+![lab4_img28](./imagenes/lab4_img28.png)
 
 6. Añade la medida `Avg Price` a la matriz visual y observa que produce el mismo resultado que la columna `Unit Price`.
 7. En el área de Valores, abre el menú contextual del campo `Avg Price` y observa que no es posible cambiar la técnica de agregación de una medida.
@@ -410,21 +411,21 @@ Order Lines = COUNTROWS(Sales)
     * Establece el formato con **2 decimales**.
     * Asigna la **Carpeta de presentación**: `Pricing`.
 
-![lab4_img28](./imagenes/lab4_img29.png)
+![lab4_img29](./imagenes/lab4_img29.png)
 
 11. Oculta la columna `Unit Price`.
 12. Selecciona las medidas `Order Lines` y `Orders` y configura:
     * Activa el **Separador de millares**.
     * Asigna la **Carpeta de presentación**: `Counts`.
 
-![lab4_img29](./imagenes/lab4_img30.png)
+![lab4_img30](./imagenes/lab4_img30.png)
 
 13. En la vista de informe, en el área de valores del gráfico matricial, elimina `Average of Unit Price`.
 14. Aumenta el tamaño de la matriz visual.
 15. Añade las cinco medidas a la matriz visual (`Median Price`, `Min Price`, `Max Price`, `Orders`, `Order Lines`).
 16. Verifica que los resultados estén formateados correctamente.
 
-![lab4_img30](./imagenes/lab4_img31.png)
+![lab4_img31](./imagenes/lab4_img31.png)
 
 ---
 
@@ -447,7 +448,7 @@ En esta tarea, crearás más medidas que usan fórmulas más complejas.
 
 1. En la vista de informe, selecciona la Página 1 y revisa la imagen de la tabla de los vendedores (a la derecha), observando el total incorrecto de la columna **Suma de objetivos** ($676,210,000).
 
-![lab4_img31](./imagenes/lab4_img32.png)
+![lab4_img32](./imagenes/lab4_img32.png)
 
 2. Selecciona la tabla visual y elimina **Suma de Objetivos**.
 3. Renombra la columna `Targets | Target` como `TargetAmount`.

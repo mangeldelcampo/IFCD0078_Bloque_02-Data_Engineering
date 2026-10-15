@@ -437,15 +437,19 @@ Order Lines = COUNTROWS(Sales)
 12. Selecciona las medidas `Order Lines` y `Orders` y configura:
     * Activa el **Separador de millares**.
     * Asigna la **Carpeta de presentación**: `Counts`.
+
 ![lab4_img27](./imagenes/lab4_img27.png)
 
 
 13. En la vista de informe, en el área de valores del gráfico matricial, elimina `Average of Unit Price`.
+
+![lab4_img28](./imagenes/lab4_img28.png)
+
 14. Aumenta el tamaño de la matriz visual.
 15. Añade las cinco medidas a la matriz visual (`Median Price`, `Min Price`, `Max Price`, `Orders`, `Order Lines`).
 16. Verifica que los resultados estén formateados correctamente.
 
-![lab4_img28](./imagenes/lab4_img28.png)
+![lab4_img29](./imagenes/lab4_img29.png)
 
 ---
 
@@ -462,19 +466,21 @@ Order Lines = COUNTROWS(Sales)
 * Conversión de la tabla `Targets` en una **tabla de medidas** pura mediante la ocultación de `TargetAmount`.
 * Validación final en el objeto visual de tabla.
 
-#### Crear medidas adicionales
+### Crear medidas adicionales
 
 En esta tarea, crearás más medidas que usan fórmulas más complejas.
 
 1. En la vista de informe, selecciona la Página 1 y revisa la imagen de la tabla de los vendedores (a la derecha), observando el total incorrecto de la columna **Suma de objetivos** ($676,210,000).
 
-![lab4_img29](./imagenes/lab4_img29.png)
+
 ![lab4_img30](./imagenes/lab4_img30.png)
+
 ![lab4_img31](./imagenes/lab4_img31.png)
 ![lab4_img32](./imagenes/lab4_img32.png)
 
 2. Selecciona la tabla visual y elimina **Suma de Objetivos**.
 3. Renombra la columna `Targets | Target` como `TargetAmount`.
+
 >[!TIP]
 > Hay varias formas de renombrar la columna en la vista de informe: en el panel de Datos, puedes hacer clic derecho en la columna y luego seleccionar Renombrar—o hacer doble clic en la columna, o pulsar F2.
 

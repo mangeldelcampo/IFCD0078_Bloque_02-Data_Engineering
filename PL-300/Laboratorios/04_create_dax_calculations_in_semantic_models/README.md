@@ -343,9 +343,9 @@ En esta tarea, marcarás la tabla `Date` como una tabla de fechas oficial.
 6. Selecciona **Guardar**.
 7. Guarda el archivo de Power BI Desktop.
 
-Power BI Desktop ahora entiende que esta tabla define la fecha (hora).
+>Power BI Desktop ahora entiende que esta tabla define la fecha (hora).
 
-Este enfoque de diseño para una tabla de fechas es adecuado cuando no tienes una tabla de fechas en tu fuente de datos. Si tienes un almacén de datos, sería apropiado cargar datos de fechas desde su tabla de dimensiones de fechas en lugar de "redefinir" la lógica de fechas en tu modelo de datos.
+>Este enfoque de diseño para una tabla de fechas es adecuado cuando no tienes una tabla de fechas en tu fuente de datos. Si tienes un almacén de datos, sería apropiado cargar datos de fechas desde su tabla de dimensiones de fechas en lugar de "redefinir" la lógica de fechas en tu modelo de datos.
 
 ---
 

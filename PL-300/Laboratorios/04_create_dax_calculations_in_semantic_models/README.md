@@ -474,16 +474,18 @@ IF(
 > Puedes usar la cinta contextual de **Herramientas de Medición.**
 
 6. Oculta la columna `TargetAmount`.
-
-![lab4_img34](./imagenes/lab4_img34.png)
-
 >[!TIP] 
-> *Al contener sólo medidas visibles, la tabla `Targets` se mueve automáticamente a la parte superior de la lista en el panel de datos.*
+> Puedes hacer clic derecho en la columna del panel de **datos** y luego seleccionar **Ocultar**.
 
 7. Añade la medida `Target` a la tabla visual.
-8. Observa que el total de la columna Objetivo es ahora **`BLANK`**.
 
 ![lab4_img34](./imagenes/lab4_img34.png)
+
+>[!NOTE] 
+> *Al contener sólo medidas visibles, la tabla `Targets` se mueve automáticamente a la parte superior de la lista en el panel de datos.*
+8. Observa que el total de la columna Objetivo es ahora **`BLANK`**.
+
+
 
 9. Crea las siguientes dos medidas para la tabla `Targets`:
 

@@ -224,7 +224,6 @@ En esta tarea, añadirás más columnas para permitir el filtrado y agrupar por 
 Year = "FY" & YEAR('Date'[Date]) + IF(MONTH('Date'[Date]) > 6, 1)
 ```
 
-![lab4_img09](./imagenes/lab4_img09.png)
 
 *La fórmula utiliza el valor anual de la fecha pero añade uno al valor del año cuando el mes es posterior a junio (inicio del año fiscal de Adventure Works).*
 
@@ -240,6 +239,7 @@ Month = FORMAT('Date'[Date], "yyyy MMM")
 
 4. Verifica que se hayan añadido las nuevas columnas en la vista de tabla.
 
+![lab4_img09](./imagenes/lab4_img09.png)
 ![lab4_img10](./imagenes/lab4_img010.png)
 
 5. Para validar los cálculos, cambia a la **vista de informe**.

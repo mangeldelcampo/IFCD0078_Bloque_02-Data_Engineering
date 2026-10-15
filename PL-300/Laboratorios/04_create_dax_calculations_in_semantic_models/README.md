@@ -453,7 +453,7 @@ En esta tarea, crearás más medidas que usan fórmulas más complejas.
 2. Selecciona la tabla visual y elimina **Suma de Objetivos**.
 3. Renombra la columna `Targets | Target` como `TargetAmount`.
 >[!TIP]
->Hay varias formas de renombrar la columna en la vista de informe: en el panel de Datos, puedes hacer clic derecho en la columna y luego seleccionar Renombrar—o hacer doble clic en la columna, o pulsar F2.
+> Hay varias formas de renombrar la columna en la vista de informe: en el panel de Datos, puedes hacer clic derecho en la columna y luego seleccionar Renombrar—o hacer doble clic en la columna, o pulsar F2.
 
 4. Crea la siguiente medida en la tabla `Targets`:
 
@@ -470,11 +470,15 @@ IF(
 *La función `HASONEVALUE` evalúa si hay un único vendedor filtrado en el contexto. Si es verdadero, devuelve la suma de los objetivos del vendedor; si es falso (como en la fila de total), devuelve `BLANK`.*
 
 5. Formatea la medida `Target` con **0 decimales**.
+>[!TIP]
+> Puedes usar la cinta contextual de **Herramientas de Medición.**
+
 6. Oculta la columna `TargetAmount`.
 
 ![lab4_img34](./imagenes/lab4_img34.png)
 
-*Al contener sólo medidas visibles, la tabla `Targets` se mueve automáticamente a la parte superior de la lista en el panel de datos.*
+>[!TIP] 
+> *Al contener sólo medidas visibles, la tabla `Targets` se mueve automáticamente a la parte superior de la lista en el panel de datos.*
 
 7. Añade la medida `Target` a la tabla visual.
 8. Observa que el total de la columna Objetivo es ahora **`BLANK`**.
